@@ -12,6 +12,10 @@ const App = () => (
     anchors={anchors}
     navigation
     navigationTooltips={anchors}
+    controlArrowsHTML={[
+      '<div class="fp-arrow"></div>',
+      '<div class="fp-arrow"></div>',
+    ]}
     sectionsColor={["#7fff00", "#00ffff", "#29ab87", "#476999"]}
     onLeave={(origin, destination, direction) => {
       console.log("onLeave event", { origin, destination, direction });
@@ -20,22 +24,16 @@ const App = () => (
       console.log("render prop change", state, fullpageApi);
 
       return (
-        <div>
+        <div className="text-center">
+          <div className="section h-screen text-white">Intro</div>
+          <div className="section">Skills</div>
           <div className="section">
-            <div className="slide"> Slide 11111111</div>
-            <div className="slide"> Slide 22222222</div>
-            <div className="slide"> Slide 3333333</div>
-            <div className="slide "> Slide 4 4444444</div>
+            <div className="slide"> Projects 1</div>
+            <div className="slide"> Projects 1.1</div>
+            <div className="slide"> Projects 1.2</div>
+            <div className="slide"> Projects 1.3</div>
           </div>
-          <div className="section">
-            Section 2
-          </div>
-          <div className="section">
-            Section 3
-          </div>
-          <div className="section">
-            Section 4
-          </div>
+          <div className="section">Roadmap</div>
         </div>
       );
     }}
