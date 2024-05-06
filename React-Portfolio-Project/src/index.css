@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-
 .fp-watermark {
   display: none !important;
 }
@@ -18,3 +10,15 @@
   display: none !important;
 }
 
+/* vertical nav dots */
+#fp-nav ul li a span {
+  background-color: #fff;
+}
+
+/* horizontal nav arrows */
+.fp-prev {
+  margin-left: 45px;
+}
+.fp-next {
+  margin-right: 45px;
+}

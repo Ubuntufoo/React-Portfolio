@@ -1,40 +1,52 @@
-//
+// App.jsx is the main file that renders the fullpage component and child components.
 
 import ReactFullpage from "@fullpage/react-fullpage";
 import "./index.css";
+
+//enable keyboard scrolling for up, down, left, right
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowUp") {
+    window.fullpage_api.moveSectionUp();
+  } else if (e.key === "ArrowDown") {
+    window.fullpage_api.moveSectionDown();
+  } else if (e.key === "ArrowLeft") {
+    window.fullpage_api.moveSlideLeft();
+  } else if (e.key === "ArrowRight") {
+    window.fullpage_api.moveSlideRight();
+  }
+}
+);
 
 const anchors = ["intro", "skills", "projects", "roadmap"];
 
 const App = () => (
   <ReactFullpage
     licenseKey={"gplv3-license"}
-    scrollingSpeed={10} /* Options here */
+    scrollingSpeed={1000}
     anchors={anchors}
-    navigation
+    navigation={true}
     navigationTooltips={anchors}
     controlArrowsHTML={[
       '<div class="fp-arrow"></div>',
       '<div class="fp-arrow"></div>',
     ]}
-    sectionsColor={["#7fff00", "#00ffff", "#29ab87", "#476999"]}
-    onLeave={(origin, destination, direction) => {
-      console.log("onLeave event", { origin, destination, direction });
-    }}
-    render={({ state, fullpageApi }) => {
-      console.log("render prop change", state, fullpageApi);
 
+    // eslint-disable-next-line no-unused-vars
+    render={() => {
       return (
-        <div className="text-center">
-          <div className="section h-screen text-white">Intro</div>
-          <div className="section">Skills</div>
-          <div className="section">
+        <>
+          {/* <div className="section h-screen">
+            <div className="w-1/2 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est nesciunt officiis voluptates architecto, odit veniam placeat corporis repellendus reprehenderit aspernatur odio nobis facere voluptatibus sint mollitia nostrum error unde!</div>
+          </div> */}
+          <div className="section h-screen">Skills</div>
+          <div className="section h-screen">
             <div className="slide"> Projects 1</div>
             <div className="slide"> Projects 1.1</div>
             <div className="slide"> Projects 1.2</div>
             <div className="slide"> Projects 1.3</div>
           </div>
-          <div className="section">Roadmap</div>
-        </div>
+          <div className="section h-screen">Roadmap</div>
+        </>
       );
     }}
   />
