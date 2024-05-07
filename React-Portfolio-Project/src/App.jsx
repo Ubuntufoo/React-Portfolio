@@ -1,7 +1,7 @@
 // App.jsx using Fullpage.js and Tailwind for the UI
 
 import ReactFullpage from "@fullpage/react-fullpage";
-import Intro from "./components/Intro";
+// import Intro from "./components/Intro";
 import "./index.css";
 
 //enable keyboard scrolling for up, down, left, right
@@ -36,7 +36,7 @@ const App = () => (
     render={() => {
       return (
         <>
-          <div></div>
+
           <div className="section h-screen">Skills</div>
           <div className="section h-screen">
             <div className="slide"> Projects 1</div>
