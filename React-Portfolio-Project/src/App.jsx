@@ -4,6 +4,20 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import IntroPage from "./components/IntroPage";
 import "./index.css";
 
+//enable keyboard scrolling for up, down, left, right
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowUp") {
+    window.fullpage_api.moveSectionUp();
+  } else if (e.key === "ArrowDown") {
+    window.fullpage_api.moveSectionDown();
+  } else if (e.key === "ArrowLeft") {
+    window.fullpage_api.moveSlideLeft();
+  } else if (e.key === "ArrowRight") {
+    window.fullpage_api.moveSlideRight();
+  }
+}
+);
+
 const anchors = ["intro", "skills", "projects", "roadmap"];
 
 const App = () => {
