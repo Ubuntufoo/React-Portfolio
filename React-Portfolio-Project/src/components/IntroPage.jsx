@@ -1,6 +1,8 @@
 // Intro and landing page child component
 /* eslint-disable react/prop-types */
 
+import KeyboardArrows from "./KeyboardArrows";
+
 export default function IntroPage() {
   return (
     <div className="section h-screen">
@@ -8,8 +10,9 @@ export default function IntroPage() {
         <div
           className=" w-2/3 h-64 bg-white absolute
           transform rotate-[20deg] -me-80 -mt-24 text-black"
-        >test</div>
+        ></div>
       </div>
+      <KeyboardArrows />
     </div>
   );
 }
