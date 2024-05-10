@@ -9,7 +9,7 @@ export default function SkillsPage({ keyClasses }) {
     left: keyClasses.keyInactiveClass,
     right: keyClasses.keyInactiveClass,
   }
-  
+
   return (
     <div className="section h-screen">
       Skills
