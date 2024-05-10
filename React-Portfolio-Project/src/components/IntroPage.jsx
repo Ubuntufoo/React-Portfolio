@@ -1,18 +1,26 @@
 // Intro and landing page child component
-/* eslint-disable react/prop-types */
 
-import KeyboardArrows from "./KeyboardArrows";
+import KeyboardArrows from './KeyboardArrows'
 
-export default function IntroPage() {
+export default function IntroPage({ keyClasses }) {
+  // Define keyStyling object to pass to KeyboardArrows component
+  const keyStyling = {
+    up: keyClasses.keyInactiveClass,
+    down: keyClasses.keyActiveClass,
+    left: keyClasses.keyInactiveClass,
+    right: keyClasses.keyInactiveClass,
+  }
+
   return (
     <div className="section h-screen">
-      <div className="bg-black h-0 w-screen fixed top-0 flex justify-end">
+      <div className="fixed top-0 flex h-0 w-screen justify-end">
         <div
-          className=" w-2/3 h-64 bg-white absolute
-          transform rotate-[20deg] -me-80 -mt-24 text-black"
+          className=" absolute -me-80 -mt-24 h-64
+          w-2/3 rotate-[20deg] transform bg-white text-black"
         ></div>
       </div>
-      <KeyboardArrows />
+      {/* Pass keyStyling object as prop to KeyboardArrows component */}
+      <KeyboardArrows keyStyling={keyStyling} />
     </div>
-  );
+  )
 }

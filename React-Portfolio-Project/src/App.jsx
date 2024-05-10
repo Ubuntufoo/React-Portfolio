@@ -2,20 +2,28 @@
 
 import ReactFullpage from '@fullpage/react-fullpage'
 import IntroPage from './components/IntroPage'
+import ProjectsPage from './components/ProjectsPage'
+import SkillsPage from './components/SkillsPage'
+import RoadmapPage from './components/RoadmapPage'
 import './index.css'
 
 //enable keyboard scrolling for up, down, left, right
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'ArrowUp') {
-    window.fullpage_api.moveSectionUp()
-  } else if (e.key === 'ArrowDown') {
-    window.fullpage_api.moveSectionDown()
-  } else if (e.key === 'ArrowLeft') {
-    window.fullpage_api.moveSlideLeft()
-  } else if (e.key === 'ArrowRight') {
-    window.fullpage_api.moveSlideRight()
-  }
-})
+// document.addEventListener('keydown', (e) => {
+//   if (e.key === 'ArrowUp') {
+//     window.fullpage_api.moveSectionUp()
+//   } else if (e.key === 'ArrowDown') {
+//     window.fullpage_api.moveSectionDown()
+//   } else if (e.key === 'ArrowLeft') {
+//     window.fullpage_api.moveSlideLeft()
+//   } else if (e.key === 'ArrowRight') {
+//     window.fullpage_api.moveSlideRight()
+//   }
+// })
+
+const keyClasses = {
+  keyActiveClass: 'text-white text-5xl',
+  keyInactiveClass: 'hidden',
+}
 
 const anchors = ['intro', 'projects', 'skills', 'roadmap']
 
@@ -35,15 +43,10 @@ const App = () => {
         render={() => {
           return (
             <>
-              <IntroPage />
-              <div className="section h-screen">
-                <div className="slide"> Projects 1</div>
-                <div className="slide"> Projects 1.1</div>
-                <div className="slide"> Projects 1.2</div>
-                <div className="slide"> Projects 1.3</div>
-              </div>
-              <div className="section h-screen">Skills</div>
-              <div className="section h-screen">Roadmap</div>
+              <IntroPage keyClasses={keyClasses} />
+              <ProjectsPage keyClasses={keyClasses} />
+              <SkillsPage keyClasses={keyClasses} />
+              <RoadmapPage keyClasses={keyClasses} />
             </>
           )
         }}
