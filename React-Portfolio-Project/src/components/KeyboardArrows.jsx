@@ -30,7 +30,10 @@ export default function KeyboardArrows({ keyStyling }) {
       <div className="grid grid-cols-3 gap-2">
         {/* Map over the icons array to render each icon */}
         {icons.map((item, index) => (
-          <div key={index} className={`arrow-container ${item.gridStyle}`}>
+          <div
+            key={index}
+            className={`flex size-12	place-content-center rounded-lg bg-gray-800 shadow-lg ${item.gridStyle}`}
+          >
             {/* Apply the className dynamically based on keyStyling */}
             {React.cloneElement(item.icon, { className: item.className })}
           </div>

@@ -35,7 +35,7 @@ const App = () => {
         licenseKey={'A65MK-M52I6-641KK-JE4PH-ZPSWP'}
         scrollingSpeed={1000}
         anchors={anchors}
-        navigation={true}
+        navigation={false}
         navigationTooltips={anchors}
         loopBottom={true}
         fixedElements='#NavBar'
