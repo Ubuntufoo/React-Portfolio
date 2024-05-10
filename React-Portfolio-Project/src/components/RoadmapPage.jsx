@@ -5,7 +5,7 @@ import KeyboardArrows from './KeyboardArrows'
 export default function RoadmapPage({ keyClasses }) {
   const keyStyling = {
     up: keyClasses.keyActiveClass,
-    down: keyClasses.keyInactiveClass,
+    down: keyClasses.keyActiveClass,
     left: keyClasses.keyInactiveClass,
     right: keyClasses.keyInactiveClass,
   }

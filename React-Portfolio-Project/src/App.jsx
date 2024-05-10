@@ -36,6 +36,7 @@ const App = () => {
         anchors={anchors}
         navigation={true}
         navigationTooltips={anchors}
+        loopBottom={true}
         controlArrowsHTML={[
           '<div class="fp-arrow"></div>',
           '<div class="fp-arrow"></div>',
