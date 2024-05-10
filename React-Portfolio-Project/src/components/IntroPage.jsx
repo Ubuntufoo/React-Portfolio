@@ -1,6 +1,7 @@
 // Intro and landing page child component
 
 import KeyboardArrows from './KeyboardArrows'
+// import SideBar from './SideBar'
 
 export default function IntroPage({ keyClasses }) {
   // Define keyStyling object to pass to KeyboardArrows component
@@ -13,13 +14,10 @@ export default function IntroPage({ keyClasses }) {
 
   return (
     <div className="section h-screen">
-      <div className="fixed top-0 flex h-0 w-screen justify-end">
-        <div
-          className=" absolute -me-80 -mt-24 h-64
-          w-2/3 rotate-[20deg] transform bg-white text-black"
-        ></div>
-      </div>
-      {/* Pass keyStyling object as prop to KeyboardArrows component */}
+      {/* <div
+        className="absolute top-0 -ms-64 h-0 w-0 border-b-[540px] border-l-[385px] border-t-[140px]
+border-solid border-b-transparent border-l-[#fff] border-t-transparent opacity-90"
+      ></div> */}
       <KeyboardArrows keyStyling={keyStyling} />
     </div>
   )
