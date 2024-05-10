@@ -5,6 +5,7 @@ import IntroPage from './components/IntroPage'
 import ProjectsPage from './components/ProjectsPage'
 import SkillsPage from './components/SkillsPage'
 import RoadmapPage from './components/RoadmapPage'
+import NavBar from './components/NavBar'
 import './index.css'
 
 //enable keyboard scrolling for up, down, left, right
@@ -37,6 +38,7 @@ const App = () => {
         navigation={true}
         navigationTooltips={anchors}
         loopBottom={true}
+        fixedElements='#NavBar'
         controlArrowsHTML={[
           '<div class="fp-arrow"></div>',
           '<div class="fp-arrow"></div>',
@@ -44,6 +46,7 @@ const App = () => {
         render={() => {
           return (
             <>
+              <NavBar />
               <IntroPage keyClasses={keyClasses} />
               <ProjectsPage keyClasses={keyClasses} />
               <SkillsPage keyClasses={keyClasses} />
