@@ -21,8 +21,8 @@ document.addEventListener('keydown', (e) => {
 })
 
 const keyClasses = {
-  keyActiveClass: 'text-white text-5xl',
-  keyInactiveClass: 'hidden'
+  keyActiveClass: 'text-white text-5xl animate-[pulse_2s_ease-in-out_2]',
+  keyInactiveClass: 'hidden',
 }
 
 const anchors = ['intro', 'projects', 'skills', 'roadmap']

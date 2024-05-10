@@ -26,7 +26,7 @@ export default function KeyboardArrows({ keyStyling }) {
   ]
 
   return (
-    <div className="fixed bottom-10 right-10 z-10">
+    <div className="absolute bottom-8 right-8 z-10">
       <div className="grid grid-cols-3 gap-2">
         {/* Map over the icons array to render each icon */}
         {icons.map((item, index) => (
