@@ -8,7 +8,12 @@ export default {
     "./src/**/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'oswold': ['"Oswald"', "sans-serif"],
+        'bebas-neue': ['"Bebas Neue"', 'serif'],
+      },
+    },
   },
   plugins: [],
 }

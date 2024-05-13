@@ -5,7 +5,8 @@ import IntroPage from './components/IntroPage'
 import ProjectsPage from './components/ProjectsPage'
 import SkillsPage from './components/SkillsPage'
 import RoadmapPage from './components/RoadmapPage'
-import NavBar from './components/NavBar'
+import NavBarFull from './components/NavBarFull'
+import NavBarMobile from './components/NavBarFull'
 import './index.css'
 
 //enable keyboard scrolling for up, down, left, right
@@ -46,7 +47,7 @@ const App = () => {
         render={() => {
           return (
             <>
-              <NavBar />
+              <NavBarFull />
               <IntroPage keyClasses={keyClasses} />
               <ProjectsPage keyClasses={keyClasses} />
               <SkillsPage keyClasses={keyClasses} />

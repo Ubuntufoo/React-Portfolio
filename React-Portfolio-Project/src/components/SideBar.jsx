@@ -2,42 +2,50 @@
 
 import { FaGithub } from 'react-icons/fa'
 import { SiMinutemailer } from 'react-icons/si'
-import { PiMailboxFill } from 'react-icons/pi'
+import { BiLogoLinkedinSquare } from 'react-icons/bi'
+import { RiContactsLine } from "react-icons/ri";
+
+
+
+// import Tim1noBG from '../assets/Tim1noBG.png/'
 
 
 export default function SideBar() {
   return (
-    <div className="absolute top-0 -ms-80 h-0 w-0 cursor-pointer border-b-[410px] border-l-[440px] border-t-[200px] border-solid border-b-transparent border-l-[#fff] border-t-transparent opacity-90 transition-transform duration-1000 translate-x-56">
-      <p className="absolute right-9 text-xl font-semibold text-gray-800 hover:font-bold hover:text-black">
-        Contact
-      </p>
+    <div className="absolute top-0 -ms-[370px] h-0 w-0 hover:translate-x-24 cursor-pointer border-b-[410px] border-l-[440px] border-t-[125px] border-solid border-b-transparent border-l-[#fff] border-t-transparent transition-transform duration-700 lg:-ms-[360px]">
+      <div className="absolute -ms-16 -mt-2">
+        <RiContactsLine className="text-3xl text-gray-700 lg:text-4xl" />
+      </div>
       <div
-        className="absolute -ms-[590px] h-0 w-0 cursor-pointer border-b-[300px] border-l-[320px] border-t-[90px]
-          border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-1000 hover:translate-x-44"
+        className="mt-3 absolute -ms-[427px] h-0 w-0 cursor-pointer border-b-[298px] border-l-[320px] border-t-[89px]
+          border-solid border-b-transparent border-l-gray-700 border-t-transparent transition-transform duration-700 hover:translate-x-44"
       >
-        <div className="absolute right-8 -mt-1 flex items-center space-x-3 text-white">
-          <a href="https://github.com/Ubuntufoo" className="font-mono leading-relaxed text-nowrap">
+        <div className="absolute -ms-[220px] -mt-[5px] flex items-center space-x-3.5 text-white">
+          <a
+            href="https://github.com/Ubuntufoo"
+            className="text-nowrap font-mono leading-relaxed"
+          >
             Github Repository
           </a>
           <FaGithub className="text-3xl" />
         </div>
       </div>
       <div
-        className="absolute -ms-[590px] mt-36 h-0 w-0 cursor-pointer border-b-[300px] border-l-[320px] border-t-[90px]
-          border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-1000 hover:translate-x-60"
+        className="absolute -ms-[427px] mt-[162px] h-0 w-0 cursor-pointer border-b-[298px] border-l-[320px] border-t-[90px]
+          border-solid border-b-transparent border-l-gray-700 border-t-transparent transition-transform duration-700 hover:translate-x-64"
       >
-        <div className="absolute right-8 -mt-1 flex items-center space-x-3 text-white">
+        <div className="absolute -ms-[298px] -mt-[5px] flex items-center space-x-3.5 text-white">
           <p className="font-mono">TimothyMurphy123@gmail.com</p>
           <SiMinutemailer className="text-3xl" />
         </div>
       </div>
       <div
-        className="absolute -ms-[590px] mt-72 h-0 w-0 cursor-pointer border-b-[300px] border-l-[320px] border-t-[90px]
-          border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-1000 hover:translate-x-44"
+        className="absolute -ms-[427px] mt-80 h-0 w-0 cursor-pointer border-b-[295px] border-l-[320px] border-t-[89px]
+          border-solid border-b-transparent border-l-gray-700 border-t-transparent transition-transform duration-700 hover:translate-x-40"
       >
-        <div className="absolute right-8 -mt-1 flex items-center space-x-3 text-white">
-          <p className="text-nowrap font-mono">Hyannis, MA, 02601</p>
-          <PiMailboxFill className="text-3xl" />
+        <div className="absolute -ms-[211px] -mt-[6px] flex items-center space-x-3.5 text-white">
+          <p className="text-nowrap font-mono">LinkedIn Profile</p>
+          <BiLogoLinkedinSquare className="text-3xl" />
         </div>
       </div>
     </div>
