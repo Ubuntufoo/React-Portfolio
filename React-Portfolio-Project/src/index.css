@@ -26,6 +26,14 @@
   margin-right: 45px;
 }
 
+/* HTML: <div class="slanted-edge"></div> */
+.parallelogram {
+  --p: 120px;
+  /* control the shape (can be percentage) */
+  clip-path: polygon(0 calc(100% - var(--p)), 0 0, 100% var(--p), 100% 100%);
+
+}
+
 @keyframes waving {
   0% {
     transform: translate(0%, 0%) rotate(0deg);
@@ -49,5 +57,5 @@
 }
 
 .animate-waving {
-  animation: waving 1.3s linear 1s 2; /* Changed animation-delay to 0s */
+  animation: waving 1.3s linear 1s 2;
 }
