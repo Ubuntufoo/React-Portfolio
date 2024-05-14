@@ -32,7 +32,7 @@ export default function SideBar() {
       </div>
       <div
         className="absolute -ms-[427px] mt-[162px] h-0 w-0 cursor-pointer border-b-[298px] border-l-[320px] border-t-[90px]
-          border-solid border-b-transparent border-l-gray-700 border-t-transparent transition-transform duration-700 hover:translate-x-64"
+          border-solid border-b-transparent border-l-gray-700 border-t-transparent transition-transform duration-700 hover:translate-x-60"
       >
         <div className="absolute -ms-[298px] -mt-[5px] flex items-center space-x-3.5 text-white">
           <p className="font-mono">TimothyMurphy123@gmail.com</p>

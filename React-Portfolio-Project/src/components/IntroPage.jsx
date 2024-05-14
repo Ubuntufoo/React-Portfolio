@@ -14,7 +14,7 @@ export default function IntroPage({ keyClasses }) {
   }
 
   return (
-    <div className="section h-screen font-bebas-neue">
+    <div className="section h-screen">
       <SideBar />
       <KeyboardArrows keyStyling={keyStyling} />
       <KeyboardNoti />
