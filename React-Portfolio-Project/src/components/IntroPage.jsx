@@ -3,6 +3,7 @@
 import KeyboardArrows from './KeyboardArrows'
 import SideBar from './SideBar'
 import KeyboardNoti from './KeyboardNoti'
+import Hero from './Hero'
 
 export default function IntroPage({ keyClasses }) {
   // Define keyStyling object to pass to KeyboardArrows component
@@ -15,6 +16,7 @@ export default function IntroPage({ keyClasses }) {
 
   return (
     <div className="section h-screen">
+      <Hero />
       <SideBar />
       <KeyboardArrows keyStyling={keyStyling} />
       <KeyboardNoti />

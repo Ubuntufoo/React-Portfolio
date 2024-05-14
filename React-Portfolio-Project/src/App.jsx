@@ -5,11 +5,8 @@ import IntroPage from './components/IntroPage'
 import ProjectsPage from './components/ProjectsPage'
 import SkillsPage from './components/SkillsPage'
 import RoadmapPage from './components/RoadmapPage'
-import NavBarFull from './components/NavBarFull'
-import NavBarMobile from './components/NavBarMobile'
+import Header from './components/Header'
 import './index.css'
-
-import { useState, useEffect } from 'react'
 
 //enable keyboard scrolling for up, down, left, right
 document.addEventListener('keydown', (e) => {
@@ -32,23 +29,9 @@ const keyClasses = {
 const anchors = ['intro', 'projects', 'skills', 'roadmap']
 
 const App = () => {
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsLargeScreen(window.innerWidth >= 1024)
-    }
-
-    window.addEventListener('resize', handleResize)
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, []) // Empty dependency array to only add event listener once on mount
-
   return (
     <>
-
+      <Header />
       <ReactFullpage
         licenseKey={'A65MK-M52I6-641KK-JE4PH-ZPSWP'}
         scrollingSpeed={1000}
@@ -64,7 +47,6 @@ const App = () => {
         render={() => {
           return (
             <>
-              {isLargeScreen ? <NavBarFull /> : <NavBarMobile />}
               <IntroPage keyClasses={keyClasses} />
               <ProjectsPage keyClasses={keyClasses} />
               <SkillsPage keyClasses={keyClasses} />

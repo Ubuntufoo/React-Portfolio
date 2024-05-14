@@ -3,7 +3,7 @@
 import { FaGithub } from 'react-icons/fa'
 import { SiMinutemailer } from 'react-icons/si'
 import { BiLogoLinkedinSquare } from 'react-icons/bi'
-import { RiContactsLine } from "react-icons/ri";
+import { IoInformation } from 'react-icons/io5'
 
 
 
@@ -12,12 +12,12 @@ import { RiContactsLine } from "react-icons/ri";
 
 export default function SideBar() {
   return (
-    <div className="absolute top-0 -ms-[370px] h-0 w-0 hover:translate-x-24 cursor-pointer border-b-[410px] border-l-[440px] border-t-[125px] border-solid border-b-transparent border-l-[#fff] border-t-transparent transition-transform duration-700 lg:-ms-[360px]">
+    <div className="absolute top-0 -ms-[370px] -mt-10 h-0 w-0 cursor-pointer border-b-[410px] border-l-[440px] border-t-[125px] border-solid border-b-transparent border-l-[#fff] border-t-transparent transition-transform duration-700 hover:translate-x-24 lg:-ms-[360px]">
       <div className="absolute -ms-16 -mt-2">
-        <RiContactsLine className="text-3xl text-gray-700 lg:text-4xl" />
+        <IoInformation className="text-4xl text-gray-700 lg:text-4xl" />
       </div>
       <div
-        className="mt-3 absolute -ms-[427px] h-0 w-0 cursor-pointer border-b-[298px] border-l-[320px] border-t-[89px]
+        className="absolute -ms-[427px] mt-3 h-0 w-0 cursor-pointer border-b-[298px] border-l-[320px] border-t-[89px]
           border-solid border-b-transparent border-l-gray-700 border-t-transparent transition-transform duration-700 hover:translate-x-44"
       >
         <div className="absolute -ms-[220px] -mt-[5px] flex items-center space-x-3.5 text-white">

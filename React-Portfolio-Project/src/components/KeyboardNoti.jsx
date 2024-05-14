@@ -8,15 +8,15 @@ export default function KeyboardNoti() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setFade(false)
-    }, 4000)
+    }, 6000)
     return () => clearTimeout(timer)
   }, [])
 
   return (
     <div
       className={`${
-        fade ? 'opacity-100' : 'hidden opacity-0'
-      } invisible lg:visible absolute bottom-5 right-10 w-1/2 xl:w-1/3 cursor-pointer border-b-2 border-white pb-2 text-xl text-white transition-opacity duration-500 ease-in`}
+        fade ? 'opacity-100' : ' transition-display opacity-0 duration-1000'
+      } absolute bottom-5 right-10 hidden w-2/5 cursor-pointer border-b-2 border-white pb-2 text-lg text-white ease-in lg:block xl:w-1/4`}
     >
       Keyboard Navigation Enabled
     </div>
