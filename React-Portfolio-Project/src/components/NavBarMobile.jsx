@@ -14,7 +14,7 @@ export default function NavBarMobile() {
   return (
     <nav
       id="NavBarMobile"
-      className="font-bebas-neue fixed inset-x-0 top-0 z-20 flex flex-col bg-transparent text-center text-white lg:hidden lg:text-gray-700"
+      className="font-bebas-neue fixed inset-x-0 top-0 z-20 flex flex-col bg-transparent text-center text-white lg:hidden lg:text-gray-800"
     >
       <div
         onClick={toggleNav}
@@ -32,7 +32,7 @@ export default function NavBarMobile() {
       </div>
 
       <div
-        className={`transform ${isOpen ? 'translate-y-48' : ''} -mt-48 flex w-screen flex-col items-center space-y-4 bg-gray-700 py-4 text-lg transition-transform duration-500`}
+        className={`transform ${isOpen ? 'translate-y-48' : ''} -mt-48 flex w-screen flex-col items-center space-y-4 bg-gray-800 py-4 text-lg transition-transform duration-500`}
       >
         <div className="w-fit hover:font-bold">
           <a href="#intro" className="hover:scale-110">

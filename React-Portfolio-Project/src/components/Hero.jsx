@@ -19,17 +19,17 @@ export default function Hero() {
   }
 
   return (
-    <main className="flex h-screen flex-col items-center justify-center">
+    <main className="flex h-screen items-center justify-center">
       {animationEnded ? (
         <Parallelogram>
-          <div className="animate-fade flex size-full  items-center">
+          <div className="flex h-full animate-fade justify-center align-middle">
             <img
               src={Tim1noBG}
               alt="Tim's avatar"
-              className="-ms-10 mt-10 2xl:-ms-0 2xl:mt-0 2xl:scale-125"
+              className="block basis-1/3 size-fit self-center scale-75 2xl:scale-100 2xl:mr-10"
             />
-            <div className="font-oswold z-10 text-pretty pe-6 text-lg leading-8">
-              <span className="text-3xl">
+            <div className="self-center text-pretty font-oswold 2xl:text-lg basis-2/3 pe-6 text-slate-200">
+              <span className="mb-10 block text-3xl">
                 Welcome. I&apos;m Tim. <br />
               </span>
               Tempora odit, vero ad nobis, dolorum commodi quidem sunt, nulla

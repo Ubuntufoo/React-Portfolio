@@ -28,10 +28,15 @@
 
 /* HTML: <div class="slanted-edge"></div> */
 .parallelogram {
-  --p: 120px;
+  --p: 160px;
   /* control the shape (can be percentage) */
   clip-path: polygon(0 calc(100% - var(--p)), 0 0, 100% var(--p), 100% 100%);
+}
 
+/* HTML: <div class="triangle"></div> */
+.triangle {
+  aspect-ratio: cos(33deg);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
 @keyframes waving {
