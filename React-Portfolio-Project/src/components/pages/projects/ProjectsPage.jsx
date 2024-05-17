@@ -4,7 +4,6 @@ import KeyboardArrows from '../../features/KeyboardArrows'
 import Cards from './Cards'
 
 export default function ProjectsPage({ keyClasses, activePage }) {
-
   const keyStyling = {
     up: keyClasses.keyActiveClass,
     down: keyClasses.keyActiveClass,
@@ -14,9 +13,8 @@ export default function ProjectsPage({ keyClasses, activePage }) {
 
   return (
     <div className="section h-screen">
-      <div className="slide">
-        <Cards numCards={4} activePage={activePage} />
-      </div>
+      <Cards numCards={4} activePage={activePage} />
+
       <div className="slide">aaaaaaaaaaaaaaaaa</div>
       <div className="slide">bbbbbbbbbbbbbbbbbbb</div>
       <div className="slide">ccccccccccccccccc</div>
@@ -24,4 +22,3 @@ export default function ProjectsPage({ keyClasses, activePage }) {
     </div>
   )
 }
-
