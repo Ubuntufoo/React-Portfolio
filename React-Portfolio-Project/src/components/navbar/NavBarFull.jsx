@@ -33,7 +33,7 @@ export default function NavBarFull() {
         </div>
         <div className="col-span-4 col-start-4 col-end-5">
           <a
-            href="#roadmap"
+            href="#contact-me"
             className="inline-block hover:scale-110 hover:text-black"
           >
             Contact

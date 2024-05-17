@@ -5,8 +5,7 @@ import SideBar from './SideBar'
 import KeyboardNoti from '../../features/KeyboardNoti'
 import Hero from './Hero'
 
-export default function IntroPage({ keyClasses }) {
-  // Define keyStyling object to pass to KeyboardArrows component
+export default function IntroPage({ keyClasses}) {
   const keyStyling = {
     up: keyClasses.keyInactiveClass,
     down: keyClasses.keyActiveClass,

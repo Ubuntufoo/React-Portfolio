@@ -9,8 +9,6 @@ export default function NavBarMobile() {
     setIsOpen(!isOpen)
   }
 
-  console.log('isOpen:', isOpen)
-
   return (
     <nav
       id="NavBarMobile"
@@ -50,7 +48,7 @@ export default function NavBarMobile() {
           </a>
         </div>
         <div className="w-fit hover:font-bold">
-          <a href="#roadmap" className="hover:scale-110">
+          <a href="#contact-me" className="hover:scale-110">
             Contact
           </a>
         </div>

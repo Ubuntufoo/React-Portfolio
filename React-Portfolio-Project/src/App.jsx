@@ -1,34 +1,25 @@
 // App.jsx using Fullpage.js and Tailwind for the UI
 
+import {  useState } from 'react'
+
 import ReactFullpage from '@fullpage/react-fullpage'
 import IntroPage from './components/pages/intro/IntroPage'
 import ProjectsPage from './components/pages/projects/ProjectsPage'
 import SkillsPage from './components/pages/skills/SkillsPage'
 import ContactPage from './components/pages/contact/ContactPage'
 import Header from './components/navbar/Header'
+import { keyClasses, anchors, setupKeydownHandler } from './utils/utils'
 import './index.css'
 
-//enable keyboard scrolling for up, down, left, right
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'ArrowUp') {
-    window.fullpage_api.moveSectionUp()
-  } else if (e.key === 'ArrowDown') {
-    window.fullpage_api.moveSectionDown()
-  } else if (e.key === 'ArrowLeft') {
-    window.fullpage_api.moveSlideLeft()
-  } else if (e.key === 'ArrowRight') {
-    window.fullpage_api.moveSlideRight()
-  }
-})
-
-const keyClasses = {
-  keyActiveClass: 'text-white text-5xl animate-[pulse_2s_ease-in-out_2]',
-  keyInactiveClass: 'hidden',
-}
-
-const anchors = ['intro', 'projects', 'skills', 'roadmap']
+setupKeydownHandler()
 
 const App = () => {
+  const [activePage, setActivePage] = useState('intro')
+  const afterLoad = () => {
+    setActivePage(window.fullpage_api.getActiveSection().anchor)
+    console.log(window.fullpage_api.getActiveSection().anchor)
+  }
+
   return (
     <>
       <Header />
@@ -44,11 +35,12 @@ const App = () => {
           '<div class="fp-arrow"></div>',
           '<div class="fp-arrow"></div>',
         ]}
+        afterLoad={afterLoad}
         render={() => {
           return (
             <>
               <IntroPage keyClasses={keyClasses} />
-              <ProjectsPage keyClasses={keyClasses} />
+              <ProjectsPage keyClasses={keyClasses} activePage={activePage} />
               <SkillsPage keyClasses={keyClasses} />
               <ContactPage keyClasses={keyClasses} />
             </>
