@@ -26,13 +26,13 @@ export default function KeyboardArrows({ keyStyling }) {
   ]
 
   return (
-    <div className="hidden lg:block absolute bottom-4 right-4">
-      <div className="grid scale-75 grid-cols-3 gap-3">
+    <div className="hidden lg:block absolute bottom-3 right-2">
+      <div className="grid scale-75 grid-cols-3 gap-2">
         {/* Map over the icons array to render each icon */}
         {icons.map((item, index) => (
           <div
             key={index}
-            className={`flex size-12 scale-110 place-content-center rounded-md bg-gray-800 shadow-lg ${item.gridStyle}`}
+            className={`flex size-12 place-content-center rounded-md bg-gray-800 shadow-lg ${item.gridStyle}`}
           >
             {/* Apply the className dynamically based on keyStyling */}
             {React.cloneElement(item.icon, { className: item.className })}

@@ -1,11 +1,11 @@
 // App.jsx using Fullpage.js and Tailwind for the UI
 
 import ReactFullpage from '@fullpage/react-fullpage'
-import IntroPage from './components/IntroPage'
-import ProjectsPage from './components/ProjectsPage'
-import SkillsPage from './components/SkillsPage'
-import RoadmapPage from './components/RoadmapPage'
-import Header from './components/Header'
+import IntroPage from './components/pages/intro/IntroPage'
+import ProjectsPage from './components/pages/projects/ProjectsPage'
+import SkillsPage from './components/pages/skills/SkillsPage'
+import ContactPage from './components/pages/contact/ContactPage'
+import Header from './components/navbars/Header'
 import './index.css'
 
 //enable keyboard scrolling for up, down, left, right
@@ -50,7 +50,7 @@ const App = () => {
               <IntroPage keyClasses={keyClasses} />
               <ProjectsPage keyClasses={keyClasses} />
               <SkillsPage keyClasses={keyClasses} />
-              <RoadmapPage keyClasses={keyClasses} />
+              <ContactPage keyClasses={keyClasses} />
             </>
           )
         }}

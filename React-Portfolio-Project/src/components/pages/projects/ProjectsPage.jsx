@@ -1,6 +1,6 @@
 // child component showcasing several web dev projects
 
-import KeyboardArrows from './KeyboardArrows'
+import KeyboardArrows from '../../features/KeyboardArrows'
 
 export default function ProjectsPage({ keyClasses }) {
   const keyStyling = {

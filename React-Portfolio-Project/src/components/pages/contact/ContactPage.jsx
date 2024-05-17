@@ -1,8 +1,8 @@
-// child component detailing my web dev skills
+// child component showing my learning roadmap
 
-import KeyboardArrows from './KeyboardArrows'
+import KeyboardArrows from '../../features/KeyboardArrows'
 
-export default function SkillsPage({ keyClasses }) {
+export default function RoadmapPage({ keyClasses }) {
   const keyStyling = {
     up: keyClasses.keyActiveClass,
     down: keyClasses.keyActiveClass,
@@ -12,7 +12,7 @@ export default function SkillsPage({ keyClasses }) {
 
   return (
     <div className="section h-screen">
-      Skills
+      Roadmap
       <KeyboardArrows keyStyling={keyStyling} />
     </div>
   )

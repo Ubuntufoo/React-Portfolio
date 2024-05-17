@@ -1,6 +1,6 @@
 // hero section of intro page
 
-import Parallelogram from './shapes/Parallelogram'
+import Parallelogram from '../../shapes/Parallelogram'
 import { useState } from 'react'
 import Tim1noBG from '../assets/Tim1noBG.png'
 
