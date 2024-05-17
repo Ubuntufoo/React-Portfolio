@@ -13,54 +13,25 @@
   display: none !important;
 }
 
-/* vertical nav dots */
-#fp-nav ul li a span {
+/* vertical nav dots, currently disabled via fullpage option */
+/* #fp-nav ul li a span {
   background-color: #fff;
-}
+} */
 
 /* horizontal nav arrows */
 .fp-prev {
-  margin-left: 45px;
+  margin-left: 30px;
 }
 .fp-next {
-  margin-right: 45px;
+  margin-right: 30px;
 }
 
-/* HTML: <div class="slanted-edge"></div> */
-.parallelogram {
+/* .parallelogram {
   --p: 160px;
-  /* control the shape (can be percentage) */
   clip-path: polygon(0 calc(100% - var(--p)), 0 0, 100% var(--p), 100% 100%);
 }
 
-/* HTML: <div class="triangle"></div> */
 .triangle {
   aspect-ratio: cos(33deg);
   clip-path: polygon(0 0, 100% 50%, 0 100%);
-}
-
-@keyframes waving {
-  0% {
-    transform: translate(0%, 0%) rotate(0deg);
-  }
-
-  25% {
-    transform: translate(50%, -33%) rotate(10deg);
-  }
-
-  50% {
-    transform: translate(100%, -66%) rotate(20deg);
-  }
-
-  75% {
-    transform: translate(50%, -33%) rotate(10deg);
-  }
-
-  100% {
-    transform: translate(0%, 0%) rotate(0deg);
-  }
-}
-
-.animate-waving {
-  animation: waving 1.2s linear 1s 3;
-}
+} */

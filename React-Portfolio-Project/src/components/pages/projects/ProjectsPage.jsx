@@ -17,9 +17,9 @@ export default function ProjectsPage({ keyClasses, activePage }) {
       <div className="slide">
         <Cards numCards={4} activePage={activePage} />
       </div>
-      <div className="slide"></div>
-      <div className="slide"></div>
-      <div className="slide"></div>
+      <div className="slide">aaaaaaaaaaaaaaaaa</div>
+      <div className="slide">bbbbbbbbbbbbbbbbbbb</div>
+      <div className="slide">ccccccccccccccccc</div>
       <KeyboardArrows keyStyling={keyStyling} />
     </div>
   )
