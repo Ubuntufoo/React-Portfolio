@@ -1,6 +1,7 @@
 // child component showcasing several web dev projects
 
 import KeyboardArrows from '../../features/KeyboardArrows'
+import Cards from './Cards'
 
 export default function ProjectsPage({ keyClasses }) {
   const keyStyling = {
@@ -12,7 +13,7 @@ export default function ProjectsPage({ keyClasses }) {
 
   return (
     <div className="section h-screen">
-      Projects
+      <Cards numCards={4}/>
       <KeyboardArrows keyStyling={keyStyling} />
     </div>
   )
