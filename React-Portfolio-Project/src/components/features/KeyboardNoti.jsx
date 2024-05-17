@@ -8,7 +8,7 @@ export default function KeyboardNoti() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setFade(false)
-    }, 6000)
+    }, 10000)
     return () => clearTimeout(timer)
   }, [])
 

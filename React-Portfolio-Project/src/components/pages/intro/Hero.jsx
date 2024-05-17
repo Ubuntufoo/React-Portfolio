@@ -2,7 +2,7 @@
 
 import Parallelogram from '../../shapes/Parallelogram'
 import { useState } from 'react'
-import Tim1noBG from '../assets/Tim1noBG.png'
+import Tim2 from '../../../assets/Tim2.jpg'
 
 export default function Hero() {
   const [animationEnded, setAnimationEnded] = useState(false)
@@ -24,11 +24,11 @@ export default function Hero() {
         <Parallelogram>
           <div className="flex h-full animate-fade justify-center align-middle">
             <img
-              src={Tim1noBG}
+              src={Tim2}
               alt="Tim's avatar"
-              className="block basis-1/3 size-fit self-center scale-75 2xl:scale-100 2xl:mr-10"
+              className="block size-fit basis-1/3 scale-75 self-center 2xl:mr-10 2xl:scale-100"
             />
-            <div className="self-center text-pretty font-oswold 2xl:text-lg basis-2/3 pe-6 text-slate-200">
+            <div className="basis-2/3 self-center text-pretty pe-6 font-oswold text-slate-200 2xl:text-lg">
               <span className="mb-10 block text-3xl">
                 Welcome. I&apos;m Tim. <br />
               </span>

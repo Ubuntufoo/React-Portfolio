@@ -9,15 +9,15 @@ import { IoInformation } from 'react-icons/io5'
 
 export default function SideBar() {
   return (
-    <div className="absolute top-1 -ms-[370px] -mt-14 h-0 w-0 hover:translate-x-24 cursor-pointer border-b-[410px] border-l-[440px] border-t-[90px] border-solid border-b-transparent border-l-[#fff] border-t-transparent transition-transform duration-700 lg:-ms-[360px]">
-      <div className="absolute -ms-16 -mt-2">
+    <div className="absolute top-[600px] -ms-[370px] h-0 w-0 hover:translate-x-24 cursor-pointer border-b-[410px] border-l-[440px] border-t-[90px] border-solid border-b-transparent border-l-[#fff] border-t-transparent transition-transform duration-700 lg:-ms-[360px] flex flex-col justify-center">
+      <div className="absolute -ms-16 mt-6">
         <IoInformation className="text-4xl text-gray-800 lg:text-4xl" />
       </div>
       <div
-        className="absolute -ms-[427px] mt-9 h-0 w-0 cursor-pointer border-b-[290px] border-l-[315px] border-t-[70px]
+        className="relative -ms-[427px] h-0 w-0 cursor-pointer border-b-[290px] border-l-[315px] border-t-[70px]
           border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-700 hover:translate-x-44"
       >
-        <div className="absolute -ms-[220px] -mt-[4px] flex items-center space-x-3.5 text-white">
+        <div className="absolute -ms-[220px] -mt-[3px] flex items-center space-x-3.5 text-white">
           <a
             href="https://github.com/Ubuntufoo"
             className="text-nowrap font-mono leading-relaxed"
@@ -28,19 +28,19 @@ export default function SideBar() {
         </div>
       </div>
       <div
-        className="absolute -ms-[427px] top-32 h-0 w-0 cursor-pointer border-b-[290px] border-l-[315px] border-t-[70px]
+        className="absolute  -ms-[427px] h-0 w-0 cursor-pointer border-b-[290px] border-l-[315px] border-t-[70px]
           border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-700 hover:translate-x-60"
       >
-        <div className="absolute -ms-[278px] -mt-[5px] flex items-center space-x-3.5 text-white">
+        <div className="absolute -ms-[278px] -mt-[4px] flex items-center space-x-3.5 text-white">
           <p className="font-mono tracking-tighter">TimothyMurphy123@gmail.com</p>
           <SiMinutemailer className="text-3xl" />
         </div>
       </div>
       <div
-        className="absolute -ms-[427px] mt-56 h-0 w-0 cursor-pointer border-b-[290px] border-l-[315px] border-t-[70px]
+        className="relative -ms-[427px] h-0 w-0 cursor-pointer border-b-[290px] border-l-[315px] border-t-[70px]
           border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-700 hover:translate-x-40"
       >
-        <div className="absolute -ms-[211px] -mt-[6px] flex items-center space-x-3.5 text-white">
+        <div className="absolute -ms-[211px] -mt-[4px] flex items-center space-x-3.5 text-white">
           <p className="text-nowrap font-mono">LinkedIn Profile</p>
           <BiLogoLinkedinSquare className="text-3xl" />
         </div>

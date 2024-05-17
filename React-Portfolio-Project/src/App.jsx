@@ -5,7 +5,7 @@ import IntroPage from './components/pages/intro/IntroPage'
 import ProjectsPage from './components/pages/projects/ProjectsPage'
 import SkillsPage from './components/pages/skills/SkillsPage'
 import ContactPage from './components/pages/contact/ContactPage'
-import Header from './components/navbars/Header'
+import Header from './components/navbar/Header'
 import './index.css'
 
 //enable keyboard scrolling for up, down, left, right

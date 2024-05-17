@@ -1,9 +1,9 @@
 // Intro and landing page child component
 
 import KeyboardArrows from '../../features/KeyboardArrows'
-import SideBar from '../../navbars/SideBar'
+import SideBar from './SideBar'
 import KeyboardNoti from '../../features/KeyboardNoti'
-// import Hero from './Hero'
+import Hero from './Hero'
 
 export default function IntroPage({ keyClasses }) {
   // Define keyStyling object to pass to KeyboardArrows component
@@ -16,7 +16,7 @@ export default function IntroPage({ keyClasses }) {
 
   return (
     <div className="section h-screen">
-      {/* <Hero /> */}
+      <Hero />
       <SideBar />
       <KeyboardArrows keyStyling={keyStyling} />
       <KeyboardNoti />
