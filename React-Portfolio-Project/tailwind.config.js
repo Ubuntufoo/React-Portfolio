@@ -15,10 +15,15 @@ export default {
       },
       animation: {
         fade: 'fadeIn 1s ease-in-out',
+        fadeFast: 'fadeInFast 0.5s ease-in-out',
         waving: 'waving 1.2s linear 1s 3',
       },
       keyframes: {
         fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+         fadeInFast: {
           from: { opacity: 0 },
           to: { opacity: 1 },
         },

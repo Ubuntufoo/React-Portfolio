@@ -9,7 +9,7 @@ import { IoInformation } from 'react-icons/io5'
 
 export default function SideBar() {
   return (
-    <div className="absolute -bottom-72 -ms-96 flex h-0 w-0 cursor-pointer flex-col justify-center border-b-[410px] border-l-[440px] border-t-[1px] border-solid border-b-transparent border-l-[#fff] border-t-transparent transition-transform duration-700 hover:translate-x-24 lg:-ms-[360px]">
+    <div className="absolute -bottom-80 -ms-96 flex h-0 w-0 cursor-pointer flex-col justify-center border-b-[410px] border-l-[440px] border-t-[1px] border-solid border-b-transparent border-l-[#fff] border-t-transparent transition-transform duration-700 hover:translate-x-24 lg:-ms-[360px]">
       <div className="absolute -ms-[72px] mt-11">
         <IoInformation className="text-4xl text-gray-800 lg:text-4xl" />
       </div>
