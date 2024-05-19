@@ -22,30 +22,33 @@ export default function Hero() {
     <main className="flex h-screen items-center justify-center">
       {animationEnded ? (
         <Parallelogram>
-          <div className="flex h-full animate-fade justify-center align-middle">
+          <section className="flex h-full animate-fade flex-col justify-center md:flex-row">
             <img
               src={Tim2}
               alt="Tim's avatar"
-              className="block size-fit basis-1/3 scale-75 self-center 2xl:mr-10 2xl:scale-100"
+              className="mt-4"
             />
-            <div className="basis-2/3 self-center text-pretty pe-6 font-oswold text-slate-200 2xl:text-lg">
-              <span className="mb-10 block text-3xl">
+            <div className="font-oswold order-1 self-center px-4 text-slate-200 md:order-2  md:pe-10 xl:text-lg">
+              <h1 className="mb-10 block xl:text-3xl">
                 Welcome. I&apos;m Tim. <br />
-              </span>
-              Tempora odit, vero ad nobis, dolorum commodi quidem sunt, nulla
-              earum veritatis pariatur? Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Rem corporis mollitia voluptate. Sapiente ipsa,
-              mollitia dolorum excepturi error quos, atque dolores corrupti esse
-              perspiciatis aliquam vel magnam assumenda inventore tenetur. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
+              </h1>
+              <p className="text-pretty">
+                Tempora odit, vero ad nobis, dolorum commodi quidem sunt, nulla
+                earum veritatis pariatur? Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Rem corporis mollitia voluptate.
+                Sapiente ipsa, mollitia dolorum excepturi error quos, atque
+                dolores corrupti esse perspiciatis aliquam vel magnam assumenda
+                inventore tenetur. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
             </div>
-          </div>
+          </section>
         </Parallelogram>
       ) : (
         <div
           onAnimationEnd={handleAnimationEnd}
           onAnimationStart={handleAnimationStart}
-          className={`${animationStarted ? 'opacity-0 transition-opacity duration-1000' : 'opacity-100'} animate-waving me-32 w-20 text-9xl`}
+          className={`${animationStarted ? 'opacity-0 transition-opacity duration-1000' : 'opacity-100'} me-32 w-20 animate-waving text-9xl`}
         >
           👋
         </div>

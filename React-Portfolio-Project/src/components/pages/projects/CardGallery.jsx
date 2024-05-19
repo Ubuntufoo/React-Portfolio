@@ -26,9 +26,9 @@ export default function CardGallery({ activePage }) {
   const cards = Object.keys(imageImports).map((imageName, index) => (
     <div
       key={index}
-      className={`-ml-44 shadow-2xl transition-all duration-500 ${
+      className={`-ml-44 shadow-2xl transition-all duration-700 ${
         selectedCard === index
-          ? 'absolute -translate-y-80 scale-150 animate-fade transition duration-500'
+          ? 'absolute -translate-y-96 -translate-x-96 scale-150 animate-fade transition duration-700'
           : 'animate-fadeFast -skew-x-6 cursor-pointer'
       }`}
       onClick={() => handleCardClick(index)}
@@ -46,7 +46,7 @@ export default function CardGallery({ activePage }) {
       <div
         className={`${
           activePage === 'projects' ? 'visible animate-fade' : 'invisible'
-        } mx-auto flex h-screen w-screen items-center justify-center ps-32 ${selectedCard !== null && 'translate-y-40 scale-90 transition duration-500'}`}
+        } mx-auto flex h-screen w-screen items-center justify-center ps-32 ${selectedCard !== null && ' translate-y-52 transition-all duration-500'}`}
       >
         {cards}
       </div>

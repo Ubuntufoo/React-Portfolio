@@ -2,7 +2,7 @@
 
 export default function Parallelogram({ children }) {
   return (
-    <div className="parallelogram h-3/4 w-2/3 bg-cyan-900 -z-10">
+    <div className="parallelogram h-5/6 md:h-3/4 w-3/4 bg-cyan-900">
       {children}
     </div>
   )
