@@ -26,7 +26,7 @@ export default function KeyboardArrows({ keyStyling }) {
   ]
 
   return (
-    <div className="hidden lg:block absolute bottom-3 right-2">
+    <div className="hidden lg:block absolute bottom-2 right-0">
       <div className="grid scale-75 grid-cols-3 gap-2">
         {/* Map over the icons array to render each icon */}
         {icons.map((item, index) => (

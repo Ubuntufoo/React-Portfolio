@@ -2,7 +2,7 @@
 
 import Parallelogram from '../../shapes/Parallelogram'
 import { useState } from 'react'
-import Tim2 from '../../../assets/Tim2.jpg'
+import Tim1_5 from '../../../assets/Tim1_5.jpg'
 
 export default function Hero() {
   const [animationEnded, setAnimationEnded] = useState(false)
@@ -22,26 +22,25 @@ export default function Hero() {
     <main className="flex h-screen items-center justify-center">
       {animationEnded ? (
         <Parallelogram>
-          <section className="flex h-full animate-fade flex-col justify-center md:flex-row">
-            <img
-              src={Tim2}
-              alt="Tim's avatar"
-              className="mt-4"
-            />
-            <div className="font-oswold order-1 self-center px-4 text-slate-200 md:order-2  md:pe-10 xl:text-lg">
-              <h1 className="mb-10 block xl:text-3xl">
+          <section className="h-full relative animate-fade gap-8">
+            <div className="font-oswold z-50 space-y-4 text-sm text-white xl:text-lg">
+              <h1 className="text-2xl md:text-3xl">
                 Welcome. I&apos;m Tim. <br />
               </h1>
               <p className="text-pretty">
                 Tempora odit, vero ad nobis, dolorum commodi quidem sunt, nulla
                 earum veritatis pariatur? Lorem ipsum, dolor sit amet
                 consectetur adipisicing elit. Rem corporis mollitia voluptate.
-                Sapiente ipsa, mollitia dolorum excepturi error quos, atque
-                dolores corrupti esse perspiciatis aliquam vel magnam assumenda
-                inventore tenetur. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+                Sapiente ipsa, mollitia dolorum excepturi error quos. <br />
+                <br /> atque dolores corrupti esse perspiciatis aliquam vel
+                magnam assumenda inventore tenetur.
               </p>
             </div>
+            <img
+              src={Tim1_5}
+              alt="Tim's avatar"
+              className="absolute bottom-0 sm:right-36 md:-bottom-12 lg:-bottom-8 md:right-0 lg:right-1 2xl:right-24 xl:-bottom-7 2xl:bottom-4 md:scale-100 xl:scale-110 2xl:scale-150"
+            />
           </section>
         </Parallelogram>
       ) : (
