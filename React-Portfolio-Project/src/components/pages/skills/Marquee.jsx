@@ -1,4 +1,4 @@
-// a vertical marquee component that displays the skills of the user
+// a vertical marquee component that displays my web dev tech stack
 
 import nodeJSIMG from '../../../assets/nodeJSIMG.jpg'
 import reactIMG from '../../../assets/reactIMG.png'
