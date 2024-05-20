@@ -19,9 +19,10 @@ export default {
       animation: {
         fade: 'fadeIn 1s ease-in-out',
         fadeFast: 'fadeInFast 0.5s ease-in-out',
+        fadeSlow: 'fadeInSlow 2.5s ease-in-out', // Added fadeSlow animation
         waving: 'waving 1.2s linear 1s 3',
-        marquee: 'marquee 15s linear infinite',
-        marquee2: 'marquee2 15s linear infinite',
+        marquee: 'marquee 24s linear infinite',
+        marquee2: 'marquee2 24s linear infinite',
       },
       keyframes: {
         marquee: {
@@ -40,6 +41,10 @@ export default {
           from: { opacity: 0 },
           to: { opacity: 1 },
         },
+        fadeInSlow: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        }, // Added fadeInSlow keyframe
         waving: {
           '0%': {
             transform: 'translate(0%, 0%) rotate(0deg)',
@@ -60,6 +65,13 @@ export default {
       },
       height: {
         '12/25': '48%',
+      },
+      width: {
+        '1/11': '9.09%',
+        '1/10': '10%',
+        '1/9': '11.11%',
+        '1/8': '12.5%',
+        '1/7': '14.29%',
       },
     },
   },

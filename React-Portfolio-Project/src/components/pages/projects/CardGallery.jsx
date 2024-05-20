@@ -44,9 +44,9 @@ export default function CardGallery({ activePage }) {
   return (
     <section className="slide">
       <div
-        className={`${
-          activePage === 'projects' ? 'visible animate-fade' : 'invisible'
-        } mx-auto flex h-screen w-screen items-center justify-center ps-32 ${selectedCard !== null && ' translate-y-52 transition-all duration-500'}`}
+        // ${activePage === 'projects' ? 'visible animate-fade' : 'invisible'}
+        className={`
+          mx-auto flex h-screen w-screen items-center justify-center ps-32 ${selectedCard !== null && ' translate-y-52 transition-all duration-500'}`}
       >
         {cards}
       </div>
