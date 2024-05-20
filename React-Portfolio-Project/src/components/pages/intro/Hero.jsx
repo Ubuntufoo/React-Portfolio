@@ -23,26 +23,36 @@ export default function Hero() {
       {animationEnded ? (
         <Parallelogram>
           <section className="relative h-full animate-fadeFast gap-8">
-            <div className="animate-fade font-oswold relative z-50 space-y-9 leading-6 px-8 pt-28 text-white sm:px-8 sm:text-base md:w-1/2 md:pt-20 lg:ms-16 lg:pt-28 xl:pt-24 2xl:ms-20 2xl:pt-36 2xl:text-xl 2xl:leading-8">
+            <div className="font-oswold relative z-50 animate-fade space-y-9 px-8 pt-28 leading-6 text-white sm:px-8 sm:text-base md:w-1/2 md:pt-20 lg:ms-16 lg:pt-28 xl:pt-24 2xl:ms-20 2xl:pt-36 2xl:text-xl 2xl:leading-8">
               <h1 className="text-2xl lg:text-4xl">
                 Welcome. I&apos;m Tim. <br />
               </h1>
               <p className="text-pretty">
-                <span className="inline-flex gap-3.5 flex-wrap">
-                  {['Introvert.', 'Athlete.', 'Husband.', 'Father.', <strong key={4}>Web Developer.</strong>].map((word, index) => (
+                <span className="inline-flex flex-wrap gap-3.5">
+                  {[
+                    'Introvert.',
+                    'Athlete.',
+                    'Husband.',
+                    'Father.',
+                    <strong key={4}>Web Developer.</strong>,
+                  ].map((word, index) => (
                     <span key={index}>{word}</span>
                   ))}
                 </span>
-                <br/>
                 <br />
-                The following pages should give you a sense of who I am as an author of code, the potential I possess, and what I can do for you. <br />
                 <br />
+                I tackle my projects with enthusiasm and curiosity.
+                <br />
+                <br />
+                The following pages will give you a sense of who I am as an
+                author of code, the potential I possess, and what I can do for
+                you.
               </p>
             </div>
             <img
               src={Tim1_5}
               alt="Tim's avatar"
-              className="absolute animate-fadeSlow -bottom-12 right-4 scale-75 sm:bottom-0 sm:right-36 sm:scale-100 md:-bottom-12 md:right-0 lg:-bottom-8 lg:right-14 xl:-bottom-12 xl:scale-100 2xl:-bottom-2 2xl:right-28 2xl:scale-125"
+              className="animate-fadeSlow absolute -bottom-12 right-4 scale-75 sm:bottom-0 sm:right-36 sm:scale-100 md:-bottom-12 md:right-0 lg:-bottom-8 lg:right-14 xl:-bottom-12 xl:scale-100 2xl:-bottom-2 2xl:right-28 2xl:scale-125"
             />
           </section>
         </Parallelogram>
@@ -56,5 +66,5 @@ export default function Hero() {
         </div>
       )}
     </main>
-  );
+  )
 }
