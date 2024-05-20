@@ -22,9 +22,9 @@ export default function Hero() {
     <main className="flex h-screen items-center justify-center">
       {animationEnded ? (
         <Parallelogram>
-          <section className="h-full relative animate-fade gap-8">
-            <div className="font-oswold z-50 space-y-4 text-sm text-white xl:text-lg">
-              <h1 className="text-2xl md:text-3xl">
+          <section className="relative h-full animate-fade gap-8">
+            <div className="font-oswold relative z-50 space-y-4 leading-6 px-8 pt-28 text-sm text-white sm:px-8 sm:text-base md:w-1/2 md:pt-20 lg:ms-16 lg:pt-28 2xl:ms-20 2xl:pt-36 2xl:text-xl 2xl:leading-8">
+              <h1 className="text-2xl lg:text-4xl">
                 Welcome. I&apos;m Tim. <br />
               </h1>
               <p className="text-pretty">
@@ -39,7 +39,7 @@ export default function Hero() {
             <img
               src={Tim1_5}
               alt="Tim's avatar"
-              className="absolute bottom-0 sm:right-36 md:-bottom-12 lg:-bottom-8 md:right-0 lg:right-1 2xl:right-24 xl:-bottom-7 2xl:bottom-4 md:scale-100 xl:scale-110 2xl:scale-150"
+              className="absolute -bottom-12 right-4 scale-75 sm:bottom-0 sm:right-36 sm:scale-100 md:-bottom-12 md:right-0 lg:-bottom-8 lg:right-10 xl:-bottom-20 xl:scale-110 2xl:-bottom-2 2xl:right-28 2xl:scale-125"
             />
           </section>
         </Parallelogram>
