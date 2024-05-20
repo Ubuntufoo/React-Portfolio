@@ -39,7 +39,7 @@ export default function Hero() {
             <img
               src={Tim1_5}
               alt="Tim's avatar"
-              className="absolute -bottom-12 right-4 scale-75 sm:bottom-0 sm:right-36 sm:scale-100 md:-bottom-12 md:right-0 lg:-bottom-8 lg:right-10 xl:-bottom-20 xl:scale-110 2xl:-bottom-2 2xl:right-28 2xl:scale-125"
+              className="absolute -bottom-12 right-4 scale-75 sm:bottom-0 sm:right-36 sm:scale-100 md:-bottom-12 md:right-0 lg:-bottom-8 lg:right-10 xl:-bottom-12 xl:scale-100 2xl:-bottom-2 2xl:right-28 2xl:scale-125"
             />
           </section>
         </Parallelogram>

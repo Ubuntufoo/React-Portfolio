@@ -1,6 +1,7 @@
 // child component detailing my web dev skills
 
 import KeyboardArrows from '../../features/KeyboardArrows'
+import CombinedSlantedEdge from '../../shapes/CombinedSlantedEdge'
 
 export default function SkillsPage({ keyClasses }) {
   const keyStyling = {
@@ -12,7 +13,7 @@ export default function SkillsPage({ keyClasses }) {
 
   return (
     <div className="section h-screen">
-      Skills
+      <CombinedSlantedEdge/>
       <KeyboardArrows keyStyling={keyStyling} />
     </div>
   )
