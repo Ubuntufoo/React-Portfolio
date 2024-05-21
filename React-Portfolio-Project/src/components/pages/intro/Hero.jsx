@@ -23,7 +23,7 @@ export default function Hero() {
       {animationEnded ? (
         <Parallelogram>
           <section className="relative h-full animate-fadeFast gap-8">
-            <div className="font-oswold relative z-50 animate-fade space-y-9 px-8 pt-28 leading-6 text-white sm:px-8 sm:text-base md:w-1/2 md:pt-20 lg:ms-16 lg:pt-28 xl:pt-24 2xl:ms-20 2xl:pt-36 2xl:text-xl 2xl:leading-8">
+            <div className="font-oswold relative z-50 animate-fade space-y-9 px-8 pt-28 leading-6 text-white sm:px-8 sm:text-base md:w-1/2 md:pt-20 lg:ms-16 lg:pt-28 xl:pt-24 2xl:ms-20 2xl:pt-36 2xl:text-2xl 2xl:leading-8">
               <h1 className="text-2xl lg:text-4xl">
                 Welcome. I&apos;m Tim. <br />
               </h1>
@@ -41,12 +41,10 @@ export default function Hero() {
                 </span>
                 <br />
                 <br />
-                I tackle my projects with enthusiasm and curiosity.
+                I thrive on challenge and bring precision <br />and common sense to every project I innovate.
                 <br />
                 <br />
-                The following pages will give you a sense of who I am as an
-                author of code, the potential I possess, and what I can do for
-                you.
+                As a team, we can bring your projects to new heights.
               </p>
             </div>
             <img

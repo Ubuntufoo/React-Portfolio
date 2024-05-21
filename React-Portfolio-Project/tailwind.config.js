@@ -21,8 +21,8 @@ export default {
         fadeFast: 'fadeInFast 0.5s ease-in-out',
         fadeSlow: 'fadeInSlow 2.5s ease-in-out', // Added fadeSlow animation
         waving: 'waving 1.2s linear 1s 3',
-        marquee: 'marquee 24s linear infinite',
-        marquee2: 'marquee2 24s linear infinite',
+        marquee: 'marquee 26s linear infinite',
+        marquee2: 'marquee2 26s linear infinite',
       },
       keyframes: {
         marquee: {
@@ -77,7 +77,13 @@ export default {
   },
   plugins: [
     function({ addUtilities }) {
-      const newUtilities = {
+
+
+      addUtilities(newUtilities);
+    },
+  ],
+};
+const newUtilities = {
         '.parallelogram': {
           '--p': '160px',
           'clip-path': 'polygon(0 calc(100% - var(--p)), 0 0, 100% var(--p), 100% 100%)',
@@ -98,9 +104,16 @@ export default {
           '--p': '70px', // control the shape (can be percentage)
           'clip-path': 'polygon(0 0, 100% 0, 100% 50%, 0 calc(50% + var(--p)), 0 100%, 100% 100%, 100% calc(50% - var(--p)), 0 50%)',
         },
+        '.hexagon': {
+        'aspect-ratio': 'calc(1 / cos(30deg))',
+        'clip-path': 'polygon(50% -50%, 100% 50%, 50% 150%, 0 50%)',
+      },
+        '.slanted-edge-right': {
+        '--p': '50px;',
+        'clip-path': 'polygon(0 0,calc(100% - var(--p)) 0,100% 100%,0 100%)',
+      },
+        '.slanted-edge-left': {
+        '--p': '50px;',
+        'clip-path': 'polygon(0 0,100% 0,100% 100%,var(--p) 100%)',
+      },
       };
-
-      addUtilities(newUtilities);
-    },
-  ],
-};

@@ -16,7 +16,7 @@ export default function NavBarMobile() {
     >
       <div
         onClick={toggleNav}
-        className="absolute right-8 top-7 z-40 flex h-10 w-9 cursor-pointer flex-col items-center justify-center space-y-1.5"
+        className="absolute right-7 top-6 z-40 flex h-10 w-9 cursor-pointer flex-col items-center justify-center space-y-1.5"
       >
         <div
           className={`h-1.5 w-9 origin-right rounded-sm bg-white transition-all duration-300 ${isOpen ? 'translate-y-[-5px] rotate-[-30deg]' : ''}`}
