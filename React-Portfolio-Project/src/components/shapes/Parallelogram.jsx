@@ -9,7 +9,7 @@ export default function Parallelogram({ children }) {
       <img
         src={BG1}
         alt="background"
-        className="absolute left-0 top-0 -z-10 size-full object-cover opacity-10"
+        className="absolute left-0 top-0 -z-10 size-full object-cover opacity-20 blur-[2px] brightness-50"
       />
     </div>
   )

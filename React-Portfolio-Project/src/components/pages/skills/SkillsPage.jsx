@@ -15,7 +15,7 @@ export default function SkillsPage({ keyClasses }) {
   }
 
   const combinedSlantedEdgeClasses =
-    'shrink-0 relative w-1/8 md:w-1/9 xl:w-1/13 2xl:w-1/14 bg-white'
+    'shrink-0 relative w-1/8 md:w-1/10 lg:w-1/12 xl:w-1/14 2xl:w-1/16 bg-white'
 
   return (
     <div className="section">

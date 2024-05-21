@@ -67,6 +67,8 @@ export default {
         '12/25': '48%',
       },
       width: {
+        '1/16': '6.25%',
+        '1/15': '6.67%',
         '1/14': '7.14%',
         '1/13': '7.69%',
         '1/11': '9.09%',
@@ -110,11 +112,11 @@ const newUtilities = {
         'aspect-ratio': 'calc(1 / cos(30deg))',
         'clip-path': 'polygon(50% -50%, 100% 50%, 50% 150%, 0 50%)',
       },
-        '.slanted-edge-right': {
+        '.slanted-edge-rs': {
         '--p': '50px;',
         'clip-path': 'polygon(0 0,calc(100% - var(--p)) 0,100% 100%,0 100%)',
       },
-        '.slanted-edge-left': {
+        '.slanted-edge-ls': {
         '--p': '50px;',
         'clip-path': 'polygon(0 0,100% 0,100% 100%,var(--p) 100%)',
       },
