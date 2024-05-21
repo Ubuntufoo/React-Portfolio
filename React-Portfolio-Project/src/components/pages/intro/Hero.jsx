@@ -4,6 +4,7 @@ import Parallelogram from '../../shapes/Parallelogram'
 import { useState } from 'react'
 import Tim1_5 from '../../../assets/Tim1_5.jpg'
 
+
 export default function Hero() {
   const [animationEnded, setAnimationEnded] = useState(false)
   const [animationStarted, setAnimationStarted] = useState(false)
@@ -23,12 +24,12 @@ export default function Hero() {
       {animationEnded ? (
         <Parallelogram>
           <section className="relative h-full animate-fadeFast gap-8">
-            <div className="font-oswold relative z-50 animate-fade space-y-9 px-8 pt-28 leading-6 text-white sm:px-8 sm:text-base md:w-1/2 md:pt-20 lg:ms-16 lg:pt-28 xl:pt-24 2xl:ms-20 2xl:pt-36 2xl:text-2xl 2xl:leading-8">
+            <div className="font-oswold relative z-10 animate-fade space-y-9 px-8 pt-28 leading-6 text-white sm:px-8 sm:text-base md:w-1/2 md:pt-20 lg:ms-16 lg:pt-28 xl:pt-24 2xl:ms-20 2xl:pt-44 2xl:text-2xl 2xl:leading-8">
               <h1 className="text-2xl lg:text-4xl">
                 Welcome. I&apos;m Tim. <br />
               </h1>
               <p className="text-pretty">
-                <span className="inline-flex flex-wrap gap-3.5">
+                <h2 className="inline-flex flex-wrap gap-3.5 2xl:text-2xl">
                   {[
                     'Introvert.',
                     'Athlete.',
@@ -38,7 +39,7 @@ export default function Hero() {
                   ].map((word, index) => (
                     <span key={index}>{word}</span>
                   ))}
-                </span>
+                </h2>
                 <br />
                 <br />
                 I thrive on challenge and bring precision <br />and common sense to every project I innovate.

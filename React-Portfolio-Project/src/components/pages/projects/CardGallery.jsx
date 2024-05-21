@@ -1,11 +1,11 @@
 // smooth flex cards with images
 import { useState } from 'react'
 
-// import BrainteasersLogo from '../../../assets/BrainteasersLogo.png'
-import ExploreLLMscreenshot from '../../../assets/ExploreLLMscreenshot.png'
-import TADAapp from '../../../assets/TADAapp.png'
-// import WordlePlus from '../../../assets/WordlePlus.png'
-import workDashboardScreenshot from '../../../assets/workDashboardScreenshot.png'
+// import BrainteasersLogo from '../../../assets/projects/BrainteasersLogo.png'
+import ExploreLLMscreenshot from '../../../assets/projects/ExploreLLMscreenshot.png'
+import TADAapp from '../../../assets/projects/TADAapp.png'
+// import WordlePlus from '../../../assets/projects/WordlePlus.png'
+import workDashboardScreenshot from '../../../assets/projects/workDashboardScreenshot.png'
 
 // Define an object to map image names to import paths
 const imageImports = {

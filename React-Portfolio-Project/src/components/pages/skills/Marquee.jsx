@@ -1,15 +1,15 @@
 // a vertical marquee component that displays my web dev tech stack
 
-import nodeJSIMG from '../../../assets/nodeJSIMG.jpg'
-import reactIMG from '../../../assets/reactIMG.png'
-import tailwindIMG from '../../../assets/tailwindIMG.png'
-import bootstrapIMG from '../../../assets/bootstrapIMG.webp'
-import djangoIMG from '../../../assets/djangoIMG.png'
-import htmlandcssIMG from '../../../assets/htmlandcssIMG.jpg'
-import jsIMG from '../../../assets/jsIMG.jpg'
-import pythonIMG from '../../../assets/pythonIMG.png'
-import vueIMG from '../../../assets/vueIMG.jpg'
-import sqlIMG from '../../../assets/sqlIMG.png'
+import nodeJSIMG from '../../../assets/marquee/nodeJSIMG.jpg'
+import reactIMG from '../../../assets/marquee/reactIMG.png'
+import tailwindIMG from '../../../assets/marquee/tailwindIMG.png'
+import bootstrapIMG from '../../../assets/marquee/bootstrapIMG.webp'
+import djangoIMG from '../../../assets/marquee/djangoIMG.png'
+import htmlandcssIMG from '../../../assets/marquee/htmlandcssIMG.jpg'
+import jsIMG from '../../../assets/marquee/jsIMG.jpg'
+import pythonIMG from '../../../assets/marquee/pythonIMG.png'
+import vueIMG from '../../../assets/marquee/vueIMG.jpg'
+import sqlIMG from '../../../assets/marquee/sqlIMG.png'
 
 const logos = [
   { src: sqlIMG, alt: "SQL Logo", additionalClass: "" },
@@ -28,7 +28,7 @@ function MarqueeRow({ className }) {
   return (
     <div className={className}>
       {logos.map((logo, index) => (
-        <span key={index} className={`mx-3 lg:mx-8 ${logo.additionalClass}`}>
+        <span key={index} className={`mx-2 md:mx-3 lg:mx-5 ${logo.additionalClass}`}>
           <img src={logo.src} alt={logo.alt} />
         </span>
       ))}
