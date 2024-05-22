@@ -1,8 +1,10 @@
 // a slanted edge shape component facing left
 
-export default function SlantedEdgeLS({ children, classNames }) {
+export default function SlantedEdgeLS({ children, classNames, onClick }) {
   return (
-    <div className={`slanted-edge-ls ${classNames}`}>
+    <div
+      onClick={onClick}
+      className={`slanted-edge-ls ${classNames}`}>
       {children}
     </div>
   )

@@ -1,7 +1,9 @@
 // a grid of items discussing my coding skills
 
+import { useState } from 'react'
 import SlantedEdgeRS from '../../shapes/SlantedEdgeRS'
 import SlantedEdgeLS from '../../shapes/SlantedEdgeLS'
+import Modal from '../../features/Modal'
 
 import reactLOGOcustom from '../../../assets/grid/reactLOGOcustom.png'
 import genaiIMG from '../../../assets/grid/genaiIMG.png'
@@ -13,22 +15,34 @@ const imgClasses = 'size-1/2 object-cover'
 const gridContentClasses = 'flex h-full place-items-center'
 
 const gridBorderAnimationClasses =
-  'absolute h-1 w-10 bg-cyan-950 transition-all duration-1000 group-hover:w-1/2 group-hover:bg-white'
+  'absolute h-full -z-50 w-1/12 bg-cyan-950 transition-all duration-1000 group-hover:w-1/2 group-hover:bg-white'
 
 const slantedEdgeClasses =
-  'group relative bg-cyan-950 text-white transition-all duration-700 hover:scale-110 hover:bg-white hover:text-cyan-950 hover:z-50 border-t-2 border-b-2 border-white hover-shadow-2xl cursor-pointer size-fit'
+  'group relative h-fit bg-cyan-950 text-white transition-all duration-700 hover:bg-white hover:text-cyan-900 border-t-2 border-b-2 border-white hover:[text-shadow:3px_4px_5px_var(--tw-shadow-color)] shadow-cyan-600 cursor-pointer size-fit'
 
 export default function SkillsGrid() {
+  const [modalState, setModalState] = useState({ isOpen: false, image: '' })
+
+  const handleOpenModal = (img) => {
+    setModalState({ isOpen: true, image: img })
+  }
+
+  const handleCloseModal = () => {
+    setModalState({ isOpen: false, image: '' })
+  }
+
   return (
-    <main className="flex size-full py-6 place-items-center place-content-center ">
-      <div className="grid h-full w-3/4 md:w-6/10 lg:w-2/3 grid-cols-1 text-sm md:text-2xl xl:text-3xl text-center lg:grid-cols-2 content-evenly lg:content-center lg:gap-y-12 ">
-        <SlantedEdgeRS classNames={`${slantedEdgeClasses} border-l-2`}>
+    <main className="flex size-full place-content-center place-items-center py-5">
+      <div className="md:w-6/10 lg:w-6/7 grid h-full w-2/3 grid-cols-1 content-evenly text-center text-sm md:text-2xl lg:grid-cols-2 lg:content-center lg:gap-y-8 xl:w-2/3 2xl:text-3xl">
+        <SlantedEdgeRS
+          onClick={() => handleOpenModal(reactLOGOcustom)}
+          classNames={`${slantedEdgeClasses} border-l-2`}
+        >
           <div className={`left-0 top-0 ${gridBorderAnimationClasses}`}></div>
           <div className={gridContentClasses}>
             <h3 className="w-full font-semibold">
               React <br /> Specialization
             </h3>
-
             <img
               className={imgClasses}
               src={reactLOGOcustom}
@@ -40,19 +54,26 @@ export default function SkillsGrid() {
           ></div>
         </SlantedEdgeRS>
 
-        <SlantedEdgeLS classNames={`${slantedEdgeClasses} border-r-2`}>
+        <SlantedEdgeLS
+          onClick={() => handleOpenModal(genaiIMG)}
+          classNames={`${slantedEdgeClasses} border-r-2`}
+        >
           <div className={`right-0 top-0 ${gridBorderAnimationClasses}`}></div>
           <div className={`flex-row-reverse ${gridContentClasses}`}>
             <h3 className="w-full font-semibold">
               Generative AI <br /> Integration
             </h3>
-            <img className={imgClasses} src={genaiIMG} alt="reactLOGOcustom" />
+            <img className={imgClasses} src={genaiIMG} alt="genaiIMG" />
           </div>
           <div
             className={`bottom-0 right-0 ${gridBorderAnimationClasses}`}
           ></div>
         </SlantedEdgeLS>
-        <SlantedEdgeRS classNames={`${slantedEdgeClasses} border-l-2`}>
+
+        <SlantedEdgeRS
+          onClick={() => handleOpenModal(fullstackIMG3)}
+          classNames={`${slantedEdgeClasses} border-l-2`}
+        >
           <div className={`left-0 top-0 ${gridBorderAnimationClasses}`}></div>
           <div className={gridContentClasses}>
             <h3 className="w-full font-semibold">
@@ -61,14 +82,18 @@ export default function SkillsGrid() {
             <img
               className={imgClasses}
               src={fullstackIMG3}
-              alt="reactLOGOcustom"
+              alt="fullstackIMG3"
             />
           </div>
           <div
             className={`bottom-0 left-0 ${gridBorderAnimationClasses}`}
           ></div>
         </SlantedEdgeRS>
-        <SlantedEdgeLS classNames={`${slantedEdgeClasses} border-r-2`}>
+
+        <SlantedEdgeLS
+          onClick={() => handleOpenModal(problemsolveIMG)}
+          classNames={`${slantedEdgeClasses} border-r-2`}
+        >
           <div className={`right-0 top-0 ${gridBorderAnimationClasses}`}></div>
           <div className={`flex-row-reverse ${gridContentClasses}`}>
             <h3 className="w-full font-semibold">
@@ -77,7 +102,7 @@ export default function SkillsGrid() {
             <img
               className={imgClasses}
               src={problemsolveIMG}
-              alt="reactLOGOcustom"
+              alt="problemsolveIMG"
             />
           </div>
           <div
@@ -85,6 +110,17 @@ export default function SkillsGrid() {
           ></div>
         </SlantedEdgeLS>
       </div>
+      <Modal modalState={modalState} handleClose={handleCloseModal}>
+        <div className='z-50 text-white h-full flex flex-col justify-evenly text-center text-4xl'>
+          <h2 className="text-6xl">Modal Content</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+            cum nihil provident recusandae tenetur, ipsa unde esse consequatur
+            voluptas! Corrupti voluptatum error facere placeat nemo dolores
+            laudantium alias voluptate sapiente? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magni ipsum est maiores itaque, voluptates nihil debitis assumenda ullam expedita asperiores possimus aspernatur velit, quos, numquam amet deleniti? Error, pariatur.
+          </p>
+        </div>
+      </Modal>
     </main>
   )
 }
