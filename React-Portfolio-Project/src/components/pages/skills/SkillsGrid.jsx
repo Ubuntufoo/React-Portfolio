@@ -16,12 +16,12 @@ const gridBorderAnimationClasses =
   'absolute h-1 w-10 bg-cyan-950 transition-all duration-1000 group-hover:w-1/2 group-hover:bg-white'
 
 const slantedEdgeClasses =
-  'group relative bg-cyan-950 text-white transition-all duration-700 hover:scale-110 hover:bg-white hover:text-cyan-950 hover:z-50 border-t-2 border-b-2 border-white hover-shadow-2xl cursor-pointer m-auto'
+  'group relative bg-cyan-950 text-white transition-all duration-700 hover:scale-110 hover:bg-white hover:text-cyan-950 hover:z-50 border-t-2 border-b-2 border-white hover-shadow-2xl cursor-pointer size-fit'
 
 export default function SkillsGrid() {
   return (
-    <main className="flex my-auto size-full place-content-center">
-      <div className="grid my-auto size-4/5 grid-cols-1 gap-y-2.5 text-sm text-center md:grid-cols-2 md:gap-y-10">
+    <main className="flex size-full py-6 place-items-center place-content-center ">
+      <div className="grid h-full w-3/4 md:w-6/10 lg:w-2/3 grid-cols-1 text-sm md:text-2xl xl:text-3xl text-center lg:grid-cols-2 content-evenly lg:content-center lg:gap-y-12 ">
         <SlantedEdgeRS classNames={`${slantedEdgeClasses} border-l-2`}>
           <div className={`left-0 top-0 ${gridBorderAnimationClasses}`}></div>
           <div className={gridContentClasses}>
