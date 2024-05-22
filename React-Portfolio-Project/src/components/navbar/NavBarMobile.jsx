@@ -12,7 +12,7 @@ export default function NavBarMobile() {
   return (
     <nav
       id="NavBarMobile"
-      className="font-bebas-neue fixed inset-x-0 top-0 z-20 flex flex-col bg-transparent text-center text-white lg:hidden lg:text-gray-800"
+      className="fixed inset-x-0 top-0 z-20 flex flex-col bg-transparent text-center text-white lg:hidden lg:text-gray-800"
     >
       <div
         onClick={toggleNav}

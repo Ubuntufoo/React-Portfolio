@@ -16,7 +16,7 @@ export default function SideBar() {
             href="https://github.com/Ubuntufoo"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-nowrap font-mono leading-relaxed"
+            className="text-nowrap leading-relaxed"
           >
             Github Repository
           </a>
@@ -25,7 +25,7 @@ export default function SideBar() {
       </div>
       <div className="-mb-48 me-32 h-0 w-0 cursor-pointer border-b-[290px] border-l-[330px] border-t-[1px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-700 hover:translate-x-60">
         <div className="absolute -ms-[316px] mt-1 flex items-center space-x-3.5 text-white">
-          <p className="font-mono">TimothyMurphy123@gmail.com</p>
+          <p>TimothyMurphy123@gmail.com</p>
           <SiMinutemailer className="text-3xl" />
         </div>
       </div>
@@ -35,7 +35,7 @@ export default function SideBar() {
             href="https://www.linkedin.com/in/timothy-murphy-19a702213/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-nowrap font-mono"
+            className="text-nowrap"
           >
             LinkedIn Profile
           </a>

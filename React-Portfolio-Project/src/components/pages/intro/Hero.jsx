@@ -24,7 +24,7 @@ export default function Hero() {
       {animationEnded ? (
         <Parallelogram>
           <section className="relative h-full animate-fadeFast gap-8">
-            <div className=" font-mono relative z-10 animate-fade space-y-9 px-8 pt-28 leading-6 text-orange-50 sm:px-8 sm:text-base md:pt-20 lg:ms-16 lg:pt-28 xl:pt-24 2xl:ms-20 2xl:pt-44 2xl:text-2xl 2xl:leading-8">
+            <div className="relative z-10 animate-fade space-y-9 px-8 pt-28 leading-6 text-orange-50 sm:px-8 sm:text-base md:pt-20 lg:ms-16 lg:pt-28 xl:pt-24 2xl:ms-20 2xl:pt-44 2xl:text-2xl 2xl:leading-8">
               <h1 className="text-2xl lg:text-4xl">
                 Welcome. I&apos;m Tim. <br />
               </h1>
