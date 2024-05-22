@@ -15,7 +15,7 @@ export default function Modal({ children, modalState, handleClose }) {
   return (
     <div
       onClick={handleClose}
-      className="absolute isolate h-3/4 w-2/3 overflow-hidden bg-current "
+      className="absolute isolate h-3/4 w-2/3 overflow-hidden bg-current z-20"
     >
       <button
         onClick={handleClose}
@@ -27,9 +27,10 @@ export default function Modal({ children, modalState, handleClose }) {
       </button>
       {children}
       <img
-        className="absolute top-0 -z-10 size-full object-cover opacity-50 blur"
+        className="absolute top-0 -z-10 size-full object-cover opacity-60 blur"
         src={image}
       />
+
     </div>
   )
 }

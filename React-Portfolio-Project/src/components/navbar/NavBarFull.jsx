@@ -4,13 +4,13 @@ export default function NavBarFull() {
   return (
     <nav
       id="NavBarFull"
-      className="w-fit ms-auto hidden bg-transparent lg:block"
+      className="ms-auto hidden w-fit bg-transparent lg:block"
     >
-      <div className="mt-3 me-1 w-72 grid grid-cols-4 tracking-wide text-gray-800 lg:gap-y-2 lg:text-xl">
-        <div className="col-span-4 col-start-1 ms-3">
+      <div className="me-1 mt-3 grid w-72 grid-cols-4 tracking-wide text-gray-800 lg:gap-y-2 lg:text-xl">
+        <div className="col-span-4 col-start-1 ms-3 ">
           <a
             href="#intro"
-            className="inline-block hover:scale-110 hover:text-black"
+            className="inline-block hover:scale-110 hover:animate-pulse hover:text-black"
           >
             Intro
           </a>
@@ -18,7 +18,7 @@ export default function NavBarFull() {
         <div className="col-span-4 col-start-2">
           <a
             href="#projects"
-            className="inline-block hover:scale-110 hover:text-black"
+            className="inline-block hover:scale-110 hover:animate-pulse hover:text-black"
           >
             Projects
           </a>
@@ -26,7 +26,7 @@ export default function NavBarFull() {
         <div className="col-span-4 col-start-3 ms-3">
           <a
             href="#skills"
-            className="inline-block hover:scale-110 hover:text-black"
+            className="inline-block hover:scale-110 hover:animate-pulse hover:text-black"
           >
             Skills
           </a>
@@ -34,7 +34,7 @@ export default function NavBarFull() {
         <div className="col-span-4 col-start-4 col-end-5">
           <a
             href="#contact-me"
-            className="inline-block hover:scale-110 hover:text-black"
+            className="inline-block hover:scale-110 hover:animate-pulse hover:text-black"
           >
             Contact
           </a>

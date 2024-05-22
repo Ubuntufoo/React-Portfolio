@@ -111,9 +111,10 @@ export default function SkillsGrid() {
         </SlantedEdgeLS>
       </div>
       <Modal modalState={modalState} handleClose={handleCloseModal}>
+
         <div className='z-50 text-white h-full flex flex-col justify-evenly text-center text-4xl'>
           <h2 className="text-6xl">Modal Content</h2>
-          <p>
+          <p className='mx-20'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
             cum nihil provident recusandae tenetur, ipsa unde esse consequatur
             voluptas! Corrupti voluptatum error facere placeat nemo dolores
@@ -121,6 +122,8 @@ export default function SkillsGrid() {
           </p>
         </div>
       </Modal>
+      {modalState.isOpen && (
+        <div className='absolute top-0 left-0 w-screen h-screen bg-black opacity-85 blur-2xl z-10'></div>)}
     </main>
   )
 }
