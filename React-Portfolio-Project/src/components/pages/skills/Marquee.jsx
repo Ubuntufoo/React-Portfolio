@@ -28,7 +28,7 @@ function MarqueeRow({ className }) {
   return (
     <div className={className}>
       {logos.map((logo, index) => (
-        <span key={index} className={`mx-2  md:mx-3 lg:mx-5 ${logo.additionalClass}`}>
+        <span key={index} className={`mx-1 md:mx-2 lg:mx-4 ${logo.additionalClass}`}>
           <img src={logo.src} alt={logo.alt} />
         </span>
       ))}

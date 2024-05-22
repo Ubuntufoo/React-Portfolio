@@ -77,6 +77,7 @@ export default {
         '1/8': '12.5%',
         '1/7': '14.29%',
         '9/20': '45%',
+        '9/10': '90%',
 
 
 
@@ -117,11 +118,11 @@ const newUtilities = {
         'clip-path': 'polygon(50% -50%, 100% 50%, 50% 150%, 0 50%)',
       },
         '.slanted-edge-rs': {
-        '--p': '50px;',
+        '--p': '30px;',
         'clip-path': 'polygon(0 0,calc(100% - var(--p)) 0,100% 100%,0 100%)',
       },
         '.slanted-edge-ls': {
-        '--p': '50px;',
+        '--p': '30px;',
         'clip-path': 'polygon(0 0,100% 0,100% 100%,var(--p) 100%)',
       },
       };
