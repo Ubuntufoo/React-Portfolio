@@ -16,7 +16,7 @@ export default function KeyboardNoti() {
     <div
       className={`${
         fade ? 'opacity-100' : ' transition-display opacity-0 duration-1000'
-      } absolute bottom-2 right-7 hidden w-1/2 lg:w-1/3 2xl:w-1/4 cursor-default border-b-2 border-white pb-2 text-white ease-in lg:block`}
+      } absolute bottom-2 right-7 hidden w-1/2 lg:w-1/3 2xl:w-[23%] cursor-default border-b-2 border-white pb-2 text-white ease-in lg:block`}
     >
       Keyboard Navigation Enabled
     </div>

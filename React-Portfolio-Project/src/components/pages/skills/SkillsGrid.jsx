@@ -10,7 +10,7 @@ import genaiIMG from '../../../assets/grid/genaiIMG.png'
 import fullstackIMG3 from '../../../assets/grid/fullstackIMG3.png'
 import problemsolveIMG from '../../../assets/grid/problemsolveIMG.png'
 
-const imgClasses = 'size-1/2 object-cover'
+const imgClasses = 'size-1/2 object-cover group-hover:brightness-150 transition-all duration-700'
 
 const gridContentClasses = 'flex h-full place-items-center'
 

@@ -6,7 +6,7 @@ export default function NavBarFull() {
       id="NavBarFull"
       className="ms-auto hidden w-fit bg-transparent lg:block"
     >
-      <div className="me-1 mt-3 grid w-72 grid-cols-4 tracking-wide text-gray-800 lg:gap-y-2 lg:text-xl">
+      <div className="me-5 mt-3 grid w-72 grid-cols-4 tracking-wide text-gray-800 lg:gap-y-2 lg:text-xl">
         <div className="col-span-4 col-start-1 ms-3 ">
           <a
             href="#intro"

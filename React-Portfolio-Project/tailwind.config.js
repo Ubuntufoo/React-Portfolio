@@ -13,8 +13,8 @@ export default {
         'combined-slanted-edge': 'polygon(0 0, 100% 0, 100% 50%, 0 calc(50% + var(--p)), 0 100%, 100% 100%, 100% calc(50% - var(--p)), 0 50%)',
       },
       fontFamily: {
-        'oswald': ['"Oswald"', "sans-serif"],
-        'bebas-neue': ['"Bebas Neue"', 'serif'],
+        'montserrat': ['"Montserrat"', 'sans-serif'],
+        'roboto': ['"Roboto"', 'sans-serif'],
       },
       animation: {
         fade: 'fadeIn 1s ease-in-out',
@@ -76,6 +76,7 @@ export default {
         '1/9': '11.11%',
         '1/8': '12.5%',
         '1/7': '14.29%',
+        '2/9': '22%',
         '9/20': '45%',
         '6/10': '60%',
         '6/7': '85.7142857%',

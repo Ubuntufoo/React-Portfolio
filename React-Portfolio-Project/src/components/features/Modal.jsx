@@ -27,7 +27,7 @@ export default function Modal({ children, modalState, handleClose }) {
       </button>
       {children}
       <img
-        className="absolute top-0 -z-10 size-full object-cover opacity-60 blur"
+        className="absolute top-0 -z-10 size-full object-cover opacity-50 blur"
         src={image}
       />
 
