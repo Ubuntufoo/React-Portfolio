@@ -3,7 +3,10 @@
 import Parallelogram from '../../shapes/Parallelogram'
 import { useState } from 'react'
 import Tim1_5 from '../../../assets/Tim1_5.jpg'
+import BG1 from '../../../assets/BG1.png'
 
+const parallelogramClasses =
+  'bg-cyan-950 w-full h-full md:h-5/6 lg:w-3/4 lg:h-5/6'
 
 export default function Hero() {
   const [animationEnded, setAnimationEnded] = useState(false)
@@ -22,44 +25,52 @@ export default function Hero() {
   return (
     <main className="flex h-screen items-center justify-center">
       {animationEnded ? (
-        <Parallelogram>
-          <section className="relative h-full animate-fadeFast gap-8">
-            <div className="relative z-10 animate-fade space-y-9 px-8 pt-28 leading-6 text-orange-50 sm:px-8 sm:text-base md:pt-20 lg:ms-16 lg:pt-28 xl:pt-24 2xl:ms-20 2xl:pt-44 2xl:text-2xl 2xl:leading-8">
-              <h1 className="text-2xl lg:text-4xl">
+        <Parallelogram parallelogramClasses={parallelogramClasses}>
+          <section className="size-full">
+            <img
+              src={BG1}
+              alt="work desk with laptop"
+              className="absolute left-0 top-0 -z-10 size-full object-cover opacity-30 blur-[4px] brightness-50"
+            />
+            <img
+              src={Tim1_5}
+              alt="Tim's image"
+              className="absolute -bottom-14 -right-20 scale-75 animate-fade sm:-bottom-8  md:-right-2 md:bottom-10 md:scale-100 lg:-bottom-20 lg:right-4 lg:scale-50 xl:-bottom-6 xl:right-24 xl:scale-75 2xl:bottom-6 2xl:right-72 2xl:scale-125"
+            />
+            <div className="relative z-10 mx-6 animate-fade space-y-5 pt-28 leading-tight text-orange-50 md:mx-8 md:pt-36 md:text-2xl lg:pt-24 lg:text-xl 2xl:mx-24 2xl:space-y-8 2xl:pt-32 2xl:text-2xl 2xl:leading-snug">
+              <h1 className="text-2xl md:text-3xl xl:text-4xl">
                 Welcome. I&apos;m Tim. <br />
               </h1>
               <p className="text-pretty">
-                <span className="inline-flex flex-wrap gap-3.5 2xl:text-2xl">
+                <span className="inline-flex flex-wrap gap-4">
                   {[
                     'Introvert.',
                     'Athlete.',
                     'Husband.',
                     'Father.',
-                    <strong className='italic' key={4}>Web Developer.</strong>,
+                    <strong className="italic" key={4}>
+                      Web Developer.
+                    </strong>,
                   ].map((word, index) => (
                     <span key={index}>{word}</span>
                   ))}
                 </span>
                 <br />
                 <br />
-                I thrive on challenge and bring precision <br />and common sense to every project I innovate.
+                I thrive on challenge and bring precision <br />
+                and common sense to every project I innovate.
                 <br />
                 <br />
                 As a team, we can bring your projects to new heights.
               </p>
             </div>
-            <img
-              src={Tim1_5}
-              alt="Tim's avatar"
-              className="animate-fadeSlow absolute -bottom-12 right-4 scale-75 sm:bottom-0 sm:right-36 sm:scale-100 md:-bottom-12 md:right-0 lg:-bottom-9 lg:right-14 xl:-bottom-12 xl:scale-100 2xl:-bottom-4 2xl:right-28 2xl:scale-125"
-            />
           </section>
         </Parallelogram>
       ) : (
         <div
           onAnimationEnd={handleAnimationEnd}
           onAnimationStart={handleAnimationStart}
-          className={`${animationStarted ? 'opacity-0 transition-opacity duration-1000' : 'opacity-100'} me-44 w-20 animate-waving text-9xl`}
+          className={`${animationStarted ? 'opacity-0 transition-opacity duration-1000' : 'opacity-100'} me-44 w-28 2xl:w-40 animate-waving text-8xl 2xl:text-[140px]`}
         >
           👋
         </div>

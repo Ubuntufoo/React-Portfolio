@@ -5,6 +5,7 @@ import SideBar from './SideBar'
 import KeyboardNoti from '../../features/KeyboardNoti'
 import Hero from './Hero'
 
+
 export default function IntroPage({ keyClasses}) {
   const keyStyling = {
     up: keyClasses.keyInactiveClass,
