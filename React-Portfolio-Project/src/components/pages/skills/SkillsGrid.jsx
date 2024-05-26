@@ -10,8 +10,10 @@ import genaiIMG from '../../../assets/grid/genaiIMG.png'
 import fullstackIMG3 from '../../../assets/grid/fullstackIMG3.png'
 import problemsolveIMG from '../../../assets/grid/problemsolveIMG.png'
 
+import { skillCardsContent } from '../../../utils/utils'
+
 const imgClasses =
-  'size-1/2 object-cover group-hover:brightness-125 transition-all duration-700'
+  'size-1/2 object-cover group-hover:brightness-125 transition-all duration-700 '
 
 const gridContentClasses = 'flex h-full place-items-center'
 
@@ -112,21 +114,21 @@ export default function SkillsGrid() {
         </SlantedEdgeLS>
       </div>
       <Modal modalState={modalState} handleClose={handleCloseModal}>
-        <div className="z-50 mx-2 flex h-fit flex-col items-stretch justify-between text-center text-sm text-white">
-          <h2 className="py-3 text-lg font-semibold">React v18</h2>
-          <p className="whitespace-pre-wrap py-3">
-            My focus is on modern React, utilizing functional components, hooks,
-            and the latest features. <br /> <br /> I prefer learning from the
-            ground up, and therefore, I do not depend on component libraries.
-          </p>
+        <div className="z-50 mx-2 flex h-fit flex-col items-stretch justify-between whitespace-pre-line text-center text-sm text-white md:mx-7 md:text-lg xl:text-xl">
+          <h2 className="py-3 text-lg font-semibold">
+            {skillCardsContent[0].firstHeader}
+          </h2>
+          <p className=" py-3 ">{skillCardsContent[0].firstPara}</p>
           <hr className="my-1" />
-          <h2 className="py-3 text-lg font-semibold">Learning Roadmap</h2>
-          <p className="py-3">
-            There is no end in sight on my learning path. <br /> <br />I am in
-            the process of adding TypeScript to my skill-set. A revisit of raw Javascript is
-            back on my radar as well.
-          </p>
+          <h2 className="py-3 text-lg font-semibold">
+            {skillCardsContent[0].secondHeader}
+          </h2>
+          <p className="text-pretty py-3">{skillCardsContent[0].secondPara}</p>
         </div>
+        <img
+          className="absolute right-1 top-0 -z-10 size-full object-contain opacity-45 blur-sm"
+          src={modalState.image}
+        />
       </Modal>
       {modalState.isOpen && (
         <div className="absolute left-0 top-0 z-10 h-screen w-screen bg-black opacity-75"></div>

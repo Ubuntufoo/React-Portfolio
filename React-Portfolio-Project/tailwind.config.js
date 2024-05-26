@@ -83,9 +83,6 @@ export default {
         '7/8': '87.5%',
         '8/9': '88.8888889%',
         '9/10': '90%',
-
-
-
       },
     },
   },
@@ -115,7 +112,7 @@ const newUtilities = {
           'clip-path': 'polygon(0 var(--p),100% 0,100% 100%,0 100%)',
         },
         '.combined-slanted-edge': {
-          '--p': '70px', // control the shape (can be percentage)
+          '--p': '-180px', // control the shape (can be percentage)
           'clip-path': 'polygon(0 0, 100% 0, 100% 50%, 0 calc(50% + var(--p)), 0 100%, 100% 100%, 100% calc(50% - var(--p)), 0 50%)',
         },
         '.hexagon': {
@@ -123,11 +120,11 @@ const newUtilities = {
         'clip-path': 'polygon(50% -50%, 100% 50%, 50% 150%, 0 50%)',
       },
         '.slanted-edge-rs': {
-        '--p': '30px;',
+        '--p': '60px;',
         'clip-path': 'polygon(0 0,calc(100% - var(--p)) 0,100% 100%,0 100%)',
       },
         '.slanted-edge-ls': {
-        '--p': '30px;',
+        '--p': '60px;',
         'clip-path': 'polygon(0 0,100% 0,100% 100%,var(--p) 100%)',
       },
       };

@@ -29,3 +29,34 @@ export const setupKeydownHandler = () => {
   // Return the handler function for cleanup purpose
   return handler
 }
+
+export const skillCardsContent = [
+  {
+    title: 'React Specialization',
+    firstHeader: 'React v18',
+    firstPara: "My focus is on modern React, utilizing functional components, hooks, and the latest features.\n\nI prefer learning from the ground up, and therefore, I generally do not depend on component libraries.",
+    secondHeader: 'Learning Roadmap',
+    secondPara: "Can a developer maintain enterprise-level code quality while preserving their curiosity and joy of experimentation? That is my goal. \n\nAside from React-specific features such as router libraries, I am also in the process of adding TypeScript to my skill-set, and a revisit to raw Javascript.",
+  },
+  {
+    title: 'React Specialization',
+    firstHeader: 'Generative AI',
+    firstPara: "lorem xxxxxxxxxxx.",
+    secondHeader: 'More Generative AI',
+    secondPara: "lorem yyyyyyyyyy.",
+  },
+  {
+    title: 'React Specialization',
+    firstHeader: 'Generative AI',
+    firstPara: "lorem xxxxxxxxxxx.",
+    secondHeader: 'More Generative AI',
+    secondPara: "lorem yyyyyyyyyy.",
+  },
+  {
+    title: 'React Specialization',
+    firstHeader: 'Generative AI',
+    firstPara: "lorem xxxxxxxxxxx.",
+    secondHeader: 'More Generative AI',
+    secondPara: "lorem yyyyyyyyyy.",
+  },
+]
