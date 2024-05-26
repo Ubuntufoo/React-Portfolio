@@ -10,7 +10,8 @@ import genaiIMG from '../../../assets/grid/genaiIMG.png'
 import fullstackIMG3 from '../../../assets/grid/fullstackIMG3.png'
 import problemsolveIMG from '../../../assets/grid/problemsolveIMG.png'
 
-const imgClasses = 'size-1/2 object-cover group-hover:brightness-150 transition-all duration-700'
+const imgClasses =
+  'size-1/2 object-cover group-hover:brightness-125 transition-all duration-700'
 
 const gridContentClasses = 'flex h-full place-items-center'
 
@@ -33,7 +34,7 @@ export default function SkillsGrid() {
 
   return (
     <main className="flex size-full place-content-center place-items-center py-5">
-      <div className="md:w-6/10 lg:w-6/7 grid h-full w-2/3 grid-cols-1 content-evenly text-center text-sm md:text-2xl lg:grid-cols-2 lg:content-center lg:gap-y-8 xl:w-2/3 2xl:text-3xl">
+      <div className="grid h-full w-2/3 grid-cols-1 content-evenly text-center text-xs sm:text-base md:w-6/10 md:text-xl lg:w-6/7 lg:grid-cols-2 lg:content-center lg:gap-y-8 lg:text-2xl xl:w-2/3 2xl:text-3xl">
         <SlantedEdgeRS
           onClick={() => handleOpenModal(reactLOGOcustom)}
           classNames={`${slantedEdgeClasses} border-l-2`}
@@ -111,19 +112,25 @@ export default function SkillsGrid() {
         </SlantedEdgeLS>
       </div>
       <Modal modalState={modalState} handleClose={handleCloseModal}>
-
-        <div className='z-50 text-white h-full flex flex-col justify-evenly text-center text-4xl'>
-          <h2 className="text-6xl">Modal Content</h2>
-          <p className='mx-20'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
-            cum nihil provident recusandae tenetur, ipsa unde esse consequatur
-            voluptas! Corrupti voluptatum error facere placeat nemo dolores
-            laudantium alias voluptate sapiente? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magni ipsum est maiores itaque, voluptates nihil debitis assumenda ullam expedita asperiores possimus aspernatur velit, quos, numquam amet deleniti? Error, pariatur.
+        <div className="z-50 mx-2 flex h-fit flex-col items-stretch justify-between text-center text-sm text-white">
+          <h2 className="py-3 text-lg font-semibold">React v18</h2>
+          <p className="whitespace-pre-wrap py-3">
+            My focus is on modern React, utilizing functional components, hooks,
+            and the latest features. <br /> <br /> I prefer learning from the
+            ground up, and therefore, I do not depend on component libraries.
+          </p>
+          <hr className="my-1" />
+          <h2 className="py-3 text-lg font-semibold">Learning Roadmap</h2>
+          <p className="py-3">
+            There is no end in sight on my learning path. <br /> <br />I am in
+            the process of adding TypeScript to my skill-set. A revisit of raw Javascript is
+            back on my radar as well.
           </p>
         </div>
       </Modal>
       {modalState.isOpen && (
-        <div className='absolute top-0 left-0 w-screen h-screen bg-black opacity-85 blur-2xl z-10'></div>)}
+        <div className="absolute left-0 top-0 z-10 h-screen w-screen bg-black opacity-75"></div>
+      )}
     </main>
   )
 }

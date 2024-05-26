@@ -15,11 +15,11 @@ export default function Modal({ children, modalState, handleClose }) {
   return (
     <div
       onClick={handleClose}
-      className="absolute isolate h-3/4 w-2/3 overflow-hidden bg-current z-20"
+      className="absolute p-4 isolate h-fit w-3/4 overflow-hidden bg-current z-20"
     >
       <button
         onClick={handleClose}
-        className=" group absolute right-10 top-4 cursor-pointer bg-transparent py-2 text-6xl font-bold text-white shadow-2xl transition hover:scale-110"
+        className=" group absolute right-4 top-0 cursor-pointer bg-transparent py-2 text-2xl font-bold text-white shadow-2xl transition hover:scale-110"
       >
         <span className="shadow-white group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)]">
           𝕏
@@ -27,7 +27,7 @@ export default function Modal({ children, modalState, handleClose }) {
       </button>
       {children}
       <img
-        className="absolute top-0 -z-10 size-full object-cover opacity-50 blur"
+        className="absolute top-0 left-0 -z-10 size-full object-contain opacity-45 blur-sm"
         src={image}
       />
 
