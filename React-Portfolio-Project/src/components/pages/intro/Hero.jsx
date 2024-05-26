@@ -26,7 +26,7 @@ export default function Hero() {
     <main className="flex h-screen items-center justify-center">
       {animationEnded ? (
         <Parallelogram parallelogramClasses={parallelogramClasses}>
-          <section className="size-full">
+          <section className="grid grid-cols-1 grid-rows-6 h-full">
             <img
               src={BG1}
               alt="work desk with laptop"
@@ -35,13 +35,13 @@ export default function Hero() {
             <img
               src={Tim1_5}
               alt="Tim's image"
-              className="absolute -bottom-14 -right-20 scale-75 animate-fade sm:-bottom-8  md:-right-2 md:bottom-10 md:scale-100 lg:-bottom-20 lg:right-4 lg:scale-50 xl:-bottom-6 xl:right-24 xl:scale-75 2xl:bottom-6 2xl:right-72 2xl:scale-125"
+              className="absolute -bottom-14 -right-20 scale-75 animate-fade sm:-bottom-8  md:-right-2 md:bottom-10 md:scale-100 lg:-bottom-20 lg:right-4 lg:scale-50 xl:-bottom-6 xl:right-24 xl:scale-75 2xl:bottom-6 2xl:right-80 2xl:scale-125"
             />
-            <div className="relative z-10 mx-6 animate-fade space-y-5 pt-28 leading-tight text-orange-50 md:mx-8 md:pt-36 md:text-2xl lg:pt-24 lg:text-xl 2xl:mx-24 2xl:space-y-8 2xl:pt-32 2xl:text-2xl 2xl:leading-snug">
-              <h1 className="text-2xl md:text-3xl xl:text-4xl">
+            <div className="row-start-2 mx-5 relative h-fit  z-10 animate-fade space-y-4 leading-snug text-orange-50  md:text-2xl lg:text-xl lg:ps-4 xl:ps-10 xl:pt-6  2xl:space-y-8  2xl:text-2xl 2xl:ps-14 2xl:pt-8">
+              <h1 className="text-2xl ps-2 md:text-3xl xl:text-4xl">
                 Welcome. I&apos;m Tim. <br />
               </h1>
-              <p className="text-pretty">
+              <p className="ps-2 text-pretty">
                 <span className="inline-flex flex-wrap gap-4">
                   {[
                     'Introvert.',
@@ -70,7 +70,7 @@ export default function Hero() {
         <div
           onAnimationEnd={handleAnimationEnd}
           onAnimationStart={handleAnimationStart}
-          className={`${animationStarted ? 'opacity-0 transition-opacity duration-1000' : 'opacity-100'} me-44 w-28 2xl:w-40 animate-waving text-8xl 2xl:text-[140px]`}
+          className={`${animationStarted ? 'opacity-0 transition-opacity duration-1000' : 'opacity-100'} me-44 w-28 animate-waving text-8xl 2xl:w-40 2xl:text-[140px]`}
         >
           👋
         </div>
