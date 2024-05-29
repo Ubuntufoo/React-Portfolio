@@ -6,7 +6,7 @@ import Tim1_5 from '../../../assets/Tim1_5.jpg'
 import BG1 from '../../../assets/BG1.png'
 
 const parallelogramClasses =
-  'bg-cyan-950 w-full h-full md:h-5/6 lg:w-3/4 lg:h-5/6 bg-gradient-to-b md:bg-gradient-to-r from-cyan-100 to-cyan-950 from-30% to-80%'
+  'bg-cyan-950 w-full h-full md:h-5/6 lg:w-3/4 lg:h-5/6 bg-gradient-to-b md:bg-gradient-to-r from-cyan-100 to-cyan-950 from-30% to-80% 2xl:me-8'
 
 export default function Hero() {
   const [animationEnded, setAnimationEnded] = useState(false)
@@ -35,14 +35,14 @@ export default function Hero() {
             <img
               src={Tim1_5}
               alt="Tim's image"
-              className="absolute -bottom-14 -right-20 scale-75 animate-fade sm:-bottom-8  md:-right-2 md:bottom-10 md:scale-100 lg:-bottom-20 lg:right-4 lg:scale-50 xl:-bottom-6 xl:right-24 xl:scale-75 2xl:bottom-6 2xl:right-80 2xl:scale-125"
+              className="absolute -bottom-14 -right-20 scale-75 animate-fade sm:-bottom-8  md:-right-2 md:bottom-10 md:scale-100 lg:-bottom-20 lg:right-4 lg:scale-50 xl:-bottom-6 xl:right-24 xl:scale-75 2xl:bottom-6 2xl:right-72 2xl:scale-125"
             />
             <div className="row-start-2 mx-5 relative h-fit  z-10 animate-fade space-y-4 leading-snug text-black  md:text-2xl lg:text-xl lg:ps-4 xl:ps-10 xl:pt-6  2xl:space-y-8  2xl:text-2xl 2xl:ps-14 2xl:pt-8">
-              <h1 className="text-2xl ps-2 md:text-3xl xl:text-4xl">
+              <h1 className="text-2xl md:text-3xl xl:text-4xl">
                 Welcome. I&apos;m Tim. <br />
               </h1>
-              <p className="ps-2 text-pretty">
-                <span className="inline-flex flex-wrap gap-4">
+              <p className="text-pretty">
+                <span className="inline-flex flex-wrap gap-3">
                   {[
                     'Introvert.',
                     'Athlete.',
