@@ -12,8 +12,7 @@ export default function Modal({ children, modalState, handleClose }) {
   if (!isOpen) return null
   return (
     <div
-      onClick={handleClose}
-      className="absolute isolate z-20 h-fit w-4/5 max-w-[500px] overflow-hidden bg-current p-4 2xl:w-1/2"
+      className="absolute isolate z-20 h-fit w-4/5 max-w-[500px] overflow-hidden bg-current p-6 2xl:w-1/2"
     >
       <button
         onClick={handleClose}

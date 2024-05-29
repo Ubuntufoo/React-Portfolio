@@ -8,11 +8,11 @@ import { skillCardsContent } from '../../../utils/utils'
 
 const imgClasses =
   'size-1/2 object-cover group-hover:brightness-125 transition-all duration-700 '
-const gridContentClasses = 'flex h-full place-items-center'
+const gridContentClasses = 'flex h-full place-items-center xl:leading-10'
 const gridBorderAnimationClasses =
   'absolute h-full -z-50 w-1/12 bg-cyan-950 transition-all duration-1000 group-hover:w-1/2 group-hover:bg-white'
 const slantedEdgeClasses =
-  'group relative h-fit bg-cyan-950 text-white transition-all duration-700 hover:bg-white hover:text-cyan-900 border-t-2 border-b-2 border-white hover:[text-shadow:3px_4px_5px_var(--tw-shadow-color)] shadow-cyan-600 cursor-pointer size-fit'
+  'group relative h-fit bg-cyan-950 text-white transition-all duration-700 hover:bg-white hover:text-cyan-900 border-t-2 border-b-2 border-white hover:[text-shadow:3px_4px_5px_var(--tw-shadow-color)] shadow-cyan-600 cursor-pointer size-fit whitespace-pre'
 
 export default function SkillsGrid() {
   const [modalState, setModalState] = useState({
@@ -30,7 +30,7 @@ export default function SkillsGrid() {
 
   return (
     <main className="flex size-full place-content-center place-items-center py-5">
-      <div className="grid h-full w-2/3 grid-cols-1 content-evenly text-center text-xs sm:text-base md:w-6/10 md:text-xl lg:w-6/7 lg:grid-cols-2 lg:content-center lg:gap-y-8 lg:text-2xl xl:w-2/3 2xl:text-3xl">
+      <div className="grid h-full w-2/3 grid-cols-1 content-evenly text-center text-xs sm:text-base md:w-6/10 md:text-xl lg:w-6/7 lg:grid-cols-2 lg:content-center lg:gap-y-14 lg:text-2xl xl:w-6/10">
         {skillCardsContent.map((content, index) => (
           <React.Fragment key={index}>
             {index % 2 === 0 ? (
@@ -80,7 +80,7 @@ export default function SkillsGrid() {
       {modalState.isOpen && (
         <Modal modalState={modalState} handleClose={handleCloseModal}>
           {modalState.contentIndex !== null && (
-            <div className="z-50 mx-2 flex h-fit flex-col items-stretch justify-between whitespace-pre-line text-center text-sm text-white md:mx-7 md:text-lg xl:text-xl">
+            <div className="z-50 flex h-fit flex-col items-stretch justify-between whitespace-pre-line text-center text-sm text-white md:px-5 md:text-lg xl:text-xl">
               <h2 className="py-3 text-lg font-semibold underline underline-offset-8 xl:text-2xl">
                 {skillCardsContent[modalState.contentIndex].firstHeader}
               </h2>
@@ -102,9 +102,12 @@ export default function SkillsGrid() {
             alt="Modal Image"
           />
         </Modal>
+
       )}
       {modalState.isOpen && (
-        <div className="absolute left-0 top-0 z-10 h-screen w-screen bg-black opacity-75"></div>
+        <div
+          onClick={handleCloseModal}
+          className="absolute left-0 top-0 z-10 h-screen w-screen bg-black opacity-75"></div>
       )}
     </main>
   )
