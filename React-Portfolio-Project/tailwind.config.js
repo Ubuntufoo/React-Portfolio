@@ -112,7 +112,7 @@ const newUtilities = {
           'clip-path': 'polygon(0 var(--p),100% 0,100% 100%,0 100%)',
         },
         '.combined-slanted-edge': {
-          '--p': '-180px', // control the shape (can be percentage)
+          '--p': '-80px', // control the shape (can be percentage)
           'clip-path': 'polygon(0 0, 100% 0, 100% 50%, 0 calc(50% + var(--p)), 0 100%, 100% 100%, 100% calc(50% - var(--p)), 0 50%)',
         },
         '.hexagon': {
