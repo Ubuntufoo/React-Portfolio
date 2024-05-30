@@ -6,10 +6,9 @@ import fullstackIMG3 from '../assets/grid/fullstackIMG3.png'
 import problemsolveIMG from '../assets/grid/problemsolveIMG.png'
 
 export const keyClasses = {
-  keyActiveClass: 'text-white text-5xl animate-[pulse_2s_ease-in-out_2]',
+  keyActiveClass: 'text-white text-4xl animate-[pulse_2s_ease-in-out_2]',
   keyInactiveClass: 'hidden',
 }
-
 export const anchors = ['Intro', 'Projects', 'Skills', 'Contact']
 
 export const setupKeydownHandler = () => {

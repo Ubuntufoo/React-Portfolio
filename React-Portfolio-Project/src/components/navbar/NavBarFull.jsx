@@ -2,7 +2,7 @@
 
 const links = [
   { text: 'Intro', className: 'col-span-4 col-start-1 ms-3' },
-  { text: 'Projects', className: 'col-span-4 col-start-2' },
+  { text: 'Projects', className: 'col-span-4 col-start-2 ms-0.5' },
   { text: 'Skills', className: 'col-span-4 col-start-3 ms-3' },
   { text: 'Contact', className: 'col-span-4 col-start-4 col-end-5' },
 ]

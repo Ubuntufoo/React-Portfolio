@@ -1,14 +1,14 @@
 // child component showing a contact form
 
-import KeyboardArrows from '../../features/KeyboardArrows'
+// import KeyboardArrows from '../../features/KeyboardArrows'
 
-export default function ContactPage({ keyClasses }) {
-  const keyStyling = {
-    up: keyClasses.keyActiveClass,
-    down: keyClasses.keyActiveClass,
-    left: keyClasses.keyInactiveClass,
-    right: keyClasses.keyInactiveClass,
-  }
+export default function ContactPage() {
+  // const keyStyling = {
+  //   up: keyClasses.keyActiveClass,
+  //   down: keyClasses.keyActiveClass,
+  //   left: keyClasses.keyInactiveClass,
+  //   right: keyClasses.keyInactiveClass,
+  // }
 
   return (
     <div className="section h-screen">
@@ -70,7 +70,7 @@ export default function ContactPage({ keyClasses }) {
           </form>
         </div>
       </section>
-      <KeyboardArrows keyStyling={keyStyling} />
+      {/* <KeyboardArrows keyStyling={keyStyling} /> */}
     </div>
   )
 }

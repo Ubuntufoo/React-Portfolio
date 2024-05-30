@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import FullpageWrapper from './FullPageWrapper'
 import Header from './components/navbar/Header'
-import { setupKeydownHandler } from './utils/utils'
+import { setupKeydownHandler, keyClasses } from './utils/utils'
 import './index.css'
 
 const App = () => {
@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <>
-      <Header activePage={activePage} />
+      <Header activePage={activePage} keyClasses={keyClasses} />
       <FullpageWrapper afterLoad={afterLoad} activePage={activePage} />
     </>
   )

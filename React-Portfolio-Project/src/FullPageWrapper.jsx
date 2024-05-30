@@ -4,7 +4,7 @@ import IntroPage from './components/pages/intro/IntroPage'
 import ProjectsPage from './components/pages/projects/ProjectsPage'
 import SkillsPage from './components/pages/skills/SkillsPage'
 import ContactPage from './components/pages/contact/ContactPage'
-import { keyClasses, anchors } from './utils/utils'
+import { anchors } from './utils/utils'
 
 const FullpageWrapper = ({ afterLoad, activePage }) => {
   return (
@@ -24,10 +24,10 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       afterLoad={afterLoad}
       render={() => (
         <>
-          <IntroPage keyClasses={keyClasses} />
-          <ProjectsPage keyClasses={keyClasses} activePage={activePage} />
-          <SkillsPage keyClasses={keyClasses} />
-          <ContactPage keyClasses={keyClasses} />
+          <IntroPage />
+          <ProjectsPage activePage={activePage} />
+          <SkillsPage />
+          <ContactPage />
         </>
       )}
     />

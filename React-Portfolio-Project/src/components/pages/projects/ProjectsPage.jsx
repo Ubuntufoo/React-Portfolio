@@ -1,15 +1,15 @@
 // child component showcasing several web dev projects
 
-import KeyboardArrows from '../../features/KeyboardArrows'
+// import KeyboardArrows from '../../features/KeyboardArrows'
 import CardGallery from './CardGallery'
 
-export default function ProjectsPage({ keyClasses, activePage }) {
-  const keyStyling = {
-    up: keyClasses.keyActiveClass,
-    down: keyClasses.keyActiveClass,
-    left: keyClasses.keyActiveClass,
-    right: keyClasses.keyActiveClass,
-  }
+export default function ProjectsPage({ activePage }) {
+  // const keyStyling = {
+  //   up: keyClasses.keyActiveClass,
+  //   down: keyClasses.keyActiveClass,
+  //   left: keyClasses.keyActiveClass,
+  //   right: keyClasses.keyActiveClass,
+  // }
 
   return (
     <div className="section h-screen">
@@ -19,7 +19,7 @@ export default function ProjectsPage({ keyClasses, activePage }) {
       <div className="slide">bbbbbbbbbbbbbbbbbbb</div>
       <div className="slide">ccccccccccccccccc</div>
       <div className="slide">dddddddddddddddddd</div>
-      <KeyboardArrows keyStyling={keyStyling} />
+      {/* <KeyboardArrows keyStyling={keyStyling} /> */}
     </div>
   )
 }
