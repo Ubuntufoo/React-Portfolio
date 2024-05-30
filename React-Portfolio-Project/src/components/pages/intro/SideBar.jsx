@@ -17,7 +17,7 @@ export default function SideBar() {
             href="https://github.com/Ubuntufoo"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-nowrap transition-all ease-in-out hover:animate-pulse hover:font-semibold"
+            className="text-nowrap shadow-gray-400 transition-all duration-500 ease-in-out hover:font-semibold hover:[text-shadow:5px_5px_2px_var(--tw-shadow-color)]"
           >
             Github Repository
           </a>
@@ -28,7 +28,7 @@ export default function SideBar() {
         <div className="absolute -ms-[331px] -mt-3.5 flex items-center space-x-5 text-white">
           <a
             href="mailto:TimothyMurphy123@gmail.com"
-            className="text-nowrap transition-all ease-in-out hover:animate-pulse hover:font-semibold"
+            className="text-nowrap shadow-gray-400 transition-all duration-500 ease-in-out hover:font-semibold hover:[text-shadow:5px_5px_2px_var(--tw-shadow-color)]"
           >
             TimothyMurphy123@gmail.com
           </a>
@@ -41,20 +41,20 @@ export default function SideBar() {
             href="https://www.linkedin.com/in/timothy-murphy-19a702213/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-nowrap transition-all ease-in-out hover:animate-pulse hover:font-semibold"
+            className="text-nowrap font-semibold shadow-gray-400 transition-all duration-500 ease-in-out hover:font-semibold hover:[text-shadow:5px_5px_2px_var(--tw-shadow-color)]"
           >
             LinkedIn Profile
           </a>
           <BiLogoLinkedinSquare className="text-3xl" />
         </div>
       </div>
-      <div className="-mb-20 me-28 h-0 w-0 cursor-pointer border-b-[120px] border-l-[290px] border-t-[120px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-40">
+      <div className="-mb-16 me-28 h-0 w-0 cursor-pointer border-b-[120px] border-l-[290px] border-t-[120px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-40">
         <div className="absolute -ms-[199px] -mt-3.5 flex items-center space-x-6 text-white">
           <a
             href="https://docs.google.com/document/d/15K8jNlhiDEw9anGdRNiWMGWhdIbsLZinUbh73TV_LD8/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-nowrap transition-all ease-in-out hover:animate-pulse hover:font-semibold"
+            className="text-nowrap shadow-gray-400 transition-all duration-500 ease-in-out hover:font-semibold hover:[text-shadow:5px_5px_2px_var(--tw-shadow-color)]"
           >
             View Resume
           </a>
@@ -62,7 +62,7 @@ export default function SideBar() {
         </div>
       </div>
       <div className="mb-7 mr-12">
-        <IoInformation className="text-4xl text-gray-800 transition-all duration-700 group-hover:scale-150 group-hover:animate-pulse lg:text-4xl" />
+        <IoInformation className="text-4xl text-gray-800 transition-all duration-700 group-hover:scale-150 lg:text-4xl" />
       </div>
     </div>
   )

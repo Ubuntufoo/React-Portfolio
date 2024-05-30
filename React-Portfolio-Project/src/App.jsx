@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <>
-      <Header />
+      <Header activePage={activePage} />
       <FullpageWrapper afterLoad={afterLoad} activePage={activePage} />
     </>
   )

@@ -10,7 +10,7 @@ export const keyClasses = {
   keyInactiveClass: 'hidden',
 }
 
-export const anchors = ['intro', 'projects', 'skills', 'contact-me']
+export const anchors = ['Intro', 'Projects', 'Skills', 'Contact']
 
 export const setupKeydownHandler = () => {
   const handler = (e) => {
