@@ -32,7 +32,7 @@ export default function NavBarMobile() {
       <div
         className={`transform ${isOpen ? 'translate-y-48' : ''} -mt-48 flex w-screen flex-col items-center space-y-4 bg-gray-800 py-4 text-lg transition-transform duration-500`}
       >
-        {['intro', 'projects', 'skills', 'contact-me'].map((section) => (
+        {['Intro', 'Projects', 'Skills', 'Contact'].map((section) => (
           <div className="w-fit hover:font-bold" key={section}>
             <a href={`#${section}`} className="hover:scale-110" onClick={toggleNav}>
               {section.charAt(0).toUpperCase() + section.slice(1)}

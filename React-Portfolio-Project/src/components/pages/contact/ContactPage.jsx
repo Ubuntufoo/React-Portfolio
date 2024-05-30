@@ -13,7 +13,7 @@ export default function ContactPage() {
   return (
     <div className="section h-screen">
       <section className="h-screen w-screen">
-        <div className="absolute inset-0 2xl:py-40">
+        <div className="absolute inset-0 2xl:py-24">
           <iframe
             className="size-full brightness-95"
             title="Map of My Area"
@@ -22,9 +22,9 @@ export default function ContactPage() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="absolute bottom-16 left-44 z-10 flex w-1/4 flex-col p-8 text-white shadow-2xl">
+        <div className="absolute bottom-12 max-w-[470px] left-36 z-10 flex flex-col p-7 text-white shadow-2xl">
           <div className="absolute inset-0 -z-10 bg-cyan-950 opacity-90"></div>
-          <h1 className="text-center text-4xl">Contact me</h1>
+          <h1 className="text-center text-4xl">Contact Me</h1>
           <form action="" className="mt-10 text-lg">
             <div className="grid gap-8 sm:grid-cols-2">
               <div className="relative z-0">

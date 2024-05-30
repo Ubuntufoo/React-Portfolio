@@ -30,7 +30,7 @@ export default function SkillsGrid() {
 
   return (
     <main className="flex size-full place-content-center place-items-center py-5">
-      <div className="grid h-full w-2/3 grid-cols-1 content-evenly text-center text-xs sm:text-base md:w-6/10 md:text-xl lg:w-6/7 lg:grid-cols-2 lg:content-center lg:gap-y-14 lg:text-2xl xl:w-6/10 2xl:me-4">
+      <div className="grid h-full w-2/3 grid-cols-1 content-evenly text-center text-xs sm:text-base md:w-6/10 md:text-xl lg:w-6/7 lg:grid-cols-2 lg:content-center lg:gap-y-12 lg:text-2xl xl:w-6/10 2xl:me-4">
         {skillCardsContent.map((content, index) => (
           <React.Fragment key={index}>
             {index % 2 === 0 ? (
