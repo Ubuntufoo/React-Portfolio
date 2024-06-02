@@ -17,7 +17,7 @@ export default function SideBar() {
             href="https://github.com/Ubuntufoo"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-nowrap shadow-gray-400 transition-all duration-500 ease-in-out hover:font-semibold hover:[text-shadow:5px_5px_2px_var(--tw-shadow-color)]"
+            className="text-nowrap shadow-gray-300 transition-all duration-500 ease-in-out hover:font-semibold hover:[text-shadow:6px_6px_2px_var(--tw-shadow-color)]"
           >
             Github Repository
           </a>
@@ -28,7 +28,7 @@ export default function SideBar() {
         <div className="absolute -ms-[332px] -mt-3.5 flex items-center space-x-5 text-white">
           <a
             href="mailto:TimothyMurphy123@gmail.com"
-            className="text-nowrap shadow-gray-400 transition-all duration-500 ease-in-out hover:font-semibold hover:[text-shadow:5px_5px_2px_var(--tw-shadow-color)]"
+            className="text-nowrap shadow-gray-300 transition-all duration-500 ease-in-out hover:font-semibold hover:[text-shadow:6px_6px_2px_var(--tw-shadow-color)]"
           >
             TimothyMurphy123@gmail.com
           </a>
@@ -41,7 +41,7 @@ export default function SideBar() {
             href="https://www.linkedin.com/in/timothy-murphy-19a702213/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-nowrap font-semibold shadow-gray-400 transition-all duration-500 ease-in-out hover:font-semibold hover:[text-shadow:5px_5px_2px_var(--tw-shadow-color)]"
+            className="text-nowrap font-semibold shadow-gray-300 transition-all duration-500 ease-in-out hover:font-semibold hover:[text-shadow:6px_6px_2px_var(--tw-shadow-color)]"
           >
             LinkedIn Profile
           </a>
@@ -54,7 +54,7 @@ export default function SideBar() {
             href="https://docs.google.com/document/d/15K8jNlhiDEw9anGdRNiWMGWhdIbsLZinUbh73TV_LD8/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-nowrap shadow-gray-400 transition-all duration-500 ease-in-out hover:font-semibold hover:[text-shadow:5px_5px_2px_var(--tw-shadow-color)]"
+            className="text-nowrap shadow-gray-300 transition-all duration-500 ease-in-out hover:font-semibold hover:[text-shadow:6px_6px_2px_var(--tw-shadow-color)]"
           >
             View Resume
           </a>
