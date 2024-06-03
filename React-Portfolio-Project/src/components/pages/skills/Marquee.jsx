@@ -1,34 +1,32 @@
 // a vertical marquee component that displays my web dev tech stack
 
-import nodeJSIMG from '../../../assets/marquee/nodeJSIMG.jpg'
-import reactIMG from '../../../assets/marquee/reactIMG.png'
-import tailwindIMG from '../../../assets/marquee/tailwindIMG.png'
-import bootstrapIMG from '../../../assets/marquee/bootstrapIMG.webp'
-import djangoIMG from '../../../assets/marquee/djangoIMG.png'
-import htmlandcssIMG from '../../../assets/marquee/htmlandcssIMG.jpg'
-import jsIMG from '../../../assets/marquee/jsIMG.jpg'
-import pythonIMG from '../../../assets/marquee/pythonIMG.png'
-import vueIMG from '../../../assets/marquee/vueIMG.jpg'
-import sqlIMG from '../../../assets/marquee/sqlIMG.png'
+import JS_no_BG from "../../../assets/marquee/JS_no_BG.png";
+import NODEJS_no_BG from "../../../assets/marquee/NODEJS_no_BG.png";
+import REACT_no_BG from "../../../assets/marquee/REACT_no_BG.png";
+import VUE_no_BG from "../../../assets/marquee/VUE_no_BG.png";
+import BS_no_BG from "../../../assets/marquee/BS_no_BG.png";
+import DJANGO_no_BG from "../../../assets/marquee/DJANGO_no_BG.png";
+import PYTHON_no_BG from "../../../assets/marquee/PYTHON_no_BG.png";
+import SQL_no_BG from "../../../assets/marquee/SQL_no_BG.png";
+import tailwindIMG from '../../../assets/marquee/tailwindIMG.png';
 
 const logos = [
-  { src: sqlIMG, alt: "SQL Logo", additionalClass: "" },
-  { src: djangoIMG, alt: "Django Logo", additionalClass: "" },
-  { src: pythonIMG, alt: "Python Logo", additionalClass: "" },
-  { src: bootstrapIMG, alt: "Bootstrap Logo", additionalClass: "scale-125" },
-  { src: tailwindIMG, alt: "Tailwind CSS Logo", additionalClass: "scale-90" },
-  { src: vueIMG, alt: "Vue Logo", additionalClass: "" },
-  { src: reactIMG, alt: "React Logo", additionalClass: "" },
-  { src: nodeJSIMG, alt: "NodeJS Logo", additionalClass: "scale-90" },
-  { src: jsIMG, alt: "JavaScript Logo", additionalClass: "" },
-  { src: htmlandcssIMG, alt: "HTML and CSS Logo", additionalClass: "mb-8 scale-150" },
-];
+  { src: SQL_no_BG, alt: 'SQL Logo', additionalClass: '' },
+  { src: PYTHON_no_BG, alt: 'Python Logo', additionalClass: '' },
+  { src: DJANGO_no_BG, alt: 'Django Logo', additionalClass: '' },
+  { src: NODEJS_no_BG, alt: 'NodeJS Logo', additionalClass: 'scale-90' },
+  { src: REACT_no_BG, alt: 'React Logo', additionalClass: 'scale-90' },
+  { src: VUE_no_BG, alt: 'Vue Logo', additionalClass: '' },
+  { src: BS_no_BG, alt: 'Bootstrap Logo', additionalClass: 'scale-125' },
+  { src: JS_no_BG, alt: 'JavaScript Logo', additionalClass: '' },
+  { src: tailwindIMG, alt: 'Tailwind CSS Logo', additionalClass: 'scale-90' }
+]
 
 function MarqueeRow({ className }) {
   return (
     <div className={className}>
       {logos.map((logo, index) => (
-        <span key={index} className={`mx-1 md:mx-2 lg:mx-4 xl:mx-5 ${logo.additionalClass}`}>
+        <span key={index} className={`${logo.additionalClass}`}>
           <img src={logo.src} alt={logo.alt} />
         </span>
       ))}
@@ -38,9 +36,11 @@ function MarqueeRow({ className }) {
 
 export default function Marquee() {
   return (
-    <div className="flex relative h-screen flex-col overflow-y-hidden">
-      <MarqueeRow className="animate-marquee absolute flex grow flex-col gap-8 whitespace-nowrap" />
-      <MarqueeRow className="animate-marquee2 absolute top-0 flex flex-col gap-8 whitespace-nowrap" />
+    <div className=" relative w-1/10 md:w-1/11 lg:w-1/12 xl:w-1/14 2xl:w-1/18">
+      <div className="relative flex h-screen flex-col overflow-y-hidden">
+        <MarqueeRow className="absolute flex grow animate-marquee gap-5 flex-col whitespace-nowrap" />
+        <MarqueeRow className="absolute top-0 flex animate-marquee2 gap-5 flex-col whitespace-nowrap" />
+      </div>
     </div>
-  );
+  )
 }
