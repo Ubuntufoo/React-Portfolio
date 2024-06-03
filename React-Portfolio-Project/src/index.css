@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* used to prevent Chrome autofill background-color override */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -37,7 +38,6 @@ img {
 .fp-prev {
   margin-left: 5px;
 }
-
 .fp-next {
   margin-right: 5px;
 }
