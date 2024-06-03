@@ -40,7 +40,7 @@ export default function Form() {
 
   return (
     <div
-      className={`${loading && 'animate-pulse'} absolute z-10 h-1/2 w-full px-4  shadow-xl 2xl:left-12 2xl:top-10 2xl:h-fit 2xl:max-w-[550px] 2xl:pb-8`}
+      className={`${loading && 'animate-pulse'} absolute z-10 h-1/2 w-full px-4 shadow-xl 2xl:left-14 2xl:top-10 2xl:h-fit 2xl:max-w-[550px] 2xl:pb-6`}
     >
       <div className="absolute inset-0 -z-10 bg-cyan-950 opacity-90"></div>
 
@@ -52,7 +52,7 @@ export default function Form() {
         autoCorrect="on"
         className="group mx-auto size-full 2xl:size-fit"
       >
-        <div className="mt-6 grid size-full grid-cols-2 gap-x-4 pb-3 text-sm text-white focus:text-gray-950 md:text-xl 2xl:gap-x-5 2xl:gap-y-14 2xl:pb-8">
+        <div className="mt-4 grid size-full grid-cols-2 gap-x-4 pb-3 text-sm text-white focus:text-gray-950 md:text-xl 2xl:gap-x-5 2xl:gap-y-14 2xl:pb-8">
           <h1 className="col-span-full pb-1 text-2xl md:text-4xl 2xl:pt-5 2xl:text-center">
             Contact Me
           </h1>
@@ -67,10 +67,7 @@ export default function Form() {
               placeholder=""
               required
             />
-            <label
-              htmlFor="name"
-              className={`${labelClasses}`}
-            >
+            <label htmlFor="name" className={`${labelClasses}`}>
               Your Name
             </label>
           </div>
@@ -83,10 +80,7 @@ export default function Form() {
               placeholder=" "
               required
             />
-            <label
-              htmlFor="reply_to"
-              className={`${labelClasses}`}
-            >
+            <label htmlFor="reply_to" className={`${labelClasses}`}>
               Your Email
             </label>
           </div>
@@ -100,10 +94,7 @@ export default function Form() {
               placeholder=" "
               required
             ></textarea>
-            <label
-              htmlFor="message"
-              className={`${labelClasses}`}
-            >
+            <label htmlFor="message" className={`${labelClasses}`}>
               Your Message
             </label>
           </div>
@@ -113,14 +104,14 @@ export default function Form() {
             </div>
           )}
           {success === false && (
-            <div className="justify-self-center text-4xl text-red-500 md:text-5xl">
+            <div className="dura justify-self-center text-4xl text-red-500 md:text-5xl">
               <TbFaceIdError />
             </div>
           )}
 
           <button
             type="submit"
-            className="col-start-2 flex size-full h-fit w-fit cursor-pointer justify-self-center bg-cyan-600 px-8 py-2 text-base tracking-wide ring-1 ring-gray-950 hover:bg-cyan-500 hover:ring-cyan-200 group-invalid:pointer-events-none group-invalid:opacity-50 md:text-lg 2xl:-mb-2"
+            className="col-start-2 flex size-full h-fit w-fit cursor-pointer justify-self-center bg-cyan-600 px-8 py-2 text-base tracking-wide ring-1 ring-gray-950 transition-all duration-200 hover:bg-cyan-500 hover:ring-cyan-200 group-invalid:pointer-events-none group-invalid:opacity-50 md:text-lg 2xl:-mb-2"
           >
             Send
           </button>
@@ -129,5 +120,3 @@ export default function Form() {
     </div>
   )
 }
-
-
