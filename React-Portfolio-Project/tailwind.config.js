@@ -21,8 +21,8 @@ export default {
         fadeFast: 'fadeInFast 0.5s ease-in-out',
         fadeSlow: 'fadeInSlow 2.5s ease-in-out', // Added fadeSlow animation
         waving: 'waving 1.2s linear 1s 3',
-        marquee: 'marquee 26s linear infinite',
-        marquee2: 'marquee2 26s linear infinite',
+        marquee: 'marquee 40s linear infinite',
+        marquee2: 'marquee2 40s linear infinite',
       },
       keyframes: {
         marquee: {

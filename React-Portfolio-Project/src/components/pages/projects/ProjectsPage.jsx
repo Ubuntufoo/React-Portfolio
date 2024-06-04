@@ -1,7 +1,7 @@
 // child component showcasing several web dev projects
 
 // import KeyboardArrows from '../../features/KeyboardArrows'
-import CardGallery from './CardGallery'
+import ProjGallery from './ProjGallery'
 
 export default function ProjectsPage({ activePage }) {
   // const keyStyling = {
@@ -13,8 +13,8 @@ export default function ProjectsPage({ activePage }) {
 
   return (
     <div className="section h-screen">
-      <div className='absolute text-center text-7xl'>origin-[0] ?</div>
-      <CardGallery activePage={activePage} />
+      <div className='absolute text-center text-7xl'></div>
+      <ProjGallery activePage={activePage} />
 
       <div className="slide">aaaaaaaaaaaaaaaaa</div>
       <div className="slide">bbbbbbbbbbbbbbbbbbb</div>

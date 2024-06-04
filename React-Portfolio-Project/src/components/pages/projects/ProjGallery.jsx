@@ -8,22 +8,22 @@ import TADAapp from '../../../assets/projects/TADAapp.png'
 import workDashboardScreenshot from '../../../assets/projects/workDashboardScreenshot.png'
 
 // Define an object to map image names to import paths
-const imageImports = {
+const imageImports = [
   // BrainteasersLogo,
   ExploreLLMscreenshot,
   TADAapp,
   // WordlePlus,
   workDashboardScreenshot,
-}
+];
 
-export default function CardGallery({ activePage }) {
+export default function CardGallery() {
   const [selectedCard, setSelectedCard] = useState(null)
 
   const handleCardClick = (index) => {
     setSelectedCard(index)
   }
 
-  const cards = Object.keys(imageImports).map((imageName, index) => (
+  const cards = imageImports.map((image, index) => (
     <div
       key={index}
       className={`-ml-44 shadow-2xl transition-all duration-700 ${
@@ -34,8 +34,8 @@ export default function CardGallery({ activePage }) {
       onClick={() => handleCardClick(index)}
     >
       <img
-        src={imageImports[imageName]}
-        alt={imageName}
+        src={image}
+        alt={`Image ${index}`}
         className="max-w-62 max-h-56"
       />
     </div>
@@ -44,7 +44,6 @@ export default function CardGallery({ activePage }) {
   return (
     <section className="slide">
       <div
-        // ${activePage === 'projects' ? 'visible animate-fade' : 'invisible'}
         className={`
           mx-auto flex h-screen w-screen items-center justify-center ps-32 ${selectedCard !== null && ' translate-y-52 transition-all duration-500'}`}
       >

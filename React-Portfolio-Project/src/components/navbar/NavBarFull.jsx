@@ -18,7 +18,7 @@ export default function NavBarFull({ activePage }) {
           <div key={index} className={link.className}>
             <a
               href={`#${link.text}`}
-              className={`${activePage == link.text ? '[text-shadow:6px_6px_3px_var(--tw-shadow-color)] font-semibold' : ''} inline-block shadow-gray-400 transition-all duration-500 ease-in-out origin-bottom hover:font-semibold hover:scale-110  hover:text-black hover:[text-shadow:6px_6px_3px_var(--tw-shadow-color)]`}
+              className={`${activePage == link.text ? '[text-shadow:6px_6px_3px_var(--tw-shadow-color)] font-semibold' : ''} inline-block shadow-gray-400 transition-all duration-700 ease-in-out origin-bottom hover:font-semibold hover:scale-110  hover:text-black hover:[text-shadow:6px_6px_3px_var(--tw-shadow-color)]`}
             >
               {link.text}
             </a>

@@ -12,7 +12,7 @@ const gridContentClasses = 'flex h-full place-items-center xl:leading-10'
 const gridBorderAnimationClasses =
   'absolute h-full -z-50 w-1/12 bg-cyan-950 transition-all duration-1000 group-hover:w-1/2 group-hover:bg-white'
 const slantedEdgeClasses =
-  'group relative h-fit bg-cyan-950 text-white transition-all duration-700 [text-shadow:4px_4px_4px_var(--tw-shadow-color)] hover:bg-white hover:text-cyan-900 border-t-2 border-b-2 border-white hover:[text-shadow:4px_4px_4px_var(--tw-shadow-color)] shadow-cyan-600 cursor-pointer size-fit whitespace-pre'
+  'group relative h-fit bg-cyan-950 text-gray-50 transition-all duration-700 hover:bg-white hover:text-cyan-900 border-t-2 border-b-2 border-gray-900 hover:[text-shadow:6px_4px_4px_var(--tw-shadow-color)] shadow-cyan-600 cursor-pointer size-fit whitespace-pre'
 
 export default function SkillsGrid() {
   const [modalState, setModalState] = useState({
