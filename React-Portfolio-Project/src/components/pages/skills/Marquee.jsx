@@ -1,14 +1,14 @@
 // a vertical marquee component that displays my web dev tech stack
 
-import JS_no_BG from '../../../assets/marquee/JS_no_BG.png'
-import NODEJS_no_BG from '../../../assets/marquee/NODEJS_no_BG.png'
-import REACT_no_BG from '../../../assets/marquee/REACT_no_BG.png'
-import VUE_no_BG from '../../../assets/marquee/VUE_no_BG.png'
-import BS_no_BG from '../../../assets/marquee/BS_no_BG.png'
-import DJANGO_no_BG from '../../../assets/marquee/DJANGO_no_BG.png'
-import PYTHON_no_BG from '../../../assets/marquee/PYTHON_no_BG.png'
-import SQL_no_BG from '../../../assets/marquee/SQL_no_BG.png'
-import tailwindIMG from '../../../assets/marquee/tailwindIMG.png'
+import JS_no_BG from '../../../assets/marquee-assets/JS_no_BG.png'
+import NODEJS_no_BG from '../../../assets/marquee-assets/NODEJS_no_BG.png'
+import REACT_no_BG from '../../../assets/marquee-assets/REACT_no_BG.png'
+import VUE_no_BG from '../../../assets/marquee-assets/VUE_no_BG.png'
+import BS_no_BG from '../../../assets/marquee-assets/BS_no_BG.png'
+import DJANGO_no_BG from '../../../assets/marquee-assets/DJANGO_no_BG.png'
+import PYTHON_no_BG from '../../../assets/marquee-assets/PYTHON_no_BG.png'
+import SQL_no_BG from '../../../assets/marquee-assets/SQL_no_BG.png'
+import tailwindIMG from '../../../assets/marquee-assets/tailwindIMG.png'
 
 const logos = [
   { src: SQL_no_BG, alt: 'SQL Logo', additionalClass: 'my-4' },

@@ -1,54 +1,79 @@
-// smooth flex cards with images
+//
 import { useState } from 'react'
+import BrainteasersHomeIMG from '../../../assets/projects-assets/BrainteasersHomeIMG.png'
+import ExploreLLM_IMG from '../../../assets/projects-assets/ExploreLLM_IMG.png'
+import TADAmobile from '../../../assets/projects-assets/TADAmobile.png'
+import WorkDashIMG from '../../../assets/projects-assets/WorkDashIMG.png'
 
-// import BrainteasersLogo from '../../../assets/projects/BrainteasersLogo.png'
-import ExploreLLMscreenshot from '../../../assets/projects/ExploreLLMscreenshot.png'
-import TADAapp from '../../../assets/projects/TADAapp.png'
-// import WordlePlus from '../../../assets/projects/WordlePlus.png'
-import workDashboardScreenshot from '../../../assets/projects/workDashboardScreenshot.png'
+const images = [
+  {
+    src: BrainteasersHomeIMG,
+    label: 'BrainteasersHomeIMG',
+    description: 'Some representative placeholder content for the first slide.',
+  },
+  {
+    src: ExploreLLM_IMG,
+    label: 'ExploreLLM_IMG',
+    description:
+      'Some representative placeholder content for the second slide.',
+  },
+  {
+    src: TADAmobile,
+    label: 'TADAmobile',
+    description: 'Some representative placeholder content for the third slide.',
+  },
+  {
+    src: WorkDashIMG,
+    label: 'WorkDashIMG',
+    description:
+      'Some representative placeholder content for the fourth slide.',
+  },
+]
 
-// Define an object to map image names to import paths
-const imageImports = [
-  // BrainteasersLogo,
-  ExploreLLMscreenshot,
-  TADAapp,
-  // WordlePlus,
-  workDashboardScreenshot,
-];
+export default function ProjGallery() {
+  const [currentIndex, setCurrentIndex] = useState(0)
 
-export default function CardGallery() {
-  const [selectedCard, setSelectedCard] = useState(null)
-
-  const handleCardClick = (index) => {
-    setSelectedCard(index)
+  const handlePrevClick = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
+    )
   }
 
-  const cards = imageImports.map((image, index) => (
-    <div
-      key={index}
-      className={`-ml-44 shadow-2xl transition-all duration-700 ${
-        selectedCard === index
-          ? 'absolute -translate-y-96 -translate-x-96 scale-150 animate-fade transition duration-700'
-          : 'animate-fadeFast -skew-x-6 cursor-pointer'
-      }`}
-      onClick={() => handleCardClick(index)}
-    >
-      <img
-        src={image}
-        alt={`Image ${index}`}
-        className="max-w-62 max-h-56"
-      />
-    </div>
-  ))
+  const handleNextClick = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1,
+    )
+  }
 
   return (
-    <section className="slide">
-      <div
-        className={`
-          mx-auto flex h-screen w-screen items-center justify-center ps-32 ${selectedCard !== null && ' translate-y-52 transition-all duration-500'}`}
-      >
-        {cards}
+    <div className="mx-auto flex max-w-xl flex-col items-center">
+      <div className="text-center">
+        <img
+          src={images[currentIndex].src}
+          alt={images[currentIndex].label}
+          className="h-80 w-full rounded-lg object-cover shadow-lg"
+        />
+        <div className="mt-4">
+          <h3 className="text-xl font-semibold">
+            {images[currentIndex].label}
+          </h3>
+          <p className="text-gray-600">{images[currentIndex].description}</p>
+        </div>
       </div>
-    </section>
+      <div className="mt-4 flex w-full justify-between">
+        <button
+          onClick={handlePrevClick}
+          className="rounded-lg bg-blue-500 px-4 py-2 text-white shadow-md hover:bg-blue-700"
+        >
+          Previous
+        </button>
+        <button
+          onClick={handleNextClick}
+          className="rounded-lg bg-blue-500 px-4 py-2 text-white shadow-md hover:bg-blue-700"
+        >
+          Next
+        </button>
+      </div>
+    </div>
   )
 }
