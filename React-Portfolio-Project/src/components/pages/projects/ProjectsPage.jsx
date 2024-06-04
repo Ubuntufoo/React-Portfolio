@@ -13,7 +13,7 @@ export default function ProjectsPage({ activePage }) {
 
   return (
     <div className="section h-screen">
-      <div className='text-center text-7xl'>origin-[0] ?</div>
+      <div className='absolute text-center text-7xl'>origin-[0] ?</div>
       <CardGallery activePage={activePage} />
 
       <div className="slide">aaaaaaaaaaaaaaaaa</div>
