@@ -14,18 +14,21 @@ const images = [
     label: 'ExploreLLM Concept Web App',
     description:
       "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses', this project demonstrates how ExploreLLM enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.",
+    link: false,
   },
   {
     src: BrainteasersHomeIMG,
     label: 'Brainteasers Web Games',
     description:
       'Brainteasers is a responsive, full-stack website developed with Vue.js and Django. It features postgreSQL database integration, user authentication, email functionality, and 3 Vue.js game applications with score boards. Django provides client-side admin access for simple CRUD operations.',
+    link: 'https://brainteasers.herokuapp.com/',
   },
   {
     src: TADAmobile,
     label: 'TADA! List',
     description:
       "TADA! is a responsive web app created using React.js and Express.js. It takes user input, combines it into a server-side composite prompt, and sends it to the OpenAI API. The Large Language Model (LLM) generates positive affirmations for the user's various achievements, both big and small.",
+    link: 'https://tada-list.herokuapp.com/',
   },
   {
     src: WorkDashIMG,
