@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import SlantedEdgeRS from '../../shapes/SlantedEdgeRS'
 import SlantedEdgeLS from '../../shapes/SlantedEdgeLS'
 import Modal from '../../features/Modal'
-import { skillCardsContent } from '../../../utils/utils'
+import { skillCardsContent } from '../../../utils/images'
 
 const imgClasses =
   'size-1/2 object-cover group-hover:brightness-125 transition-all duration-700 '
