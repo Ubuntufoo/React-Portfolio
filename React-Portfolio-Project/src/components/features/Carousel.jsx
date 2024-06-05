@@ -19,46 +19,38 @@ export default function Carousel({ images }) {
   }
 
   return (
-    <>
-      <div className="mx-auto flex size-fit h-[900px] w-[1000px] gap-y-10 flex-col justify-center text-center">
-        <p className="text-center text-4xl">Some of my work:</p>
-        <div className="flex h-fit">
-          <div
+    <div className="flex h-screen flex-col justify-center">
+      <div className="mt-12 grid mb-20 justify-evenly grid-cols-3 gap-y-8 text-center">
+        <img
+          src={images[currentIndex].src}
+          alt={images[currentIndex].label}
+          className="col-start-2 row-start-1 h-[450px] w-[1000px] cursor-pointer rounded object-scale-down"
+        />
+
+        <div className="col-start-3 row-start-1 ms-6 flex flex-col justify-center gap-y-6">
+          <button
             onClick={handlePrevClick}
-            className="flex flex-col justify-center"
+            className=" size-fit bg-cyan-900 p-4 text-3xl text-white
+                transition-all duration-150 hover:bg-teal-950 hover:ring-2 hover:ring-teal-950 active:-skew-x-12 active:scale-75"
           >
-            <button
-              className="size-fit -rotate-90 bg-cyan-900 px-8 py-3 text-3xl text-white
-              transition-all duration-150 hover:bg-teal-950 hover:ring-2 hover:ring-teal-950 active:-skew-x-12 active:scale-75"
-            >
-              <PiArrowFatLinesUpFill />
-            </button>
-          </div>
-          <img
-            src={images[currentIndex].src}
-            alt={images[currentIndex].label}
-            className="h-[480px] w-[800px] shrink cursor-pointer rounded object-scale-down"
-          />
-          <div
+            <PiArrowFatLinesUpFill />
+          </button>
+          <button
             onClick={handleNextClick}
-            className="flex flex-col justify-center"
+            className=" size-fit bg-cyan-900 p-4 text-3xl text-white
+                transition-all duration-150 hover:bg-teal-950 hover:ring-2 hover:ring-teal-950 active:-skew-x-12 active:scale-75"
           >
-            <button
-              className="size-fit -rotate-90 bg-cyan-900 px-8 py-3 text-3xl text-white
-              transition-all duration-150 hover:bg-teal-950 hover:ring-2 hover:ring-teal-950 active:skew-x-12 active:scale-75"
-            >
-              <PiArrowFatLinesDownFill />
-            </button>
-          </div>
+            <PiArrowFatLinesDownFill />
+          </button>
         </div>
 
-        <div className=" w-full text-slate-50">
+        <div className="self-start col-span-full mx-64 space-y-4 text-slate-50">
           <h3 className="text-xl font-semibold">
             {images[currentIndex].label}
           </h3>
           <p>{images[currentIndex].description}</p>
         </div>
       </div>
-    </>
+    </div>
   )
 }

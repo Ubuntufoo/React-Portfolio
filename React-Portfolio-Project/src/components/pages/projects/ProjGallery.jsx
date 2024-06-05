@@ -19,18 +19,19 @@ const images = [
     src: ExploreLLM_IMG,
     label: 'ExploreLLM_IMG',
     description:
-      'Some representative placeholder content for the second slide.',
+      'A bunch of text about Braintesers. lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum lorem nec, ultricies nunc. Nulla facilisi. more lorem here:  https://www.brainteasers.com/',
   },
   {
     src: TADAmobile,
     label: 'TADAmobile',
-    description: 'Some representative placeholder content for the third slide.',
+    description:
+      'A bunch of text about Braintesers. lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum lorem nec, ultricies nunc. Nulla facilisi. more lorem here:  https://www.brainteasers.com/',
   },
   {
     src: WorkDashIMG,
     label: 'WorkDashIMG',
     description:
-      'Some representative placeholder content for the fourth slide.',
+      'A bunch of text about Braintesers. lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum lorem nec, ultricies nunc. Nulla facilisi. more lorem here:  https://www.brainteasers.com/',
   },
 ]
 
