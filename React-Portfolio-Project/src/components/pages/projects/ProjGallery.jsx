@@ -8,7 +8,7 @@ export default function ProjGallery() {
 
   return (
     <>
-      <Carousel imagesProjMain={imagesProjMain} />
+      <Carousel images={imagesProjMain} />
     </>
   )
 }

@@ -1,4 +1,4 @@
-// image handling
+// image handling for project pages
 
 import reactLOGOcustom from '../assets/grid/reactLOGOcustom.png'
 import genaiIMG from '../assets/grid/genaiIMG.png'
@@ -9,6 +9,10 @@ import BrainteasersHomeIMG from '../assets/projects-assets/BrainteasersHomeIMG.p
 import ExploreLLM_IMG from '../assets/projects-assets/ExploreLLM_IMG.png'
 import TADAmobile from '../assets/projects-assets/TADAmobile.png'
 import WorkDashIMG from '../assets/projects-assets/WorkDashIMG.png'
+
+import ExploreLLMConcept from '../assets/projects-assets/ExploreLLMConcept.mp4'
+import ExploreLLMcards from '../assets/projects-assets/ExploreLLMcards.png'
+
 
 export const skillCardsContent = [
   {
@@ -70,5 +74,30 @@ export const imagesProjMain = [
     label: 'Workflow Dashboard',
     description:
       'A web app built with React and Flask, used to boost my productivity by providing a central location for tools and resources used in my daily workflow. API calls to the server automate web data retrieval with Selenium; PyAutoGUI automates point-and-click desktop tasks. Several 3rd-party web apps are embedded in iframe elements for quick access.',
+  },
+]
+
+export const imagesProjExploreLLM = [
+  {
+    src: ExploreLLMConcept,
+    label: 'ExploreLLM Concept Video',
+    description:
+    'A video showcasing the concept of ExploreLLM, a web app that enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.',
+    link: false,
+    type: 'video',
+  },
+  {
+    src: ExploreLLMcards,
+    label: 'ExploreLLM Concept Cards',
+    description:
+      'A visual representation of the ExploreLLM concept, showcasing the app’s user interface and features.',
+    link: false,
+  },
+  {
+    src: ExploreLLM_IMG,
+    label: 'ExploreLLM Concept Web App',
+    description:
+      "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses', this project demonstrates how ExploreLLM enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.",
+    link: false,
   },
 ]
