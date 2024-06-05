@@ -20,9 +20,9 @@ export default function Carousel({ images }) {
 
   return (
     <>
-      <div className="mx-auto flex size-fit h-[700px] w-[1000px] flex-col justify-evenly text-center">
+      <div className="mx-auto flex size-fit h-[900px] w-[1000px] gap-y-10 flex-col justify-center text-center">
         <p className="text-center text-4xl">Some of my work:</p>
-        <div className="flex">
+        <div className="flex h-fit">
           <div
             onClick={handlePrevClick}
             className="flex flex-col justify-center"
@@ -37,7 +37,7 @@ export default function Carousel({ images }) {
           <img
             src={images[currentIndex].src}
             alt={images[currentIndex].label}
-            className="h-[480px] w-[800px] grow cursor-pointer rounded object-scale-down"
+            className="h-[480px] w-[800px] shrink cursor-pointer rounded object-scale-down"
           />
           <div
             onClick={handleNextClick}
@@ -52,11 +52,11 @@ export default function Carousel({ images }) {
           </div>
         </div>
 
-        <div className=" w-full bg-black text-slate-50">
-          <p>{images[currentIndex].description}</p>
+        <div className=" w-full text-slate-50">
           <h3 className="text-xl font-semibold">
             {images[currentIndex].label}
           </h3>
+          <p>{images[currentIndex].description}</p>
         </div>
       </div>
     </>
