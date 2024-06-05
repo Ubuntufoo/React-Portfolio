@@ -10,26 +10,26 @@ import Carousel from '../../features/Carousel'
 
 const images = [
   {
-    src: BrainteasersHomeIMG,
-    label: 'BrainteasersHomeIMG',
+    src: ExploreLLM_IMG,
+    label: 'ExploreLLM Web App',
     description:
-      'A bunch of text about Braintesers. lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum lorem nec, ultricies nunc. Nulla facilisi. more lorem here:  https://www.brainteasers.com/',
+      "Recreating the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses', this project demonstrates how ExploreLLM enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured and personalized user experiences.",
   },
   {
-    src: ExploreLLM_IMG,
-    label: 'ExploreLLM_IMG',
+    src: BrainteasersHomeIMG,
+    label: 'Brainteasers',
     description:
-      'A bunch of text about Braintesers. lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum lorem nec, ultricies nunc. Nulla facilisi. more lorem here:  https://www.brainteasers.com/',
+      "Brainteasers is a full-stack website developed with Vue.js and Django. It features postgreSQL database integration, user authentication, email functionality, and 3 Vue.js game applications with score boards.",
   },
   {
     src: TADAmobile,
-    label: 'TADAmobile',
+    label: 'TADA!',
     description:
-      'A bunch of text about Braintesers. lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum lorem nec, ultricies nunc. Nulla facilisi. more lorem here:  https://www.brainteasers.com/',
+      "TADA! is a responsive web app built with React and Express. It's hosted live with Render Web Services. I've designed a server-side composite prompt which includes the user's input to make custom API calls to the OpenAI API, the same architecture that ChatGPT is built upon.",
   },
   {
     src: WorkDashIMG,
-    label: 'WorkDashIMG',
+    label: 'Workflow Dashboard',
     description:
       'A bunch of text about Braintesers. lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum lorem nec, ultricies nunc. Nulla facilisi. more lorem here:  https://www.brainteasers.com/',
   },

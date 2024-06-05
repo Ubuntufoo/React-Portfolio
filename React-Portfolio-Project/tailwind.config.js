@@ -99,36 +99,41 @@ export default {
   ],
 };
 const newUtilities = {
-        '.parallelogram': {
-          '--p': '160px',
-          'clip-path': 'polygon(0 calc(100% - var(--p)), 0 0, 100% var(--p), 100% 100%)',
-        },
-        '.triangle': {
-          'aspect-ratio': 'calc(1 / cos(33deg))', // Correct aspect-ratio calculation
-          'clip-path': 'polygon(0 0, 100% 50%, 0 100%)',
-        },
-        '.slanted-edge-down': {
-          '--p': '70px', /* control the shape (can be percentage) */
-          'clip-path': 'polygon(0 0,100% 0,100% calc(100% - var(--p)),0 100%)',
-        },
-        '.slanted-edge-up': {
-          '--p': '70px', /* control the shape (can be percentage) */
-          'clip-path': 'polygon(0 var(--p),100% 0,100% 100%,0 100%)',
-        },
-        '.combined-slanted-edge': {
-          '--p': '-80px', // control the shape (can be percentage)
-          'clip-path': 'polygon(0 0, 100% 0, 100% 50%, 0 calc(50% + var(--p)), 0 100%, 100% 100%, 100% calc(50% - var(--p)), 0 50%)',
-        },
-        '.hexagon': {
-        'aspect-ratio': 'calc(1 / cos(30deg))',
-        'clip-path': 'polygon(50% -50%, 100% 50%, 50% 150%, 0 50%)',
-      },
-        '.slanted-edge-rs': {
-        '--p': '60px;',
-        'clip-path': 'polygon(0 0,calc(100% - var(--p)) 0,100% 100%,0 100%)',
-      },
-        '.slanted-edge-ls': {
-        '--p': '60px;',
-        'clip-path': 'polygon(0 0,100% 0,100% 100%,var(--p) 100%)',
-      },
-      };
+  '.parallelogram': {
+    '--p': '160px',
+    'clip-path': 'polygon(0 calc(100% - var(--p)), 0 0, 100% var(--p), 100% 100%)',
+  },
+  '.triangle': {
+    'aspect-ratio': 'calc(1 / cos(33deg))', // Correct aspect-ratio calculation
+    'clip-path': 'polygon(0 0, 100% 50%, 0 100%)',
+  },
+  '.slanted-edge-down': {
+    '--p': '70px', /* control the shape (can be percentage) */
+    'clip-path': 'polygon(0 0,100% 0,100% calc(100% - var(--p)),0 100%)',
+  },
+  '.slanted-edge-up': {
+    '--p': '70px', /* control the shape (can be percentage) */
+    'clip-path': 'polygon(0 var(--p),100% 0,100% 100%,0 100%)',
+  },
+  '.combined-slanted-edge': {
+    '--p': '-80px', // control the shape (can be percentage)
+    'clip-path': 'polygon(0 0, 100% 0, 100% 50%, 0 calc(50% + var(--p)), 0 100%, 100% 100%, 100% calc(50% - var(--p)), 0 50%)',
+  },
+  '.hexagon': {
+    'aspect-ratio': 'calc(1 / cos(30deg))',
+    'clip-path': 'polygon(50% -50%, 100% 50%, 50% 150%, 0 50%)',
+  },
+  '.slanted-edge-rs': {
+    '--p': '60px;',
+    'clip-path': 'polygon(0 0,calc(100% - var(--p)) 0,100% 100%,0 100%)',
+  },
+  '.slanted-edge-ls': {
+    '--p': '60px;',
+    'clip-path': 'polygon(0 0,100% 0,100% 100%,var(--p) 100%)',
+  },
+  '.trapezoid': {
+    '--p': '15px',
+    'aspect-ratio': '1',
+    'clip-path': 'polygon(var(--p) 0, calc(100% - var(--p)) 0, 100% 100%, 0 100%)',
+  },
+};
