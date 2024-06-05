@@ -12,7 +12,7 @@ export default function ProjectsPage({ activePage }) {
   // }
 
   return (
-    <div className="section h-screen">
+    <div className="section h-screen bg-gradient-to-b from-cyan-500 to-cyan-900">
       <div className="absolute text-center text-7xl"></div>
 
       <div className="slide">

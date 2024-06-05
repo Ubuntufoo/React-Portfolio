@@ -12,7 +12,7 @@ export default function Header({ activePage}) {
   //   right: keyClasses.keyInactiveClass,
   // }
   return (
-    <header className="fixed top-0 z-50 w-screen font-roboto">
+    <header className="fixed h-0 top-0 z-40 w-screen font-roboto">
       {/* <KeyboardArrows keyStyling={keyStyling} /> */}
       <NavBarFull activePage={activePage} />
       <NavBarMobile />
