@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        '3xl': '1920px',
+        // => @media (min-width: 992px) { ... }
+      },
       clipPath: {
         'combined-slanted-edge': 'polygon(0 0, 100% 0, 100% 50%, 0 calc(50% + var(--p)), 0 100%, 100% 100%, 100% calc(50% - var(--p)), 0 50%)',
       },

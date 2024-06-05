@@ -11,27 +11,27 @@ import Carousel from '../../features/Carousel'
 const images = [
   {
     src: ExploreLLM_IMG,
-    label: 'ExploreLLM Web App',
+    label: 'ExploreLLM Concept Web App',
     description:
-      "Recreating the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses', this project demonstrates how ExploreLLM enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured and personalized user experiences.",
+      "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses', this project demonstrates how ExploreLLM enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.",
   },
   {
     src: BrainteasersHomeIMG,
-    label: 'Brainteasers',
+    label: 'Brainteasers Web Games',
     description:
-      "Brainteasers is a full-stack website developed with Vue.js and Django. It features postgreSQL database integration, user authentication, email functionality, and 3 Vue.js game applications with score boards.",
+      'Brainteasers is a responsive, full-stack website developed with Vue.js and Django. It features postgreSQL database integration, user authentication, email functionality, and 3 Vue.js game applications with score boards. Django provides client-side admin access for simple CRUD operations.',
   },
   {
     src: TADAmobile,
-    label: 'TADA!',
+    label: 'TADA! List',
     description:
-      "TADA! is a responsive web app built with React and Express. It's hosted live with Render Web Services. I've designed a server-side composite prompt which includes the user's input to make custom API calls to the OpenAI API, the same architecture that ChatGPT is built upon.",
+      "TADA! is a responsive web app created using React.js and Express.js. It takes user input, combines it into a server-side composite prompt, and sends it to the OpenAI API. The Large Language Model (LLM) generates positive affirmations for the user's various achievements, both big and small.",
   },
   {
     src: WorkDashIMG,
     label: 'Workflow Dashboard',
     description:
-      'A bunch of text about Braintesers. lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum lorem nec, ultricies nunc. Nulla facilisi. more lorem here:  https://www.brainteasers.com/',
+      'A web app built with React and Flask, used to boost my productivity by providing a central location for several tools and resources used in my daily workflow. API calls to the server can automate web data retrieval with Selenium; PyAutoGUI automates point-and-click tasks on my desktop.',
   },
 ]
 
