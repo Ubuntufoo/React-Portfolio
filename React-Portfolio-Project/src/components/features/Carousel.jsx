@@ -1,13 +1,23 @@
 //
+import { useState } from 'react'
 import { PiArrowFatLinesDownFill } from 'react-icons/pi'
 import { PiArrowFatLinesUpFill } from 'react-icons/pi'
 
 export default function Carousel({
   images,
-  currentIndex,
-  setCurrentIndex,
+  currentIndex: propCurrentIndex,
+  setCurrentIndex: propSetCurrentIndex,
   children,
 }) {
+  // If props are not provided, manage state internally
+  const [internalCurrentIndex, setInternalCurrentIndex] = useState(0)
+  const currentIndex =
+    propCurrentIndex !== undefined ? propCurrentIndex : internalCurrentIndex
+  const setCurrentIndex =
+    propSetCurrentIndex !== undefined
+      ? propSetCurrentIndex
+      : setInternalCurrentIndex
+
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1,
@@ -31,14 +41,14 @@ export default function Carousel({
           <video
             src={images[currentIndex].src}
             alt={images[currentIndex].label}
-            className="z-10 col-start-2 row-start-1 h-[450px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-300 ease-in-out hover:scale-125"
+            className="z-10 col-start-2 row-start-1 h-[450px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out hover:scale-[1.3]"
             controls
           />
         ) : (
           <img
             src={images[currentIndex].src}
             alt={images[currentIndex].label}
-            className="z-10 col-start-2 row-start-1 h-[450px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-300 ease-in-out hover:scale-125"
+            className="z-10 col-start-2 row-start-1 h-[450px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out hover:scale-[1.3]"
           />
         )}
 
