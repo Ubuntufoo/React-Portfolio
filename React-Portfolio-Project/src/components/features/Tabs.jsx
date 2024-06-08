@@ -8,24 +8,21 @@ export default function Tabs() {
   const tabs = [
     {
       id: 0,
-      title: 'Tab 1',
+      title: 'Project Journey',
       content:
-        ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cupiditate voluptatibus cumque a sint corrupti expedita laborum aut, eligendi beatae odit officia saepe? Voluptas atque fugit ipsa distinctio neque aliquam!',
-      align: 'start',
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cupiditate voluptatibus cumque a sint corrupti expedita laborum aut, eligendi beatae odit officia saepe? Voluptas atque fugit ipsa distinctio neque aliquam!',
     },
     {
       id: 1,
-      title: 'Tab 2',
+      title: 'Lessons Learned',
       content:
-        ' Dorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cupiditate voluptatibus cumque a sint corrupti expedita laborum aut, eligendi beatae odit officia saepe? Voluptas atque fugit ipsa distinctio neque aliquam!',
-      align: 'center',
+        'Dorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cupiditate voluptatibus cumque a sint corrupti expedita laborum aut, eligendi beatae odit officia saepe? Voluptas atque fugit ipsa distinctio neque aliquam!',
     },
     {
       id: 2,
-      title: 'Tab 3',
+      title: 'Specs & Techs',
       content:
-        ' Morem ipsum dolor sit, amet consectetur adipisicing elit. Quas cupiditate voluptatibus cumque a sint corrupti expedita laborum aut, eligendi beatae odit officia saepe? Voluptas atque fugit ipsa distinctio neque aliquam!',
-      align: 'end',
+        'Morem ipsum dolor sit, amet consectetur adipisicing elit. Quas cupiditate voluptatibus cumque a sint corrupti expedita laborum aut, eligendi beatae odit officia saepe? Voluptas atque fugit ipsa distinctio neque aliquam!',
     },
   ]
 
@@ -33,27 +30,40 @@ export default function Tabs() {
     setActiveTab(id)
   }
 
+  const getTabShift = () => {
+    switch (activeTab) {
+      case 0:
+        return '-left-1 mt-1 rotate-180'
+      case 1:
+        return 'left-1/2 -mt-2.5 ms-2 -translate-x-1/2'
+      case 2:
+        return 'left-full -ms-1.5 mt-1 -translate-x-full -rotate-180'
+      default:
+        return 'left-0'
+    }
+  }
+
   return (
-    <div className="flex size-full flex-col justify-end gap-10">
-      <div className="relative isolate mx-auto grid w-3/4 grid-cols-3 grid-rows-1 text-black">
-        {tabs.map((tab) => (
+    <div className="flex size-full flex-col justify-end gap-12 3xl:gap-14">
+      <div className="relative isolate mx-auto grid w-1/2 grid-cols-3 text-center text-black">
+        {tabs.map((tab, index) => (
           <div
             key={tab.id}
-            className={`h-12 w-20 cursor-pointer border border-black bg-transparent transition-colors col-start-${tab.id + 1} justify-self-${tab.align}  z-10 col-span-1 duration-300 ${activeTab === tab.id ? 'border-b-2 border-blue-500 text-blue-500' : 'text-black'}`}
+            className={`z-10 col-span-1 flex h-12 w-20 cursor-pointer flex-col justify-center bg-transparent text-lg font-semibold transition-all duration-700 ${index === 0 ? 'justify-self-start' : index === 1 ? 'justify-self-center' : 'justify-self-end'} ${activeTab === tab.id ? 'text-cyan-800' : 'text-black'}`}
             onClick={() => handleTabClick(tab.id)}
           >
             {tab.title}
           </div>
         ))}
         <div
-          className={`absolute left-0 right-0 -z-10 h-12 w-20 bg-white transition-all duration-300`}
+          className={`cube rotate absolute top-0 h-14 w-20 origin-center scale-[1.6] bg-slate-50 transition-all duration-700 ease-out ${getTabShift()}`}
         ></div>
       </div>
       <div className="mx-auto w-4/5">
         {tabs.map((tab) => (
           <div
             key={tab.id}
-            className={`${activeTab === tab.id ? 'opacity-100' : 'hidden'} mb-10`}
+            className={`${activeTab === tab.id ? 'opacity-100' : 'hidden'} mb-6 3xl:mb-10`}
           >
             {tab.content}
           </div>

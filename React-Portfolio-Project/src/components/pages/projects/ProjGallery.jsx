@@ -15,8 +15,8 @@ export default function ProjGallery() {
         setCurrentIndex={setCurrentIndex}
       >
         {imagesProjMain[currentIndex] && (
-          <div className="flex size-full flex-col justify-end gap-y-4 px-20 pb-6 3xl:gap-y-10 3xl:pb-10">
-            <h3 className="text-3xl font-semibold">
+          <div className="flex size-full flex-col justify-end gap-y-7 px-20 pb-6 3xl:gap-y-10 3xl:pb-10">
+            <h3 className="text-2xl font-semibold">
               {imagesProjMain[currentIndex].label}
               {imagesProjMain[currentIndex].link && (
                 <a
@@ -25,7 +25,7 @@ export default function ProjGallery() {
                   rel="noreferrer"
                   className="inline text-cyan-950"
                 >
-                  <FaLink className="ms-4 inline text-3xl" />
+                  <FaLink className="ms-4 inline text-2xl" />
                 </a>
               )}
             </h3>

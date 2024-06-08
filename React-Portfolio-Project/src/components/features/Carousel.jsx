@@ -36,19 +36,19 @@ export default function Carousel({
 
   return (
     <div className="flex h-screen flex-col justify-center">
-      <div className="mb-24 grid grid-cols-3 justify-evenly gap-y-10 text-center 3xl:mb-36 3xl:gap-y-4">
+      <div className="mb-24 grid grid-cols-3 justify-evenly gap-y-16 text-center 3xl:mb-36 3xl:gap-y-4">
         {images[currentIndex].type === 'video' ? (
           <video
             src={images[currentIndex].src}
             alt={images[currentIndex].label}
-            className="z-10 col-start-2 row-start-1 h-[450px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out hover:scale-[1.3]"
+            className="z-10 col-start-2 row-start-1 aspect-square h-[320px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out 3xl:h-[400px]"
             controls
           />
         ) : (
           <img
             src={images[currentIndex].src}
             alt={images[currentIndex].label}
-            className="z-10 col-start-2 row-start-1 h-[450px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out hover:scale-[1.3]"
+            className="z-10 col-start-2 row-start-1 h-[320px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out 3xl:h-[400px]"
           />
         )}
 
