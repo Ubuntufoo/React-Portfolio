@@ -41,14 +41,14 @@ export default function Carousel({
           <video
             src={images[currentIndex].src}
             alt={images[currentIndex].label}
-            className="z-10 col-start-2 row-start-1 aspect-square h-[320px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out 3xl:h-[400px]"
+            className="z-10 col-start-2 row-start-1 aspect-square h-[320px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out 3xl:h-[420px]"
             controls
           />
         ) : (
           <img
             src={images[currentIndex].src}
             alt={images[currentIndex].label}
-            className="z-10 col-start-2 row-start-1 h-[320px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out 3xl:h-[400px]"
+            className="z-10 col-start-2 row-start-1 h-[320px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out 3xl:h-[420px]"
           />
         )}
 

@@ -13,6 +13,10 @@ import WorkDashIMG from '../assets/projects-assets/WorkDashIMG.png'
 import ExploreLLMConcept from '../assets/projects-assets/ExploreLLMConcept.mp4'
 import ExploreLLMcards from '../assets/projects-assets/ExploreLLMcards.png'
 
+import BrainteasersWordleIMG from '../assets/projects-assets/BrainteasersWordleIMG.png'
+import BrainteasersRegIMG from '../assets/projects-assets/BrainteasersRegIMG.png'
+import BrainteasersAdmin from '../assets/projects-assets/BrainteasersAdmin.png'
+
 
 export const skillCardsContent = [
   {
@@ -83,7 +87,6 @@ export const imagesProjExploreLLM = [
     label: 'ExploreLLM Concept Video',
     description:
     'A video showcasing the concept of ExploreLLM, a web app that enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.',
-    link: false,
     type: 'video',
   },
   {
@@ -91,13 +94,42 @@ export const imagesProjExploreLLM = [
     label: 'ExploreLLM Concept Cards',
     description:
       'A visual representation of the ExploreLLM concept, showcasing the app’s user interface and features.',
-    link: false,
   },
   {
     src: ExploreLLM_IMG,
     label: 'ExploreLLM Concept Web App',
     description:
       "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses', this project demonstrates how ExploreLLM enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.",
-    link: false,
+  },
+]
+
+export const imagesProjBT = [
+  {
+    src: BrainteasersHomeIMG,
+    label: 'Brainteasers Home',
+    description:
+      'The home page of the Brainteasers website, showcasing the site’s design and features.',
+    link: 'https://brainteasers.herokuapp.com/',
+  },
+  {
+    src: BrainteasersWordleIMG,
+    label: 'Brainteasers Wordle',
+    description:
+      'The Wordle game on the Brainteasers website, featuring a word-guessing game with a score board.',
+    link: 'https://brainteasers.herokuapp.com/wordle',
+  },
+  {
+    src: BrainteasersRegIMG,
+    label: 'Brainteasers Registration',
+    description:
+      'The registration page of the Brainteasers website, allowing users to create an account.',
+    link: 'https://brainteasers.herokuapp.com/register',
+  },
+  {
+    src: BrainteasersAdmin,
+    label: 'Brainteasers Admin',
+    description:
+      'The admin page of the Brainteasers website, providing access to CRUD operations for the site’s content.',
+    link: 'https://brainteasers.herokuapp.com/admin',
   },
 ]

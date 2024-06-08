@@ -33,7 +33,7 @@ export default function Tabs() {
   const getTabShift = () => {
     switch (activeTab) {
       case 0:
-        return '-left-1 mt-1 rotate-180'
+        return '-left-1.5 mt-1 rotate-180'
       case 1:
         return 'left-1/2 -mt-2.5 ms-2 -translate-x-1/2'
       case 2:
