@@ -1,13 +1,13 @@
 //
 import Carousel from "../../features/Carousel"
 import Tabs from "../../features/Tabs"
-import { imagesProjBT } from '../../../utils/images'
+import { projBTContent } from '../../../utils/images'
 
 export default function ProjBT() {
 
   return (
     <>
-      <Carousel images={imagesProjBT}>
+      <Carousel images={projBTContent}>
         <Tabs />
       </Carousel>
     </>

@@ -17,6 +17,11 @@ import BrainteasersWordleIMG from '../assets/projects-assets/BrainteasersWordleI
 import BrainteasersRegIMG from '../assets/projects-assets/BrainteasersRegIMG.png'
 import BrainteasersAdmin from '../assets/projects-assets/BrainteasersAdmin.png'
 
+import TADA_code_IMG from '../assets/projects-assets/TADA_code_IMG.png'
+import TADAdesktop from '../assets/projects-assets/TADAdesktop.png'
+
+import WorkDashCode from '../assets/projects-assets/WorkDashCode.png'
+
 
 export const skillCardsContent = [
   {
@@ -51,37 +56,42 @@ export const skillCardsContent = [
   },
 ]
 
-export const imagesProjMain = [
+export const projMainContent = [
   {
     src: ExploreLLM_IMG,
     label: 'ExploreLLM Concept Web App',
     description:
       "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses', this project demonstrates how ExploreLLM enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.",
-    link: false,
+    linkExternal: false,
+    linkToSlide: 1,
   },
   {
     src: BrainteasersHomeIMG,
     label: 'Brainteasers',
     description:
       'Brainteasers is a responsive, full-stack website developed with Vue.js and Django. It features postgreSQL database integration, user authentication, email functionality, and 3 Vue.js game applications with score boards. Django provides client-side admin access for simple CRUD operations.',
-    link: 'https://brainteasers.herokuapp.com/',
+    linkExternal: 'https://brainteasers.herokuapp.com/',
+    linkToSlide: 2,
   },
   {
     src: TADAmobile,
     label: 'TADA! Web App',
     description:
       "TADA! is a responsive web app created using React.js and Express.js. It takes user input, combines it into a server-side composite prompt, and sends it to the OpenAI API. The Large Language Model (LLM) generates positive affirmations for the user's various achievements, both big and small.",
-    link: 'https://tada-w0iq.onrender.com',
+    linkExternal: 'https://tada-w0iq.onrender.com',
+    linkToSlide: 3,
   },
   {
     src: WorkDashIMG,
     label: 'Workflow Dashboard',
     description:
       'A web app built with React and Flask, used to boost my productivity by providing a central location for tools and resources used in my daily workflow. API calls to the server automate web data retrieval with Selenium; PyAutoGUI automates point-and-click desktop tasks. Several 3rd-party web apps are embedded in iframe elements for quick access.',
+    linkExternal: false,
+    linkToSlide: 4,
   },
 ]
 
-export const imagesProjExploreLLM = [
+export const projExploreLLMContent = [
   {
     src: ExploreLLMConcept,
     label: 'ExploreLLM Concept Video',
@@ -103,7 +113,7 @@ export const imagesProjExploreLLM = [
   },
 ]
 
-export const imagesProjBT = [
+export const projBTContent = [
   {
     src: BrainteasersHomeIMG,
     label: 'Brainteasers Home',
@@ -131,5 +141,42 @@ export const imagesProjBT = [
     description:
       'The admin page of the Brainteasers website, providing access to CRUD operations for the site’s content.',
     link: 'https://brainteasers.herokuapp.com/admin',
+  },
+]
+
+export const projTADAContent = [
+  {
+    src: TADAmobile,
+    label: 'TADA! Mobile View',
+    description:
+      'The mobile view of the TADA! web app, showcasing the site’s design and features.',
+    link: 'https://tada-w0iq.onrender.com',
+  },
+  {
+    src: TADA_code_IMG,
+    label: 'TADA! Code View',
+    description:
+      'The code view of the TADA! web app, highlighting the React.js and Express.js code used to create the site.',
+  },
+  {
+    src: TADAdesktop,
+    label: 'TADA! Desktop View',
+    description:
+      'The desktop view of the TADA! web app, featuring the site’s design and user interface.',
+  },
+]
+
+export const projWDContent = [
+  {
+    src: WorkDashIMG,
+    label: 'Workflow Dashboard',
+    description:
+      'The Workflow Dashboard web app, showcasing the site’s design and features.',
+  },
+  {
+    src: WorkDashCode,
+    label: 'Workflow Dashboard Code',
+    description:
+      'The code view of the Workflow Dashboard web app, highlighting the React and Flask code used to create the site.',
   },
 ]

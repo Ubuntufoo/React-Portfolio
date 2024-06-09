@@ -1,7 +1,7 @@
 // Intro and landing page child component
 
 // import KeyboardArrows from '../../features/KeyboardArrows'
-import SideBar from './SideBar'
+import Drawer from './Drawer'
 import KeyboardNoti from '../../features/KeyboardNoti'
 import Hero from './Hero'
 
@@ -17,7 +17,7 @@ export default function IntroPage() {
   return (
     <div className="section h-screen bg-gradient-to-b from-cyan-900 to-cyan-500">
       <Hero />
-      <SideBar />
+      <Drawer />
       {/* <KeyboardArrows keyStyling={keyStyling} /> */}
       <KeyboardNoti />
     </div>

@@ -1,7 +1,7 @@
 //
 import { useState } from 'react'
 import Carousel from '../../features/Carousel'
-import { imagesProjMain } from '../../../utils/images'
+import { projMainContent } from '../../../utils/images'
 import { FaLink } from 'react-icons/fa'
 
 export default function ProjGallery() {
@@ -10,27 +10,27 @@ export default function ProjGallery() {
   return (
     <>
       <Carousel
-        images={imagesProjMain}
+        images={projMainContent}
         currentIndex={currentIndex}
         setCurrentIndex={setCurrentIndex}
       >
-        {imagesProjMain[currentIndex] && (
-          <div className="flex size-full flex-col justify-end gap-y-7 px-20 pb-6 3xl:gap-y-10 3xl:pb-10">
-            <h3 className="text-2xl font-semibold">
-              {imagesProjMain[currentIndex].label}
-              {imagesProjMain[currentIndex].link && (
+        {projMainContent[currentIndex] && (
+          <div className="flex size-full flex-col justify-end gap-y-10 pb-6 2xl:px-40 3xl:gap-y-14 3xl:px-60 3xl:pb-12">
+            <h3 className="text-3xl font-semibold">
+              <a href={`http://localhost:5173/#Projects/${projMainContent[currentIndex].linkToSlide}`}>{projMainContent[currentIndex].label}</a>
+              {projMainContent[currentIndex].linkExternal && (
                 <a
-                  href={imagesProjMain[currentIndex].link}
+                  href={projMainContent[currentIndex].linkExternal}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline text-cyan-950"
+                  className="inline ms-3 text-cyan-950"
                 >
                   <FaLink className="ms-4 inline text-2xl" />
                 </a>
               )}
             </h3>
-            <p className="pretty text-lg tracking-wide 3xl:text-xl">
-              {imagesProjMain[currentIndex].description}
+            <p className="pretty text-lg 3xl:text-xl">
+              {projMainContent[currentIndex].description}
             </p>
           </div>
         )}

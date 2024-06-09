@@ -36,12 +36,12 @@ export default function Carousel({
 
   return (
     <div className="flex h-screen flex-col justify-center">
-      <div className="mb-24 grid grid-cols-3 justify-evenly gap-y-16 text-center 3xl:mb-36 3xl:gap-y-4">
+      <div className="mb-12  grid grid-cols-3 justify-evenly gap-y-24 text-center 3xl:mb-28 3xl:gap-y-4">
         {images[currentIndex].type === 'video' ? (
           <video
             src={images[currentIndex].src}
             alt={images[currentIndex].label}
-            className="z-10 col-start-2 row-start-1 aspect-square h-[320px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out 3xl:h-[420px]"
+            className="col-start-2 row-start-1 aspect-square h-[320px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out 3xl:h-[420px]"
             controls
           />
         ) : (
@@ -52,7 +52,7 @@ export default function Carousel({
           />
         )}
 
-        <div className="col-start-3 row-start-1 ms-8 flex flex-col justify-center gap-y-6">
+        <div className="col-start-3 row-start-1 ms-8 flex flex-col justify-center gap-y-4">
           <button
             onClick={handlePrevClick}
             className="w-16 bg-cyan-900 text-white transition-all
@@ -68,7 +68,7 @@ export default function Carousel({
             <PiArrowFatLinesDownFill className="mx-auto rotate-180 text-xl" />
           </button>
         </div>
-        <div className="col-span-full -my-20 mx-auto h-56 w-3/4 bg-gradient-to-b from-transparent to-white text-gray-950 trapezoid 3xl:-my-36 3xl:h-96">
+        <div className="col-span-full -my-12 mx-auto h-56 w-3/4 bg-gradient-to-b from-transparent to-white text-gray-950 trapezoid 3xl:-my-24 3xl:h-96">
           {children}
         </div>
       </div>
