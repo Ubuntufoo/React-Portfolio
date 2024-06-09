@@ -1,7 +1,6 @@
 //
 import { useState } from 'react'
-import { PiArrowFatLinesDownFill } from 'react-icons/pi'
-import { PiArrowFatLinesUpFill } from 'react-icons/pi'
+import { PiArrowFatLinesDownFill, PiArrowFatLinesUpFill } from 'react-icons/pi'
 
 export default function Carousel({
   images,
@@ -11,6 +10,8 @@ export default function Carousel({
 }) {
   // If props are not provided, manage state internally
   const [internalCurrentIndex, setInternalCurrentIndex] = useState(0)
+  const [isClicked, setIsClicked] = useState(false)
+
   const currentIndex =
     propCurrentIndex !== undefined ? propCurrentIndex : internalCurrentIndex
   const setCurrentIndex =
@@ -30,40 +31,44 @@ export default function Carousel({
     )
   }
 
+  const handleClick = () => {
+    setIsClicked(!isClicked)
+  }
+
   if (!images[currentIndex]) {
     return null
   }
 
   return (
-    <div className="flex h-screen flex-col justify-center">
-      <div className="mb-12  grid grid-cols-3 justify-evenly gap-y-24 text-center 3xl:mb-28 3xl:gap-y-4">
+    <div className="relative flex h-screen flex-col justify-center">
+      <div className="mb-12 grid grid-cols-3 justify-evenly gap-y-24 text-center 3xl:mb-28 3xl:gap-y-4">
         {images[currentIndex].type === 'video' ? (
           <video
             src={images[currentIndex].src}
             alt={images[currentIndex].label}
-            className="col-start-2 row-start-1 aspect-square h-[320px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out 3xl:h-[420px]"
+            className={`z-10 col-start-2 row-start-1 aspect-square h-[320px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out 3xl:h-[420px]`}
             controls
+            onClick={handleClick}
           />
         ) : (
           <img
             src={images[currentIndex].src}
             alt={images[currentIndex].label}
-            className="z-10 col-start-2 row-start-1 h-[320px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out 3xl:h-[420px]"
+            className={`z-10 col-start-2 row-start-1 h-[320px] w-[1000px] origin-top cursor-pointer rounded object-scale-down transition-all duration-500 ease-in-out 3xl:h-[420px] ${isClicked ? 'origin-top scale-[1.85]' : ''}`}
+            onClick={handleClick}
           />
         )}
 
         <div className="col-start-3 row-start-1 ms-8 flex flex-col justify-center gap-y-4">
           <button
             onClick={handlePrevClick}
-            className="w-16 bg-cyan-900 text-white transition-all
-                duration-150 trapezoid-button hover:scale-110 hover:bg-teal-950 active:-skew-x-6 active:scale-90"
+            className="w-16 bg-cyan-900 text-white transition-all duration-150 trapezoid-button hover:scale-110 hover:bg-teal-950 active:-skew-x-6 active:scale-90"
           >
             <PiArrowFatLinesUpFill className="mx-auto text-xl" />
           </button>
           <button
             onClick={handleNextClick}
-            className="w-16 rotate-180 bg-cyan-900 text-white transition-all duration-150
-                trapezoid-button hover:scale-110 hover:bg-teal-950 active:-skew-x-6 active:scale-90"
+            className="w-16 rotate-180 bg-cyan-900 text-white transition-all duration-150 trapezoid-button hover:scale-110 hover:bg-teal-950 active:-skew-x-6 active:scale-90"
           >
             <PiArrowFatLinesDownFill className="mx-auto rotate-180 text-xl" />
           </button>
@@ -75,5 +80,7 @@ export default function Carousel({
     </div>
   )
 }
+
+
 
 

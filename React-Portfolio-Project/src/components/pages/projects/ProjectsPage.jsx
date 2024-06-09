@@ -5,6 +5,7 @@ import ProjExploreLLM from './ProjExploreLLM'
 import ProjBT from './ProjBT'
 import ProjTADA from './ProjTADA'
 import ProjWD from './ProjWD'
+import ProjPortfolio from './ProjPortfolio'
 
 export default function ProjectsPage() {
 
@@ -24,6 +25,9 @@ export default function ProjectsPage() {
       </div>
       <div className="slide">
         <ProjWD />
+      </div>
+      <div className="slide">
+        <ProjPortfolio />
       </div>
     </div>
   )

@@ -1,5 +1,15 @@
 // image handling for project pages
 
+import JS_no_BG from '../assets/marquee-assets/JS_no_BG.png'
+import NODEJS_no_BG from '../assets/marquee-assets/NODEJS_no_BG.png'
+import REACT_no_BG from '../assets/marquee-assets/REACT_no_BG.png'
+import VUE_no_BG from '../assets/marquee-assets/VUE_no_BG.png'
+import BS_no_BG from '../assets/marquee-assets/BS_no_BG.png'
+import DJANGO_no_BG from '../assets/marquee-assets/DJANGO_no_BG.png'
+import PYTHON_no_BG from '../assets/marquee-assets/PYTHON_no_BG.png'
+import SQL_no_BG from '../assets/marquee-assets/SQL_no_BG.png'
+import tailwindIMG from '../assets/marquee-assets/tailwindIMG.png'
+
 import reactLOGOcustom from '../assets/grid/reactLOGOcustom.png'
 import genaiIMG from '../assets/grid/genaiIMG.png'
 import fullstackIMG3 from '../assets/grid/fullstackIMG3.png'
@@ -21,6 +31,26 @@ import TADA_code_IMG from '../assets/projects-assets/TADA_code_IMG.png'
 import TADAdesktop from '../assets/projects-assets/TADAdesktop.png'
 
 import WorkDashCode from '../assets/projects-assets/WorkDashCode.png'
+
+// import ProjPortfolioFormCode from '../assets/projects-assets/ProjPortfolioFormCode.png'
+import ProjPortfolioFullpageJSCode from '../assets/projects-assets/ProjPortfolioFullpageJSCode.png'
+import ProjPortfolioMarqueeCode from '../assets/projects-assets/ProjPortfolioMarqueeCode.png'
+
+export const logos = [
+  { src: SQL_no_BG, alt: 'SQL Logo', additionalClass: 'my-4' },
+  { src: PYTHON_no_BG, alt: 'Python Logo', additionalClass: '' },
+  { src: DJANGO_no_BG, alt: 'Django Logo', additionalClass: 'my-3' },
+  { src: NODEJS_no_BG, alt: 'NodeJS Logo', additionalClass: 'scale-90' },
+  { src: REACT_no_BG, alt: 'React Logo', additionalClass: 'scale-90 my-3' },
+  { src: VUE_no_BG, alt: 'Vue Logo', additionalClass: 'mt-1' },
+  { src: BS_no_BG, alt: 'Bootstrap Logo', additionalClass: 'scale-125 my-2' },
+  { src: JS_no_BG, alt: 'JavaScript Logo', additionalClass: '' },
+  {
+    src: tailwindIMG,
+    alt: 'Tailwind CSS Logo',
+    additionalClass: 'scale-90 mb-7 mt-3',
+  },
+]
 
 
 export const skillCardsContent = [
@@ -178,5 +208,20 @@ export const projWDContent = [
     label: 'Workflow Dashboard Code',
     description:
       'The code view of the Workflow Dashboard web app, highlighting the React and Flask code used to create the site.',
+  },
+]
+
+export const projPortfolioContent = [
+  {
+    src: ProjPortfolioFullpageJSCode,
+    label: 'Fullpage.js Code',
+    description:
+      'The code view of the Fullpage.js library, highlighting the JavaScript code used to create the full-page scrolling effect.',
+  },
+  {
+    src: ProjPortfolioMarqueeCode,
+    label: 'Marquee Code',
+    description:
+      'The code view of the Marquee, showcasing the JavaScript code used to create the scrolling effect.',
   },
 ]
