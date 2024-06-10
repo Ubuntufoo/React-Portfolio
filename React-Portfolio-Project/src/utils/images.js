@@ -130,56 +130,51 @@ export const projMainContent = [
   },
 ]
 
-export const projExploreLLMContent = [
-  {
-    src: ExploreLLMConcept,
-    label: 'ExploreLLM Concept Video',
-    figcaption:
-    'A video showcasing the concept app for ExploreLLM.',
-    type: 'video',
-  },
-  {
-    src: ExploreLLMcards,
-    label: 'ExploreLLM Concept Cards',
-    figcaption:
-      'ExploreLLM concept: a task destructuring approach.',
-  },
-  {
-    src: ExploreLLM_IMG,
-    label: 'ExploreLLM Concept Web App IMG',
-    figcaption:
-      "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses'.",
-  },
-]
+export const projExploreLLMImages = [
+    {
+      src: ExploreLLM_IMG,
+      label: 'ExploreLLM Concept Web App IMG',
+      figcaption: "ExplloreLLM concept: main interface'.",
+      type: 'image',
+    },
+    {
+      src: ExploreLLMConcept,
+      label: 'ExploreLLM Concept Video',
+      figcaption: 'A video showcasing the concept app for ExploreLLM.',
+      type: 'video',
+    },
+    {
+      src: ExploreLLMcards,
+      label: 'ExploreLLM Concept Cards',
+      figcaption: 'ExploreLLM concept: a task destructuring approach.',
+      type: 'image',
+    },
+];
 
 export const projBTContent = [
-  {
+    {
     src: BrainteasersHomeIMG,
     label: 'Brainteasers Home',
-    description:
-      'The home page of the Brainteasers website, showcasing the site’s design and features.',
-    link: 'https://brainteasers.herokuapp.com/',
+    figcaption: 'ExploreLLM concept: a task destructuring approach.',
+    type: 'image',
   },
   {
     src: BrainteasersWordleIMG,
     label: 'Brainteasers Wordle',
-    description:
-      'The Wordle game on the Brainteasers website, featuring a word-guessing game with a score board.',
-    link: 'https://brainteasers.herokuapp.com/wordle',
+    figcaption: 'ExploreLLM concept: a task destructuring approach.',
+    type: 'image',
   },
   {
     src: BrainteasersRegIMG,
     label: 'Brainteasers Registration',
-    description:
-      'The registration page of the Brainteasers website, allowing users to create an account.',
-    link: 'https://brainteasers.herokuapp.com/register',
+    figcaption: 'ExploreLLM concept: a task destructuring approach.',
+    type: 'image',
   },
   {
     src: BrainteasersAdmin,
     label: 'Brainteasers Admin',
-    description:
-      'The admin page of the Brainteasers website, providing access to CRUD operations for the site’s content.',
-    link: 'https://brainteasers.herokuapp.com/admin',
+    figcaption: 'ExploreLLM concept: a task destructuring approach.',
+    type: 'image',
   },
 ]
 

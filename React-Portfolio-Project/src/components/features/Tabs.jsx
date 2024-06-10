@@ -10,22 +10,18 @@ export default function Tabs() {
     {
       id: 0,
       title: 'About Project',
-      content: 'Content for About Project',
     },
     {
       id: 1,
       title: 'Project Journey',
-      content: 'Content for Project Journey',
     },
     {
       id: 2,
       title: 'Lessons Learned',
-      content: 'Content for Lessons Learned',
     },
     {
       id: 3,
       title: 'Techs & Specs',
-      content: 'Content for Techs & Specs',
     },
   ]
 
