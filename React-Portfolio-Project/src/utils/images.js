@@ -19,6 +19,7 @@ import BrainteasersHomeIMG from '../assets/projects-assets/BrainteasersHomeIMG.p
 import ExploreLLM_IMG from '../assets/projects-assets/ExploreLLM_IMG.png'
 import TADAmobile from '../assets/projects-assets/TADAmobile.png'
 import WorkDashIMG from '../assets/projects-assets/WorkDashIMG.png'
+import ProjPortfolioHero from '../assets/projects-assets/ProjPortfolioHero.png'
 
 import ExploreLLMConcept from '../assets/projects-assets/ExploreLLMConcept.mp4'
 import ExploreLLMcards from '../assets/projects-assets/ExploreLLMcards.png'
@@ -119,27 +120,35 @@ export const projMainContent = [
     linkExternal: false,
     linkToSlide: 4,
   },
+  {
+    src: ProjPortfolioHero,
+    label: 'React Portfolio',
+    description:
+      'A responsive website for showcasing my web dev accomplishments. It is built with React, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect. No additional component libraries were incorporated. EmailJS provides light-weight email functionality. The site is hosted on _____ .',
+    linkExternal: false,
+    linkToSlide: 5,
+  },
 ]
 
 export const projExploreLLMContent = [
   {
     src: ExploreLLMConcept,
     label: 'ExploreLLM Concept Video',
-    description:
-    'A video showcasing the concept of ExploreLLM, a web app that enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.',
+    figcaption:
+    'A video showcasing the concept app for ExploreLLM.',
     type: 'video',
   },
   {
     src: ExploreLLMcards,
     label: 'ExploreLLM Concept Cards',
-    description:
-      'A visual representation of the ExploreLLM concept, showcasing the app’s user interface and features.',
+    figcaption:
+      'ExploreLLM concept: a task destructuring approach.',
   },
   {
     src: ExploreLLM_IMG,
-    label: 'ExploreLLM Concept Web App',
-    description:
-      "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses', this project demonstrates how ExploreLLM enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.",
+    label: 'ExploreLLM Concept Web App IMG',
+    figcaption:
+      "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses'.",
   },
 ]
 

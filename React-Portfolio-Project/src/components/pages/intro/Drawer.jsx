@@ -61,7 +61,7 @@ export default function Drawer() {
           <GrDocumentUser className="text-2xl" />
         </div>
       </div>
-      <div className="mb-8 mr-16">
+      <div className="mb-7 mr-16">
         {/* <IoInformation className="text-4xl text-gray-800 transition-all duration-700 group-hover:scale-150 lg:text-4xl" /> */}
         <div className="text-2xl text-gray-800 transition-all duration-700 group-hover:scale-[1.4] group-hover:text-black">
           Info
