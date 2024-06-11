@@ -1,4 +1,4 @@
-// image handling for project pages
+// image exports for use in components
 
 import JS_no_BG from '../assets/marquee-assets/JS_no_BG.png'
 import NODEJS_no_BG from '../assets/marquee-assets/NODEJS_no_BG.png'
@@ -52,7 +52,6 @@ export const logos = [
     additionalClass: 'scale-90 mb-7 mt-3',
   },
 ]
-
 
 export const skillCardsContent = [
   {
@@ -124,7 +123,7 @@ export const projMainContent = [
     src: ProjPortfolioHero,
     label: 'React Portfolio',
     description:
-      'A responsive website for showcasing my web dev accomplishments. It is built with React, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect. No additional component libraries were incorporated. EmailJS provides light-weight email functionality. The site is hosted on _____ .',
+      'A responsive website for showcasing my web dev accomplishments and connecting with like-minded people. It is built with React, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect. No additional component libraries were incorporated. EmailJS provides light-weight email functionality.',
     linkExternal: false,
     linkToSlide: 5,
   },
@@ -146,7 +145,7 @@ export const projExploreLLMImages = [
     {
       src: ExploreLLMcards,
       label: 'ExploreLLM Concept Cards',
-      figcaption: 'ExploreLLM concept: a task destructuring approach.',
+      figcaption: 'ExploreLLM concept: task decomposition.',
       type: 'image',
     },
 ];
