@@ -1,10 +1,8 @@
 //
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 export default function Tabs({ tabsContent }) {
   const [activeTab, setActiveTab] = useState(0)
-  const [previousTab, setPreviousTab] = useState(null)
-  const [isRotated, setIsRotated] = useState(false)
 
   const tabs = [
     {
@@ -26,7 +24,6 @@ export default function Tabs({ tabsContent }) {
   ]
 
   const handleTabClick = (id) => {
-    setPreviousTab(activeTab)
     setActiveTab(id)
   }
 
@@ -45,12 +42,6 @@ export default function Tabs({ tabsContent }) {
     }
   }
 
-  useEffect(() => {
-    if (previousTab !== null) {
-      setIsRotated((prevIsRotated) => !prevIsRotated)
-    }
-  }, [activeTab, previousTab])
-
   if (!tabsContent || !Array.isArray(tabsContent)) {
     return null // or render a loading state
   }
@@ -68,20 +59,19 @@ export default function Tabs({ tabsContent }) {
           </div>
         ))}
         <div
-          className={`cube rotate absolute top-0 z-40 -mt-2.5 h-14 w-20 origin-center translate-x-2/3 scale-[1.5] bg-slate-50 transition-all duration-700 ease-out ${getTabShift()} ${isRotated ? '-ms-2 mt-1 rotate-180' : ''}`}
+          className={`cube rotate absolute top-0 z-40 -mt-2.5 ms-1.5 h-14 w-20 origin-center translate-x-2/3 scale-[1.5] bg-slate-50 transition-all duration-700 ease-out ${getTabShift()}`}
         ></div>
       </div>
       <div className="mx-auto w-4/5">
         {tabsContent.map((tab) => (
           <div
             key={tab.id}
-            className={`${activeTab === tab.id ? 'opacity-100' : 'hidden'} mb-4 p-1 text-lg 3xl:mb-10`}
+            className={`${activeTab === tab.id ? 'opacity-100' : 'hidden'} mb-4 p-1 text-lg 3xl:mb-7`}
           >
-            {tab.content}
+            <p className="text-base">{tab.content}</p>
           </div>
         ))}
       </div>
     </div>
   )
 }
-
