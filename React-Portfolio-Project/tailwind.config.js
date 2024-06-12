@@ -136,12 +136,12 @@ const newUtilities = {
     'clip-path': 'polygon(0 0,100% 0,100% 100%,var(--p) 100%)',
   },
   '.trapezoid': {
-    '--p': '100px',
+    '--p': '25.5%',
     'aspect-ratio': '1',
     'clip-path': 'polygon(var(--p) 0, calc(100% - var(--p)) 0, 100% 100%, 0 100%)',
   },
   '.trapezoid-button': {
-    '--p': '10px',
+    '--p': '12px',
     'aspect-ratio': '1',
     'clip-path': 'polygon(var(--p) 0, calc(100% - var(--p)) 0, 100% 100%, 0 100%)',
   },

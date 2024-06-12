@@ -36,19 +36,21 @@ img {
 
 /* horizontal nav arrows */
 .fp-prev {
-  margin-left: 5px;
+  scale: .75;
 }
 .fp-next {
-  margin-right: 5px;
+  scale: .75;
 }
 @media (min-width: 640px) {
   /* Screen size is sm or larger */
   .fp-prev {
     margin-left: 20px;
+    scale: 1;
   }
 
   .fp-next {
     margin-right: 20px;
+    scale: 1;
   }
 }
 
@@ -62,6 +64,6 @@ img {
   border-width: var(--d) var(--d) 0 0;
   clip-path: polygon(0 100%, calc(100% - var(--d)) 100%, 100% calc(100% - var(--d)), 100% 0, var(--d) 0, 0 var(--d));
   background:
-    conic-gradient(from 45deg at calc(100% - var(--d)) var(--d), #0004 37.5%, #0000 0 62.5%, #0008 0) border-box #ffffff;
+    conic-gradient(from 45deg at calc(100% - var(--d)) var(--d), #0004 37.5%, #0000 0 62.5%, #0008 0) border-box;
   /* the color */
 }
