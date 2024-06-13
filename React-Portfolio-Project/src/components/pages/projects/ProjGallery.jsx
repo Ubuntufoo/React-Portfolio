@@ -16,9 +16,9 @@ export default function ProjGallery() {
       >
         {projMainContent[currentIndex] && (
           <>
-            <h3 className="flex w-full place-items-center h-1/4 2xl:h-1/3 justify-self-start justify-center gap-x-8 bg-cyan-200 text-center text-lg font-semibold md:text-xl xl:text-2xl">
+            <h3 className="flex w-full place-items-center py-3 justify-self-start justify-center gap-x-8 bg-cyan-200 text-center text-lg font-semibold md:text-xl xl:text-2xl">
               <a
-                className="shadow-gray-400 transition-all duration-500  [text-shadow:6px_6px_3px_var(--tw-shadow-color)]  hover:scale-110"
+                className="shadow-gray-400 transition-all duration-500  [text-shadow:6px_6px_3px_var(--tw-shadow-color)]  hover:scale-110 font-roboto"
                 href={`http://localhost:5173/#Projects/${projMainContent[currentIndex].linkToSlide}`}
               >
                 {projMainContent[currentIndex].label}

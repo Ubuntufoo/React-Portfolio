@@ -11,14 +11,14 @@ export default function NavBarFull({ activePage }) {
   return (
     <nav
       id="NavBarFull"
-      className="ms-auto hidden w-fit bg-transparent lg:block"
+      className="ms-auto hidden w-fit select-none bg-transparent lg:block"
     >
       <div className="me-7 mt-4 grid w-72 grid-cols-4 tracking-wide text-gray-800 lg:gap-y-2 lg:text-xl">
         {links.map((link, index) => (
           <div key={index} className={link.className}>
             <a
               href={`#${link.text}`}
-              className={`${activePage == link.text ? '[text-shadow:6px_6px_3px_var(--tw-shadow-color)] font-semibold' : ''} inline-block shadow-gray-400 transition-all duration-700 ease-in-out origin-bottom hover:font-semibold hover:scale-110  hover:text-black hover:[text-shadow:6px_6px_3px_var(--tw-shadow-color)]`}
+              className={`${activePage == link.text ? 'font-semibold [text-shadow:6px_6px_3px_var(--tw-shadow-color)]' : ''} inline-block origin-bottom shadow-gray-400 transition-all duration-700 ease-in-out hover:scale-110 hover:font-semibold  hover:text-black hover:[text-shadow:6px_6px_3px_var(--tw-shadow-color)]`}
             >
               {link.text}
             </a>

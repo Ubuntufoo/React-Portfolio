@@ -40,14 +40,14 @@ export default function Carousel({
   }
 
   return (
-    <div className="flex h-screen flex-col gap-y-4">
-      <div className="flex w-full basis-1/2 place-items-center justify-center gap-x-2 lg:mt-6 lg:gap-x-3">
+    <div className="flex h-screen flex-col gap-y-6">
+      <div className="flex w-full basis-1/2 3xl:basis-2/3 place-items-center justify-center gap-x-2 lg:mt-6 lg:gap-x-3">
         <div className=" w-4/5 sm:w-2/3 md:w-6/10 lg:w-1/2 xl:w-9/20">
           {images[currentIndex].type === 'video' ? (
             <video
               src={images[currentIndex].src}
               alt={images[currentIndex].label}
-              className={`relative z-50 mx-auto h-[500px] max-h-52 origin-top cursor-pointer rounded object-scale-down transition-all duration-300 sm:max-h-56 md:max-h-60 lg:max-h-64 xl:max-h-80 2xl:max-h-[380px]`}
+              className={`relative z-50 mx-auto h-[500px] max-h-52 origin-top cursor-pointer rounded object-scale-down transition-all duration-300 sm:max-h-56 md:max-h-60 lg:max-h-64 xl:max-h-80 2xl:max-h-[360px] 3xl:max-h-[380px]`}
               controls
               onClick={handleClick}
             />
@@ -55,7 +55,7 @@ export default function Carousel({
             <img
               src={images[currentIndex].src}
               alt={images[currentIndex].label}
-              className={`relative z-50 mx-auto h-[500px] max-h-52 origin-top cursor-pointer rounded object-scale-down transition-all duration-300 sm:max-h-56 md:max-h-60 lg:max-h-64 xl:max-h-80 2xl:max-h-[360px] ${isClicked ? 'scale-y-[1.6] scale-x-150' : ''}`}
+              className={`lg:max-h-68 relative z-50 mx-auto h-[500px] max-h-52 origin-top cursor-pointer rounded object-scale-down transition-all duration-300 sm:max-h-56 md:max-h-64 xl:max-h-80 2xl:max-h-[360px] ${isClicked ? 'scale-x-[1.35] scale-y-150' : '3xl:scale-[1.05]'}`}
               onClick={handleClick}
             />
           )}
@@ -71,7 +71,7 @@ export default function Carousel({
           ></button>
         </div>
       </div>
-      <div className=" flex basis-1/2 h-1/2 flex-col place-content-start place-items-center bg-cyan-400 text-center lg:trapezoid">
+      <div className=" flex h-1/2 basis-1/2 flex-col place-content-start place-items-center bg-cyan-400 text-center lg:trapezoid">
         {children}
       </div>
     </div>

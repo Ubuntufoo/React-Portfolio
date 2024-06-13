@@ -42,7 +42,9 @@ export default function SkillsGrid() {
                   className={`left-0 top-0 ${gridBorderAnimationClasses}`}
                 ></div>
                 <div className={gridContentClasses}>
-                  <h3 className="w-full font-semibold">{content.title}</h3>
+                  <h3 className="w-full font-roboto font-semibold">
+                    {content.title}
+                  </h3>
                   <img
                     className={imgClasses}
                     src={content.img}
@@ -62,7 +64,9 @@ export default function SkillsGrid() {
                   className={`right-0 top-0 ${gridBorderAnimationClasses}`}
                 ></div>
                 <div className={`flex-row-reverse ${gridContentClasses}`}>
-                  <h3 className="w-full font-semibold">{content.title}</h3>
+                  <h3 className="w-full font-roboto font-semibold">
+                    {content.title}
+                  </h3>
                   <img
                     className={imgClasses}
                     src={content.img}
@@ -81,14 +85,14 @@ export default function SkillsGrid() {
         <Modal modalState={modalState} handleClose={handleCloseModal}>
           {modalState.contentIndex !== null && (
             <div className="z-50 flex h-fit flex-col items-stretch justify-between whitespace-pre-line text-center text-sm text-white md:px-5 md:text-lg xl:text-xl">
-              <h2 className="py-3 text-lg font-semibold underline underline-offset-8 xl:text-2xl">
+              <h2 className="py-3 font-roboto text-lg font-semibold underline underline-offset-8 xl:text-2xl">
                 {skillCardsContent[modalState.contentIndex].firstHeader}
               </h2>
               <p className="text-pretty py-3">
                 {skillCardsContent[modalState.contentIndex].firstPara}
               </p>
               <hr className="my-6" />
-              <h2 className="py-3 text-lg font-semibold underline underline-offset-8 xl:text-2xl">
+              <h2 className="py-3 font-roboto text-lg font-semibold underline underline-offset-8 xl:text-2xl">
                 {skillCardsContent[modalState.contentIndex].secondHeader}
               </h2>
               <p className="text-pretty py-3">
@@ -102,12 +106,12 @@ export default function SkillsGrid() {
             alt="Modal Image"
           />
         </Modal>
-
       )}
       {modalState.isOpen && (
         <div
           onClick={handleCloseModal}
-          className="absolute left-0 top-0 z-10 h-screen w-screen bg-black opacity-75"></div>
+          className="absolute left-0 top-0 z-10 h-screen w-screen bg-black opacity-75"
+        ></div>
       )}
     </main>
   )
