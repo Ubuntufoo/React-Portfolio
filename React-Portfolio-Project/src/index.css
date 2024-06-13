@@ -8,6 +8,10 @@ html {
   height: -webkit-fill-available;
 }
 
+body {
+  height: -webkit-fill-available;
+}
+
 /* used to prevent Chrome autofill background-color override */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
