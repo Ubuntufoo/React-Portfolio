@@ -25,7 +25,7 @@ export default function Drawer() {
         </div>
       </div>
       <div className="-mb-24 me-36 h-0 w-0 cursor-pointer border-b-[120px] border-l-[350px] border-t-[120px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-60">
-        <div className="absolute -ms-[356px] -mt-3.5 flex items-center space-x-7 text-white">
+        <div className="absolute -ms-[358px] -mt-3.5 flex items-center space-x-7 text-white">
           <a
             href="mailto:TimothyMurphy123@gmail.com"
             className="origin-left text-nowrap transition-all duration-300 hover:scale-[1.08]"
