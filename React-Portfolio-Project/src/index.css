@@ -5,15 +5,15 @@
 @tailwind utilities;
 
 html {
-  height: -webkit-fill-available;
+  height: 100%;
 }
 
 body {
-  height: -webkit-fill-available;
+  height: 100%;
 }
 
 .section {
-  height: -webkit-fill-available;
+  height: 100%;
 }
 
 /* used to prevent Chrome autofill background-color override */
