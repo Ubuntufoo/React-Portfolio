@@ -4,7 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html {
+  height: -webkit-fill-available;
+}
 
 /* used to prevent Chrome autofill background-color override */
 input:-webkit-autofill,
