@@ -6,7 +6,7 @@ import Tim1_5 from '../../../assets/Tim1_5.jpg'
 import BG1 from '../../../assets/BG1.png'
 
 const parallelogramClasses =
-  'bg-cyan-950 w-full h-19/20 lg:w-4/5 lg:h-5/6 bg-gradient-to-b md:bg-gradient-to-r from-cyan-100 to-cyan-950 from-30% to-80%'
+  'bg-cyan-950 w-full h-6/7 lg:w-4/5 lg:h-5/6 bg-gradient-to-b md:bg-gradient-to-r from-cyan-100 to-cyan-950 from-30% to-80%'
 
 export default function Hero() {
   const [animationEnded, setAnimationEnded] = useState(false)
