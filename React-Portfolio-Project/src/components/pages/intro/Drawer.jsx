@@ -10,9 +10,9 @@ import { GrDocumentUser } from 'react-icons/gr'
 
 export default function Drawer() {
   return (
-    <div className="group absolute bottom-0 left-0 -ms-72 flex size-0 cursor-pointer flex-col items-end justify-end border-b-[1px] border-l-[430px] border-t-[1200px] border-solid border-b-transparent border-l-[#fff] border-t-transparent font-mono transition-transform duration-500 hover:translate-x-28">
+    <div className="group absolute bottom-0 left-0 -ms-72 flex size-0 cursor-pointer flex-col items-end justify-end border-b-[1px] border-l-[430px] border-t-[1100px] border-solid border-b-transparent border-l-[#fff] border-t-transparent font-mono transition-transform duration-500 hover:translate-x-28">
       <div className="-mb-32 me-36 h-0 w-0 cursor-pointer border-b-[120px] border-l-[290px] border-t-[120px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-44">
-        <div className="absolute -ms-[266px] -mt-3.5 flex items-center space-x-8 text-white ">
+        <div className="absolute -ms-[268px] -mt-3.5 flex items-center space-x-8 text-white ">
           <a
             href="https://github.com/Ubuntufoo"
             target="_blank"
@@ -48,7 +48,7 @@ export default function Drawer() {
           <BiLogoLinkedinSquare className="text-3xl" />
         </div>
       </div>
-      <div className="-mb-10 me-36 h-0 w-0 cursor-pointer border-b-[120px] border-l-[290px] border-t-[120px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-40">
+      <div className="-mb-12 me-36 h-0 w-0 cursor-pointer border-b-[120px] border-l-[290px] border-t-[120px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-40">
         <div className="absolute -ms-[210px] -mt-3.5 flex items-center space-x-7 text-white">
           <a
             href="https://docs.google.com/document/d/15K8jNlhiDEw9anGdRNiWMGWhdIbsLZinUbh73TV_LD8/edit?usp=sharing"

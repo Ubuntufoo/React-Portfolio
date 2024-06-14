@@ -1,6 +1,7 @@
 //
 import { useState } from 'react'
 import Carousel from '../../features/Carousel'
+import ServerTooltip from '../../features/ServerTooltip'
 import { projMainContent } from '../../../utils/images'
 import { FaLink } from 'react-icons/fa'
 
@@ -28,8 +29,12 @@ export default function ProjGallery() {
                   href={projMainContent[currentIndex].linkExternal}
                   target="_blank"
                   rel="noreferrer"
+                  className="group relative h-fit flex justify-center transition-all"
                 >
-                  <FaLink className="text-xl text-black transition-all duration-500 hover:scale-125" />
+                  <FaLink className="text-sm text-black transition-all duration-500 hover:scale-125 2xl:text-2xl" />
+                  {projMainContent[currentIndex].linkToSlide === 3 && (
+                    <ServerTooltip />
+                  )}
                 </a>
               )}
             </h3>

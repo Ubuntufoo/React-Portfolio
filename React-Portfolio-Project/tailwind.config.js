@@ -24,7 +24,7 @@ export default {
         fade: 'fadeIn 1s ease-in-out',
         fadeFast: 'fadeInFast 0.5s ease-in-out',
         fadeSlow: 'fadeInSlow 2.5s ease-in-out', // Added fadeSlow animation
-        waving: 'waving 1.2s linear 1s 3',
+        waving: 'waving 1.2s linear 1s 2.3',
         marquee: 'marquee 40s linear infinite',
         marquee2: 'marquee2 40s linear infinite',
       },
@@ -138,7 +138,7 @@ const newUtilities = {
   },
   '.trapezoid': {
     '--p': '25.5%',
-    'aspect-ratio': '1',
+
     'clip-path': 'polygon(var(--p) 0, calc(100% - var(--p)) 0, 100% 100%, 0 100%)',
   },
   '.trapezoid-button': {

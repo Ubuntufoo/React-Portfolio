@@ -8,7 +8,7 @@ export default function ProjBT() {
 
   return (
     <>
-      <Carousel images={projBTContent}>
+      <Carousel images={projBTContent} tabsType="tabsBrainteasers">
         <Tabs tabsContent={tabsBrainteasers} />
       </Carousel>
     </>

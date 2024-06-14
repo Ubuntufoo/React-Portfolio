@@ -8,7 +8,7 @@ export default function ProjTADA() {
 
   return (
     <>
-      <Carousel images={projTADAContent}>
+      <Carousel images={projTADAContent} tabsType="tabsTADA">
         <Tabs tabsContent={tabsTADA} />
       </Carousel>
     </>
