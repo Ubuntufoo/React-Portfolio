@@ -16,10 +16,10 @@ export default function ProjGallery() {
       >
         {projMainContent[currentIndex] && (
           <>
-            <h3 className="flex w-full place-items-center py-3 justify-self-start justify-center gap-x-8 bg-cyan-200 text-center text-lg font-semibold md:text-xl xl:text-2xl">
+            <h3 className="flex w-full place-items-center justify-center gap-x-8 justify-self-start bg-cyan-200 py-3 text-center text-lg font-semibold md:text-xl xl:text-2xl">
               <a
-                className="shadow-gray-400 transition-all duration-500  [text-shadow:6px_6px_3px_var(--tw-shadow-color)]  hover:scale-110 font-roboto"
-                href={`http://localhost:5173/#Projects/${projMainContent[currentIndex].linkToSlide}`}
+                className="font-roboto shadow-gray-400 transition-all  duration-500  [text-shadow:6px_6px_3px_var(--tw-shadow-color)] hover:scale-110"
+                href={`https://timmurphywebdev.netlify.app/#Projects/${projMainContent[currentIndex].linkToSlide}`}
               >
                 {projMainContent[currentIndex].label}
               </a>
@@ -33,7 +33,7 @@ export default function ProjGallery() {
                 </a>
               )}
             </h3>
-            <p className=" text-pretty h-full p-7 text-sm sm:text-base md:text-lg lg:w-2/3 lg:px-24 3xl:px-32 lg:text-xl xl:pt-8 3xl:pt-20">
+            <p className=" h-full text-pretty p-7 text-sm sm:text-base md:text-lg lg:w-2/3 lg:px-24 lg:text-xl xl:pt-8 3xl:px-32 3xl:pt-20">
               {projMainContent[currentIndex].description
                 .split('\n')
                 .map((line, index) => (
