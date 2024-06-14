@@ -77,7 +77,7 @@ export default function Carousel({
             />
           )}
         </div>
-        <div className="relative flex w-7 shrink flex-col gap-y-2 md:w-8 xl:w-12">
+        <div className="relative flex w-10 shrink flex-col gap-y-2 md:w-10 xl:w-16">
           <button
             onClick={handlePrevClick}
             className=" inline-block  bg-gradient-to-b from-white to-cyan-950 text-white transition-all duration-150 trapezoid-button hover:scale-110 hover:bg-teal-950 active:-skew-x-6 active:scale-90"
