@@ -60,6 +60,8 @@ export default function Carousel({
         <div className=" w-4/5 sm:w-2/3 md:w-6/10 lg:w-1/2 xl:w-9/20">
           {images[currentIndex].type === 'video' ? (
             <video
+              autoPlay
+              muted
               src={images[currentIndex].src}
               alt={images[currentIndex].label}
               className={`relative z-40 mx-auto h-[500px] max-h-52 origin-top cursor-pointer rounded object-scale-down transition-all duration-300 sm:max-h-56 md:max-h-60 lg:max-h-64 xl:max-h-80 2xl:max-h-[360px] 3xl:max-h-[380px]`}
@@ -70,7 +72,7 @@ export default function Carousel({
             <img
               src={images[currentIndex].src}
               alt={images[currentIndex].label}
-              className={`lg:max-h-68 relative z-40 mx-auto h-[500px] max-h-52 origin-top cursor-pointer rounded object-scale-down transition-all duration-300 sm:max-h-56 md:max-h-64 xl:max-h-80 2xl:max-h-[360px] ${isClicked ? 'scale-x-[1.35] scale-y-150' : '3xl:scale-[1.05]'}`}
+              className={`lg:max-h-68 relative z-40 mx-auto h-[500px] max-h-52 origin-top cursor-pointer rounded object-scale-down transition-all duration-300 sm:max-h-56 md:max-h-64 xl:max-h-80 2xl:max-h-[360px] ${isClicked ? 'scale-y-[1.8] scale-x-[1.9]' : '3xl:scale-[1.05]'}`}
               onClick={handleClick}
             />
           )}
@@ -90,7 +92,7 @@ export default function Carousel({
             renderLink('https://tada-w0iq.onrender.com', false)}
         </div>
       </div>
-      <div className=" flex h-1/2 basis-1/2 flex-col place-content-start place-items-center bg-cyan-400 text-center lg:trapezoid">
+      <div className=" flex h-1/2 basis-1/2 flex-col place-content-start place-items-center bg-cyan-200 text-center lg:trapezoid">
         {children}
       </div>
     </div>

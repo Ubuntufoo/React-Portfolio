@@ -30,13 +30,13 @@ export default function Tabs({ tabsContent }) {
   const getTabShift = () => {
     switch (activeTab) {
       case 0:
-        return 'left-0 -ms-5 md:ms-5 md:-mt-0'
+        return 'left-0 -ms-4 md:ms-5 md:-mt-0'
       case 1:
-        return 'left-1/4 -ms-7 md:ms-4 md:-mt-0'
+        return 'left-1/4 -ms-5 md:ms-4 md:-mt-0'
       case 2:
-        return 'left-1/2 -ms-7 md:ms-4 md:-mt-0'
+        return 'left-1/2 -ms-6 md:ms-4 md:-mt-0'
       case 3:
-        return 'left-3/4 -ms-6 md:ms-4 md:-mt-0'
+        return 'left-3/4 -ms-5 md:ms-4 md:-mt-0'
       default:
         return 'left-0 '
     }
@@ -48,11 +48,11 @@ export default function Tabs({ tabsContent }) {
 
   return (
     <>
-      <div className="relative mt-8 grid h-1/4 w-full grid-cols-4 text-center text-black md:mt-5 lg:h-1/3 xl:w-1/2 3xl:mt-10">
+      <div className="relative mt-6 grid h-1/4 w-full grid-cols-4 pb-5 text-center text-black md:mt-5 lg:h-1/3 xl:w-1/2 2xl:pb-5 3xl:pb-0">
         {tabs.map((tab) => (
           <div
             key={tab.id}
-            className={`font-roboto col-span-1 box-content flex h-fit cursor-pointer select-none flex-col justify-center justify-self-center whitespace-pre border-b-2 border-gray-600 bg-transparent pb-2 text-sm font-semibold transition-all duration-500 hover:scale-110 xl:text-base 3xl:text-xl ${activeTab === tab.id ? 'border-none text-black' : ' text-cyan-950'}`}
+            className={`col-span-1 box-content flex h-fit cursor-pointer select-none flex-col justify-center justify-self-center whitespace-pre border-b-2 border-gray-600 bg-transparent pb-2 font-roboto text-sm font-semibold transition-all duration-500 hover:scale-110 xl:text-base 3xl:text-xl ${activeTab === tab.id ? 'border-none text-black' : ' text-cyan-950'}`}
             onClick={() => handleTabClick(tab.id)}
           >
             {tab.title}
@@ -65,9 +65,9 @@ export default function Tabs({ tabsContent }) {
       {tabsContent.map((tab) => (
         <div
           key={tab.id}
-          className={`${activeTab === tab.id ? 'opacity-100' : 'hidden'} py-1 px-5 3xl:px-7`}
+          className={`${activeTab === tab.id ? 'opacity-100' : 'hidden'} flex h-full flex-col justify-center bg-cyan-400 p-5 py-1 2xl:px-28`}
         >
-          <p className="pretty mx-auto w-full whitespace-pre-wrap text-xs sm:text-sm md:text-base xl:w-7/10 2xl:leading-snug 3xl:w-2/3 3xl:text-xl">
+          <p className="pretty  mx-auto w-full whitespace-pre-wrap text-xs sm:text-sm md:text-base xl:w-7/10 2xl:leading-snug 3xl:w-2/3 3xl:text-xl">
             {tab.content}
           </p>
         </div>
