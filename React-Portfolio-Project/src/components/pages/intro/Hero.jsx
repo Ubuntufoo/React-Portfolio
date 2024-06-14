@@ -44,8 +44,6 @@ export default function Hero() {
               <p className="text-pretty">
                 <span className="inline-flex flex-wrap gap-2.5">
                   {[
-                    'Introvert.',
-                    'Athlete.',
                     'Husband.',
                     'Father.',
                     <strong className="italic font-semibold" key={4}>

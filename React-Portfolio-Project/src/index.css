@@ -2,9 +2,9 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;j
 
-
+/* Tailwind config autoprefixer enabled and located in tailwind.config.js */
 
 /* used to prevent Chrome autofill background-color override */
 input:-webkit-autofill,
