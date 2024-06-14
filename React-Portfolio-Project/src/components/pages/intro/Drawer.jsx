@@ -10,7 +10,7 @@ import { GrDocumentUser } from 'react-icons/gr'
 
 export default function Drawer() {
   return (
-    <div className="group absolute bottom-0 left-0 -ms-72 flex size-0 translate-x-28 cursor-pointer flex-col items-end justify-end border-b-[1px] border-l-[430px] border-t-[1200px] border-solid border-b-transparent border-l-[#fff] border-t-transparent font-mono transition-transform duration-500">
+    <div className="group absolute bottom-0 left-0 -ms-72 flex size-0 hover:translate-x-28 cursor-pointer flex-col items-end justify-end border-b-[1px] border-l-[430px] border-t-[1200px] border-solid border-b-transparent border-l-[#fff] border-t-transparent font-mono transition-transform duration-500">
       <div className="-mb-32 me-36 h-0 w-0 cursor-pointer border-b-[120px] border-l-[290px] border-t-[120px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-44">
         <div className="absolute -ms-[254px] -mt-3.5 flex items-center space-x-8 text-white ">
           <a
