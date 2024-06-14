@@ -72,7 +72,7 @@ export default function Carousel({
             <img
               src={images[currentIndex].src}
               alt={images[currentIndex].label}
-              className={`lg:max-h-68 relative z-40 mx-auto h-[500px] max-h-52 origin-top cursor-pointer rounded object-scale-down transition-all duration-300 sm:max-h-56 md:max-h-64 xl:max-h-80 2xl:max-h-[360px] ${isClicked ? 'scale-y-[1.8] scale-x-[1.9]' : '3xl:scale-[1.05]'}`}
+              className={`lg:max-h-68 relative z-40 mx-auto h-[500px] max-h-52 origin-top cursor-pointer rounded object-scale-down transition-all duration-300 sm:max-h-56 md:max-h-64 xl:max-h-80 2xl:max-h-[360px] ${isClicked ? 'scale-x-[1.9] scale-y-[1.8]' : '3xl:scale-[1.05]'}`}
               onClick={handleClick}
             />
           )}
@@ -89,7 +89,7 @@ export default function Carousel({
           {tabsType === 'tabsTADA' &&
             renderLink('https://tada-w0iq.onrender.com', true)}
           {tabsType === 'tabsBrainteasers' &&
-            renderLink('https://tada-w0iq.onrender.com', false)}
+            renderLink('https://brainteasers.herokuapp.com/', false)}
         </div>
       </div>
       <div className=" flex h-1/2 basis-1/2 flex-col place-content-start place-items-center bg-cyan-200 text-center lg:trapezoid">
