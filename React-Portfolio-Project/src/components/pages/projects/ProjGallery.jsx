@@ -31,14 +31,14 @@ export default function ProjGallery() {
                   rel="noreferrer"
                   className="group relative h-fit flex justify-center transition-all"
                 >
-                  <FaLink className="text-sm text-black transition-all duration-500 hover:scale-125 2xl:text-2xl" />
+                  <FaLink className="text-base text-black transition-all duration-500 hover:scale-125 2xl:text-2xl" />
                   {projMainContent[currentIndex].linkToSlide === 3 && (
                     <ServerTooltip />
                   )}
                 </a>
               )}
             </h3>
-            <p className=" h-full bg-cyan-400 text-pretty text-sm sm:text-base md:text-lg lg:w-full p-3 lg:px-80 lg:text-xl xl:pt-6 3xl:px-96 3xl:pt-20">
+            <p className=" h-full bg-cyan-400 text-pretty text-sm sm:text-base md:text-lg lg:w-full p-5 lg:px-80 lg:text-xl xl:pt-6 3xl:px-96 3xl:pt-20">
               {projMainContent[currentIndex].description
                 .split('\n')
                 .map((line, index) => (

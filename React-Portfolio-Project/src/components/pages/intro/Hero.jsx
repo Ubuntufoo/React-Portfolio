@@ -37,7 +37,7 @@ export default function Hero() {
               alt="Tim's image"
               className="absolute -bottom-16 -right-20 scale-[0.7] animate-fade sm:-bottom-8  md:-right-2 md:bottom-10 md:scale-100 lg:-bottom-20 lg:right-4 lg:scale-50 xl:-bottom-6 xl:right-24 xl:scale-75 2xl:bottom-0 2xl:right-60 3xl:scale-[1.35] 3xl:right-96 2xl:scale-110 3xl:bottom-16"
             />
-            <div className="row-start-2 mx-5 relative h-fit p-2 z-10 animate-fade leading-snug text-black md:text-2xl lg:text-xl lg:ps-4 xl:ps-10 xl:pt-6 2xl:space-y-9 2xl:text-2xl 2xl:ps-20 3xl:ps-28 2xl:pt-8 3xl:pt-14">
+            <div className="row-start-2 mx-5 relative h-fit p-2 ps-4 z-10 animate-fade leading-snug text-black md:text-2xl lg:text-xl lg:ps-4 xl:ps-10 xl:pt-6 2xl:space-y-9 2xl:text-2xl 2xl:ps-20 3xl:ps-28 2xl:pt-8 3xl:pt-14">
               <h1 className="text-2xl md:text-3xl pb-4 2xl:max-3xl:pb-0 3xl:pb-4 xl:text-4xl">
                 Welcome. I&apos;m Tim. <br />
               </h1>
