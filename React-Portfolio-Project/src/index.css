@@ -4,11 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  height: 100%;
-}
-
 .section {
   height: 100vh;
   /* Fallback for other browsers */
