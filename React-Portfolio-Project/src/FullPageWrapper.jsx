@@ -17,6 +17,7 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       navigation={false}
       navigationTooltips={anchors}
       loopBottom={true}
+      touchSensitivity={6}
       fixedElements="#NavBar"
       controlArrowsHTML={[                  // exposed for visibility and optional modification
         '<div class="fp-arrow"></div>',

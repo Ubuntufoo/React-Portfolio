@@ -24,7 +24,7 @@ export default function ContactPage() {
   // }
 
   return (
-    <div className="section h-screen fp-auto-height bg-gradient-to-b from-cyan-500 to-cyan-900">
+    <div className="section fp-auto-height-responsive bg-gradient-to-b from-cyan-500 to-cyan-900">
       <section className="h-screen w-screen">
         <div
           onClick={handleIframeClick}
