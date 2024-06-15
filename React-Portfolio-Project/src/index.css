@@ -2,9 +2,19 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;j
+@tailwind utilities;
 
-/* Tailwind config autoprefixer enabled and located in tailwind.config.js */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.section {
+  height: 100vh;
+  /* Fallback for other browsers */
+  height: -webkit-fill-available;
+}
 
 /* used to prevent Chrome autofill background-color override */
 input:-webkit-autofill,
