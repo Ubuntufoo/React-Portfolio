@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .section {
-  height: 100dvh;
+  height: 100vh;
   /* Fallback for other browsers */
   height: -webkit-fill-available;
 }
