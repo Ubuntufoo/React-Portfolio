@@ -1,4 +1,4 @@
-//
+// Tailwind CSS Configuration
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -12,9 +12,6 @@ export default {
       screens: {
         '3xl': '1920px',
         // => @media (min-width: 992px) { ... }
-      },
-      clipPath: {
-        'combined-slanted-edge': 'polygon(0 0, 100% 0, 100% 50%, 0 calc(50% + var(--p)), 0 100%, 100% 100%, 100% calc(50% - var(--p)), 0 50%)',
       },
       fontFamily: {
         'montserrat': ['"Montserrat"', 'sans-serif'],
@@ -68,22 +65,12 @@ export default {
         },
       },
       height: {
-        '12/25': '48%',
         '6/7': '85.7142857%',
-        '19/20': '95%',
       },
       width: {
-        '1/18': '5.5555556%',
         '1/16': '6.25%',
-        '1/15': '6.67%',
         '1/14': '7.14%',
-        '1/13': '7.69%',
-        '1/11': '9.09%',
         '1/10': '10%',
-        '1/9': '11.11%',
-        '1/8': '12.5%',
-        '1/7': '14.29%',
-        '2/9': '22%',
         '9/20': '45%',
         '6/10': '60%',
         '13/20': '65%',
@@ -97,53 +84,44 @@ export default {
   },
   plugins: [
     function({ addUtilities }) {
-
+      const newUtilities = {
+        '.parallelogram': {
+          '--p': '160px',
+          'clip-path': 'polygon(0 calc(100% - var(--p)), 0 0, 100% var(--p), 100% 100%)',
+        },
+        '.slanted-edge-down': {
+          '--p': '70px', /* control the shape (can be percentage) */
+          'clip-path': 'polygon(0 0,100% 0,100% calc(100% - var(--p)),0 100%)',
+        },
+        '.slanted-edge-up': {
+          '--p': '70px', /* control the shape (can be percentage) */
+          'clip-path': 'polygon(0 var(--p),100% 0,100% 100%,0 100%)',
+        },
+        '.hexagon': {
+          'aspect-ratio': 'calc(1 / cos(30deg))',
+          'clip-path': 'polygon(50% -50%, 100% 50%, 50% 150%, 0 50%)',
+        },
+        '.slanted-edge-rs': {
+          '--p': '60px;',
+          'clip-path': 'polygon(0 0,calc(100% - var(--p)) 0,100% 100%,0 100%)',
+        },
+        '.slanted-edge-ls': {
+          '--p': '60px;',
+          'clip-path': 'polygon(0 0,100% 0,100% 100%,var(--p) 100%)',
+        },
+        '.trapezoid': {
+          '--p': '25.5%',
+          'clip-path': 'polygon(var(--p) 0, calc(100% - var(--p)) 0, 100% 100%, 0 100%)',
+        },
+        '.trapezoid-button': {
+          '--p': '20px',
+          'aspect-ratio': '1',
+          'clip-path': 'polygon(var(--p) 0, calc(100% - var(--p)) 0, 100% 100%, 0 100%)',
+        },
+      };
 
       addUtilities(newUtilities);
     },
   ],
 };
-const newUtilities = {
-  '.parallelogram': {
-    '--p': '160px',
-    'clip-path': 'polygon(0 calc(100% - var(--p)), 0 0, 100% var(--p), 100% 100%)',
-  },
-  '.triangle': {
-    'aspect-ratio': 'calc(1 / cos(33deg))', // Correct aspect-ratio calculation
-    'clip-path': 'polygon(0 0, 100% 50%, 0 100%)',
-  },
-  '.slanted-edge-down': {
-    '--p': '70px', /* control the shape (can be percentage) */
-    'clip-path': 'polygon(0 0,100% 0,100% calc(100% - var(--p)),0 100%)',
-  },
-  '.slanted-edge-up': {
-    '--p': '70px', /* control the shape (can be percentage) */
-    'clip-path': 'polygon(0 var(--p),100% 0,100% 100%,0 100%)',
-  },
-  '.combined-slanted-edge': {
-    '--p': '-80px', // control the shape (can be percentage)
-    'clip-path': 'polygon(0 0, 100% 0, 100% 50%, 0 calc(50% + var(--p)), 0 100%, 100% 100%, 100% calc(50% - var(--p)), 0 50%)',
-  },
-  '.hexagon': {
-    'aspect-ratio': 'calc(1 / cos(30deg))',
-    'clip-path': 'polygon(50% -50%, 100% 50%, 50% 150%, 0 50%)',
-  },
-  '.slanted-edge-rs': {
-    '--p': '60px;',
-    'clip-path': 'polygon(0 0,calc(100% - var(--p)) 0,100% 100%,0 100%)',
-  },
-  '.slanted-edge-ls': {
-    '--p': '60px;',
-    'clip-path': 'polygon(0 0,100% 0,100% 100%,var(--p) 100%)',
-  },
-  '.trapezoid': {
-    '--p': '25.5%',
 
-    'clip-path': 'polygon(var(--p) 0, calc(100% - var(--p)) 0, 100% 100%, 0 100%)',
-  },
-  '.trapezoid-button': {
-    '--p': '20px',
-    'aspect-ratio': '1',
-    'clip-path': 'polygon(var(--p) 0, calc(100% - var(--p)) 0, 100% 100%, 0 100%)',
-  },
-};
