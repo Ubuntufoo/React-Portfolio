@@ -17,7 +17,7 @@ export default function SkillsPage() {
 
 
   return (
-    <div className="section fp-auto-height-responsive h-dvh bg-gradient-to-b from-cyan-900 to-cyan-500 ">
+    <div className="section h-screen bg-gradient-to-b from-cyan-900 to-cyan-500 ">
       <div className="flex size-full place-items-center">
         <Marquee />
         <SkillsGrid />

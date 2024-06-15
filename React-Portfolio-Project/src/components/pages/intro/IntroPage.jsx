@@ -15,7 +15,7 @@ export default function IntroPage() {
   // }
 
   return (
-    <div className="section h-dvh fp-auto-height-responsive bg-gradient-to-b from-cyan-900 to-cyan-500">
+    <div className="section h-screen bg-gradient-to-b from-cyan-900 to-cyan-500">
       <Hero />
       <Drawer />
       {/* <KeyboardArrows keyStyling={keyStyling} /> */}
