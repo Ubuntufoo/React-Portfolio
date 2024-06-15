@@ -56,7 +56,7 @@ export default function Carousel({
 
   return (
     <div className="flex h-screen flex-col gap-y-6 ">
-      <div className="flex w-full basis-1/2 place-items-center justify-center gap-x-3 lg:mt-6 3xl:basis-2/3">
+      <div className="flex w-full basis-1/2 place-items-center justify-center gap-x-3 pt-24 lg:pt-0 lg:mt-6 3xl:basis-2/3">
         <div className=" w-4/5 sm:w-2/3 md:w-6/10 lg:w-1/2 xl:w-9/20">
           {images[currentIndex].type === 'video' ? (
             <video
