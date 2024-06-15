@@ -25,7 +25,7 @@ export default function Drawer() {
         </div>
       </div>
       <div className="-mb-32 me-36 h-0 w-0 cursor-pointer border-b-[140px] border-l-[350px] border-t-[140px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-60">
-        <div className="absolute -ms-[340px] -mt-3.5 flex items-center space-x-5 text-white md:-ms-[338px] md:space-x-8">
+        <div className="absolute -ms-[346px] -mt-3.5 flex items-center space-x-6 text-white md:-ms-[338px] md:space-x-8">
           <a
             href="mailto:TimothyMurphy123@gmail.com"
             className="origin-left text-nowrap tracking-tighter transition-all duration-300 hover:scale-[1.08]"
@@ -36,7 +36,7 @@ export default function Drawer() {
         </div>
       </div>
       <div className=" -mb-28 me-36 h-0 w-0 cursor-pointer border-b-[120px] border-l-[290px] border-t-[120px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-40">
-        <div className="absolute -ms-[266px] -mt-3.5 flex items-center space-x-7 text-white">
+        <div className="absolute -ms-[268px] -mt-3.5 flex items-center space-x-7 text-white">
           <a
             href="https://www.linkedin.com/in/timothy-murphy-19a702213/"
             target="_blank"
@@ -48,7 +48,7 @@ export default function Drawer() {
           <BiLogoLinkedinSquare className="text-3xl" />
         </div>
       </div>
-      <div className="-mb-12 me-36 h-0 w-0 cursor-pointer border-b-[120px] border-l-[290px] border-t-[120px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-40">
+      <div className="-mb-20 lg:-mb-6 me-36 h-0 w-0 cursor-pointer border-b-[120px] border-l-[290px] border-t-[120px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-40">
         <div className="absolute -ms-[210px] -mt-3.5 flex items-center space-x-7 text-white">
           <a
             href="https://docs.google.com/document/d/15K8jNlhiDEw9anGdRNiWMGWhdIbsLZinUbh73TV_LD8/edit?usp=sharing"
