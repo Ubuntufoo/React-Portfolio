@@ -16,7 +16,6 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       anchors={anchors}
       navigation={false}
       navigationTooltips={anchors}
-      loopBottom={true}
       fixedElements="#NavBar"
       controlArrowsHTML={[
         // exposed for visibility and optional modification
