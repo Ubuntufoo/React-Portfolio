@@ -30,7 +30,7 @@ export default function NavBarMobile() {
       </div>
 
       <div
-        className={`transform ${isOpen ? 'translate-y-48' : ''} -mt-48 flex w-screen flex-col items-center space-y-4 bg-gray-800 py-4 text-lg transition-transform duration-500`}
+        className={`transform ${isOpen ? 'translate-y-60' : ''} -mt-60 flex w-screen flex-col items-center space-y-6 bg-gray-800 py-6 text-lg transition-transform duration-500`}
       >
         {['Intro', 'Projects', 'Skills', 'Contact'].map((section) => (
           <div className="w-fit hover:font-bold" key={section}>
