@@ -29,17 +29,22 @@ export default function NavBarMobile() {
         ></div>
       </div>
 
-      <div
+      <ul id="myMenu"
         className={`transform ${isOpen ? 'translate-y-60' : ''} -mt-60 flex w-screen flex-col items-center space-y-6 bg-gray-800 py-6 text-lg transition-transform duration-500`}
       >
         {['Intro', 'Projects', 'Skills', 'Contact'].map((section) => (
-          <div className="w-fit hover:font-bold" key={section}>
-            <a href={`#${section}`} className="hover:scale-110" onClick={toggleNav}>
+          <li className="w-fit hover:font-bold" key={section}>
+            <a
+              data-menuanchor={`${section}`}
+              href={`#${section}`}
+              className="hover:scale-110"
+              onClick={toggleNav}
+            >
               {section.charAt(0).toUpperCase() + section.slice(1)}
             </a>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </nav>
   )
 }
