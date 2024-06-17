@@ -7,8 +7,14 @@ import SkillsPage from './components/pages/skills/SkillsPage'
 import ContactPage from './components/pages/contact/ContactPage'
 import { anchors } from './utils/utils'
 
-const FullpageWrapper = ({ afterLoad, activePage }) => {
+const isiPhoneWithiOS17 = () => {
+  const userAgent = window.navigator.userAgent
+  const iOS = !!userAgent.match(/iP(hone|od|ad)/i)
+  const iOSVersion = userAgent.match(/OS (\d+)_/i)
+  return iOS && iOSVersion && parseInt(iOSVersion[1], 10) === 17
+}
 
+const FullpageWrapper = ({ afterLoad, activePage }) => {
   return (
     <ReactFullpage
       licenseKey={import.meta.env.VITE_FULLPAGEJS_LICENSE_KEY}
@@ -20,11 +26,11 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       fixedElements="#NavBar"
       lazyLoading={true}
       responsiveWidth={640}
-      // afterResponsive={(isResponsive) => {
-      //   if (isResponsive) {
-      //     window.fullpage_api.setAutoScrolling(true)
-      //   }
-      // }}
+      afterResponsive={(isResponsive) => {
+        if (isResponsive && !isiPhoneWithiOS17()) {
+          window.fullpage_api.setAutoScrolling(true)
+        }
+      }}
       afterLoad={afterLoad}
       render={() => (
         <>
