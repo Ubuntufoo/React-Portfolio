@@ -56,12 +56,14 @@ img {
 
 /* horizontal nav arrows */
 .fp-prev {
+  margin-left: -5px;
   scale: .75;
-  top: 49%;
+  top: 44%;
 }
 .fp-next {
+  margin-right: -5px;
   scale: .75;
-  top: 49%;
+  top: 44%;
 }
 @media (min-width: 640px) {
   /* Screen size is sm or larger */

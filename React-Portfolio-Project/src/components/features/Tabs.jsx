@@ -48,7 +48,7 @@ export default function Tabs({ tabsContent }) {
 
   return (
     <>
-      <div className="relative mt-5 grid h-1/4 w-full grid-cols-4 text-center text-black md:mt-5 lg:h-1/3 xl:w-1/2 2xl:pb-5 3xl:pb-0">
+      <div className="relative mt-3 grid h-1/4 w-full grid-cols-4 text-center text-black md:mt-5 lg:h-1/3 xl:w-1/2 2xl:pb-5 3xl:pb-0">
         {tabs.map((tab) => (
           <div
             key={tab.id}
@@ -65,9 +65,9 @@ export default function Tabs({ tabsContent }) {
       {tabsContent.map((tab) => (
         <div
           key={tab.id}
-          className={`${activeTab === tab.id ? 'opacity-100' : 'hidden'} flex h-full flex-col justify-start pt-5 px-5 bg-cyan-400 2xl:px-28`}
+          className={`${activeTab === tab.id ? 'opacity-100' : 'hidden'} flex h-full flex-col justify-start pt-5 bg-cyan-400 2xl:px-28`}
         >
-          <p className="pretty  mx-auto w-full whitespace-pre-wrap text-xs sm:text-sm md:text-base xl:w-7/10 2xl:leading-snug 3xl:w-2/3 3xl:text-xl">
+          <p className="pretty mx-auto whitespace-pre-wrap text-sm md:text-base xl:w-7/10 w-19/20 2xl:leading-snug 3xl:w-2/3 3xl:text-xl">
             {tab.content}
           </p>
         </div>

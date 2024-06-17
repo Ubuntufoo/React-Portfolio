@@ -56,12 +56,10 @@ export default function Carousel({
 
   return (
     <div className="flex h-svh flex-col gap-y-5">
-      <div className="flex w-full basis-1/2 place-items-center justify-center gap-x-3 pt-16 lg:mt-6 lg:pt-0 3xl:basis-2/3">
+      <div className="flex w-full basis-1/2 place-items-center justify-center gap-x-3 pt-4 lg:mt-6 lg:pt-0 3xl:basis-2/3">
         <div className=" w-4/5 sm:w-2/3 md:w-6/10 lg:w-1/2 xl:w-9/20">
           {images[currentIndex].type === 'video' ? (
             <video
-              autoPlay
-              muted
               src={images[currentIndex].src}
               alt={images[currentIndex].label}
               className={`relative z-40 mx-auto h-[500px] max-h-52 origin-top cursor-pointer rounded object-scale-down transition-all duration-300 sm:max-h-56 md:max-h-60 lg:max-h-64 xl:max-h-80 2xl:max-h-[360px] 3xl:max-h-[380px]`}
@@ -92,7 +90,7 @@ export default function Carousel({
             renderLink('https://brainteasers.herokuapp.com/', false)}
         </div>
       </div>
-      <div className=" flex h-1/2 basis-1/2 flex-col place-content-start place-items-center bg-cyan-200 text-center lg:trapezoid">
+      <div className=" basis-11/20 h-11/20 flex flex-col place-content-start place-items-center bg-cyan-200 text-center lg:trapezoid">
         {children}
       </div>
     </div>
