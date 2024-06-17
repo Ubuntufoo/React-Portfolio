@@ -4,6 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* list all possible values for css width property below */
+/* width: auto; */
+/* width: max-content; */
+/* width: min-content; */
+/* width: fit-content; */
+/* width: 100%; */
+/* width: 100vw; */
+/* width: 100vh; */
+/* width: 100vmin; */
+/* width: 100vmax; */
+/* width: 100vw; */
+/* width: 100vh; */
+/* width: 100vmin; */
+/* width: 100vmax; */
+/* width: 100%; */
+
+html {
+  padding-left: 50px;
+}
+
 /* used to prevent Chrome autofill background-color override */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,

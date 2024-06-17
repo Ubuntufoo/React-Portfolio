@@ -26,7 +26,6 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       fixedElements="#NavBar"
       lazyLoading={true}
       normalScrollElements='#map'
-      scrollOverflow={false}
       responsiveWidth={640}
       afterResponsive={(isResponsive) => {
         if (isResponsive && !isiPhoneWithiOS17()) {
