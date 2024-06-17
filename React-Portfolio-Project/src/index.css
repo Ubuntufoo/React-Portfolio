@@ -35,16 +35,15 @@ img {
 } */
 
 /* horizontal nav arrows */
-.fp-arrow.fp-controlArrow.fp-prev {
+.fp-prev {
   margin-left: -5px;
   scale: .75;
-  top: 45% !important;
+  top: calc(50% - 50px);
 }
-
-.fp-arrow.fp-controlArrow.fp-next {
+.fp-next {
   margin-right: -5px;
   scale: .75;
-  top: 45% !important;
+  top: calc(50% - 50px);
 }
 
 @media (min-width: 640px) {
