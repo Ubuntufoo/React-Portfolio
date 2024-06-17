@@ -58,13 +58,14 @@ img {
 .fp-prev {
   margin-left: -5px;
   scale: .75;
-  top: 40%;
+  top: 45%;
 }
 .fp-next {
   margin-right: -5px;
   scale: .75;
-  top: 40%;
+  top: 45%;
 }
+
 @media (min-width: 640px) {
   /* Screen size is sm or larger */
   .fp-prev {
