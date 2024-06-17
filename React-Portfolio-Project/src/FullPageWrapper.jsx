@@ -6,7 +6,7 @@ import ProjectsPage from './components/pages/projects/ProjectsPage'
 import SkillsPage from './components/pages/skills/SkillsPage'
 import ContactPage from './components/pages/contact/ContactPage'
 
-const anchors = ['Intro', 'Projects', 'Skills', 'Contact']
+import { anchors } from './utils/utils'
 
 const isiPhoneWithiOS17 = () => {
   const userAgent = window.navigator.userAgent
@@ -27,7 +27,7 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       scrollingSpeed={1000}
       keyboardScrolling={true}
       anchors={anchors}
-      
+
 
       menu="#myMenu"
       fixedElements="#NavBar"

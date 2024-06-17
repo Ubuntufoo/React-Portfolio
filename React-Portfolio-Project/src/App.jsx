@@ -5,6 +5,8 @@ import Header from './components/navbar/Header'
 import { setupKeydownHandler, keyClasses } from './utils/utils'
 import './index.css'
 
+import { anchors } from './utils/utils'
+
 const App = () => {
   const [activePage, setActivePage] = useState('Intro')
 
@@ -14,6 +16,16 @@ const App = () => {
 
     return () => {
       document.removeEventListener('keydown', handler)
+    }
+  }, [])
+
+  useEffect(() => {
+    const initialHash = window.location.hash.replace('#', '')
+    console.log('Initial URL hash:', initialHash) // Debugging
+    if (anchors.includes(initialHash)) {
+      setActivePage(initialHash)
+    } else {
+      setActivePage('Intro')
     }
   }, [])
 
