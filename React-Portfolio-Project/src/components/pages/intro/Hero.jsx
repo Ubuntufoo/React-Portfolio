@@ -23,7 +23,7 @@ export default function Hero() {
   }
 
   return (
-    <main className="flex h-screen items-center justify-center">
+    <main className="flex h-svh items-center justify-center">
       {animationEnded ? (
         <Parallelogram parallelogramClasses={parallelogramClasses}>
           <section className="grid grid-cols-1 grid-rows-6 h-full">

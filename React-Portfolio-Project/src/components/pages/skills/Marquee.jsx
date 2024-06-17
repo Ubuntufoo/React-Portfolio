@@ -23,7 +23,7 @@ function MarqueeRow({ className }) {
 export default function Marquee() {
   return (
     <div className="z-10 ms-1 w-1/10 lg:w-1/12 xl:w-1/14 2xl:w-1/16">
-      <div className="relative flex h-screen flex-col overflow-y-hidden">
+      <div className="relative flex h-svh flex-col overflow-y-hidden">
         <MarqueeRow className="absolute -z-10 flex grow animate-marquee flex-col gap-8" />
         <MarqueeRow className="absolute -z-10 flex animate-marquee2 flex-col gap-8" />
       </div>

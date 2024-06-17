@@ -110,7 +110,7 @@ export default function SkillsGrid() {
       {modalState.isOpen && (
         <div
           onClick={handleCloseModal}
-          className="absolute left-0 top-0 z-10 h-screen w-screen bg-black opacity-75"
+          className="absolute left-0 top-0 z-10 h-full w-screen bg-black opacity-75"
         ></div>
       )}
     </main>
