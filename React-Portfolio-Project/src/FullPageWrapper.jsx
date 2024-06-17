@@ -36,11 +36,11 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       fixedElements="#NavBar"
       lazyLoading={true}
       responsiveWidth={640}
-      afterResponsive={(isResponsive) => {
-        if (isResponsive) {
-          window.fullpage_api.setAutoScrolling(true)
-        }
-      }}
+      // afterResponsive={(isResponsive) => {
+      //   if (isResponsive) {
+      //     window.fullpage_api.setAutoScrolling(true)
+      //   }
+      // }}
       afterLoad={afterLoad}
       render={() => (
         <>
