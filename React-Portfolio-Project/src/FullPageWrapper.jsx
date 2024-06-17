@@ -33,6 +33,7 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       fixedElements="#NavBar"
       lazyLoading={true}
       normalScrollElements="#map"
+      loopBottom={true}
       afterLoad={handleAfterLoad}
       responsiveWidth={640}
       afterResponsive={(isResponsive) => {

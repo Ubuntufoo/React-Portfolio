@@ -57,9 +57,11 @@ img {
 /* horizontal nav arrows */
 .fp-prev {
   scale: .75;
+  top: 49%;
 }
 .fp-next {
   scale: .75;
+  top: 49%;
 }
 @media (min-width: 640px) {
   /* Screen size is sm or larger */
