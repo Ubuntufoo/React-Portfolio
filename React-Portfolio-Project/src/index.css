@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#fullscreen:fullscreen {
+  padding:10px;
+}
+
 /* used to prevent Chrome autofill background-color override */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -13,8 +17,8 @@ textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus,
 textarea:-webkit-autofill:active {
-    transition: all 0s 5000s;
-  }
+  transition: all 0s 5000s;
+}
 
 img {
   display: block;
@@ -48,6 +52,7 @@ img {
 }
 
 @media (min-width: 640px) {
+
   /* Screen size is sm or larger */
   .fp-prev {
     margin-left: 20px;

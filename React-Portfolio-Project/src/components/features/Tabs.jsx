@@ -30,9 +30,9 @@ export default function Tabs({ tabsContent }) {
   const getTabShift = () => {
     switch (activeTab) {
       case 0:
-        return 'left-0 -ms-4 md:ms-5 md:-mt-0'
+        return 'left-0 -ms-5 md:ms-5 md:-mt-0'
       case 1:
-        return 'left-1/4 -ms-5 md:ms-4 md:-mt-0'
+        return 'left-1/4 -ms-6 md:ms-4 md:-mt-0'
       case 2:
         return 'left-1/2 -ms-6 md:ms-4 md:-mt-0'
       case 3:

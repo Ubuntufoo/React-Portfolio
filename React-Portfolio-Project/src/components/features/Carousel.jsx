@@ -70,7 +70,7 @@ export default function Carousel({
       target="_blank"
       rel="noreferrer"
       href={href}
-      className="group absolute top-full mt-4 self-center"
+      className="group absolute top-full mt-5 md:mt-16 self-center"
     >
       <FaLink className="cursor-pointer text-2xl text-black transition-all duration-500 hover:scale-[1.20] 2xl:text-5xl" />
       {showTooltip && <ServerTooltip />}
@@ -85,15 +85,16 @@ export default function Carousel({
             <video
               src={images[currentIndex].src}
               alt={images[currentIndex].label}
-              className="relative z-40 mx-auto h-[500px] max-h-52 origin-top cursor-pointer rounded object-scale-down transition-all duration-300 sm:max-h-56 md:max-h-60 lg:max-h-64 xl:max-h-80 2xl:max-h-[360px] 3xl:max-h-[380px]"
+              className="relative z-40 mx-auto h-[500px] max-h-52 cursor-pointer rounded object-scale-down sm:max-h-56 md:max-h-60 lg:max-h-64 xl:max-h-80 2xl:max-h-[360px] 3xl:max-h-[380px]"
               controls
               onClick={handleImageClick}
             />
           ) : (
             <img
+              id='fullscreen'
               src={images[currentIndex].src}
               alt={images[currentIndex].label}
-              className="lg:max-h-68 relative z-40 mx-auto h-[500px] max-h-52 origin-top cursor-pointer rounded object-scale-down transition-all duration-300 sm:max-h-56 md:max-h-64 xl:max-h-80 2xl:max-h-[360px]"
+              className="lg:max-h-68 transition-all duration-50 origin-bottom relative z-40 mx-auto h-[500px] max-h-52 cursor-pointer rounded object-scale-down sm:max-h-56 md:max-h-64 xl:max-h-80 2xl:max-h-[360px]"
               onClick={handleImageClick}
             />
           )}
