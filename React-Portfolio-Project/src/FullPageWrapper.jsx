@@ -5,7 +5,8 @@ import IntroPage from './components/pages/intro/IntroPage'
 import ProjectsPage from './components/pages/projects/ProjectsPage'
 import SkillsPage from './components/pages/skills/SkillsPage'
 import ContactPage from './components/pages/contact/ContactPage'
-import { anchors } from './utils/utils'
+
+const anchors = ['Intro', 'Projects', 'Skills', 'Contact']
 
 const isiPhoneWithiOS17 = () => {
   const userAgent = window.navigator.userAgent
@@ -15,25 +16,30 @@ const isiPhoneWithiOS17 = () => {
 }
 
 const FullpageWrapper = ({ afterLoad, activePage }) => {
+  const handleAfterLoad = (origin, destination) => {
+    console.log('Navigated to:', destination.anchor) // Debugging
+    afterLoad()
+  }
+
   return (
     <ReactFullpage
       licenseKey={import.meta.env.VITE_FULLPAGEJS_LICENSE_KEY}
       scrollingSpeed={1000}
       keyboardScrolling={true}
       anchors={anchors}
-      menu='#myMenu'
-      navigation={false}
-      navigationTooltips={anchors}
+      
+
+      menu="#myMenu"
       fixedElements="#NavBar"
       lazyLoading={true}
-      normalScrollElements='#map'
+      normalScrollElements="#map"
+      afterLoad={handleAfterLoad}
       responsiveWidth={640}
       afterResponsive={(isResponsive) => {
         if (isResponsive && !isiPhoneWithiOS17()) {
           window.fullpage_api.setAutoScrolling(true)
         }
       }}
-      afterLoad={afterLoad}
       render={() => (
         <>
           <IntroPage />

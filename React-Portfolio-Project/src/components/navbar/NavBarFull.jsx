@@ -17,6 +17,7 @@ export default function NavBarFull({ activePage }) {
         {links.map((link, index) => (
           <li key={index} className={link.className}>
             <a
+              data-menuanchor={`${link.text}`}
               href={`#${link.text}`}
               className={`${activePage == link.text ? 'font-semibold [text-shadow:6px_6px_3px_var(--tw-shadow-color)]' : ''} inline-block origin-bottom shadow-gray-400 transition-all duration-700 ease-in-out hover:scale-110 hover:font-semibold  hover:text-black hover:[text-shadow:6px_6px_3px_var(--tw-shadow-color)]`}
             >

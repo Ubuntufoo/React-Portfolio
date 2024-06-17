@@ -6,19 +6,21 @@ import { setupKeydownHandler, keyClasses } from './utils/utils'
 import './index.css'
 
 const App = () => {
-  const [activePage, setActivePage] = useState('intro')
+  const [activePage, setActivePage] = useState('Intro')
 
- useEffect(() => {
-   const handler = setupKeydownHandler()
-   document.addEventListener('keydown', handler)
+  useEffect(() => {
+    const handler = setupKeydownHandler()
+    document.addEventListener('keydown', handler)
 
-   return () => {
-     document.removeEventListener('keydown', handler)
-   }
- }, [])
+    return () => {
+      document.removeEventListener('keydown', handler)
+    }
+  }, [])
 
   const afterLoad = () => {
-    setActivePage(window.fullpage_api.getActiveSection().anchor)
+    const activeSection = window.fullpage_api.getActiveSection().anchor
+    console.log('Active section:', activeSection) // Debugging
+    setActivePage(activeSection)
   }
 
   return (
