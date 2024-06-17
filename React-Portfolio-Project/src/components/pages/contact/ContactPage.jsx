@@ -25,7 +25,7 @@ export default function ContactPage() {
 
   return (
     <div className="section fp-auto-height bg-gradient-to-b from-cyan-500 to-cyan-900">
-      <section className="h-screen w-screen">
+      <section className="h-svh w-full">
         <div
           onClick={handleIframeClick}
           className="absolute inset-x-0 bottom-0 h-1/2 2xl:inset-0 2xl:h-full 2xl:py-24"
