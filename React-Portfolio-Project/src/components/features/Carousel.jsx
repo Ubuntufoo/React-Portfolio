@@ -47,7 +47,7 @@ export default function Carousel({
       target="_blank"
       rel="noreferrer"
       href={href}
-      className="group absolute top-full mt-16 w-fit"
+      className="group absolute self-center top-full mt-4"
     >
       <FaLink className="cursor-pointer text-2xl text-black transition-all duration-500 hover:scale-[1.20] 2xl:text-5xl" />
       {showTooltip && <ServerTooltip />}
@@ -55,8 +55,8 @@ export default function Carousel({
   )
 
   return (
-    <div className="flex h-screen flex-col gap-y-6 ">
-      <div className="flex w-full basis-1/2 place-items-center justify-center gap-x-3 pt-24 lg:pt-0 lg:mt-6 3xl:basis-2/3">
+    <div className="flex h-screen flex-col gap-y-5">
+      <div className="flex w-full basis-1/2 place-items-center justify-center gap-x-3 pt-16 lg:mt-6 lg:pt-0 3xl:basis-2/3">
         <div className=" w-4/5 sm:w-2/3 md:w-6/10 lg:w-1/2 xl:w-9/20">
           {images[currentIndex].type === 'video' ? (
             <video

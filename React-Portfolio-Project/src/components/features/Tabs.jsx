@@ -48,7 +48,7 @@ export default function Tabs({ tabsContent }) {
 
   return (
     <>
-      <div className="relative mt-6 grid h-1/4 w-full grid-cols-4 pb-4 text-center text-black md:mt-5 lg:h-1/3 xl:w-1/2 2xl:pb-5 3xl:pb-0">
+      <div className="relative mt-5 grid h-1/4 w-full grid-cols-4 text-center text-black md:mt-5 lg:h-1/3 xl:w-1/2 2xl:pb-5 3xl:pb-0">
         {tabs.map((tab) => (
           <div
             key={tab.id}
