@@ -1,4 +1,4 @@
-// Entry point for Fullpage.js
+// FullpageWrapper.jsx
 
 import ReactFullpage from '@fullpage/react-fullpage'
 import IntroPage from './components/pages/intro/IntroPage'
@@ -8,23 +8,24 @@ import ContactPage from './components/pages/contact/ContactPage'
 import { anchors } from './utils/utils'
 
 const FullpageWrapper = ({ afterLoad, activePage }) => {
+
   return (
     <ReactFullpage
       licenseKey={import.meta.env.VITE_FULLPAGEJS_LICENSE_KEY}
       scrollingSpeed={1000}
-      keyboardScrolling={true} // not working, I've forced this with utils.js/setupKeydownHandler
+      keyboardScrolling={true}
       anchors={anchors}
       navigation={false}
       navigationTooltips={anchors}
       fixedElements="#NavBar"
       lazyLoading={true}
       responsiveWidth={640}
-      controlArrowsHTML={[
-        // exposed for visibility and optional modification
-        '<div class="fp-arrow"></div>',
-        '<div class="fp-arrow"></div>',
-      ]}
-      afterLoad={afterLoad} // Callback function to update active page state
+      afterResponsive={(isResponsive) => {
+        if (isResponsive) {
+          window.fullpage_api.setAutoScrolling(true)
+        }
+      }}
+      afterLoad={afterLoad}
       render={() => (
         <>
           <IntroPage />
