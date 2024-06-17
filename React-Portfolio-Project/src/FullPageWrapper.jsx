@@ -27,8 +27,6 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       scrollingSpeed={1000}
       keyboardScrolling={true}
       anchors={anchors}
-
-
       menu="#myMenu"
       fixedElements="#NavBar"
       lazyLoading={true}
