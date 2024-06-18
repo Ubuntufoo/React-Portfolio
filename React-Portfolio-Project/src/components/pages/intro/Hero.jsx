@@ -30,7 +30,7 @@ export default function Hero() {
             <img
               src={BG1}
               alt="work desk with laptop"
-              className="absolute left-0 top-0 -z-10 size-full object-cover opacity-25 blur-[3px] brightness-50"
+              className="absolute left-0 top-0 -z-10 size-full object-cover opacity-20 blur-[3px] brightness-50"
             />
             <img
               src={Tim1_5}

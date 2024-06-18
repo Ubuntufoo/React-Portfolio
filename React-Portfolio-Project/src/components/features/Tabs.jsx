@@ -65,9 +65,9 @@ export default function Tabs({ tabsContent }) {
       {tabsContent.map((tab) => (
         <div
           key={tab.id}
-          className={`${activeTab === tab.id ? 'opacity-100' : 'hidden'} flex h-full flex-col justify-start pt-5 bg-cyan-400 2xl:px-28`}
+          className={`${activeTab === tab.id ? 'opacity-100' : 'hidden'} flex h-full flex-col justify-start pt-6 3xl:pt-12 bg-cyan-400 2xl:px-28`}
         >
-          <p className="pretty mx-auto whitespace-pre-wrap text-sm md:text-base xl:w-7/10 w-19/20 2xl:leading-snug 3xl:w-2/3 3xl:text-xl">
+          <p className=" text-pretty mx-auto whitespace-pre-wrap text-sm md:text-base xl:w-7/10 w-19/20  3xl:w-2/3 3xl:text-xl">
             {tab.content}
           </p>
         </div>

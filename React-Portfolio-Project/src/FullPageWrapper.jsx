@@ -1,4 +1,4 @@
-// FullpageWrapper.jsx
+// Entry point for the Fullpage.js library
 
 import ReactFullpage from '@fullpage/react-fullpage'
 import IntroPage from './components/pages/intro/IntroPage'
@@ -8,6 +8,7 @@ import ContactPage from './components/pages/contact/ContactPage'
 
 import { anchors } from './utils/utils'
 
+// disable Fullpage autoScroll on iPhone iOS 17 due to a incompatibility
 const isiPhoneWithiOS17 = () => {
   const userAgent = window.navigator.userAgent
   const iOS = !!userAgent.match(/iP(hone|od|ad)/i)
@@ -16,8 +17,7 @@ const isiPhoneWithiOS17 = () => {
 }
 
 const FullpageWrapper = ({ afterLoad, activePage }) => {
-  const handleAfterLoad = (origin, destination) => {
-    console.log('Navigated to:', destination.anchor) // Debugging
+  const handleAfterLoad = () => {
     afterLoad()
   }
 

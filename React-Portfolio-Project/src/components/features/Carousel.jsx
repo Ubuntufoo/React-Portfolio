@@ -79,7 +79,7 @@ export default function Carousel({
 
   return (
     <div className="flex h-svh flex-col gap-y-5">
-      <div className="flex w-full basis-1/2 place-items-center justify-center gap-x-3 pt-4 lg:mt-6 lg:pt-0 3xl:basis-2/3">
+      <div className="flex w-full basis-1/2 place-items-center justify-center gap-x-3 pt-4 lg:mt-4 lg:pt-0 3xl:basis-2/3">
         <div className="w-4/5 sm:w-2/3 md:w-6/10 lg:w-1/2 xl:w-9/20">
           {images[currentIndex].type === 'video' ? (
             <video
@@ -94,12 +94,12 @@ export default function Carousel({
               id='fullscreen'
               src={images[currentIndex].src}
               alt={images[currentIndex].label}
-              className="lg:max-h-68 transition-all duration-50 origin-bottom relative z-40 mx-auto h-[500px] max-h-52 cursor-pointer rounded object-scale-down sm:max-h-56 md:max-h-64 xl:max-h-80 2xl:max-h-[360px]"
+              className="lg:max-h-68 transition-all duration-50 origin-bottom relative z-40 mx-auto h-[500px] max-h-52 cursor-pointer rounded object-scale-down sm:max-h-56 md:max-h-64 xl:max-h-80 2xl:max-h-[360px] overflow-scroll"
               onClick={handleImageClick}
             />
           )}
         </div>
-        <div className="relative flex w-10 shrink flex-col gap-y-2 md:w-10 xl:w-16">
+        <div className="relative flex w-10 shrink flex-col gap-y-3 md:gap-y-5 md:w-10 xl:w-16">
           <button
             onClick={handlePrevClick}
             className="inline-block bg-gradient-to-b from-white to-cyan-950 text-white transition-all duration-150 trapezoid-button hover:scale-110 hover:bg-teal-950 active:-skew-x-6 active:scale-90"

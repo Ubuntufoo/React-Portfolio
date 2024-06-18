@@ -4,8 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-#fullscreen:fullscreen {
-  padding:10px;
+@media (min-width: 640px) {
+  #fullscreen:fullscreen {
+    padding:15px;
+    
+  }
 }
 
 /* used to prevent Chrome autofill background-color override */

@@ -107,7 +107,7 @@ export const projMainContent = [
     src: TADAmobile,
     label: 'TADA! Web App',
     description:
-      "TADA! is a responsive web app created using React.js and Express.js. It takes user input, combines it into a server-side composite prompt, and sends it to the OpenAI API.\n\nThe Large Language Model (LLM) generates positive affirmations for the user's various achievements, both big and small.",
+      "TADA! is a responsive web experience that puts a dynamic twist on the cliche TO-DO app. It takes user input and generates positive affirmations for the user's various achievements, both big and small.\n\nThe user input is combined into a server-side composite prompt and sent to the OpenAI API endpoint, ensuring each response is unique to the achievement.",
     linkExternal: 'https://tada-w0iq.onrender.com',
     linkToSlide: 3,
   },
@@ -115,7 +115,7 @@ export const projMainContent = [
     src: WorkDashIMG,
     label: 'Workflow Dashboard',
     description:
-      'A web app built with React and Flask, used to boost my productivity by providing a central location for tools and resources used in my daily workflow.\n\n API calls to the server automate web data retrieval with Selenium; PyAutoGUI automates point-and-click desktop tasks. Several 3rd-party web apps are embedded in iframe elements for quick access.',
+      'A web app built with the sole purpose of boosting my productivity by providing a central location for tools and resources used in my daily workflow.\n\nFrom my dashboard I can modify string data, compare differences in text, and even see the status of my test runs in my test case management tool. Several 3rd-party web apps are embedded directly into the page for quick access.',
     linkExternal: false,
     linkToSlide: 4,
   },
@@ -123,7 +123,7 @@ export const projMainContent = [
     src: ProjPortfolioHero,
     label: 'React Portfolio',
     description:
-      'A responsive website for showcasing my web dev accomplishments and connecting with like-minded people. It is built with React, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect.\n\nNo additional component libraries were incorporated. EmailJS provides light-weight email functionality.',
+      'A responsive website for showcasing my web dev accomplishments and connecting with like-minded people. It is built with React.js, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect.\n\nNo additional component libraries were incorporated. EmailJS provides light-weight email functionality.',
     linkExternal: false,
     linkToSlide: 5,
   },
