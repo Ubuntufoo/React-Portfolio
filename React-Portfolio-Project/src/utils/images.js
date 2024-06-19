@@ -57,10 +57,10 @@ export const skillCardsContent = [
   {
     img: reactLOGOcustom,
     title: 'React\nSpecialization',
-    firstHeader: 'React v18',
-    firstPara: "My projects focus on fundamentals and best practices. when I am prepared for new concepts I refer to 'React - The Complete Guide 2024', a comprehensive React course on Udemy.\n\nI prefer learning from the ground up, and generally avoid pre-built components until it is something I am comfortable building from scratch.",
+    firstHeader: 'React Fundamentals',
+    firstPara: "My projects focus on fundamentals and best practices. when I am prepared for new concepts I refer to 'React - The Complete Guide 2024', a comprehensive and highly acclaimed React course on Udemy.\n\nI prefer learning from the ground up, and generally avoid pre-built components until it is something I am actually comfortable building from scratch.",
     secondHeader: 'Learning Roadmap',
-    secondPara: "I'm also in the process of adding TypeScript to my skill-set, and revisiting raw Javascript. I am excited to dip into Next.js for more robust applications.",
+    secondPara: "I'm also in the process of adding TypeScript to my skill-set, and revisiting raw Javascript. I am excited to experiment with Next.js for more robust applications; as my projects scale up I plan to embrace performance optimization and SEO best practices.",
   },
   {
     img: genaiIMG,
@@ -80,7 +80,7 @@ export const skillCardsContent = [
     img: problemsolveIMG,
     title: 'Projects \nWith Purpose',
     firstHeader: 'Inspiration At Home',
-    firstPara: "I've drawn inspiration from loved ones for projects like my Wordle clone with added features and TADA, a serene take on the traditional To-Do list.\n\n In TADA, users receive AI-generated affirmations for their accomplishments.",
+    firstPara: "I've drawn inspiration from loved ones for projects like my Wordle clone with added features and TADA!, a mindful take on the traditional TO-DO list.\n\n In TADA!, users receive AI-generated affirmations for their accomplishments.",
     secondHeader: 'Practical Solutions',
     secondPara: "When I first discovered the power of Python scripting, I was motivated to automate everything. I've created scripts to streamline daily workflows, manage personal emails, and scrape web data using Selenium.\n\n One of my mid-term goals is to develop a Chrome Extension inspired by uBlock Origin's DOM filtering feature.",
   },
@@ -99,7 +99,7 @@ export const projMainContent = [
     src: BrainteasersHomeIMG,
     label: 'Brainteasers',
     description:
-      'Brainteasers is a responsive, full-stack website developed with Vue.js and Django.\n\nIt features postgreSQL database integration, user authentication, email functionality, and 3 Vue.js game applications with score boards. Django provides client-side admin access for crucial CRUD operations.',
+      'Brainteasers is a responsive, full-stack website developed with Vue.js and Django.\n\nIt features postgreSQL database integration, user authentication, email functionality, and 3 Vue.js game applications with score boards. Django provides client-side admin access for crucial data management operations.',
     linkExternal: 'https://brainteasers.herokuapp.com/',
     linkToSlide: 2,
   },
@@ -123,7 +123,7 @@ export const projMainContent = [
     src: ProjPortfolioHero,
     label: 'React Portfolio',
     description:
-      'A responsive website for showcasing my web dev accomplishments and connecting with like-minded people. It is built with React.js, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect.\n\nNo additional component libraries were incorporated. EmailJS provides light-weight email functionality.',
+      'A responsive website with a sharp geometric shape theme. Built to showcase my web dev accomplishments and connect with like-minded people. It is built with React.js, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect.\n\nNo additional component libraries were incorporated. EmailJS provides light-weight email functionality.',
     linkExternal: false,
     linkToSlide: 5,
   },
