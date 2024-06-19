@@ -42,7 +42,7 @@ export const tabsBrainteasers = [
   {
     id: 3,
     title: 'Techs',
-    content: "Brainteasers is built with an unconventional combination of Django, Vue.js, and Bootstrap, and is hosted on the Heroku platform.\n\nA monolithic file structure, Django handles the server-side logic while also serving the font-end Vue templates. Sendgrid powers the email contact form. Django has a convenient native tool-set that includes an admin UI for CRUD operations, and object-relational mapping, effectively SQL-in-Python.",
+    content: "Brainteasers is built with Django, Vue.js, and Bootstrap, and is hosted on the Heroku platform, complete with PostgreSQL integration.\n\nA monolithic file structure, Django handles the server-side logic while also serving the font-end Vue templates. Sendgrid powers the email contact form. Django has a convenient native tool-set that includes an admin UI for CRUD operations, and object-relational mapping, effectively SQL-in-Python.",
   },
 ];
 
