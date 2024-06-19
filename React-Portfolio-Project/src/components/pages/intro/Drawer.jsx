@@ -36,7 +36,7 @@ export default function Drawer() {
         </div>
       </div>
       <div className=" -mb-28 me-36 h-0 w-0 cursor-pointer border-b-[125px] border-l-[290px] border-t-[125px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-40">
-        <div className="absolute -ms-[261px] -mt-3.5 flex items-center space-x-6 text-white">
+        <div className="absolute -ms-[263px] -mt-3.5 flex items-center space-x-6 text-white">
           <a
             href="https://www.linkedin.com/in/timothy-murphy-19a702213/"
             target="_blank"
