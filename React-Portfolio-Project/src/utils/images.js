@@ -31,7 +31,8 @@ import BrainteasersAdmin from '../assets/projects-assets/BrainteasersAdmin.png'
 import TADA_code_IMG from '../assets/projects-assets/TADA_code_IMG.png'
 import TADAdesktop from '../assets/projects-assets/TADAdesktop.png'
 
-import WorkDashCode from '../assets/projects-assets/WorkDashCode.png'
+import WorkDashCode1of2 from '../assets/projects-assets/WorkDashCode1of2.png'
+import WorkDashCode2of2 from '../assets/projects-assets/WorkDashCode2of2.png'
 
 // import ProjPortfolioFormCode from '../assets/projects-assets/ProjPortfolioFormCode.png'
 import ProjPortfolioFullpageJSCode from '../assets/projects-assets/ProjPortfolioFullpageJSCode.png'
@@ -123,7 +124,7 @@ export const projMainContent = [
     src: ProjPortfolioHero,
     label: 'React Portfolio',
     description:
-      'A responsive website with a sharp geometric shape theme. Built to showcase my web dev accomplishments and connect with like-minded people. It is built with React.js, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect.\n\nNo additional component libraries were incorporated. EmailJS provides light-weight email functionality.',
+      "Created to showcase my web dev accomplishments and connect with like-minded people. This site is built from scratch with React.js, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect.\n\nHelp me see this website through your eyes: feedback, questions, and critiques can be submitted via the Contact section. I am eager to hear from you!",
     linkExternal: false,
     linkToSlide: 5,
   },
@@ -207,10 +208,16 @@ export const projWDContent = [
       'The Workflow Dashboard web app, showcasing the site’s design and features.',
   },
   {
-    src: WorkDashCode,
-    label: 'Workflow Dashboard Code',
+    src: WorkDashCode1of2,
+    label: 'Workflow Dashboard Code 1 of 2',
     description:
-      'The code view of the Workflow Dashboard web app, highlighting the React and Flask code used to create the site.',
+      'The code view of the Workflow Dashboard web app, highlighting the JavaScript code used to create the site.',
+  },
+  {
+    src: WorkDashCode2of2,
+    label: 'Workflow Dashboard Code 2 of 2',
+    description:
+      'The code view of the Workflow Dashboard web app, showcasing the JavaScript code used to create the site.',
   },
 ]
 

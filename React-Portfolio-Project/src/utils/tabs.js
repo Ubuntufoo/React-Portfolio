@@ -37,7 +37,7 @@ export const tabsBrainteasers = [
   {
     id: 2,
     title: 'Lessons',
-    content: "The lessons were frequent and tough. What is this CORS error? How do I protect sensitive auth credentials? Why is margin-top NOT WORKING!? (collapsing margins... oof). Hours were spent staring dumbfounded at settings.py, where my development/production configurations live. With every concept practically brand new I struggled making sense of how pieces worked together.\n\nI got my first taste of flexbox and grid, cornerstones of markup styling. And Django itself gave so much to unpack that I'm still finding aha! moments when I return to the code base.",
+    content: "The lessons were frequent and tough. What is this CORS error? How do I protect sensitive credentials? Why is margin-top NOT WORKING!? (collapsing margins... oof). Hours were spent staring dumbfounded at settings.py, where my environment configurations live. I struggled making sense of how pieces worked together.\n\nI got my first taste of flexbox and grid, cornerstones of markup styling. And Django itself gave so much to unpack that I still encounter aha! moments when I return to the code base.",
   },
   {
     id: 3,
