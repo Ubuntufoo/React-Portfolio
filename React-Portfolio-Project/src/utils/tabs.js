@@ -106,7 +106,7 @@ export const tabsPortfolio = [
   {
     id: 2,
     title: 'Lessons',
-    content: "So many good lessons learned here. For starters: Intrinsic vs extrinsic CSS sizing, advanced layout techniques, multi-browser/device support, UX design for images, Tailwind extension + configuration... \n\nSome challenges remain, and I'm comfortable telling on myself: Why is there a vertical distortion that occurs beneath images when the Fullscreen.js method is called, just a Fullpage.js quirk? How can I widen my net for device compatibility? Why does the marquee on the Skills page, on rare occasion, inexplicably overlap icons?",
+    content: "So many lessons learned here. For starters: Intrinsic vs extrinsic sizing, advanced layout techniques, multi-browser/device support, UX design for images, Tailwind customization... \n\nSome challenges remain, and I'm comfortable telling on myself: Why is there a vertical distortion that occurs beneath images when the Fullscreen.js method is called, just a Fullpage.js quirk? How can I widen my net for device compatibility? Why does the marquee on the Skills page, on rare occasion, inexplicably overlap icons?",
   },
   {
     id: 3,

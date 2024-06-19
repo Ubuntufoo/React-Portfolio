@@ -67,7 +67,6 @@ export default function Form() {
               type="text"
               name="name"
               id="name"
-              autoFocus
               pattern=".{2,}"
               className={inputClasses}
               placeholder=""
