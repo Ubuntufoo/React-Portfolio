@@ -11,7 +11,7 @@ import { GrDocumentUser } from 'react-icons/gr'
 export default function Drawer() {
   return (
     <div className="group absolute bottom-0 left-0 -ms-72 flex size-0 cursor-pointer flex-col items-end justify-end border-b-[1px] border-l-[430px] border-t-[480px] border-solid border-b-transparent border-l-[#fff] border-t-transparent font-mono transition-transform duration-500 hover:translate-x-28">
-      <div className="-mb-32 me-36 h-0 w-0 cursor-pointer border-b-[125px] border-l-[290px] border-t-[125px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-44">
+      <div className="-mb-28 me-36 h-0 w-0 cursor-pointer border-b-[125px] border-l-[290px] border-t-[125px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-44">
         <div className="absolute -ms-[268px] -mt-3.5 flex items-center space-x-8 text-white ">
           <a
             href="https://github.com/Ubuntufoo"
@@ -24,7 +24,7 @@ export default function Drawer() {
           <FaGithub className="text-3xl" />
         </div>
       </div>
-      <div className="-mb-32 me-36 h-0 w-0 cursor-pointer border-b-[125px] border-l-[350px] border-t-[125px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-60">
+      <div className="-mb-28 me-36 h-0 w-0 cursor-pointer border-b-[125px] border-l-[350px] border-t-[125px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-60">
         <div className="absolute -ms-[346px] -mt-3.5 flex items-center space-x-6 text-white md:-ms-[338px] md:space-x-8">
           <a
             href="mailto:TimothyMurphy123@gmail.com"
@@ -48,7 +48,7 @@ export default function Drawer() {
           <BiLogoLinkedinSquare className="text-3xl" />
         </div>
       </div>
-      <div className="-mb-24 me-36 h-0 w-0 cursor-pointer border-b-[125px] border-l-[290px] border-t-[125px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-40 lg:-mb-6">
+      <div className="-mb-28 me-36 h-0 w-0 cursor-pointer border-b-[125px] border-l-[290px] border-t-[125px] border-solid border-b-transparent border-l-gray-800 border-t-transparent transition-transform duration-500 hover:translate-x-40 lg:-mb-6">
         <div className="absolute -ms-[210px] -mt-3.5 flex items-center space-x-7 text-white">
           <a
             href="https://docs.google.com/document/d/15K8jNlhiDEw9anGdRNiWMGWhdIbsLZinUbh73TV_LD8/edit?usp=sharing"
