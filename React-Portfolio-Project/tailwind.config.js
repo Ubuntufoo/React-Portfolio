@@ -122,10 +122,21 @@ export default {
           'aspect-ratio': '1',
           'clip-path': 'polygon(var(--p) 0, calc(100% - var(--p)) 0, 100% 100%, 0 100%)',
         },
+        '.cube': {
+          '--d': '10px',
+          /* control the depth */
+          padding: '10px',
+          'aspect-ratio': '1',
+          'box-sizing': 'border-box',
+          border: 'solid #0000',
+          'border-width': 'var(--d) var(--d) 0 0',
+          'clip-path': 'polygon(0 100%, calc(100% - var(--d)) 100%, 100% calc(100% - var(--d)), 100% 0, var(--d) 0, 0 var(--d))',
+          background:
+            'conic-gradient(from 45deg at calc(100% - var(--d)) var(--d), rgba(102, 50, 50, 0.267) 37.5%, #0000 0 62.5%, #0008 0) border-box',
+        },
       };
 
       addUtilities(newUtilities);
     },
   ],
 };
-

@@ -1,4 +1,5 @@
-//
+// TADA! project slide
+
 import { projTADAContent } from '../../../utils/images'
 import { tabsTADA } from "../../../utils/tabs"
 import Carousel from "../../features/Carousel"

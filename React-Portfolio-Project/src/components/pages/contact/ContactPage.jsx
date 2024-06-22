@@ -1,10 +1,7 @@
-// child component showing a contact form
+// child component for a contact form
 
 import Form from "./Form";
-
 import { useState } from 'react'
-
-// import KeyboardArrows from '../../features/KeyboardArrows'
 
 export default function ContactPage() {
    const [mapClicked, setMapClicked] = useState(false)
@@ -14,14 +11,6 @@ export default function ContactPage() {
        setMapClicked(true)
      }
    }
-
-
-  // const keyStyling = {
-  //   up: keyClasses.keyActiveClass,
-  //   down: keyClasses.keyActiveClass,
-  //   left: keyClasses.keyInactiveClass,
-  //   right: keyClasses.keyInactiveClass,
-  // }
 
   return (
     <div className="section fp-auto-height-responsive bg-gradient-to-b from-cyan-500 to-cyan-900">
@@ -41,7 +30,6 @@ export default function ContactPage() {
         </div>
         <Form />
       </section>
-      {/* <KeyboardArrows keyStyling={keyStyling} /> */}
     </div>
   )
 }

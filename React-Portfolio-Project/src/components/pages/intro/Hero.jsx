@@ -16,6 +16,7 @@ export default function Hero() {
     setAnimationEnded(true)
   }
 
+
   const handleAnimationStart = () => {
     setTimeout(() => {
       setAnimationStarted(true)
@@ -26,7 +27,7 @@ export default function Hero() {
     <main className="flex h-svh items-center justify-center">
       {animationEnded ? (
         <Parallelogram parallelogramClasses={parallelogramClasses}>
-          <section className="grid grid-cols-1 grid-rows-6 h-full">
+          <section className="grid h-full grid-cols-1 grid-rows-6">
             <img
               src={BG1}
               alt="work desk with laptop"
@@ -35,10 +36,10 @@ export default function Hero() {
             <img
               src={Tim1_5}
               alt="Tim's image"
-              className="absolute -bottom-20 -right-20 scale-[0.7] animate-fade sm:-bottom-8  md:-right-2 md:bottom-10 md:scale-100 lg:-bottom-20 lg:right-4 lg:scale-50 xl:-bottom-6 xl:right-24 xl:scale-75 2xl:bottom-0 2xl:right-60 3xl:scale-[1.35] 3xl:right-96 2xl:scale-110 3xl:bottom-16"
+              className="absolute -bottom-20 -right-20 scale-[0.7] animate-fade sm:-bottom-8  md:-right-2 md:bottom-10 md:scale-100 lg:-bottom-20 lg:right-4 lg:scale-50 xl:-bottom-6 xl:right-24 xl:scale-75 2xl:bottom-0 2xl:right-60 2xl:scale-110 3xl:bottom-16 3xl:right-96 3xl:scale-[1.35]"
             />
-            <div className="row-start-2 mx-5 relative h-fit p-2 ps-4 z-10 animate-fade leading-snug text-black md:text-2xl lg:text-xl lg:ps-4 xl:ps-10 xl:pt-6 2xl:space-y-9 2xl:text-2xl 2xl:ps-20 3xl:ps-28 2xl:pt-8 3xl:pt-14">
-              <h1 className="text-2xl md:text-3xl pb-4 2xl:max-3xl:pb-0 3xl:pb-4 xl:text-4xl">
+            <div className="relative z-10 row-start-2 mx-5 h-fit animate-fade p-2 ps-4 leading-snug text-black md:text-2xl lg:ps-4 lg:text-xl xl:ps-10 xl:pt-6 2xl:space-y-9 2xl:ps-20 2xl:pt-8 2xl:text-2xl 3xl:ps-28 3xl:pt-14">
+              <h1 className="pb-4 text-2xl md:text-3xl xl:text-4xl 2xl:max-3xl:pb-0 3xl:pb-4">
                 Welcome. I&apos;m Tim. <br />
               </h1>
               <p className="text-pretty">
@@ -46,7 +47,7 @@ export default function Hero() {
                   {[
                     'Husband.',
                     'Father.',
-                    <strong className="italic font-semibold" key={4}>
+                    <strong className="font-semibold italic" key={4}>
                       Web Developer.
                     </strong>,
                   ].map((word, index) => (
@@ -69,6 +70,7 @@ export default function Hero() {
           onAnimationEnd={handleAnimationEnd}
           onAnimationStart={handleAnimationStart}
           className={`${animationStarted ? 'opacity-0 transition-opacity duration-1000' : 'opacity-100'} me-44 w-28 animate-waving text-8xl 2xl:w-40 2xl:text-[140px]`}
+          aria-hidden={!animationStarted}
         >
           👋
         </div>

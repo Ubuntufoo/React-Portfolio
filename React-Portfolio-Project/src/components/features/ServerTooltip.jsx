@@ -1,4 +1,4 @@
-// simple tooltip component
+// simple tooltip component for server hosting note
 
 export default function ServerTooltip() {
 

@@ -1,4 +1,5 @@
-//
+// Portfolio project slide
+
 import { projPortfolioContent } from '../../../utils/images'
 import { tabsPortfolio } from '../../../utils/tabs'
 import Carousel from '../../features/Carousel'

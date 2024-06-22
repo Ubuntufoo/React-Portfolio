@@ -1,4 +1,5 @@
-//
+// a component that renders a tabbed content section
+
 import { useState } from 'react'
 
 export default function Tabs({ tabsContent }) {
@@ -27,7 +28,8 @@ export default function Tabs({ tabsContent }) {
     setActiveTab(id)
   }
 
-  const getTabShift = () => {
+  // Adjust tab alignment based on the active tab
+  const getTabAlign = () => {
     switch (activeTab) {
       case 0:
         return 'left-0 -ms-5 md:ms-5 md:-mt-0'
@@ -43,15 +45,24 @@ export default function Tabs({ tabsContent }) {
   }
 
   if (!tabsContent || !Array.isArray(tabsContent)) {
-    return null // or render a loading state
+    return null
   }
 
   return (
     <>
-      <div className="relative mt-3 grid h-1/4 w-full grid-cols-4 text-center text-black md:mt-5 lg:h-1/3 xl:w-1/2 2xl:pb-5 3xl:pb-0">
+      <div
+        role="tablist"
+        aria-label="Tabbed content section"
+        className="relative mt-3 grid h-1/4 w-full grid-cols-4 text-center text-black md:mt-5 lg:h-1/3 xl:w-1/2 2xl:pb-5 3xl:pb-0"
+      >
         {tabs.map((tab) => (
           <div
             key={tab.id}
+            role="tab"
+            id={`tab-${tab.id}`}
+            aria-selected={activeTab === tab.id}
+            aria-controls={`tabpanel-${tab.id}`}
+            tabIndex={activeTab === tab.id ? 0 : -1}
             className={`col-span-1 box-content flex h-fit cursor-pointer select-none flex-col justify-center justify-self-center whitespace-pre border-b-2 border-gray-600 bg-transparent pb-2 font-roboto text-sm font-semibold transition-all duration-500 hover:scale-110 xl:text-base 3xl:text-xl ${activeTab === tab.id ? 'border-none text-black' : ' text-cyan-950'}`}
             onClick={() => handleTabClick(tab.id)}
           >
@@ -59,15 +70,18 @@ export default function Tabs({ tabsContent }) {
           </div>
         ))}
         <div
-          className={`cube absolute top-0 mt-2.5 h-10 w-14 origin-center translate-x-2/3 rotate-180 scale-[1.5] transition-all duration-700 ease-out md:h-12 md:w-16 lg:ms-4 lg:h-14 lg:w-20 2xl:ms-0 2xl:mt-0 3xl:ms-5 3xl:mt-2 ${getTabShift()}`}
+          className={`cube absolute top-0 mt-2.5 h-10 w-14 origin-center translate-x-2/3 rotate-180 scale-[1.5] transition-all duration-700 ease-out md:h-12 md:w-16 lg:ms-4 lg:h-14 lg:w-20 2xl:ms-0 2xl:mt-0 3xl:ms-5 3xl:mt-2 ${getTabAlign()}`}
         ></div>
       </div>
       {tabsContent.map((tab) => (
         <div
           key={tab.id}
-          className={`${activeTab === tab.id ? 'opacity-100' : 'hidden'} flex h-full flex-col justify-start pt-6 3xl:pt-12 bg-cyan-400 2xl:px-28`}
+          id={`tabpanel-${tab.id}`}
+          role="tabpanel"
+          aria-labelledby={`tab-${tab.id}`}
+          className={`${activeTab === tab.id ? 'opacity-100' : 'hidden'} flex h-full flex-col justify-start bg-cyan-400 pt-6 2xl:px-28 3xl:pt-12`}
         >
-          <p className=" text-pretty mx-auto whitespace-pre-wrap text-sm md:text-base xl:w-7/10 w-19/20  3xl:w-2/3 3xl:text-xl">
+          <p className="w-19/20 mx-auto whitespace-pre-wrap text-pretty text-sm md:text-base xl:w-7/10 3xl:w-2/3 3xl:text-xl">
             {tab.content}
           </p>
         </div>

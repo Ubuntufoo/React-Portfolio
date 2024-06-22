@@ -1,4 +1,5 @@
-//
+// A child component of a Carousel for images and video
+
 import { useState } from 'react'
 import ServerTooltip from './ServerTooltip'
 import { FaLink } from 'react-icons/fa'
@@ -33,6 +34,7 @@ export default function Carousel({
     )
   }
 
+  // Toggle fullscreen mode on image click event
   const handleImageClick = (event) => {
     const imageElement = event.target
 
@@ -70,7 +72,7 @@ export default function Carousel({
       target="_blank"
       rel="noreferrer"
       href={href}
-      className="group absolute top-full mt-5 md:mt-16 self-center"
+      className="group absolute top-full mt-5 self-center md:mt-16"
     >
       <FaLink className="cursor-pointer text-2xl text-black transition-all duration-500 hover:scale-[1.20] 2xl:text-5xl" />
       {showTooltip && <ServerTooltip />}
@@ -78,7 +80,11 @@ export default function Carousel({
   )
 
   return (
-    <div className="flex h-svh flex-col gap-y-5">
+    <div
+      className="flex h-svh flex-col gap-y-5"
+      role="region"
+      aria-label="Image and video carousel"
+    >
       <div className="flex w-full basis-1/2 place-items-center justify-center gap-x-3 pt-4 lg:mt-4 lg:pt-0 3xl:basis-2/3">
         <div className="w-4/5 sm:w-2/3 md:w-6/10 lg:w-1/2 xl:w-9/20">
           {images[currentIndex].type === 'video' ? (
@@ -91,22 +97,24 @@ export default function Carousel({
             />
           ) : (
             <img
-              id='fullscreen'
+              id="fullscreen"
               src={images[currentIndex].src}
               alt={images[currentIndex].label}
-              className="lg:max-h-68 transition-all duration-50 origin-bottom relative z-40 mx-auto h-[500px] max-h-52 cursor-pointer rounded object-scale-down sm:max-h-56 md:max-h-64 xl:max-h-80 2xl:max-h-[360px] overflow-scroll"
+              className="lg:max-h-68 duration-50 relative z-40 mx-auto h-[500px] max-h-52 origin-bottom cursor-pointer overflow-scroll rounded object-scale-down transition-all sm:max-h-56 md:max-h-64 xl:max-h-80 2xl:max-h-[360px]"
               onClick={handleImageClick}
             />
           )}
         </div>
-        <div className="relative flex w-10 shrink flex-col gap-y-3 md:gap-y-5 md:w-10 xl:w-16">
+        <div className="relative flex w-10 shrink flex-col gap-y-3 md:w-10 md:gap-y-5 xl:w-16">
           <button
             onClick={handlePrevClick}
             className="inline-block bg-gradient-to-b from-white to-cyan-950 text-white transition-all duration-150 trapezoid-button hover:scale-110 hover:bg-teal-950 active:-skew-x-6 active:scale-90"
+            aria-label="Previous slide"
           ></button>
           <button
             onClick={handleNextClick}
             className="rotate-180 bg-gradient-to-t from-cyan-950 to-white text-white transition-all duration-150 trapezoid-button hover:scale-110 hover:bg-teal-950 active:-skew-x-6 active:scale-90"
+            aria-label="Next slide"
           ></button>
           {tabsType === 'tabsTADA' &&
             renderLink('https://tada-w0iq.onrender.com', true)}

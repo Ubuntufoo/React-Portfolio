@@ -1,4 +1,5 @@
-//
+// ExploreLLM Project slide
+
 import Carousel from "../../features/Carousel"
 import Tabs from "../../features/Tabs"
 import { projExploreLLMImages } from '../../../utils/images'

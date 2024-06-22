@@ -1,4 +1,5 @@
-//
+// Work Dashboard project slide
+
 import Carousel from "../../features/Carousel"
 import Tabs from "../../features/Tabs"
 import { projWDContent } from '../../../utils/images'

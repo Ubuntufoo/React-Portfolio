@@ -6,7 +6,7 @@ import { PiCheckFatBold } from 'react-icons/pi'
 import { TbFaceIdError } from 'react-icons/tb'
 
 export default function Form() {
-  const form = useRef() // Access the form element
+  const form = useRef()
   const [success, setSuccess] = useState(null)
   const [loading, setLoading] = useState(false)
 
@@ -33,12 +33,12 @@ export default function Form() {
   }
 
   // Classes grouped for readability
-   const inputClasses = `border-1 peer block w-full border-b bg-transparent py-3 font-serif focus:border-gray-950
-        focus:outline-none focus:ring-0 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500
-        invalid:[&:not(:placeholder-shown):not(:focus)]:text-red-500`
-    const labelClasses = `absolute top-3 -z-10 origin-left -translate-y-7 scale-90 transform duration-300
-      peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0
-      peer-focus:-translate-y-7 peer-focus:scale-90  transform duration-300`
+  const inputClasses = `border-1 peer block w-full border-b bg-transparent py-3 font-serif focus:border-gray-950
+    focus:outline-none focus:ring-0 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500
+    invalid:[&:not(:placeholder-shown):not(:focus)]:text-red-500`
+  const labelClasses = `absolute top-3 -z-10 origin-left -translate-y-7 scale-90 transform duration-300
+    peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0
+    peer-focus:-translate-y-7 peer-focus:scale-90  transform duration-300`
 
   return (
     <div
@@ -106,6 +106,7 @@ export default function Form() {
               Your Message
             </label>
           </div>
+          {/* Success and failure indicators */}
           {success === true && (
             <div
               aria-live="polite" // Accessibility attribute for screen readers
@@ -124,7 +125,6 @@ export default function Form() {
               <span className="sr-only">Message sending failed</span>
             </div>
           )}
-
           <button
             type="submit"
             aria-label="Send"

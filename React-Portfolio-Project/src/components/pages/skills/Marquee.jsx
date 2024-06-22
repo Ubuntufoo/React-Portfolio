@@ -17,9 +17,11 @@ function MarqueeRow({ className }) {
   )
 }
 
-// Marquee uses 2 absolutely positioned columns of logos inside a relative container.
-// Column animation begins on 0% and -100% screen innerHeight, overflow is hidden
-// on y-axis.
+/*
+  Marquee uses 2 absolutely positioned columns of logos inside a relative container.
+  Column animation begins on 0% and -100% screen innerHeight, overflow is hidden
+  on y-axis.
+*/
 export default function Marquee() {
   return (
     <div className="z-10 ms-1 w-1/10 lg:w-1/12 xl:w-1/14 2xl:w-1/16">
@@ -30,3 +32,4 @@ export default function Marquee() {
     </div>
   )
 }
+
