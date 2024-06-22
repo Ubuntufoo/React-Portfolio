@@ -96,7 +96,7 @@ export const tabsPortfolio = [
   {
     id: 0,
     title: 'About',
-    content: "A responsive site featuring a theme of sharp geometric shapes with a cyan color palette, showcasing my developer accomplishments. I designed it from scratch to avoid the cookie-cutter look of rounded corners and dark, two-tone color schemes.\n\nThe content is presented as smooth-transitioning slides thanks to my secret-sauce: a JS library called Fullpage, built by a friendly fellow named Alvaro Trigo. Navigation is encouraged via the up, down, left, and right keys.",
+    content: "A responsive site featuring a theme of sharp geometric shapes with a cyan color palette, showcasing my developer accomplishments. Designed from scratch - no component libraries here.\n\nThe content is presented as smooth-transitioning slides thanks to my secret-sauce: a JS library called Fullpage, built by a friendly fellow named Alvaro Trigo. Navigation is encouraged via the up, down, left, and right keys.",
   },
   {
     id: 1,
@@ -106,7 +106,7 @@ export const tabsPortfolio = [
   {
     id: 2,
     title: 'Lessons',
-    content: "So many lessons learned here. For starters: Intrinsic vs extrinsic sizing, advanced layout techniques, multi-browser/device support, UX design for images, Tailwind customization... \n\nSome challenges remain, and I'm comfortable telling on myself: Why is there a vertical distortion beneath images when the Fullscreen.js method is called, just a Fullpage.js quirk? How can I widen my net for device compatibility? Why does the marquee on the Skills page inexplicably overlap icons on rare occasion?",
+    content: "So many lessons learned here. For starters: Intrinsic vs extrinsic sizing, advanced layout techniques, multi-browser/device support, UX design for images, Tailwind customization... \n\nI'm comfortable telling on myself: Why is there a vertical distortion beneath images when the Fullscreen.js method is called, just a Fullpage.js quirk? How can I widen my net for device compatibility? Why does the marquee on the Skills page inexplicably overlap icons on rare occasion?",
   },
   {
     id: 3,
