@@ -4,7 +4,7 @@ export const tabsExploreLLM = [
  {
     id: 0,
     title: 'About',
-    content: "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses', this project demonstrates how ExploreLLM enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.\n\nIt leverages OpenAI API to generate manageable chunks of information for the user, preventing the dreaded wall of text that chatbots are known for, and users struggle to comprehend.",
+    content: "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses', this project demonstrates ways to enhance AI interactions by integrating large language models (LLMs) with tailor-made GUIs for structured user experiences.\n\nIt leverages OpenAI API to generate manageable chunks of information for the user, preventing the dreaded wall of text that chatbots are known for, and users struggle to comprehend.",
   },
   {
     id: 1,
@@ -37,7 +37,7 @@ export const tabsBrainteasers = [
   {
     id: 2,
     title: 'Lessons',
-    content: "The lessons were frequent and tough. What is this CORS error? How do I protect sensitive credentials? Why is margin-top NOT WORKING!? (collapsing margins... oof). Hours were spent staring dumbfounded at settings.py, where my environment configurations live. I struggled making sense of how pieces worked together.\n\nI got my first taste of flexbox and grid, cornerstones of markup styling. And Django itself gave so much to unpack that I still encounter aha! moments when I return to the code base.",
+    content: "The lessons were frequent and tough. What is this CORS error? How do I protect sensitive credentials? Why is margin-top NOT WORKING? (collapsing margins...). Hours were spent staring dumbfounded at settings.py, where my environment configurations live.\n\nI got my first taste of flexbox and grid, cornerstones of markup styling. And Django itself gave so much to unpack that I still encounter aha! moments when I return to the code base.",
   },
   {
     id: 3,
@@ -60,12 +60,12 @@ export const tabsTADA = [
   {
     id: 2,
     title: 'Lessons',
-    content: "I delved into new tools and libraries with TADA!, exploring Generative AI and learning valuable lessons in API usage and data handling. Along the way, I embraced ESLint and Prettier for JavaScript syntax analysis and code formatting, enhancing my workflow with essential extensions.\n\nTransitioning from Bootstrap to Tailwind brought newfound versatility and support to my projects. Additionally, incorporating Express.js expanded my understanding of routing and middleware in backend development.",
+    content: "I delved into new tools and libraries with TADA!, exploring Generative AI and learning valuable lessons in API usage and data handling. Along the way, I embraced ESLint and Prettier for JavaScript syntax analysis and code formatting.\n\nTransitioning from Bootstrap to Tailwind brought newfound versatility and support to my projects. Additionally, incorporating Express.js expanded my understanding of routing and middleware in backend development.",
   },
   {
     id: 3,
     title: 'Techs',
-    content: "Built with React.js and Express.js, and hosted on Render. TADA! combines user input into a server-side composite prompt and sends it to the API endpoint of OpenAI. The Large Language Model (LLM), role-playing a self-help and mindfulness coach, returns a custom response based on the input. I increased the AI model's temperature, i.e. creativity setting, to ensure a variety of responses.\n\nThe project is lightweight by design allowing the freedom to easily adapt it as a PWA or mobile app in the future.",
+    content: "Built with React.js and Express.js, and hosted on Render. TADA! combines user input into a server-side composite prompt and sends it to the API endpoint of OpenAI. The Large Language Model (LLM), role-playing a self-help and mindfulness coach, returns a custom response based on the input. I increased the AI model's temperature, i.e. creativity setting, to ensure a variety of responses.\n\nThe project is lightweight allowing the freedom to adapt it as a PWA or mobile app in the future.",
   },
 ];
 
@@ -88,7 +88,7 @@ export const tabsWorkDash = [
   {
     id: 3,
     title: 'Techs',
-    content: "Built with React.js and Flask, featuring sever-side script automation. By adding a new system env variable and using the Python subprocess module I can execute any CLI tool from my browser.\n\nHTML iframe tags embed 3rd-party tools that have weak or non-existent authentication barriers (thanks Testrail!). Client-side string editing functions ensure data is formatted for quick use in my SQL queries. Small touches, like copy-on-click via the clipboard sub-property of the browser window object, make the dashboard a joy to use.",
+    content: "Built with React.js and Flask, featuring sever-side script automation. By adding a new system env variable and using the Python subprocess module I can execute any CLI tool from my browser.\n\nHTML iframe tags embed 3rd-party tools that have weak or non-existent authentication barriers (thanks Testrail!). Client-side string editing functions ensure data is formatted for quick use in my SQL queries.",
   },
 ];
 
@@ -96,22 +96,22 @@ export const tabsPortfolio = [
   {
     id: 0,
     title: 'About',
-    content: "This website showcases my greatest coding accomplishments thus far. It is a responsive site featuring a theme of sharp geometric shapes with a cyan color palette. I designed it from scratch to avoid the cookie-cutter look of rounded corners and dark, two-tone color schemes.\n\nThe content is presented as smooth-transitioning slides thanks to my secret-sauce: a JS library called Fullpage, built by a friendly fellow named Alvaro Trigo. Navigation is encouraged via the up, down, left, and right keys.",
+    content: "A responsive site featuring a theme of sharp geometric shapes with a cyan color palette, showcasing my developer accomplishments. I designed it from scratch to avoid the cookie-cutter look of rounded corners and dark, two-tone color schemes.\n\nThe content is presented as smooth-transitioning slides thanks to my secret-sauce: a JS library called Fullpage, built by a friendly fellow named Alvaro Trigo. Navigation is encouraged via the up, down, left, and right keys.",
   },
   {
     id: 1,
     title: 'Journey',
-    content: "This website is actually a do-over from a previous iteration built with Vue.js. When I chose React as my future focus I put this project on the back burner to lock-in my React skills. Now that I'm 99% done with this project, I realize I wasn't ready to tackle this back then as a Vue.js beginner. I was naive to working with a large library's callbacks and methods, prop drilling, and the like.\n\nMany new doors have opened thanks to the concepts and libraries I discovered through this process.",
+    content: "This website is actually a do-over from a previous iteration built with Vue.js. When I chose React as my future focus I put this project on the back burner to lock-in my React skills. Now that I'm 99% done with this project, I realize I wasn't ready to tackle this back then as a Vue.js beginner. I was naive to working with a large library's callbacks and methods, prop drilling, and the like.\n\nMany new doors have opened thanks to the concepts I discovered through this process.",
   },
   {
     id: 2,
     title: 'Lessons',
-    content: "So many lessons learned here. For starters: Intrinsic vs extrinsic sizing, advanced layout techniques, multi-browser/device support, UX design for images, Tailwind customization... \n\nSome challenges remain, and I'm comfortable telling on myself: Why is there a vertical distortion that occurs beneath images when the Fullscreen.js method is called, just a Fullpage.js quirk? How can I widen my net for device compatibility? Why does the marquee on the Skills page, on rare occasion, inexplicably overlap icons?",
+    content: "So many lessons learned here. For starters: Intrinsic vs extrinsic sizing, advanced layout techniques, multi-browser/device support, UX design for images, Tailwind customization... \n\nSome challenges remain, and I'm comfortable telling on myself: Why is there a vertical distortion beneath images when the Fullscreen.js method is called, just a Fullpage.js quirk? How can I widen my net for device compatibility? Why does the marquee on the Skills page inexplicably overlap icons on rare occasion?",
   },
   {
     id: 3,
     title: 'Techs',
-    content: "Built with React.js, hosted on Netlify. The Fullpage.js library aids layout and navigation. No back-end was required thanks to a lightweight library called EmailJS, which grants client-side email functionality .\n\nThe Fullpage.js wrapper exposes many methods and callbacks for customization such as triggers for conditional DOM rendering based on the section or slide the user is on. Fullscreen.js solved the issue of cramped image viewing by simply scaling-in-ratio each image to fit the viewport. ",
+    content: "Built with React.js, hosted on Netlify. The Fullpage.js library aids layout and navigation. No back-end was required thanks to a lightweight library called EmailJS, which grants client-side email functionality.\n\nThe Fullpage.js wrapper exposes many methods and callbacks for customization such as triggers for conditional DOM rendering based on the section or slide the user is on. Fullscreen.js solved the issue of cramped image viewing by simply scaling-in-ratio each image to fit the viewport. ",
   },
 ];
 
