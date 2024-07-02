@@ -31,7 +31,7 @@ const App = () => {
 
   const afterLoad = () => {
     const activeSection = window.fullpage_api.getActiveSection().anchor
-    console.log('Active section:', activeSection) // Debugging
+    // console.log('Active section:', activeSection) // Debugging
     setActivePage(activeSection)
   }
 

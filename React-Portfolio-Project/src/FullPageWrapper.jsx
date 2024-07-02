@@ -24,9 +24,10 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
   return (
     <ReactFullpage
       licenseKey={import.meta.env.VITE_FULLPAGEJS_LICENSE_KEY}
-      scrollingSpeed={1000}
+      scrollingSpeed={800}
       keyboardScrolling={true}
       anchors={anchors}
+      controlArrowsHTML={['<div class="fp-arrow"></div>', '<div class="fp-arrow"></div>']}
       menu="#myMenu"
       fixedElements="#NavBar"
       lazyLoading={true}
