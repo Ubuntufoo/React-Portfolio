@@ -1,9 +1,10 @@
 // utils
 
-export const keyClasses = {
-  keyActiveClass: 'text-white text-4xl animate-[pulse_2s_ease-in-out_2]',
-  keyInactiveClass: 'hidden',
-}
+// export const keyClasses = {
+//   keyActiveClass: 'text-white text-4xl animate-[pulse_2s_ease-in-out_2]',
+//   keyInactiveClass: 'hidden',
+// }
+
 export const anchors = ['Intro', 'Projects', 'Skills', 'Contact']
 
 export const setupKeydownHandler = () => {
@@ -24,7 +25,7 @@ export const setupKeydownHandler = () => {
   }
 
   document.addEventListener('keydown', handler)
-  
+
   // Return the handler function for cleanup purpose
   return handler
 }

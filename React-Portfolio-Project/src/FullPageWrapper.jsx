@@ -9,12 +9,12 @@ import ContactPage from './components/pages/contact/ContactPage'
 import { anchors } from './utils/utils'
 
 // disable Fullpage autoScroll on iPhone iOS 17 due to a incompatibility
-const isiPhoneWithiOS17 = () => {
-  const userAgent = window.navigator.userAgent
-  const iOS = !!userAgent.match(/iP(hone|od|ad)/i)
-  const iOSVersion = userAgent.match(/OS (\d+)_/i)
-  return iOS && iOSVersion && parseInt(iOSVersion[1], 10) === 17
-}
+// const isiPhoneWithiOS17 = () => {
+//   const userAgent = window.navigator.userAgent
+//   const iOS = !!userAgent.match(/iP(hone|od|ad)/i)
+//   const iOSVersion = userAgent.match(/OS (\d+)_/i)
+//   return iOS && iOSVersion && parseInt(iOSVersion[1], 10) === 17
+// }
 
 const FullpageWrapper = ({ afterLoad, activePage }) => {
   const handleAfterLoad = () => {
@@ -34,12 +34,12 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       normalScrollElements="#map"
       loopBottom={true}
       afterLoad={handleAfterLoad}
-      responsiveWidth={640}
-      afterResponsive={(isResponsive) => {
-        if (isResponsive && !isiPhoneWithiOS17()) {
-          window.fullpage_api.setAutoScrolling(true)
-        }
-      }}
+      // responsiveWidth={640}
+      // afterResponsive={(isResponsive) => {
+      //   if (isResponsive && !isiPhoneWithiOS17()) {
+      //     window.fullpage_api.setAutoScrolling(true)
+      //   }
+      // }}
       render={() => (
         <>
           <IntroPage />

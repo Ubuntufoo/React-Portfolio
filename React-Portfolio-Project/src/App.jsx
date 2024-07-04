@@ -1,8 +1,8 @@
 // App.jsx
 import { useState, useEffect } from 'react'
 import FullpageWrapper from './FullPageWrapper'
-import Header from './components/navbar/Header'
-import { setupKeydownHandler, keyClasses } from './utils/utils'
+// import Header from './components/navbar/Header'
+import { setupKeydownHandler } from './utils/utils'
 import './index.css'
 
 import { anchors } from './utils/utils'
@@ -31,13 +31,13 @@ const App = () => {
 
   const afterLoad = () => {
     const activeSection = window.fullpage_api.getActiveSection().anchor
-    // console.log('Active section:', activeSection) // Debugging
+    console.log('Active section:', activeSection) // Debugging
     setActivePage(activeSection)
   }
 
   return (
     <>
-      <Header activePage={activePage} keyClasses={keyClasses} />
+      {/* <Header activePage={activePage} /> */}
       <FullpageWrapper afterLoad={afterLoad} activePage={activePage} />
     </>
   )

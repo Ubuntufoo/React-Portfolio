@@ -24,11 +24,6 @@ textarea:-webkit-autofill:active {
   transition: all 0s 5000s;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 .fp-watermark {
   display: none !important;
 }
@@ -43,28 +38,11 @@ img {
 } */
 
 /* horizontal nav arrows */
-.fp-prev {
-  margin-left: -5px;
-  scale: .75;
-  top: 45% !important;
-}
 
+/* use the FP wrapper option to edit slide arrows, not these: */
+/* .fp-prev {
+
+}
 .fp-next {
-  margin-right: -5px;
-  scale: .75;
-  top: 45% !important;
-}
 
-@media (min-width: 640px) {
-
-  /* Screen size is sm or larger */
-  .fp-prev {
-    margin-left: 20px;
-    scale: 1;
-  }
-
-  .fp-next {
-    margin-right: 20px;
-    scale: 1;
-  }
-}
+} */
