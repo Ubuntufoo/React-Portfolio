@@ -18,18 +18,17 @@
   height: 200%;
   width: 150%;
   overflow: visible;
- mask-image: url('./assets/paintstrokeSVG.svg'); /* Path to your SVG file */
-            mask-size: contain; /* Adjust to fit the size of the SVG */
-            mask-repeat: no-repeat;
-            background-color: rgb(255, 255, 255); /* Set the color of the stroke */
-            z-index: -1; /* Ensure it is behind the text */
-
+  mask-image: url('./assets/paintstrokeSVG.svg'); /* Path to your SVG file */
+  mask-size: contain; /* Adjust to fit the size of the SVG */
+  mask-repeat: no-repeat;
+  background-color: rgb(255, 255, 255); /* Set the color of the stroke */
+  z-index: -1; /* Ensure it is behind the text */
+  transition: background-color 0.5s; /* Add transition for background-color */
 }
 
 .highlight:hover::after {
-  background-color: red;
+  background-color: rgb(59 130 246);
 }
-
 
 /* improve look of fullscreen effect */
 @media (min-width: 640px) {
