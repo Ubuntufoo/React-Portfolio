@@ -20,13 +20,13 @@ export default function NavBarMobile() {
         className="group absolute right-7 top-7 z-40 flex h-10 w-9 cursor-pointer flex-col items-center justify-center space-y-1.5 md:right-11 md:top-11 3xl:right-36 3xl:top-14"
       >
         <div
-          className={`h-1.5 w-9 z-1 origin-right rounded bg-black transition-all duration-500 lg:h-2 lg:w-12 ${isOpen ? 'translate-y-[-5px] rotate-[-30deg] lg:translate-y-[-13px] lg:rotate-[-36deg]' : ''}`}
+          className={`h-1.5 w-9 z-1 origin-right rounded bg-black transition-all duration-500 lg:h-2 lg:w-12 ${isOpen ? 'translate-y-[-5px] rotate-[-29deg] lg:translate-y-[-13px] lg:rotate-[-36deg]' : ''}`}
         ></div>
         <div
-          className={`h-1.5 z-2 w-full origin-center rounded bg-gray-900 transition-all duration-500 lg:h-2 lg:w-14 ${isOpen ? 'translate-x-4 rotate-90 lg:translate-x-5' : ''} `}
+          className={`h-1.5 z-2 w-full origin-center rounded bg-gray-900 transition-all duration-500 lg:h-2 lg:w-14 ${isOpen ? 'translate-x-4 rotate-90 lg:translate-x-6' : ''} `}
         ></div>
         <div
-          className={`h-1.5 z-3 w-9 origin-right rounded bg-gray-800 transition-all duration-500 lg:h-2 lg:w-12 ${isOpen ? 'translate-y-[5px] rotate-[30deg] lg:translate-y-[13px] lg:rotate-[36deg]' : ''}`}
+          className={`h-1.5 z-3 w-9 origin-right rounded bg-gray-800 transition-all duration-500 lg:h-2 lg:w-12 ${isOpen ? 'translate-y-[5px] rotate-[29deg] lg:translate-y-[13px] lg:rotate-[36deg]' : ''}`}
         ></div>
       </div>
 
