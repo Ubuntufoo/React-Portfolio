@@ -4,6 +4,32 @@
 @tailwind components;
 @tailwind utilities;
 
+.highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: -28px;
+  right: 0;
+  bottom: -13px;
+  height: 200%;
+  width: 150%;
+  overflow: visible;
+ mask-image: url('./assets/paintstrokeSVG.svg'); /* Path to your SVG file */
+            mask-size: contain; /* Adjust to fit the size of the SVG */
+            mask-repeat: no-repeat;
+            background-color: rgb(255, 255, 255); /* Set the color of the stroke */
+            z-index: -1; /* Ensure it is behind the text */
+
+}
+
+.highlight:hover::after {
+  background-color: red;
+}
+
 
 /* improve look of fullscreen effect */
 @media (min-width: 640px) {

@@ -1,7 +1,7 @@
 // App.jsx
 import { useState, useEffect } from 'react'
 import FullpageWrapper from './FullPageWrapper'
-// import Header from './components/navbar/Header'
+import Header from './components/navbar/Header'
 import { setupKeydownHandler } from './utils/utils'
 import './index.css'
 
@@ -37,7 +37,7 @@ const App = () => {
 
   return (
     <>
-      {/* <Header activePage={activePage} /> */}
+      <Header activePage={activePage} />
       <FullpageWrapper afterLoad={afterLoad} activePage={activePage} />
     </>
   )
