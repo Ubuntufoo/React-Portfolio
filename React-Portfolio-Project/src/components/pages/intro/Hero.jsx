@@ -45,7 +45,7 @@ export default function Hero() {
             onMouseLeave={() => setImageSrc(Design1)}
           />
         </div>
-        <div className="-z-10 mt-4 flex h-7/25 w-full flex-col justify-center gap-3 bg-gray-300 text-center lg:basis-1/3 lg:space-y-24 lg:bg-inherit">
+        <div className="-z-10 mt-4 flex h-1/4 w-full flex-col justify-center gap-3 bg-gray-300 text-center lg:basis-1/3 lg:space-y-24 lg:bg-inherit">
           <h2 className="whitespace-break-spaces">
             Husband. Father.
             <br />
@@ -57,7 +57,7 @@ export default function Hero() {
               Web Developer.
             </span>
           </h2>
-          <p className="whitespace-pre-wrap">
+          <p className="whitespace-pre-wrap text-sm">
             I thrive on challenge
             <br />
             and bring common sense
@@ -69,7 +69,7 @@ export default function Hero() {
           <a
             href=""
             target="_blank"
-            className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg bg-black px-7 py-3 text-gray-50 duration-500 hover:bg-blue-600"
+            className="group relative inline-flex overflow-hidden rounded-lg bg-black px-7 py-2 text-gray-50 duration-500 hover:bg-blue-600"
             onMouseEnter={handleButtonMouseEnter}
             onMouseLeave={handleButtonMouseLeave}
           >
