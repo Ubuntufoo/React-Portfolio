@@ -13,7 +13,7 @@ export default function NavBarMobile() {
   return (
     <nav
       id="NavBarMobile"
-      className={`fixed inset-x-0 top-0 z-50 flex flex-col bg-gray-700 text-center text-gray-50 transition-all duration-500 ${isOpen ? 'h-screen' : 'h-0'}`}
+      className={`fixed inset-x-0 top-0 z-50 flex flex-col bg-gray-600 text-center text-gray-50 transition-all duration-500 ${isOpen ? 'h-screen' : 'h-0'}`}
     >
       <div
         onClick={toggleNav}

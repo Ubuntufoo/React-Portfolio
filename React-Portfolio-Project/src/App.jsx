@@ -38,7 +38,10 @@ const App = () => {
   return (
     <>
       <Header activePage={activePage} />
+      <div className="container mx-auto max-w-[1280px] bg-gray-400">
+
       <FullpageWrapper afterLoad={afterLoad} activePage={activePage} />
+      </div>
     </>
   )
 }
