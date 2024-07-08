@@ -37,11 +37,11 @@
 }
 
 /* improve look of fullscreen effect */
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
   #fullscreen:fullscreen {
     padding:15px;
   }
-}
+} */
 
 /* used to prevent Chrome autofill background-color override */
 input:-webkit-autofill,
@@ -69,11 +69,10 @@ textarea:-webkit-autofill:active {
 } */
 
 /* horizontal nav arrows */
-
-/* use the FP wrapper option to edit slide arrows, not these: */
-/* .fp-prev {
+@media (max-width: 639px) {
+  .fp-prev,
+    .fp-next {
+      scale: .75;
+    }
 
 }
-.fp-next {
-
-} */

@@ -1,15 +1,5 @@
 // image exports for use in components
 
-import JS_no_BG from '../assets/marquee-assets/JS_no_BG.png'
-import NODEJS_no_BG from '../assets/marquee-assets/NODEJS_no_BG.png'
-import REACT_no_BG from '../assets/marquee-assets/REACT_no_BG.png'
-import VUE_no_BG from '../assets/marquee-assets/VUE_no_BG.png'
-import BS_no_BG from '../assets/marquee-assets/BS_no_BG.png'
-import DJANGO_no_BG from '../assets/marquee-assets/DJANGO_no_BG.png'
-import PYTHON_no_BG from '../assets/marquee-assets/PYTHON_no_BG.png'
-import SQL_no_BG from '../assets/marquee-assets/SQL_no_BG.png'
-import tailwindIMG from '../assets/marquee-assets/tailwindIMG.png'
-
 import reactLOGOcustom from '../assets/grid/reactLOGOcustom.png'
 import genaiIMG from '../assets/grid/genaiIMG.png'
 import fullstackIMG3 from '../assets/grid/fullstackIMG3.png'
@@ -38,19 +28,46 @@ import WorkDashCode2of2 from '../assets/projects-assets/WorkDashCode2of2.png'
 import ProjPortfolioFullpageJSCode from '../assets/projects-assets/ProjPortfolioFullpageJSCode.png'
 import ProjPortfolioMarqueeCode from '../assets/projects-assets/ProjPortfolioMarqueeCode.png'
 
-export const logos = [
-  { src: SQL_no_BG, alt: 'SQL Logo', additionalClass: 'my-4' },
-  { src: PYTHON_no_BG, alt: 'Python Logo', additionalClass: '' },
-  { src: DJANGO_no_BG, alt: 'Django Logo', additionalClass: 'my-3' },
-  { src: NODEJS_no_BG, alt: 'NodeJS Logo', additionalClass: 'scale-90' },
-  { src: REACT_no_BG, alt: 'React Logo', additionalClass: 'scale-90 my-3' },
-  { src: VUE_no_BG, alt: 'Vue Logo', additionalClass: 'mt-1' },
-  { src: BS_no_BG, alt: 'Bootstrap Logo', additionalClass: 'scale-125 my-2' },
-  { src: JS_no_BG, alt: 'JavaScript Logo', additionalClass: '' },
+export const projMainContent = [
   {
-    src: tailwindIMG,
-    alt: 'Tailwind CSS Logo',
-    additionalClass: 'scale-90 mb-7 mt-3',
+    src: ExploreLLM_IMG,
+    label: 'ExploreLLM Concept Web App',
+    description:
+      "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses'.\n\n This project demonstrates how ExploreLLM enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.",
+    linkExternal: false,
+    linkToSlide: 1,
+  },
+  {
+    src: BrainteasersHomeIMG,
+    label: 'Brainteasers Full-Stack Website',
+    description:
+      'Brainteasers is a responsive, full-stack website developed with Vue.js and Django.\n\nIt features postgreSQL database integration, user authentication, email functionality, and 3 Vue.js game applications with score boards. Django provides client-side admin access for crucial data management operations.',
+    linkExternal: 'https://brainteasers.herokuapp.com/',
+    linkToSlide: 2,
+  },
+  {
+    src: TADAmobile,
+    label: 'TADA! Generative AI Web App',
+    description:
+      "TADA! is a responsive web experience that puts a dynamic twist on the cliche TO-DO app. It takes user input and generates positive affirmations for the user's various achievements, both big and small.\n\nThe user input is combined into a server-side composite prompt and sent to the OpenAI API endpoint, ensuring each response is unique to the achievement.",
+    linkExternal: 'https://tada-w0iq.onrender.com',
+    linkToSlide: 3,
+  },
+  {
+    src: WorkDashIMG,
+    label: 'Workflow Dashboard Web App',
+    description:
+      'A web app built with the sole purpose of boosting my productivity by providing a central location for tools and resources used in my daily workflow.\n\nFrom my dashboard I can modify string data, compare differences in text, and even see the status of my test runs in my test case management tool. Several 3rd-party web apps are embedded directly into the page for quick access.',
+    linkExternal: false,
+    linkToSlide: 4,
+  },
+  {
+    src: ProjPortfolioHero,
+    label: 'Web Developer Portfolio V1',
+    description:
+      "Created to showcase my web dev accomplishments and connect with like-minded people. This site is built from scratch with React.js, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect.\n\nHelp me see this website through your eyes: feedback, questions, and critiques can be submitted via the Contact section. I am eager to hear from you!",
+    linkExternal: false,
+    linkToSlide: 5,
   },
 ]
 
@@ -84,49 +101,6 @@ export const skillCardsContent = [
     firstPara: "I've drawn inspiration from loved ones for projects like my Wordle clone with added features and TADA!, a mindful take on the traditional TO-DO list.\n\n In TADA!, users receive AI-generated affirmations for their accomplishments.",
     secondHeader: 'Practical Solutions',
     secondPara: "When I first discovered the power of Python scripting, I was motivated to automate everything. I've created scripts to streamline daily workflows, manage personal emails, and scrape web data using Selenium.\n\n One of my mid-term goals is to develop a Chrome Extension inspired by uBlock Origin's DOM filtering feature.",
-  },
-]
-
-export const projMainContent = [
-  {
-    src: ExploreLLM_IMG,
-    label: 'ExploreLLM Concept Web App',
-    description:
-      "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses'.\n\n This project demonstrates how ExploreLLM enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.",
-    linkExternal: false,
-    linkToSlide: 1,
-  },
-  {
-    src: BrainteasersHomeIMG,
-    label: 'Brainteasers',
-    description:
-      'Brainteasers is a responsive, full-stack website developed with Vue.js and Django.\n\nIt features postgreSQL database integration, user authentication, email functionality, and 3 Vue.js game applications with score boards. Django provides client-side admin access for crucial data management operations.',
-    linkExternal: 'https://brainteasers.herokuapp.com/',
-    linkToSlide: 2,
-  },
-  {
-    src: TADAmobile,
-    label: 'TADA! Web App',
-    description:
-      "TADA! is a responsive web experience that puts a dynamic twist on the cliche TO-DO app. It takes user input and generates positive affirmations for the user's various achievements, both big and small.\n\nThe user input is combined into a server-side composite prompt and sent to the OpenAI API endpoint, ensuring each response is unique to the achievement.",
-    linkExternal: 'https://tada-w0iq.onrender.com',
-    linkToSlide: 3,
-  },
-  {
-    src: WorkDashIMG,
-    label: 'Workflow Dashboard',
-    description:
-      'A web app built with the sole purpose of boosting my productivity by providing a central location for tools and resources used in my daily workflow.\n\nFrom my dashboard I can modify string data, compare differences in text, and even see the status of my test runs in my test case management tool. Several 3rd-party web apps are embedded directly into the page for quick access.',
-    linkExternal: false,
-    linkToSlide: 4,
-  },
-  {
-    src: ProjPortfolioHero,
-    label: 'React Portfolio',
-    description:
-      "Created to showcase my web dev accomplishments and connect with like-minded people. This site is built from scratch with React.js, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect.\n\nHelp me see this website through your eyes: feedback, questions, and critiques can be submitted via the Contact section. I am eager to hear from you!",
-    linkExternal: false,
-    linkToSlide: 5,
   },
 ]
 

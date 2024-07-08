@@ -10,7 +10,7 @@ import ProjPortfolio from './ProjPortfolio'
 export default function ProjectsPage() {
 
   return (
-    <div className="section fp-auto-height fp-noscroll bg-gradient-to-b from-cyan-500 to-cyan-900">
+    <div className="section fp-noscroll fp-auto-height-responsive h-screen">
       <div className="slide">
         <ProjGallery />
       </div>
