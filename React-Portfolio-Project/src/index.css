@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles Intro Page text "Web Developer" paint stroke on hover */
 .highlight {
   position: relative;
   display: inline-block;
@@ -18,15 +19,20 @@
   height: 200%;
   width: 150%;
   overflow: visible;
-  mask-image: url('./assets/paintstrokeSVG.svg'); /* Path to your SVG file */
-  mask-size: contain; /* Adjust to fit the size of the SVG */
+  mask-image: url('./assets/paintstrokeSVG.svg');
+  /* Path to your SVG file */
+  mask-size: contain;
+  /* Adjust to fit the size of the SVG */
   mask-repeat: no-repeat;
-  background-color: rgb(255, 255, 255); /* Set the color of the stroke */
-  z-index: -1; /* Ensure it is behind the text */
-  transition: background-color 0.5s; /* Add transition for background-color */
+  background-color: rgb(255, 255, 255);
+  /* Set the color of the stroke */
+  z-index: -1;
+  /* Ensure it is behind the text */
+  transition: background-color 0.7s;
+  /* Add transition for background-color */
 }
 
-.highlight:hover::after {
+.highlight-hover::after {
   background-color: rgb(59 130 246);
 }
 
