@@ -45,12 +45,12 @@ export default function Hero() {
             onMouseLeave={() => setImageSrc(Design1)}
           />
         </div>
-        <div className="-z-10 mt-4 flex h-3/10 w-full flex-col justify-center gap-4 bg-gray-300 text-center lg:basis-1/3 lg:space-y-24 lg:bg-inherit">
+        <div className="-z-10 mt-4 flex h-7/25 w-full flex-col justify-center gap-3 bg-gray-300 text-center lg:basis-1/3 lg:space-y-24 lg:bg-inherit">
           <h2 className="whitespace-break-spaces">
             Husband. Father.
             <br />
             <span
-              className={`highlight mt-4 cursor-pointer font-semibold italic lg:mt-6 ${isButtonHovered || isTextHovered ? 'highlight-hover' : ''}`}
+              className={`highlight mt-3 cursor-pointer font-semibold italic lg:mt-6 ${isButtonHovered || isTextHovered ? 'highlight-hover' : ''}`}
               onMouseEnter={handleTextMouseEnter}
               onMouseLeave={handleTextMouseLeave}
             >
