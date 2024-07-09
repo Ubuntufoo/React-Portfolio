@@ -72,7 +72,7 @@ textarea:-webkit-autofill:active {
 @media (max-width: 639px) {
   .fp-prev,
     .fp-next {
-      scale: .75;
+      scale: .7;
     }
 
 }
