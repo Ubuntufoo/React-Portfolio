@@ -23,7 +23,7 @@ export default function ProjGallery() {
       </h1>
 
       <section className="flex h-screen flex-col justify-center">
-        <div className="h-7/10 mx-auto mt-5 grid w-full grid-cols-2 place-content-evenly place-items-center gap-4 px-6 text-center">
+        <div className="h-7/10 mx-auto grid w-full mb-16 grid-cols-2 place-content-evenly place-items-center gap-4 px-6 text-center">
           <div className="col-span-full size-fit rounded-sm ring ring-gray-800 transition-all duration-500 ease-in-out">
             <h2 className="hidden">{projMainContent[featuredIndex].label}</h2>
             <img
