@@ -33,7 +33,7 @@ export const projMainContent = [
     src: ProjPortfolioHero,
     label: 'Portfolio V1',
     description:
-      "Created to showcase my web dev accomplishments and connect with like-minded people. This site is built from scratch with React.js, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect.\n\nHelp me see this website through your eyes: feedback, questions, and critiques can be submitted via the Contact section. I am eager to hear from you!",
+      "A previous version of my portfolio site.",
     linkExternal: false,
     linkToSlide: 5,
   },
@@ -41,7 +41,7 @@ export const projMainContent = [
     src: ExploreLLM_IMG,
     label: 'ExploreLLM Concept',
     description:
-      "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses'.\n\n This project demonstrates how ExploreLLM enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.",
+      "Recreating the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses'.",
     linkExternal: false,
     linkToSlide: 1,
   },
@@ -49,7 +49,7 @@ export const projMainContent = [
     src: TADAmobile,
     label: 'TADA! Web App',
     description:
-      "TADA! is a responsive web experience that puts a dynamic twist on the cliche TO-DO app. It takes user input and generates positive affirmations for the user's various achievements, both big and small.\n\nThe user input is combined into a server-side composite prompt and sent to the OpenAI API endpoint, ensuring each response is unique to the achievement.",
+      "Harness generative AI to produce positive affirmations for accomplishments.",
     linkExternal: 'https://tada-w0iq.onrender.com',
     linkToSlide: 3,
   },
@@ -57,7 +57,7 @@ export const projMainContent = [
     src: BrainteasersHomeIMG,
     label: 'Brainteasers',
     description:
-      'Brainteasers is a responsive, full-stack website developed with Vue.js and Django.\n\nIt features postgreSQL database integration, user authentication, email functionality, and 3 Vue.js game applications with score boards. Django provides client-side admin access for crucial data management operations.',
+      'A responsive, full-stack website with user auth and admin capabilities.',
     linkExternal: 'https://brainteasers.herokuapp.com/',
     linkToSlide: 2,
   },
@@ -65,7 +65,7 @@ export const projMainContent = [
     src: WorkDashIMG,
     label: 'Workflow Dashboard',
     description:
-      'A web app built with the sole purpose of boosting my productivity by providing a central location for tools and resources used in my daily workflow.\n\nFrom my dashboard I can modify string data, compare differences in text, and even see the status of my test runs in my test case management tool. Several 3rd-party web apps are embedded directly into the page for quick access.',
+      'A personal web app for boosting my daily workflow.',
     linkExternal: false,
     linkToSlide: 4,
   },
