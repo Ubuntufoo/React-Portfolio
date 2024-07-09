@@ -5,11 +5,11 @@ import genaiIMG from '../assets/grid/genaiIMG.png'
 import fullstackIMG3 from '../assets/grid/fullstackIMG3.png'
 import problemsolveIMG from '../assets/grid/problemsolveIMG.png'
 
-import BrainteasersHomeIMG from '../assets/projects-assets/BrainteasersHomeIMG.png'
-import ExploreLLM_IMG from '../assets/projects-assets/ExploreLLM_IMG.png'
-import TADAmobile from '../assets/projects-assets/TADAmobile.png'
-import WorkDashIMG from '../assets/projects-assets/WorkDashIMG.png'
-import ProjPortfolioHero from '../assets/projects-assets/ProjPortfolioHero.png'
+import BrainteasersHomeIMG from '../assets/projects-assets/Brainteasers1800x900.png'
+import ExploreLLM_IMG from '../assets/projects-assets/ExploreLLM_IMG1800x900.png'
+import TADAmobile from '../assets/projects-assets/TADAmobile1800x900.png'
+import WorkDashIMG from '../assets/projects-assets/WorkDashIMG1800x900.png'
+import ProjPortfolioHero from '../assets/projects-assets/ProjPortfolioHero1800x900.png'
 
 import ExploreLLMConcept from '../assets/projects-assets/ExploreLLMConcept.mp4'
 import ExploreLLMcards from '../assets/projects-assets/ExploreLLMcards.png'
@@ -30,44 +30,44 @@ import ProjPortfolioMarqueeCode from '../assets/projects-assets/ProjPortfolioMar
 
 export const projMainContent = [
   {
+    src: ProjPortfolioHero,
+    label: 'Portfolio V1',
+    description:
+      "Created to showcase my web dev accomplishments and connect with like-minded people. This site is built from scratch with React.js, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect.\n\nHelp me see this website through your eyes: feedback, questions, and critiques can be submitted via the Contact section. I am eager to hear from you!",
+    linkExternal: false,
+    linkToSlide: 5,
+  },
+  {
     src: ExploreLLM_IMG,
-    label: 'ExploreLLM Concept Web App',
+    label: 'ExploreLLM Concept',
     description:
       "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses'.\n\n This project demonstrates how ExploreLLM enhances AI interactions by integrating large language models (LLMs) with a tailor-made GUI for structured user experiences.",
     linkExternal: false,
     linkToSlide: 1,
   },
   {
-    src: BrainteasersHomeIMG,
-    label: 'Brainteasers Full-Stack Website',
-    description:
-      'Brainteasers is a responsive, full-stack website developed with Vue.js and Django.\n\nIt features postgreSQL database integration, user authentication, email functionality, and 3 Vue.js game applications with score boards. Django provides client-side admin access for crucial data management operations.',
-    linkExternal: 'https://brainteasers.herokuapp.com/',
-    linkToSlide: 2,
-  },
-  {
     src: TADAmobile,
-    label: 'TADA! Generative AI Web App',
+    label: 'TADA! Web App',
     description:
       "TADA! is a responsive web experience that puts a dynamic twist on the cliche TO-DO app. It takes user input and generates positive affirmations for the user's various achievements, both big and small.\n\nThe user input is combined into a server-side composite prompt and sent to the OpenAI API endpoint, ensuring each response is unique to the achievement.",
     linkExternal: 'https://tada-w0iq.onrender.com',
     linkToSlide: 3,
   },
   {
+    src: BrainteasersHomeIMG,
+    label: 'Brainteasers',
+    description:
+      'Brainteasers is a responsive, full-stack website developed with Vue.js and Django.\n\nIt features postgreSQL database integration, user authentication, email functionality, and 3 Vue.js game applications with score boards. Django provides client-side admin access for crucial data management operations.',
+    linkExternal: 'https://brainteasers.herokuapp.com/',
+    linkToSlide: 2,
+  },
+  {
     src: WorkDashIMG,
-    label: 'Workflow Dashboard Web App',
+    label: 'Workflow Dashboard',
     description:
       'A web app built with the sole purpose of boosting my productivity by providing a central location for tools and resources used in my daily workflow.\n\nFrom my dashboard I can modify string data, compare differences in text, and even see the status of my test runs in my test case management tool. Several 3rd-party web apps are embedded directly into the page for quick access.',
     linkExternal: false,
     linkToSlide: 4,
-  },
-  {
-    src: ProjPortfolioHero,
-    label: 'Web Developer Portfolio V1',
-    description:
-      "Created to showcase my web dev accomplishments and connect with like-minded people. This site is built from scratch with React.js, Tailwind, and Fullpage.js, a JavaScript library that creates this beautiful full-page scrolling effect.\n\nHelp me see this website through your eyes: feedback, questions, and critiques can be submitted via the Contact section. I am eager to hear from you!",
-    linkExternal: false,
-    linkToSlide: 5,
   },
 ]
 
