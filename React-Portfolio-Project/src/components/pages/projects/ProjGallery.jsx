@@ -24,15 +24,15 @@ export default function ProjGallery() {
       <section className="mx-auto flex h-6/7 w-5/6 flex-col place-content-end place-items-center">
         <div className="relative h-1/2 w-screen text-center">
           {selectedProject == null ? (
-            <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly py-6">
+            <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly py-10">
               <h2 className="text-2xl font-bold">Select a project below</h2>
               <p>or scroll right to see project details</p>
               <ImArrowRight className="mx-auto text-3xl" />
             </div>
           ) : (
-            <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly pb-5">
+            <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly">
               <img
-                className="absolute inset-x-0 bottom-0 -z-10 w-full origin-bottom scale-[1.3] opacity-20 brightness-90 sepia"
+                className="absolute inset-x-0 -bottom-5 -z-10 w-full origin-bottom scale-[1.3] opacity-20 brightness-90 sepia"
                 src={selectedProject.src}
                 alt={selectedProject.label}
               />
