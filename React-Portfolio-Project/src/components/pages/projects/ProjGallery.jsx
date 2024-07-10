@@ -22,7 +22,7 @@ export default function ProjGallery() {
         {`<Projects></Gallery>`}
       </h1>
       <section className="mx-auto flex h-6/7 w-5/6 flex-col place-content-end place-items-center">
-        <div className="relative h-2/3 w-screen text-center">
+        <div className="relative h-1/2 w-screen text-center">
           {selectedProject == null ? (
             <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly py-6">
               <h2 className="text-2xl font-bold">Select a project below</h2>
@@ -72,7 +72,7 @@ export default function ProjGallery() {
           )}
         </div>
         <div className="h-3/4">
-          <ul className="flex h-full flex-col place-content-center place-items-center">
+          <ul className="flex h-19/20 flex-col place-content-center place-items-center">
             {projMainContent.map((proj, index) => (
               <li
                 onClick={() => setSelectedProject(proj)}
