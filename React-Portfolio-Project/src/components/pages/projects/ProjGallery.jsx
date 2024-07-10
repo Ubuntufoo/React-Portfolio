@@ -21,19 +21,45 @@ export default function ProjGallery() {
         {`<Projects></Gallery>`}
       </h1>
       <section className="mx-auto mt-auto flex h-7/8 w-5/6 flex-col place-content-end place-items-center">
-        <div className="flex h-6/10 w-screen flex-col justify-center space-y-6 bg-gray-300 text-center">
+        <div className="h-2/3 w-screen text-center">
           {selectedProject == null ? (
-            <div className="mx-auto flex py-5 w-8/9 h-full flex-col justify-evenly">
-              <h2 className="text-lg font-bold">Select a project below</h2>
-              <hr className="h-0.5 w-full bg-gray-600" />
+            <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly py-6">
+              <h2 className="text-xl font-bold">Select a project below</h2>
+              <hr />
               <p className="">or scroll right to see project details</p>
               <ImArrowRight className="mx-auto text-3xl" />
             </div>
           ) : (
-            <div className="mx-auto w-8/9 flex flex-col justify-evenly h-full">
-              <h2 className="text-lg font-bold">{selectedProject.label}</h2>
-              <hr className="h-0.5 w-full bg-gray-600" />
+            <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly py-4">
+              <h2 className="text-xl font-bold">{selectedProject.label}</h2>
+              <hr />
               <p className="text-pretty">{selectedProject.description}</p>
+              <div className="mx-auto flex w-3/4 text-sm">
+                <button className="mx-auto w-24 shadow-lg shadow-white">
+                  <a
+                    href={`http://localhost:5173/#Projects/${selectedProject.linkToSlide}`}
+                    className="group relative inline-flex overflow-hidden rounded-lg bg-black px-7 py-2 text-gray-50 duration-500 hover:bg-blue-600"
+                  >
+                    <span className="z-40 font-roboto font-semibold tracking-wider">
+                      Details
+                    </span>
+                    <div className="absolute inset-0 z-20 h-[90%] w-[100%] translate-x-[-95%] rotate-45 bg-gray-400 transition-all duration-500 group-hover:translate-x-[90%] group-hover:scale-100"></div>
+                  </a>
+                </button>
+                {selectedProject.linkExternal && (
+                  <button className="group relative mx-auto w-24 overflow-hidden rounded-lg bg-gray-800 py-2 text-center text-gray-50 shadow-lg shadow-white duration-500 hover:bg-blue-600">
+                    <a
+                      href={selectedProject.linkExternal}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <span className="z-40 mx-auto inline-block text-center font-roboto font-semibold tracking-wider">
+                        Visit
+                      </span>
+                    </a>
+                  </button>
+                )}
+              </div>
             </div>
           )}
         </div>
@@ -42,7 +68,7 @@ export default function ProjGallery() {
             {projMainContent.map((proj, index) => (
               <li
                 key={index}
-                className={`flex w-screen grow flex-col justify-center text-center font-roboto text-xl tracking-wide ${backgroundClasses[index % backgroundClasses.length]}`}
+                className={`flex w-screen grow cursor-pointer flex-col justify-center text-center font-roboto text-xl tracking-wide ${backgroundClasses[index % backgroundClasses.length]}`}
               >
                 <button
                   onClick={() => setSelectedProject(proj)}

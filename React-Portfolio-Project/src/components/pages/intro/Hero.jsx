@@ -65,7 +65,7 @@ export default function Hero() {
             to the table.
           </p>
         </div>
-        <div className="mx-auto shadow-lg shadow-white">
+        <button className="mx-auto shadow-lg shadow-white">
           <a
             href=""
             target="_blank"
@@ -78,7 +78,7 @@ export default function Hero() {
             </span>
             <div className="absolute inset-0 z-20 h-[90%] w-[100%] translate-x-[-95%] rotate-45 bg-gray-400 transition-all duration-500 group-hover:translate-x-[90%] group-hover:scale-100"></div>
           </a>
-        </div>
+        </button>
       </section>
     </main>
   )

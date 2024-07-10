@@ -33,15 +33,15 @@ export const projMainContent = [
     src: ProjPortfolioHero,
     label: 'Portfolio V1',
     description:
-      "A previous version of my portfolio site.",
-    linkExternal: false,
+      "A previous version of my web developer portfolio site.",
+    linkExternal: 'https://timmurphywebdev.netlify.app/',
     linkToSlide: 5,
   },
   {
     src: ExploreLLM_IMG,
     label: 'ExploreLLM Concept',
     description:
-      "Recreating the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses'.",
+      "Custom GUI concept aimed at enhancing generative AI interaction.",
     linkExternal: false,
     linkToSlide: 1,
   },
