@@ -49,7 +49,7 @@ export const projMainContent = [
     src: TADAmobile,
     label: 'TADA! Web App',
     description:
-      "Harness generative AI to produce positive affirmations for accomplishments.",
+      "Generative AI produces positive affirmations for accomplishments.",
     linkExternal: 'https://tada-w0iq.onrender.com',
     linkToSlide: 3,
   },
