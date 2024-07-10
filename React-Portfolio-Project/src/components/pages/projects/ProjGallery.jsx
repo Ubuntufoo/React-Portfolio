@@ -32,7 +32,7 @@ export default function ProjGallery() {
           ) : (
             <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly">
               <img
-                className="absolute inset-x-0 -bottom-5 -z-10 w-full origin-bottom scale-[1.3] opacity-20 brightness-90 sepia"
+                className="absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom scale-[1.3] opacity-15 brightness-95 sepia"
                 src={selectedProject.src}
                 alt={selectedProject.label}
               />
