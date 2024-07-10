@@ -32,7 +32,7 @@ export default function ProjGallery() {
           ) : (
             <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly pb-5">
               <img
-                className="absolute inset-x-0 bottom-0 -z-10 w-full origin-bottom scale-150 opacity-15 brightness-90"
+                className="absolute inset-x-0 bottom-0 -z-10 w-full origin-bottom scale-150 opacity-20 brightness-90 sepia"
                 src={selectedProject.src}
                 alt={selectedProject.label}
               />
@@ -75,15 +75,13 @@ export default function ProjGallery() {
           <ul className="flex h-full flex-col place-content-center place-items-center">
             {projMainContent.map((proj, index) => (
               <li
+                onClick={() => setSelectedProject(proj)}
                 key={index}
-                className={`flex w-screen grow cursor-pointer place-items-center justify-center text-center font-roboto text-xl tracking-wide transition-all hover:scale-105 ${projectClasses[index % projectClasses.length].bg} ${projectClasses[index % projectClasses.length].hover}`}
+                className={`flex w-screen grow cursor-pointer hover:sepia place-items-center justify-center text-center font-roboto text-xl tracking-wide transition-all hover:scale-105 ${projectClasses[index % projectClasses.length].bg} ${projectClasses[index % projectClasses.length].hover}`}
               >
-                <button
-                  onClick={() => setSelectedProject(proj)}
-                  className="relative flex place-items-center text-gray-50"
-                >
+                <button className="relative flex place-items-center text-gray-50">
                   {proj.label}
-                  <LuBadgeInfo className="absolute -right-8 text-xl text-gray-50" />
+                  <LuBadgeInfo className="absolute -right-7 text-lg text-gray-50" />
                 </button>
               </li>
             ))}
