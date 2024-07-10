@@ -29,7 +29,7 @@ export default function Hero() {
 
   return (
     <main className="flex h-screen flex-col justify-center">
-      <section className="isolate flex h-6/7 flex-col place-content-evenly place-items-center sm:gap-20 sm:text-lg md:gap-24 md:text-xl lg:flex-row lg:flex-wrap lg:place-content-center lg:gap-x-36 lg:ps-6 lg:pt-0 lg:text-2xl xl:gap-x-52 xl:ps-8 3xl:ps-12">
+      <section className="isolate pb-4 flex h-6/7 flex-col place-content-evenly place-items-center sm:gap-20 sm:text-lg md:gap-24 md:text-xl lg:flex-row lg:flex-wrap lg:place-content-center lg:gap-x-36 lg:ps-6 lg:pt-0 lg:text-2xl xl:gap-x-52 xl:ps-8 3xl:ps-12">
         <div className="relative flex w-2/5 cursor-pointer flex-col gap-3 rounded-lg border border-gray-950 bg-gray-950 pt-5 tracking-wide sm:w-2/5 sm:gap-7 sm:pt-8 md:w-1/3 md:gap-9 md:pt-10 lg:ms-12 lg:w-1/4 lg:gap-10 lg:pt-12">
           <div className="absolute inset-0 -z-10 h-full w-full rotate-[33deg] rounded-xl border border-gray-950 bg-gray-900"></div>
           <div className="absolute inset-0 -z-20 h-full w-full rotate-[60deg] rounded-xl border border-gray-950 bg-gray-600"></div>

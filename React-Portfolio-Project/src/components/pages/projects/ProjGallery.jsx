@@ -21,7 +21,7 @@ export default function ProjGallery() {
       <h1 className="absolute left-6 top-9 h-fit font-mono text-lg font-semibold tracking-wider text-gray-950">
         {`<Projects></Gallery>`}
       </h1>
-      <section className="mx-auto mt-auto flex h-7/8 w-5/6 flex-col place-content-end place-items-center">
+      <section className="mx-auto flex h-6/7 w-5/6 flex-col place-content-end place-items-center">
         <div className="relative h-2/3 w-screen text-center">
           {selectedProject == null ? (
             <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly py-6">
@@ -32,7 +32,7 @@ export default function ProjGallery() {
           ) : (
             <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly pb-5">
               <img
-                className="absolute inset-x-0 bottom-0 -z-10 w-full origin-bottom scale-150 opacity-20 brightness-90 sepia"
+                className="absolute inset-x-0 bottom-0 -z-10 w-full origin-bottom scale-[1.3] opacity-20 brightness-90 sepia"
                 src={selectedProject.src}
                 alt={selectedProject.label}
               />
