@@ -2,7 +2,7 @@
 
 import { projPortfolioContent } from '../../../utils/images'
 import { tabsPortfolio } from '../../../utils/tabs'
-import Carousel from '../../features/Carousel'
+import Carousel from '../../features/CarouselOLD'
 import Tabs from '../../features/Tabs'
 
 export default function ProjPortfolio() {

@@ -4,18 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.marquee {
-  display: flex;
-  block-size: var(--marquee-item-height);
-  max-inline-size: var(--marquee-max-width);
-  overflow-x: hidden;
-  position: relative;
-  mask-image: linear-gradient(to right,
-      hsl(0 0% 0% / 0),
-      hsl(0 0% 0% / 1) 20%,
-      hsl(0 0% 0% / 1) 80%,
-      hsl(0 0% 0% / 0));
-  position: relative;
+.slides {
+  -webkit-overflow-scrolling: touch;
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 15px;
+  cursor: pointer;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 /* styles Intro Page text "Web Developer" paint stroke on hover */

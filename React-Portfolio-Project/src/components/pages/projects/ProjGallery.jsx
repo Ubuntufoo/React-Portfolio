@@ -22,7 +22,7 @@ export default function ProjGallery() {
       <h1 className="absolute left-6 top-7 min-w-max 2xl:border-none rounded-lg border-2 border-black p-1.5 font-mono font-semibold tracking-wider text-gray-950 sm:text-lg md:left-8 md:top-11 2xl:text-2xl 2xl:top-12 2xl:inset-x-0 text-center">
         {`<Projects></Gallery>`}
       </h1>
-      <section className="mx-auto flex h-6/7 w-5/6 flex-col place-content-end place-items-center 2xl:mt-auto">
+      <section className="mx-auto flex h-6/7 w-5/6 flex-col place-content-end place-items-center md:mt-auto">
         <div className="relative h-1/2 w-screen text-center">
           {selectedProject == null ? (
             <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly py-10">
@@ -89,7 +89,7 @@ export default function ProjGallery() {
               <li
                 onClick={() => setSelectedProject(proj)}
                 key={index}
-                className={`flex w-screen grow cursor-pointer place-items-center justify-center text-center font-roboto text-xl tracking-wide transition-all hover:scale-105 hover:sepia ${projectClasses[index % projectClasses.length].bg} ${projectClasses[index % projectClasses.length].hover}`}
+                className={`flex w-screen grow cursor-pointer place-items-center justify-center text-center font-roboto text-xl tracking-wide transition-all hover:scale-105 origin-bottom-left hover:sepia ${projectClasses[index % projectClasses.length].bg} ${projectClasses[index % projectClasses.length].hover}`}
               >
                 <button className="relative flex place-items-center text-gray-50">
                   {proj.label}
