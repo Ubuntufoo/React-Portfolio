@@ -4,6 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+.marquee {
+  display: flex;
+  block-size: var(--marquee-item-height);
+  max-inline-size: var(--marquee-max-width);
+  overflow-x: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right,
+      hsl(0 0% 0% / 0),
+      hsl(0 0% 0% / 1) 20%,
+      hsl(0 0% 0% / 1) 80%,
+      hsl(0 0% 0% / 0));
+  position: relative;
+}
+
 /* styles Intro Page text "Web Developer" paint stroke on hover */
 .highlight {
   position: relative;
@@ -73,6 +87,6 @@ textarea:-webkit-autofill:active {
   .fp-prev,
     .fp-next {
       scale: .8;
+      border-radius: 10%;
     }
-
 }

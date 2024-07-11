@@ -1,7 +1,7 @@
 // A child component of a Carousel for images and video
 
 import { useState } from 'react'
-import ServerTooltip from './ServerTooltip'
+// import ServerTooltip from './ServerTooltip'
 import { FaLink } from 'react-icons/fa'
 
 export default function Carousel({
@@ -67,7 +67,7 @@ export default function Carousel({
     return null
   }
 
-  const renderLink = (href, showTooltip) => (
+  const renderLink = (href) => (
     <a
       target="_blank"
       rel="noreferrer"
@@ -75,7 +75,7 @@ export default function Carousel({
       className="group absolute top-full mt-5 self-center md:mt-16"
     >
       <FaLink className="cursor-pointer text-2xl text-black transition-all duration-500 hover:scale-[1.20] 2xl:text-5xl" />
-      {showTooltip && <ServerTooltip />}
+      {/* {showTooltip && <ServerTooltip />} */}
     </a>
   )
 

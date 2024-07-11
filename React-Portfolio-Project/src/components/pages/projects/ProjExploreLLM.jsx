@@ -1,6 +1,6 @@
 // ExploreLLM Project slide
 
-import Carousel from "../../features/Carousel"
+import ImgMarquee from "../../features/ImgMarquee"
 import Tabs from "../../features/Tabs"
 import { projExploreLLMImages } from '../../../utils/images'
 import { tabsExploreLLM } from "../../../utils/tabs"
@@ -9,9 +9,9 @@ export default function ProjExploreLLM() {
 
   return (
     <>
-      <Carousel images={projExploreLLMImages}>
+      <ImgMarquee images={projExploreLLMImages}>
         <Tabs tabsContent={tabsExploreLLM} />
-      </Carousel>
+      </ImgMarquee>
     </>
   )
 }

@@ -18,38 +18,38 @@ export default function ProjGallery() {
   const [selectedProject, setSelectedProject] = useState(null)
 
   return (
-    <main className="flex h-screen flex-col justify-center">
-      <h1 className="absolute left-6 top-7 h-fit rounded-lg border-2 border-black p-1.5 font-mono sm:text-lg font-semibold tracking-wider text-gray-950 md:left-8 md:top-11">
+    <main className="relative flex h-screen flex-col justify-center">
+      <h1 className="absolute left-6 top-7 min-w-max 2xl:border-none rounded-lg border-2 border-black p-1.5 font-mono font-semibold tracking-wider text-gray-950 sm:text-lg md:left-8 md:top-11 2xl:text-2xl 2xl:top-12 2xl:inset-x-0 text-center">
         {`<Projects></Gallery>`}
       </h1>
-      <section className="mx-auto flex h-6/7 w-5/6 flex-col place-content-end place-items-center">
+      <section className="mx-auto flex h-6/7 w-5/6 flex-col place-content-end place-items-center 2xl:mt-auto">
         <div className="relative h-1/2 w-screen text-center">
           {selectedProject == null ? (
             <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly py-10">
               <img
-                className="absolute inset-x-0 lg:scale-75 -bottom-4 -z-10 w-full origin-bottom scale-[1.3] opacity-10 brightness-90 sepia md:scale-110"
+                className="absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom scale-[1.4] opacity-10 brightness-90 sepia md:scale-[1.4] lg:scale-[.81] xl:scale-[.67] 2xl:scale-50"
                 src={BG1}
                 alt="Cluttered desk covered with tech and tools"
               />
-              <h2 className="text-[25px] font-bold sm:text-3xl lg:text-4xl">
+              <h2 className="text-[25px] font-bold sm:text-3xl md:text-4xl">
                 Select a project below
               </h2>
-              <p className="text-pretty font-semibold sm:text-lg lg:text-xl">
+              <p className="text-pretty font-semibold sm:text-lg md:text-xl">
                 or scroll right to see project details
               </p>
               <ImArrowRight className="mx-auto text-3xl" />
             </div>
           ) : (
-            <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly">
+            <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly pt-2">
               <img
-                className="md:scale-110 opacity-15 absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom lg:scale-75 scale-[1.3] brightness-90 sepia"
+                className="absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom scale-[1.4] rounded-lg opacity-15 brightness-90 sepia md:scale-[1.38] lg:scale-[.81] xl:scale-[.67] 2xl:scale-50"
                 src={selectedProject.src}
                 alt={selectedProject.label}
               />
-              <h2 className="text-[25px] font-bold sm:text-3xl lg:text-4xl">
+              <h2 className="text-[25px] font-bold sm:text-3xl md:text-4xl">
                 {selectedProject.label}
               </h2>
-              <p className="text-pretty font-semibold sm:text-lg lg:text-xl">
+              <p className="text-pretty font-semibold sm:text-lg md:text-xl">
                 {selectedProject.description}
               </p>
               <div className="mx-auto flex w-3/4 text-sm">
@@ -83,8 +83,8 @@ export default function ProjGallery() {
             </div>
           )}
         </div>
-        <div className="h-3/4">
-          <ul className="flex h-19/20 flex-col place-content-center place-items-center">
+        <div className="2xl:h-9/20 h-1/2">
+          <ul className="flex h-19/20 flex-col place-content-center place-items-center xl:h-full">
             {projMainContent.map((proj, index) => (
               <li
                 onClick={() => setSelectedProject(proj)}
