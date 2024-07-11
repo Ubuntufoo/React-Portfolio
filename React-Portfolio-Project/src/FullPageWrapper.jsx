@@ -27,11 +27,14 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       scrollingSpeed={800}
       keyboardScrolling={true}
       anchors={anchors}
-      controlArrowsHTML={['<div class="fp-arrow"></div>', '<div class="fp-arrow"></div>']}
+      controlArrowsHTML={[
+        '<div class="fp-arrow"></div>',
+        '<div class="fp-arrow"></div>',
+      ]}
       menu="#myMenu"
       fixedElements="#NavBar"
       lazyLoading={true}
-      normalScrollElements="#map"
+      normalScrollElements="#map, .slider"
       loopBottom={true}
       scrollOverflow={true}
       afterLoad={handleAfterLoad}

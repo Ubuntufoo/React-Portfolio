@@ -105,17 +105,17 @@ export const skillCardsContent = [
 ]
 
 export const projExploreLLMImages = [
+  {
+    src: ExploreLLMConcept,
+    label: 'ExploreLLM Concept Video',
+    figcaption: 'A video showcasing the concept app for ExploreLLM.',
+    type: 'video',
+  },
     {
       src: ExploreLLM_IMG,
       label: 'ExploreLLM Concept Web App IMG',
       figcaption: "ExplloreLLM concept: main interface'.",
       type: 'image',
-    },
-    {
-      src: ExploreLLMConcept,
-      label: 'ExploreLLM Concept Video',
-      figcaption: 'A video showcasing the concept app for ExploreLLM.',
-      type: 'video',
     },
     {
       src: ExploreLLMcards,

@@ -1,48 +1,79 @@
-// an image carousel
+//an image carousel
 
-// import { useState } from 'react'
-// import { projMainContent } from '../../../utils/images'
+import { useState, useRef, useEffect } from 'react'
 
-export default function Carousel() {
-  const anchorClasses =
-    'inline-flex size-7 bg-white cursor-pointer no-underline place-content-evenly place-items-center rounded-full relative'
+export default function Carousel({ images }) {
+  const [activeSlide, setActiveSlide] = useState(0)
+  const slidesContainerRef = useRef(null)
+  const videoRefs = useRef([])
+
+  const buttonClasses = 'size-4 md:size-7 bg-white cursor-pointer rounded-full'
   const slidesClasses =
-    'w-[300px] h-[300px] shrink-0 cursor-grab 2xl:cursor-auto snap-start me-6 rounded-2xl bg-white origin-center transition-all relative flex place-content-center place-items-center text-6xl'
+    'w-[320px] h-[160px] shrink-0 cursor-grab 2xl:cursor-auto snap-start first:ms-0 me-6 last:me-0 rounded-xl bg-white origin-center transition-all relative flex place-content-center place-items-center text-6xl'
+  const activeSlideClasses = 'scale-[1.01] transition-all duration-500'
+
+  const handleSlideChange = (slideNumber) => {
+    setActiveSlide(slideNumber)
+    const slidesContainer = slidesContainerRef.current
+    const slideWidth = 320 // width of each slide
+    const slideMargin = 24 // margin-inline-end of each slide
+    slidesContainer.scrollTo({
+      left: slideNumber * (slideWidth + slideMargin),
+      behavior: 'smooth',
+    })
+  }
+
+  // Pause all videos except the active slide
+  useEffect(() => {
+    videoRefs.current.forEach((videoRef, index) => {
+      if (index === activeSlide) {
+        videoRef.play() // Play the video if it's the active slide
+      } else {
+        videoRef.pause() // Pause the video if it's not the active slide
+      }
+    })
+  }, [activeSlide])
 
   return (
-    <div className="slider w-[300px] overflow-hidden text-center">
-      <a href="#slide1" className={anchorClasses}>
-        1
-      </a>
-      <a href="#slide2" className={anchorClasses}>
-        2
-      </a>
-      <a href="#slide3" className={anchorClasses}>
-        3
-      </a>
-      <a href="#slide4" className={anchorClasses}>
-        4
-      </a>
-      <a href="#slide5" className={anchorClasses}>
-        5
-      </a>
+    <div className="slider w-[320px] overflow-hidden text-center">
+      <div className="mx-auto space-x-7">
+        {images.map((media, index) => (
+          <button
+            key={index}
+            className={buttonClasses}
+            onClick={() => handleSlideChange(index)}
+          >
+          </button>
+        ))}
+      </div>
 
-      <div className="slides flex snap-mandatory overflow-x-auto scroll-smooth pt-4">
-        <div id="slide1" className={slidesClasses}>
-          1
-        </div>
-        <div id="slide2" className={slidesClasses}>
-          2
-        </div>
-        <div id="slide3" className={slidesClasses}>
-          3
-        </div>
-        <div id="slide4" className={slidesClasses}>
-          4
-        </div>
-        <div id="slide5" className={slidesClasses}>
-          5
-        </div>
+      <div
+        ref={slidesContainerRef}
+        className="slides rounded-xl flex snap-mandatory overflow-x-auto scroll-smooth py-1.5"
+      >
+        {images.map((media, index) => (
+          <div
+            key={index}
+            id={`slide${index}`}
+            className={`${slidesClasses} ${activeSlide === index ? activeSlideClasses : ''}`}
+          >
+            {/* Conditional rendering based on media type */}
+            {media.type === 'image' && (
+              <img src={media.src} alt={`Slide ${index}`} className='rounded-xl' />
+            )}
+            {media.type === 'video' && (
+              <video
+                ref={(ref) => (videoRefs.current[index] = ref)} // Store video refs for each slide
+                controls
+                className="h-full w-full object-fill rounded-xl"
+              >
+                <source src={media.src} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
+            {/* Additional content if needed */}
+          </div>
+        ))}
       </div>
     </div>
   )
