@@ -24,7 +24,6 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
   return (
     <ReactFullpage
       licenseKey={import.meta.env.VITE_FULLPAGEJS_LICENSE_KEY}
-      scrollingSpeed={800}
       keyboardScrolling={true}
       anchors={anchors}
       controlArrowsHTML={[
@@ -34,7 +33,7 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       menu="#myMenu"
       fixedElements="#NavBar"
       lazyLoading={true}
-      normalScrollElements="#map, .slider"
+      normalScrollElements="#map, .slider, .tab"
       loopBottom={true}
       scrollOverflow={true}
       afterLoad={handleAfterLoad}

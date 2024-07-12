@@ -20,7 +20,7 @@ export default function ProjGallery() {
   return (
     <main className="relative flex h-screen flex-col justify-center">
       <h1 className="absolute left-6 top-7 min-w-max rounded-lg border-2 border-black p-1.5 text-center font-mono font-semibold tracking-wider text-gray-950 sm:text-lg md:left-8 md:top-11 2xl:inset-x-0 2xl:top-12 2xl:border-none 2xl:text-2xl">
-        <code>&lt;Projects&gt;&lt;Gallery/&gt;</code>
+        <code>&lt;Projects&gt;&lt;Gallery&gt;</code>
       </h1>
       <section className="mx-auto flex h-6/7 w-5/6 flex-col place-content-end place-items-center md:mt-auto">
         <div className="relative h-1/2 w-screen text-center">

@@ -36,21 +36,10 @@ export default function Carousel({ images }) {
   }, [activeSlide])
 
   return (
-    <div className="slider w-screen overflow-hidden text-center">
-      <div className="mx-auto space-x-7">
-        {images.map((media, index) => (
-          <button
-            key={index}
-            className={buttonClasses}
-            onClick={() => handleSlideChange(index)}
-          >
-          </button>
-        ))}
-      </div>
-
+    <div className="absolute bottom-7 overflow-hidden text-center">
       <div
         ref={slidesContainerRef}
-        className="slides flex snap-x snap-mandatory overflow-x-auto scroll-smooth pt-0.5 xl:py-2"
+        className="slides flex snap-x snap-mandatory overflow-x-auto scroll-smooth mb-4 xl:py-2"
       >
         {images.map((media, index) => (
           <div
@@ -60,7 +49,7 @@ export default function Carousel({ images }) {
           >
             {/* Conditional rendering based on media type */}
             {media.type === 'image' && (
-              <img src={media.src} alt={`Slide ${index}`} className='' />
+              <img src={media.src} alt={`Slide ${index}`} className="" />
             )}
             {media.type === 'video' && (
               <video
@@ -74,6 +63,15 @@ export default function Carousel({ images }) {
             )}
             {/* Additional content if needed */}
           </div>
+        ))}
+      </div>
+      <div className="mx-auto space-x-6">
+        {images.map((media, index) => (
+          <button
+            key={index}
+            className={buttonClasses}
+            onClick={() => handleSlideChange(index)}
+          ></button>
         ))}
       </div>
     </div>
