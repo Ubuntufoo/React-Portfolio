@@ -31,7 +31,7 @@ export default function Tabs({ tabsContent }) {
   }
 
   return (
-    <div className="relative top-24 mx-auto h-1/5 w-9/10">
+    <div className="relative top-24 mx-auto w-9/10">
       <div
         role="tablist"
         aria-label="tabs"
@@ -49,7 +49,7 @@ export default function Tabs({ tabsContent }) {
             id={`tab-${index + 1}`}
             tabIndex={activeTab === index ? 0 : -1}
             onClick={() => handleTabClick(index)}
-            className="relative block h-10 rounded-full px-6 opacity-100"
+            className="relative block rounded-full px-6"
           >
             <span className="font-roboto tracking-wide text-gray-900">
               {tab.title}
@@ -57,19 +57,19 @@ export default function Tabs({ tabsContent }) {
           </button>
         ))}
       </div>
-      <div className="tab relative mt-4 h-32">
+      <div className="tab relative mt-4">
         {tabsContent.map((tab, index) => (
           <div
             key={tab.id}
             role="tabpanel"
             id={`panel-${index + 1}`}
-            className={`group absolute h-full w-full transition-opacity duration-300 ${
+            className={`group absolute transition-opacity duration-500 ${
               activeTab === index
                 ? 'opacity-100'
                 : 'pointer-events-none opacity-0'
             }`}
           >
-            <div className="tab-content  mx-auto h-32 rounded-xl bg-gray-50 p-5 shadow-xl hover:overflow-scroll">
+            <div className="tab-content mx-auto h-32 hover:h-52 hover:z-50 rounded-xl bg-gray-50 p-5 shadow-xl hover:overflow-scroll">
               <div className=" inline-flex w-full place-items-center justify-between">
                 <h2 className="font-bold text-gray-900">{tab.title}</h2>
                 <PiMouseScroll className="text-xl group-hover:hidden" />
