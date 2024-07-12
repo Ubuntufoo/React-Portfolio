@@ -2,18 +2,17 @@
 
 Welcome to my web developer portfolio.
 
-This project showcases my skills and projects as a web developer. The project is built with React, Tailwind CSS, Fullpage.js, Fullscreen.js, and EmailJS. The project is hosted on Netlify, providing continuous deployment. The development tools include Vite, ESLint, Prettier, Autoprefixer, and cssnano. The project is tested and troubleshooted with Browserstack, and the images are optimized with Imgbot.
+This project showcases my skills and projects as a web developer. The project is built with React, Tailwind CSS, Fullpage.js, and EmailJS. The project is hosted on Netlify, providing continuous deployment. The development tools include Vite, ESLint, Prettier, Autoprefixer, and cssnano. The project is tested and troubleshooted with Browserstack, and the images are optimized with Imgbot.
 
 ## Project URL
 
-[Visit my portfolio](https://timmurphywebdev.netlify.app/#Intro)
+[Visit my portfolio](https://tmurphywebdev.netlify.app/#Intro)
 
 ## Built With
 
 - **React**: A JavaScript library for building user interfaces.
 - **Tailwind CSS**: A utility-first CSS framework for rapidly building custom user interfaces.
 - **Fullpage.js**: A library to create full screen scrolling websites.
-- **Fullscreen.js**: A library to enable full screen mode in web applications.
 - **EmailJS**: A service to send emails directly from your client-side JavaScript.
 - **Vite**: A build tool that aims to provide a faster and leaner development experience for modern web projects, with the React plugin.
 
@@ -41,7 +40,7 @@ This project showcases my skills and projects as a web developer. The project is
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/Ubuntufoo/React-Portfolio
+   git clone https://github.com/Ubuntufoo/React-Portfolio/tree/V2
    cd React-Portfolio
    ```
 

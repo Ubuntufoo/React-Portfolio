@@ -1,6 +1,6 @@
 // a button component
 
-export default function Button({ link, bg }) {
+export default function Button({ link}) {
   return (
     <button className="mx-auto rounded-lg shadow-lg shadow-white">
       <a

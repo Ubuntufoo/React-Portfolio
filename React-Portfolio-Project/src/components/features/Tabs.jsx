@@ -63,25 +63,24 @@ export default function Tabs({ tabsContent }) {
             key={tab.id}
             role="tabpanel"
             id={`panel-${index + 1}`}
-            className={`absolute h-full w-full transition-opacity duration-300 ${
+            className={`group absolute h-full w-full transition-opacity duration-300 ${
               activeTab === index
                 ? 'opacity-100'
                 : 'pointer-events-none opacity-0'
             }`}
           >
-            <div className="tab-content mx-auto h-32 rounded-xl bg-gray-50 p-5 shadow-xl hover:overflow-scroll">
-              <div className='inline-flex w-full place-items-center justify-between'>
+            <div className="tab-content  mx-auto h-32 rounded-xl bg-gray-50 p-5 shadow-xl hover:overflow-scroll">
+              <div className=" inline-flex w-full place-items-center justify-between">
                 <h2 className="font-bold text-gray-900">{tab.title}</h2>
-                <PiMouseScroll className='text-xl' />
+                <PiMouseScroll className="text-xl group-hover:hidden" />
               </div>
-              <p className="mt-2.5 line-clamp-3 text-sm text-gray-900 hover:line-clamp-none lg:text-2xl">
+              <p className="tab-content mt-2.5 line-clamp-3 text-sm text-gray-900 hover:line-clamp-none text-pretty lg:text-2xl">
                 {tab.content}
               </p>
             </div>
           </div>
         ))}
       </div>
-
     </div>
   )
 }

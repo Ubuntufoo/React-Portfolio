@@ -106,12 +106,12 @@ export const tabsPortfolio = [
   {
     id: 2,
     title: 'Lessons',
-    content: "So many lessons learned here. For starters: Intrinsic vs extrinsic sizing, advanced layout techniques, multi-browser/device support, UX design for images, Tailwind customization... \n\nI'm comfortable telling on myself: Why is there a vertical distortion beneath images when the Fullscreen.js method is called, just a Fullpage.js quirk? How can I widen my net for device compatibility? Why does the marquee on the Skills page inexplicably overlap icons on rare occasion?",
+    content: "So many lessons learned here. For starters: Intrinsic vs extrinsic sizing, advanced layout techniques, multi-browser/device support, UX design for images, Tailwind customization... \n\nI'm comfortable telling on myself: Why is there a vertical distortion beneath images when the Fullscreen method is called, just a Fullpage.js quirk? How can I widen my net for device compatibility? Why does the marquee on the Skills page inexplicably overlap icons on rare occasion?",
   },
   {
     id: 3,
     title: 'Techs',
-    content: "Built with React.js, hosted on Netlify. The Fullpage.js library aids layout and navigation. No back-end was required thanks to a lightweight library called EmailJS, which grants client-side email functionality.\n\nThe Fullpage.js wrapper exposes many methods and callbacks for customization such as triggers for conditional DOM rendering based on the section or slide the user is on. Fullscreen.js solved the issue of cramped image viewing by simply scaling-in-ratio each image to fit the viewport. ",
+    content: "Built with React.js, hosted on Netlify. The Fullpage.js library aids layout and navigation. No back-end was required thanks to a lightweight library called EmailJS, which grants client-side email functionality.\n\nThe Fullpage.js wrapper exposes many methods and callbacks for customization such as triggers for conditional DOM rendering based on the section or slide the user is on. JS Fullscreen API solved the issue of cramped image viewing by simply scaling-in-ratio each image to fit the viewport. ",
   },
 ];
 

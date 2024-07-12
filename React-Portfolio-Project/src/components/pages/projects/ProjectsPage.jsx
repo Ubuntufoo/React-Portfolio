@@ -5,7 +5,7 @@ import ProjExploreLLM from './ProjExploreLLM'
 import ProjBT from './ProjBT'
 import ProjTADA from './ProjTADA'
 import ProjWD from './ProjWD'
-import ProjPortfolio from './ProjPortfolio'
+import ProjPortfolioV1 from './ProjPortfolioV1'
 
 export default function ProjectsPage() {
 
@@ -15,19 +15,19 @@ export default function ProjectsPage() {
         <ProjGallery />
       </div>
       <div className="slide">
+        <ProjPortfolioV1 />
+      </div>
+      <div className="slide">
+        <ProjTADA />
+      </div>
+      <div className="slide">
         <ProjExploreLLM />
       </div>
       <div className="slide">
         <ProjBT />
       </div>
       <div className="slide">
-        <ProjTADA />
-      </div>
-      <div className="slide">
         <ProjWD />
-      </div>
-      <div className="slide">
-        <ProjPortfolio />
       </div>
     </div>
   )

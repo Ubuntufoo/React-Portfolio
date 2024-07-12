@@ -26,7 +26,7 @@
 }
 
 .tab-content::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
   height: 0px;
   cursor: pointer;
   background-color: transparent;
@@ -34,9 +34,9 @@
 
 .tab-content::-webkit-scrollbar-thumb {
   background: transparent;
-  border-radius: 40px;
+  border-radius: 90px;
   cursor: pointer;
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(68, 68, 68);
 }
 
 .tab-content::-webkit-scrollbar-track {
@@ -111,7 +111,7 @@ textarea:-webkit-autofill:active {
 @media (max-width: 639px) {
   .fp-prev,
     .fp-next {
-      scale: .75;
+      scale: .7;
       border-radius: 10%;
     }
 }

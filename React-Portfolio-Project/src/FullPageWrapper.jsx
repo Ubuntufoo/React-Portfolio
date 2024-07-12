@@ -33,7 +33,7 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       menu="#myMenu"
       fixedElements="#NavBar"
       lazyLoading={true}
-      normalScrollElements="#map, .slider, .tab"
+      normalScrollElements="#map, .slider, .slides, .tab"
       loopBottom={true}
       scrollOverflow={true}
       afterLoad={handleAfterLoad}

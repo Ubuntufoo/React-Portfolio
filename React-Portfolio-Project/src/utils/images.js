@@ -24,9 +24,9 @@ import TADAdesktop from '../assets/projects-assets/TADAdesktop.png'
 import WorkDashCode1of2 from '../assets/projects-assets/WorkDashCode1of2.png'
 import WorkDashCode2of2 from '../assets/projects-assets/WorkDashCode2of2.png'
 
-// import ProjPortfolioFormCode from '../assets/projects-assets/ProjPortfolioFormCode.png'
-import ProjPortfolioFullpageJSCode from '../assets/projects-assets/ProjPortfolioFullpageJSCode.png'
-import ProjPortfolioMarqueeCode from '../assets/projects-assets/ProjPortfolioMarqueeCode.png'
+import ProjPortfolioFormCode314x900 from '../assets/projects-assets/ProjPortfolioFormCode314x900.png'
+import ProjPortfolioFullpageJSCode533x900 from '../assets/projects-assets/ProjPortfolioFullpageJSCode533x900.png'
+import ProjPortfolioMarqueeCode1284x900 from '../assets/projects-assets/ProjPortfolioMarqueeCode1284x900.png'
 
 export const projMainContent = [
   {
@@ -35,7 +35,15 @@ export const projMainContent = [
     description:
       "A previous version of my web developer portfolio site.",
     linkExternal: 'https://timmurphywebdev.netlify.app/',
-    linkToSlide: 5,
+    linkToSlide: 1,
+  },
+  {
+    src: TADAmobile,
+    label: 'TADA! Web App',
+    description:
+    "Generative AI produces positive affirmations for accomplishments.",
+    linkExternal: 'https://tada-w0iq.onrender.com',
+    linkToSlide: 2,
   },
   {
     src: ExploreLLM_IMG,
@@ -43,14 +51,6 @@ export const projMainContent = [
     description:
       "Custom GUI concept aimed at enhancing generative AI interaction.",
     linkExternal: false,
-    linkToSlide: 1,
-  },
-  {
-    src: TADAmobile,
-    label: 'TADA! Web App',
-    description:
-      "Generative AI produces positive affirmations for accomplishments.",
-    linkExternal: 'https://tada-w0iq.onrender.com',
     linkToSlide: 3,
   },
   {
@@ -59,7 +59,7 @@ export const projMainContent = [
     description:
       'A responsive, full-stack website with user auth and admin capabilities.',
     linkExternal: 'https://brainteasers.herokuapp.com/',
-    linkToSlide: 2,
+    linkToSlide: 4,
   },
   {
     src: WorkDashIMG,
@@ -67,70 +67,57 @@ export const projMainContent = [
     description:
       'A personal web app for boosting my daily workflow.',
     linkExternal: false,
-    linkToSlide: 4,
+    linkToSlide: 5,
   },
 ]
 
-export const skillCardsContent = [
+export const projPortfolioContent = [
   {
-    img: reactLOGOcustom,
-    title: 'React\nSpecialization',
-    firstHeader: 'React Fundamentals',
-    firstPara: "My projects focus on fundamentals and best practices. when I am prepared for new concepts I refer to 'React - The Complete Guide 2024', a comprehensive and highly acclaimed React course on Udemy.\n\nI prefer learning from the ground up, and generally avoid pre-built components until it is something I am actually comfortable building from scratch.",
-    secondHeader: 'Learning Roadmap',
-    secondPara: "I'm also in the process of adding TypeScript to my skill-set, and revisiting raw Javascript. I am excited to experiment with Next.js for more robust applications; as my projects scale up I plan to embrace performance optimization and SEO best practices.",
+    src: ProjPortfolioHero,
+    label: 'Intro Page',
+    type: 'image',
   },
   {
-    img: genaiIMG,
-    title: 'Generative AI \nIntegration',
-    firstHeader: 'UI/UX Optimization',
-    firstPara: "User-driven content generation is flawed due to the sub-optimal UI's of AI tools.\n\nI envision ways to improve UX with creative solutions that take into account the translation gap between AI and human users.",
-    secondHeader: 'Opening Creative Doors',
-    secondPara: "Generative AI helps me tap into a creative side that I am working to express more. I believe it holds that potential for just about everyone.\n\nThe buzz around this technology offers a chance to engage those who might not usually explore their creativity, fostering new ideas and innovation.",
+    src: ProjPortfolioFullpageJSCode533x900,
+    label: 'Fullpage.js Code',
+    type: 'image',
   },
   {
-    img: fullstackIMG3,
-    title: 'Full-Stack \nExperience',
-    firstHeader: 'FE-BE Challenges',
-    firstPara: "Unraveling the complexity of the front-end/back-end relationship was ultimately the most rewarding part of my journey thus far.\n\nThe first major challenge I encountered was integrating a Vue FE with a Django BE. This pivotal moment almost made me quit, but instead I turned my frustration into fuel.\n\nAside from Django, I have also deployed server-side code using Express.js and Flask. SQL is a part of my daily workflow; I use Microsoft SQL Server Management Studio extensively.",
+    src: ProjPortfolioMarqueeCode1284x900,
+    label: 'Marquee Code',
+    type: 'image',
   },
   {
-    img: problemsolveIMG,
-    title: 'Projects \nWith Purpose',
-    firstHeader: 'Inspiration At Home',
-    firstPara: "I've drawn inspiration from loved ones for projects like my Wordle clone with added features and TADA!, a mindful take on the traditional TO-DO list.\n\n In TADA!, users receive AI-generated affirmations for their accomplishments.",
-    secondHeader: 'Practical Solutions',
-    secondPara: "When I first discovered the power of Python scripting, I was motivated to automate everything. I've created scripts to streamline daily workflows, manage personal emails, and scrape web data using Selenium.\n\n One of my mid-term goals is to develop a Chrome Extension inspired by uBlock Origin's DOM filtering feature.",
+    src: ProjPortfolioFormCode314x900,
+    label: 'Form Code',
+    type: 'image',
   },
 ]
 
 export const projExploreLLMImages = [
   {
+    src: ExploreLLM_IMG,
+    label: 'ExploreLLM Concept Web App IMG',
+    type: 'image',
+  },
+  {
     src: ExploreLLMConcept,
     label: 'ExploreLLM Concept Video',
-    figcaption: 'A video showcasing the concept app for ExploreLLM.',
     type: 'video',
   },
-    {
-      src: ExploreLLM_IMG,
-      label: 'ExploreLLM Concept Web App IMG',
-      figcaption: "ExplloreLLM concept: main interface'.",
-      type: 'image',
-    },
-    {
-      src: ExploreLLMcards,
-      label: 'ExploreLLM Concept Cards',
-      figcaption: 'ExploreLLM concept: task decomposition.',
-      type: 'image',
-    },
+  {
+    src: ExploreLLMcards,
+    label: 'ExploreLLM Concept Cards',
+    type: 'image',
+  },
 ];
 
 export const projBTContent = [
-    {
-    src: BrainteasersHomeIMG,
-    label: 'Brainteasers Home',
-    figcaption: 'ExploreLLM concept: a task destructuring approach.',
-    type: 'image',
+  {
+  src: BrainteasersHomeIMG,
+  label: 'Brainteasers Home',
+  figcaption: 'ExploreLLM concept: a task destructuring approach.',
+  type: 'image',
   },
   {
     src: BrainteasersWordleIMG,
@@ -195,17 +182,35 @@ export const projWDContent = [
   },
 ]
 
-export const projPortfolioContent = [
+export const skillCardsContent = [
   {
-    src: ProjPortfolioFullpageJSCode,
-    label: 'Fullpage.js Code',
-    description:
-      'The code view of the Fullpage.js library, highlighting the JavaScript code used to create the full-page scrolling effect.',
+    img: reactLOGOcustom,
+    title: 'React\nSpecialization',
+    firstHeader: 'React Fundamentals',
+    firstPara: "My projects focus on fundamentals and best practices. when I am prepared for new concepts I refer to 'React - The Complete Guide 2024', a comprehensive and highly acclaimed React course on Udemy.\n\nI prefer learning from the ground up, and generally avoid pre-built components until it is something I am actually comfortable building from scratch.",
+    secondHeader: 'Learning Roadmap',
+    secondPara: "I'm also in the process of adding TypeScript to my skill-set, and revisiting raw Javascript. I am excited to experiment with Next.js for more robust applications; as my projects scale up I plan to embrace performance optimization and SEO best practices.",
   },
   {
-    src: ProjPortfolioMarqueeCode,
-    label: 'Marquee Code',
-    description:
-      'The code view of the Marquee, showcasing the JavaScript code used to create the scrolling effect.',
+    img: genaiIMG,
+    title: 'Generative AI \nIntegration',
+    firstHeader: 'UI/UX Optimization',
+    firstPara: "User-driven content generation is flawed due to the sub-optimal UI's of AI tools.\n\nI envision ways to improve UX with creative solutions that take into account the translation gap between AI and human users.",
+    secondHeader: 'Opening Creative Doors',
+    secondPara: "Generative AI helps me tap into a creative side that I am working to express more. I believe it holds that potential for just about everyone.\n\nThe buzz around this technology offers a chance to engage those who might not usually explore their creativity, fostering new ideas and innovation.",
+  },
+  {
+    img: fullstackIMG3,
+    title: 'Full-Stack \nExperience',
+    firstHeader: 'FE-BE Challenges',
+    firstPara: "Unraveling the complexity of the front-end/back-end relationship was ultimately the most rewarding part of my journey thus far.\n\nThe first major challenge I encountered was integrating a Vue FE with a Django BE. This pivotal moment almost made me quit, but instead I turned my frustration into fuel.\n\nAside from Django, I have also deployed server-side code using Express.js and Flask. SQL is a part of my daily workflow; I use Microsoft SQL Server Management Studio extensively.",
+  },
+  {
+    img: problemsolveIMG,
+    title: 'Projects \nWith Purpose',
+    firstHeader: 'Inspiration At Home',
+    firstPara: "I've drawn inspiration from loved ones for projects like my Wordle clone with added features and TADA!, a mindful take on the traditional TO-DO list.\n\n In TADA!, users receive AI-generated affirmations for their accomplishments.",
+    secondHeader: 'Practical Solutions',
+    secondPara: "When I first discovered the power of Python scripting, I was motivated to automate everything. I've created scripts to streamline daily workflows, manage personal emails, and scrape web data using Selenium.\n\n One of my mid-term goals is to develop a Chrome Extension inspired by uBlock Origin's DOM filtering feature.",
   },
 ]
