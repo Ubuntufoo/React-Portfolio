@@ -9,13 +9,14 @@ export default function Carousel({ images }) {
 
   const buttonClasses = 'size-4 md:size-7 bg-white cursor-pointer rounded-full'
   const slidesClasses =
-    'w-[320px] h-[160px] shrink-0 cursor-grab 2xl:cursor-auto snap-start first:ms-0 me-6 last:me-0 rounded-xl bg-white origin-center transition-all relative flex place-content-center place-items-center text-6xl'
-  const activeSlideClasses = 'scale-[1.01] transition-all duration-500'
+    'w-full h-fit shrink-0 snap-center snap-always cursor-grab 2xl:cursor-auto first:ms-0 me-6 last:me-0 bg-white origin-center transition-all relative flex'
+  const activeSlideClasses = ''
 
   const handleSlideChange = (slideNumber) => {
     setActiveSlide(slideNumber)
     const slidesContainer = slidesContainerRef.current
-    const slideWidth = 320 // width of each slide
+    // width of each slide
+    const slideWidth = window.innerWidth;
     const slideMargin = 24 // margin-inline-end of each slide
     slidesContainer.scrollTo({
       left: slideNumber * (slideWidth + slideMargin),
@@ -35,7 +36,7 @@ export default function Carousel({ images }) {
   }, [activeSlide])
 
   return (
-    <div className="slider w-[320px] overflow-hidden text-center">
+    <div className="slider w-screen overflow-hidden text-center">
       <div className="mx-auto space-x-7">
         {images.map((media, index) => (
           <button
@@ -49,7 +50,7 @@ export default function Carousel({ images }) {
 
       <div
         ref={slidesContainerRef}
-        className="slides rounded-xl flex snap-mandatory overflow-x-auto scroll-smooth py-1.5"
+        className="slides flex snap-x snap-mandatory overflow-x-auto scroll-smooth pt-0.5 xl:py-2"
       >
         {images.map((media, index) => (
           <div
@@ -59,13 +60,13 @@ export default function Carousel({ images }) {
           >
             {/* Conditional rendering based on media type */}
             {media.type === 'image' && (
-              <img src={media.src} alt={`Slide ${index}`} className='rounded-xl' />
+              <img src={media.src} alt={`Slide ${index}`} className='' />
             )}
             {media.type === 'video' && (
               <video
                 ref={(ref) => (videoRefs.current[index] = ref)} // Store video refs for each slide
                 controls
-                className="h-full w-full object-fill rounded-xl"
+                className="h-full w-full object-scale-down"
               >
                 <source src={media.src} type="video/mp4" />
                 Your browser does not support the video tag.

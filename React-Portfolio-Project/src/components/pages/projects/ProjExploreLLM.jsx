@@ -7,9 +7,9 @@ import { tabsExploreLLM } from "../../../utils/tabs"
 
 export default function ProjExploreLLM() {
   return (
-    <div className="flex h-screen flex-col place-content-center place-items-center">
-      <Carousel images={projExploreLLMImages} />
+    <div className="flex h-screen flex-col place-content-center gap-y-5 place-items-center">
       <Tabs tabsContent={tabsExploreLLM} />
+      <Carousel images={projExploreLLMImages} />
     </div>
   )
 }

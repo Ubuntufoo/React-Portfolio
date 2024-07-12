@@ -8,20 +8,21 @@
 .slides {
   -webkit-overflow-scrolling: touch;
 }
-.slides::-webkit-scrollbar {
-  width: 10px;
-  height: 12px;
-  cursor: pointer;
-
-}
-.slides::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: white;
-}
-.slides::-webkit-scrollbar-track {
-  background: transparent;
+@media (min-width: 1280px) {
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 16px;
+    cursor: pointer;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
 }
 
 /* styles Intro Page text "Web Developer" paint stroke on hover */
@@ -63,7 +64,7 @@
   }
 } */
 
-/* used to prevent Chrome autofill background-color override */
+/* prevent Chrome autofill background-color override for Contact Form */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
