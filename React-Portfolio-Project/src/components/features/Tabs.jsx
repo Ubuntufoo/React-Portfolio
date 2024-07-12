@@ -68,7 +68,7 @@ export default function Tabs({ tabsContent }) {
             }`}
           >
             <h2 className="font-bold text-gray-900">{tab.title}</h2>
-            <p className="mt-2.5 line-clamp-3 text-pretty text-sm text-gray-700">
+            <p className="mt-2.5 line-clamp-2 text-pretty text-xs text-gray-700">
               {tab.content}
             </p>
           </div>

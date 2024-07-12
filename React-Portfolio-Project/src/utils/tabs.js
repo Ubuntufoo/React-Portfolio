@@ -4,7 +4,7 @@ export const tabsExploreLLM = [
  {
     id: 0,
     title: 'About',
-    content: "A recreation of the app from 'Beyond Chat Bots: ExploreLLM for Structured Thoughts and Personalized Model Responses', this project demonstrates ways to enhance AI interactions by integrating large language models (LLMs) with tailor-made GUIs for structured user experiences.\n\nIt leverages OpenAI API to generate manageable chunks of information for the user, preventing the dreaded wall of text that chatbots are known for, and users struggle to comprehend.",
+    content: "A recreation of the app from 'Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses', this project demonstrates ways to enhance AI interactions by integrating large language models (LLMs) with tailor-made GUIs for structured user experiences.\n\nIt leverages OpenAI API to generate manageable chunks of information for the user, preventing the dreaded wall of text that chatbots are known for, and users struggle to comprehend.",
   },
   {
     id: 1,
