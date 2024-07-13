@@ -25,12 +25,12 @@
   }
 }
 
-/* for class.tab-content set line clamp starting at 3 on devices with height 667, and line clamp increasing linearly with taller devices  */
+/* set line clamp integer based on mobile viewport height  */
 @media (min-height: 667px) {
   .tab-content {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     line-clamp: 3;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -40,8 +40,8 @@
 @media (min-height: 800px) {
   .tab-content {
     display: -webkit-box;
-    -webkit-line-clamp: 4;
     line-clamp: 4;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -51,8 +51,8 @@
 @media (min-height: 896px) {
   .tab-content {
       display: -webkit-box;
-      -webkit-line-clamp: 5;
       line-clamp: 5;
+      -webkit-line-clamp: 5;
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
