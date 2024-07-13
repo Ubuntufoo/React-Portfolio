@@ -68,14 +68,16 @@ export default function Tabs({ tabsContent }) {
                 : 'pointer-events-none opacity-0'
             }`}
           >
-            <div className="tab-content mx-auto rounded-xl bg-gray-50 px-7 py-4 shadow-xl hover:z-50 hover:h-52 hover:overflow-scroll">
-              <div className=" inline-flex w-full text-sm place-items-center justify-between">
-                <h2 className="font-bold text-base text-gray-900">{tab.title}</h2>
+            <div className="tab-content mx-auto rounded-xl bg-gray-50 px-7 py-4 shadow-xl ">
+              <div className=" inline-flex w-full place-items-center justify-between text-sm">
+                <h2 className="text-base font-bold text-gray-900">
+                  {tab.title}
+                </h2>
                 <PiMouseScroll className="text-xl group-hover:hidden" />
               </div>
-              <p className="tab-content z-50 bottom-10 mt-2.5 text-pretty text-sm hover:text-sm leading-6 text-gray-900 hover:line-clamp-none pb-0">
+              <div className="tab-content bottom-10 z-50 mt-2.5 text-pretty pb-0 text-sm leading-6 text-gray-900 hover:z-50 hover:line-clamp-none hover:h-52 hover:overflow-scroll hover:text-sm">
                 {tab.content}
-              </p>
+              </div>
             </div>
           </div>
         ))}
