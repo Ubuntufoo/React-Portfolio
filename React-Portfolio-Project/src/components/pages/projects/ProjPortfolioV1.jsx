@@ -4,6 +4,8 @@ import Carousel from '../../features/Carousel'
 import Tabs from '../../features/Tabs'
 import { projPortfolioContent } from '../../../utils/images'
 import { tabsPortfolio } from '../../../utils/tabs'
+import { projMainContent } from '../../../utils/images'
+import Button from '../../features/Button'
 
 export default function ProjPortfolioV1() {
   return (
@@ -12,7 +14,8 @@ export default function ProjPortfolioV1() {
         <code>&lt;PortfolioV1/&gt;</code>
       </h1>
       <Tabs tabsContent={tabsPortfolio} />
-      <Carousel images={projPortfolioContent}/>
+      <Carousel images={projPortfolioContent} />
+      <Button styles="absolute" link={projMainContent[0].linkExternal} />
     </div>
   )
 }

@@ -1,8 +1,19 @@
 // a button component
 
-export default function Button({ link}) {
+export default function Button({ link, styles = 'absolute' }) {
+
+let buttonClasses = ''
+
+
+  if (styles === 'absolute') {
+    buttonClasses = 'absolute left-[36%] top-[47.5%]'
+  }
+
+
+
+
   return (
-    <button className="mx-auto rounded-lg shadow-lg shadow-white">
+    <button className={`mx-auto rounded-lg shadow-lg shadow-white ${buttonClasses}`}>
       <a
         href={link}
         target="_blank"

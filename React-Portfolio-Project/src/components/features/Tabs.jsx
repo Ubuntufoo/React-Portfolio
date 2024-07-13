@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { PiMouseScroll } from 'react-icons/pi'
 
-
 export default function Tabs({ tabsContent }) {
   const [activeTab, setActiveTab] = useState(0)
 
@@ -31,7 +30,7 @@ export default function Tabs({ tabsContent }) {
   }
 
   return (
-    <div className="relative top-24 mx-auto w-9/10">
+    <div className="relative top-[13%] mx-auto flex h-[9.6%] w-[92%] flex-col justify-between">
       <div
         role="tablist"
         aria-label="tabs"
@@ -57,24 +56,24 @@ export default function Tabs({ tabsContent }) {
           </button>
         ))}
       </div>
-      <div className="tab relative mt-4">
+      <div className="tab relative">
         {tabsContent.map((tab, index) => (
           <div
             key={tab.id}
             role="tabpanel"
             id={`panel-${index + 1}`}
-            className={`group absolute transition-opacity duration-500 ${
+            className={`group absolute z-50 transition-opacity duration-500 ${
               activeTab === index
                 ? 'opacity-100'
                 : 'pointer-events-none opacity-0'
             }`}
           >
-            <div className="tab-content mx-auto h-32 hover:h-52 hover:z-50 rounded-xl bg-gray-50 p-5 shadow-xl hover:overflow-scroll">
+            <div className="tab-content mx-auto rounded-xl bg-gray-50 px-7 py-4 shadow-xl hover:z-50 hover:h-52 hover:overflow-scroll">
               <div className=" inline-flex w-full place-items-center justify-between">
                 <h2 className="font-bold text-gray-900">{tab.title}</h2>
                 <PiMouseScroll className="text-xl group-hover:hidden" />
               </div>
-              <p className="tab-content mt-2.5 line-clamp-3 text-sm text-gray-900 hover:line-clamp-none text-pretty lg:text-2xl">
+              <p className="tab-content z-50 bottom-10 mt-2.5 text-pretty text-sm leading-6 text-gray-900 hover:line-clamp-none lg:text-2xl">
                 {tab.content}
               </p>
             </div>

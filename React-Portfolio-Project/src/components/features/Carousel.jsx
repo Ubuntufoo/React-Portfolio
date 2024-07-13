@@ -94,10 +94,10 @@ export default function Carousel({ images }) {
 
 
   return (
-    <div className="absolute bottom-7 overflow-hidden text-center">
+    <div className="absolute bottom-[4%] overflow-hidden text-center">
       <div
         ref={slidesContainerRef}
-        className="slides mb-4 flex snap-x snap-mandatory overflow-x-auto scroll-smooth xl:py-2"
+        className="slides mb-3 flex snap-x snap-mandatory overflow-x-auto scroll-smooth xl:py-2"
       >
         {images.map((media, index) => (
           <div
@@ -110,7 +110,7 @@ export default function Carousel({ images }) {
               <img
                 src={media.src}
                 alt={`Slide ${index}`}
-                className={`mx-auto h-56 object-contain`}
+                className={`mx-auto max-w-screen max-h-52 object-contain`}
                 onClick={handleImageClick}
               />
             )}
@@ -124,7 +124,6 @@ export default function Carousel({ images }) {
                 Your browser does not support the video tag.
               </video>
             )}
-            {/* Additional content if needed */}
           </div>
         ))}
       </div>
