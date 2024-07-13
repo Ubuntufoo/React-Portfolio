@@ -6,7 +6,7 @@ let buttonClasses = ''
 
 
   if (styles === 'absolute') {
-    buttonClasses = 'absolute left-[36%] top-[47.5%]'
+    buttonClasses = 'absolute left-[36%] top-[44%]'
   }
 
 
