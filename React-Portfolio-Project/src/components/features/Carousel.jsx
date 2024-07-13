@@ -94,7 +94,7 @@ export default function Carousel({ images }) {
 
 
   return (
-    <div className="absolute bottom-[4%] overflow-hidden text-center">
+    <div className="absolute bottom-[6%] overflow-hidden text-center">
       <div
         ref={slidesContainerRef}
         className="slides mb-3 flex snap-x snap-mandatory overflow-x-auto scroll-smooth xl:py-2"
