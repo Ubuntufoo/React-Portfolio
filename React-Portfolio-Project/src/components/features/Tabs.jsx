@@ -34,10 +34,10 @@ export default function Tabs({ tabsContent }) {
       <div
         role="tablist"
         aria-label="tabs"
-        className="relative mx-auto grid h-11 max-w-max grid-cols-4 items-center overflow-hidden rounded-full bg-gray-50 pe-1 text-sm shadow-xl transition"
+        className="relative mx-auto grid h-11 max-w-max grid-cols-4 items-center overflow-hidden rounded-full bg-gray-50 pe-1 text-sm shadow-2xl transition"
       >
         <div
-          className={`slider absolute bottom-0 top-0 my-auto h-9 w-20 rounded-3xl bg-gray-400 shadow-xl transition-all duration-300 ${sliderLeftOffset()}`}
+          className={`slider absolute bottom-0 top-0 my-auto h-9 w-20 rounded-3xl bg-gray-400 shadow-2xl transition-all duration-300 ${sliderLeftOffset()}`}
         ></div>
         {tabsContent.map((tab, index) => (
           <button
@@ -62,7 +62,7 @@ export default function Tabs({ tabsContent }) {
             key={tab.id}
             role="tabpanel"
             id={`panel-${index + 1}`}
-            className={`group absolute z-50 transition-opacity duration-500 ${
+            className={`group absolute shadow-2xl z-50 transition-opacity duration-500 ${
               activeTab === index
                 ? 'opacity-100'
                 : 'pointer-events-none opacity-0'

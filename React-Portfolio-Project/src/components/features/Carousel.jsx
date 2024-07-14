@@ -10,7 +10,8 @@ export default function Carousel({ images }) {
 
   const screenWidth = window.innerWidth
 
-  const buttonClasses = 'size-4 md:size-7 bg-white cursor-pointer rounded-full'
+  const buttonBaseClasses =
+    'size-4 md:size-7 cursor-pointer rounded-full bg-black'
   const slidesClasses =
     'w-full h-fit shrink-0 snap-center snap-always cursor-grab 2xl:cursor-auto first:ms-0 me-6 last:me-0 bg-gray-400 origin-center transition-all relative flex'
   const activeSlideClasses = ''
@@ -91,8 +92,6 @@ export default function Carousel({ images }) {
     }
   }, [isFullscreen])
 
-
-
   return (
     <div className="absolute bottom-[14%] overflow-hidden text-center">
       <div
@@ -110,7 +109,7 @@ export default function Carousel({ images }) {
               <img
                 src={media.src}
                 alt={`Slide ${index}`}
-                className={`mx-auto max-w-screen max-h-52 object-contain`}
+                className={`max-w-screen mx-auto max-h-52 rounded object-contain`}
                 onClick={handleImageClick}
               />
             )}
@@ -131,7 +130,7 @@ export default function Carousel({ images }) {
         {images.map((media, index) => (
           <button
             key={index}
-            className={buttonClasses}
+            className={`${buttonBaseClasses} ${activeSlide === index ? 'bg-gray-700' : 'bg-white'}`}
             onClick={() => handleSlideChange(index)}
           ></button>
         ))}

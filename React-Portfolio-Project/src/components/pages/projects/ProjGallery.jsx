@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { projMainContent } from '../../../utils/images'
-import { ImArrowRight } from 'react-icons/im'
 import { LuBadgeInfo } from 'react-icons/lu'
 import BG1 from '../../../assets/BG1.png'
 
@@ -19,7 +18,7 @@ export default function ProjGallery() {
 
   return (
     <main className="relative flex h-screen flex-col justify-center">
-      <h1 className="absolute left-6 top-7 min-w-max rounded-lg border-2 border-black p-1.5 text-center font-mono font-semibold tracking-wider text-gray-950 sm:text-lg md:left-8 md:top-11 2xl:inset-x-0 2xl:top-12 2xl:border-none 2xl:text-2xl">
+      <h1 className="absolute left-6 top-7 min-w-max rounded-lg border-2 border-black p-1.5 text-center font-mono font-semibold tracking-wider text-gray-950 sm:text-lg md:left-8 md:top-11 2xl:inset-x-0 2xl:top-12 w-fit mx-auto 2xl:text-2xl">
         <code>&lt;Projects&gt;&lt;Gallery&gt;</code>
       </h1>
       <section className="mx-auto flex h-6/7 w-5/6 flex-col place-content-end place-items-center md:mt-auto">
@@ -27,7 +26,7 @@ export default function ProjGallery() {
           {selectedProject == null ? (
             <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly py-10">
               <img
-                className="absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom scale-[1.6] opacity-10 brightness-90 sepia md:scale-[1.4] lg:scale-[.81] xl:scale-[.67] 2xl:scale-50"
+                className="absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom scale-[1.6] rounded-3xl opacity-10 brightness-90 sepia md:scale-[1.4] lg:scale-[.81] xl:scale-[.67] 2xl:scale-[.45]"
                 src={BG1}
                 alt="Cluttered desk covered with tech and tools"
               />
@@ -37,12 +36,11 @@ export default function ProjGallery() {
               <p className="text-pretty font-semibold sm:text-lg md:text-xl">
                 or scroll right to see project details
               </p>
-              <ImArrowRight className="mx-auto text-3xl" />
             </div>
           ) : (
             <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly pt-2">
               <img
-                className="absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom scale-[1.6] rounded-lg opacity-15 brightness-90 sepia md:scale-[1.38] lg:scale-[.81] xl:scale-[.67] 2xl:scale-50"
+                className="absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom scale-[1.6] rounded-3xl opacity-15 brightness-90 sepia md:scale-[1.38] lg:scale-[.81] xl:scale-[.67] 2xl:scale-[.45]"
                 src={selectedProject.src}
                 alt={selectedProject.label}
               />
@@ -89,7 +87,7 @@ export default function ProjGallery() {
               <li
                 onClick={() => setSelectedProject(proj)}
                 key={index}
-                className={`flex w-screen grow origin-bottom-left cursor-pointer place-items-center justify-center text-center font-roboto text-xl tracking-wide transition-all hover:scale-105 hover:sepia ${projectClasses[index % projectClasses.length].bg} ${projectClasses[index % projectClasses.length].hover}`}
+                className={`flex w-screen grow origin-bottom cursor-pointer place-items-center justify-center text-center font-roboto text-xl tracking-wide transition-all hover:scale-105 hover:sepia ${projectClasses[index % projectClasses.length].bg} ${projectClasses[index % projectClasses.length].hover}`}
               >
                 <button className="relative flex place-items-center text-gray-50">
                   {proj.label}
