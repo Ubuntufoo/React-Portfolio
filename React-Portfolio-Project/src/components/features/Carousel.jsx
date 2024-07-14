@@ -11,7 +11,7 @@ export default function Carousel({ images }) {
   const screenWidth = window.innerWidth
 
   const buttonBaseClasses =
-    'size-4 md:size-7 cursor-pointer rounded-full bg-black'
+    'size-4 md:size-6 xl:size-7 cursor-pointer rounded-full'
   const slidesClasses =
     'w-full h-fit shrink-0 snap-center snap-always cursor-grab 2xl:cursor-auto first:ms-0 me-6 last:me-0 bg-gray-400 origin-center transition-all relative flex'
   const activeSlideClasses = ''
@@ -93,7 +93,7 @@ export default function Carousel({ images }) {
   }, [isFullscreen])
 
   return (
-    <div className="absolute bottom-[14%] overflow-hidden text-center">
+    <div className="absolute bottom-[14%] md:bottom-[6%] overflow-hidden text-center">
       <div
         ref={slidesContainerRef}
         className="slides mb-2.5 flex snap-x snap-mandatory overflow-x-auto scroll-smooth xl:py-2"
@@ -109,7 +109,7 @@ export default function Carousel({ images }) {
               <img
                 src={media.src}
                 alt={`Slide ${index}`}
-                className={`max-w-screen mx-auto max-h-52 rounded object-contain`}
+                className={`max-w-screen mx-auto max-h-52 md:max-h-80 rounded object-contain`}
                 onClick={handleImageClick}
               />
             )}

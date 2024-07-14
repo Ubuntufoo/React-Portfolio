@@ -8,17 +8,17 @@
 .slides {
   -webkit-overflow-scrolling: touch;
 }
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .slides::-webkit-scrollbar {
     width: 10px;
-    height: 16px;
+    height: 10px;
     cursor: pointer;
   }
   .slides::-webkit-scrollbar-thumb {
     background: black;
     border-radius: 10px;
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(250, 250, 250);
   }
   .slides::-webkit-scrollbar-track {
     background: transparent;
@@ -26,14 +26,13 @@
 }
 
 /* set line clamp integer based on mobile viewport height  */
-/* @media (min-height: 667px) {
+@media (min-height: 667px) {
   .tab-content {
-    display: -webkit-box;
-    line-clamp: 3;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
   }
 }
 
@@ -48,16 +47,15 @@
   }
 }
 
-@media (min-height: 896px) {
+@media (min-height: 882px) {
   .tab-content {
-      display: -webkit-box;
-      line-clamp: 5;
-      -webkit-line-clamp: 5;
-      -webkit-box-orient: vertical;
       overflow: hidden;
-      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+      line-clamp: 5;
     }
-} */
+}
 
 .tab-content::-webkit-scrollbar {
   width: 8px;

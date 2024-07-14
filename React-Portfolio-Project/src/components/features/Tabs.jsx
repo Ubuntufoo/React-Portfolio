@@ -30,7 +30,7 @@ export default function Tabs({ tabsContent }) {
   }
 
   return (
-    <div className="relative top-[12.5%] mx-auto flex h-[8%] w-[92%] flex-col justify-between">
+    <div className="relative top-[12.5%] mx-auto flex h-[8%] w-[92%] md:w-3/4 flex-col justify-between">
       <div
         role="tablist"
         aria-label="tabs"
@@ -70,10 +70,10 @@ export default function Tabs({ tabsContent }) {
           >
             <div className="group mx-auto rounded-xl bg-gray-50 px-7 py-4 shadow-xl">
               <div className=" inline-flex w-full place-items-center justify-between">
-                <h2 className="text-lg font-bold text-gray-900">{tab.title}</h2>
+                <h2 className="text-lg md:text-xl font-bold text-gray-900">{tab.title}</h2>
                 <PiMouseScroll className="text-xl opacity-100 transition group-hover:opacity-0" />
               </div>
-              <p className="tab-content whitespace-break-spaces text-pretty bottom-10 mt-2 line-clamp-3 h-fit text-gray-900 group-hover:line-clamp-none">
+              <p className="tab-content whitespace-break-spaces text-pretty bottom-10 mt-2 line-clamp-3 h-fit text-gray-900 group-hover:line-clamp-none md:text-lg hyphens-auto indent-5">
                 {tab.content}
               </p>
             </div>
