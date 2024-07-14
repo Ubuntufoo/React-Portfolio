@@ -30,7 +30,7 @@ export default function Tabs({ tabsContent }) {
   }
 
   return (
-    <div className="relative top-[11%] mx-auto flex h-[8%] w-[92%] flex-col justify-between">
+    <div className="relative top-[12.5%] mx-auto flex h-[8%] w-[92%] flex-col justify-between">
       <div
         role="tablist"
         aria-label="tabs"
