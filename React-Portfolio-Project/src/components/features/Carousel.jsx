@@ -97,7 +97,7 @@ export default function Carousel({ images }) {
     <div className="absolute bottom-[11%] overflow-hidden text-center">
       <div
         ref={slidesContainerRef}
-        className="slides mb-2 flex snap-x snap-mandatory overflow-x-auto scroll-smooth xl:py-2"
+        className="slides mb-2.5 flex snap-x snap-mandatory overflow-x-auto scroll-smooth xl:py-2"
       >
         {images.map((media, index) => (
           <div

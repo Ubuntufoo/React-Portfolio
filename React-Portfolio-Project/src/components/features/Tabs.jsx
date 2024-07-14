@@ -73,7 +73,7 @@ export default function Tabs({ tabsContent }) {
                 <h2 className="text-lg font-bold text-gray-900">{tab.title}</h2>
                 <PiMouseScroll className="text-xl opacity-100 transition group-hover:opacity-0" />
               </div>
-              <p className="tab-content text-pretty bottom-10 mt-2 line-clamp-3 h-fit text-gray-900 group-hover:line-clamp-none">
+              <p className="tab-content whitespace-break-spaces text-pretty bottom-10 mt-2 line-clamp-3 h-fit text-gray-900 group-hover:line-clamp-none">
                 {tab.content}
               </p>
             </div>
