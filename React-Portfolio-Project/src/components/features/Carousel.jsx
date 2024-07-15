@@ -107,7 +107,7 @@ export default function Carousel({ images }) {
               <img
                 src={media.src}
                 alt={`Slide ${index}`}
-                className={`max-w-screen mx-auto max-h-52 rounded object-contain md:max-h-80`}
+                className={`max-w-screen mx-auto max-h-52 rounded object-contain md:max-h-96`}
                 onClick={handleImageClick}
               />
             )}
@@ -128,7 +128,7 @@ export default function Carousel({ images }) {
         {images.map((media, index) => (
           <button
             key={index}
-            className="size-4 rounded-full cursor-pointer md:size-6 xl:size-7 bg-gray-50"
+            className="size-4 cursor-pointer rounded-full bg-gray-50 md:size-6 xl:size-7"
             onClick={() => handleSlideChange(index)}
           ></button>
         ))}
