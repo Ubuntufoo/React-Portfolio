@@ -34,10 +34,10 @@ export default function Tabs({ tabsContent }) {
       <div
         role="tablist"
         aria-label="tabs"
-        className="relative mx-auto grid h-11 max-w-max grid-cols-4 items-center overflow-hidden rounded-full bg-gray-50 pe-1 text-sm shadow-2xl transition"
+        className="relative mx-auto grid h-11 md:h-12 md:text-base max-w-max grid-cols-4 items-center overflow-hidden rounded-full bg-gray-50 pe-1 text-sm shadow-2xl transition"
       >
         <div
-          className={`slider absolute bottom-0 top-0 my-auto h-9 w-20 rounded-3xl bg-gray-400 shadow-2xl transition-all duration-300 ${sliderLeftOffset()}`}
+          className={`slider absolute bottom-0 top-0 my-auto h-9 md:h-10 w-20 rounded-3xl bg-gray-400 shadow-2xl transition-all duration-300 ${sliderLeftOffset()}`}
         ></div>
         {tabsContent.map((tab, index) => (
           <button
@@ -71,7 +71,7 @@ export default function Tabs({ tabsContent }) {
             <div className="group mx-auto rounded-xl bg-gray-50 px-7 py-4 shadow-xl">
               <div className=" inline-flex w-full place-items-center justify-between">
                 <h2 className="text-lg md:text-xl font-bold text-gray-900">{tab.title}</h2>
-                <PiMouseScroll className="text-xl opacity-100 transition group-hover:opacity-0" />
+                <PiMouseScroll className="text-xl sm:text-2xl md:text-3xl opacity-100 transition group-hover:opacity-0" />
               </div>
               <p className="tab-content whitespace-break-spaces text-pretty bottom-10 mt-2 line-clamp-3 h-fit text-gray-900 group-hover:line-clamp-none md:text-lg hyphens-auto indent-5">
                 {tab.content}
