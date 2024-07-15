@@ -30,14 +30,14 @@ export default function Tabs({ tabsContent }) {
   }
 
   return (
-    <div className="relative top-[12.5%] mx-auto flex h-[8%] w-[92%] md:w-3/4 flex-col justify-between">
+    <div className="relative top-[12.5%] lg:top-[10%] mx-auto flex h-[8%] w-[92%] flex-col justify-between md:w-3/4 lg:w-6/10">
       <div
         role="tablist"
         aria-label="tabs"
-        className="relative mx-auto grid h-11 md:h-12 md:text-base max-w-max grid-cols-4 items-center overflow-hidden rounded-full bg-gray-50 pe-1 text-sm shadow-2xl transition"
+        className="relative mx-auto grid h-11 lg:h-14 max-w-max grid-cols-4 items-center overflow-hidden rounded-full bg-gray-50 pe-1 text-sm shadow-2xl transition md:h-12 md:text-base lg:text-lg"
       >
         <div
-          className={`slider absolute bottom-0 top-0 my-auto h-9 md:h-10 w-20 rounded-3xl bg-gray-400 shadow-2xl transition-all duration-300 ${sliderLeftOffset()}`}
+          className={`slider absolute bottom-0 top-0 my-auto h-9 w-20 lg:w-24 rounded-3xl bg-gray-400 shadow-2xl transition-all duration-300 md:h-10 lg:h-12 ${sliderLeftOffset()}`}
         ></div>
         {tabsContent.map((tab, index) => (
           <button
@@ -62,18 +62,20 @@ export default function Tabs({ tabsContent }) {
             key={tab.id}
             role="tabpanel"
             id={`panel-${index + 1}`}
-            className={`group absolute shadow-2xl z-50 transition-opacity duration-500 ${
+            className={`group absolute z-50 shadow-2xl transition-opacity duration-500 ${
               activeTab === index
                 ? 'opacity-100'
                 : 'pointer-events-none opacity-0'
             }`}
           >
-            <div className="group mx-auto rounded-xl bg-gray-50 px-7 py-4 shadow-xl">
+            <div className="group mx-auto rounded-xl bg-gray-50 px-7 py-4 md:px-9 md:py-6 shadow-xl">
               <div className=" inline-flex w-full place-items-center justify-between">
-                <h2 className="text-lg md:text-xl font-bold text-gray-900">{tab.title}</h2>
-                <PiMouseScroll className="text-xl sm:text-2xl md:text-3xl opacity-100 transition group-hover:opacity-0" />
+                <h2 className="text-lg font-bold text-gray-900 md:text-xl">
+                  {tab.title}
+                </h2>
+                <PiMouseScroll className="text-xl opacity-100 transition group-hover:opacity-0 sm:text-2xl md:text-3xl" />
               </div>
-              <p className="tab-content whitespace-break-spaces text-pretty bottom-10 mt-2 line-clamp-3 h-fit text-gray-900 group-hover:line-clamp-none md:text-lg hyphens-auto indent-5">
+              <p className="tab-content bottom-10 mt-2 line-clamp-3 h-fit hyphens-auto whitespace-break-spaces text-pretty indent-5 text-gray-900 group-hover:line-clamp-none md:text-lg lg:text-xl">
                 {tab.content}
               </p>
             </div>

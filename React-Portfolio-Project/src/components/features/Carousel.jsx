@@ -107,7 +107,7 @@ export default function Carousel({ images }) {
               <img
                 src={media.src}
                 alt={`Slide ${index}`}
-                className={`max-w-screen mx-auto max-h-52 rounded object-contain md:max-h-96`}
+                className={`max-w-screen mx-auto max-h-52 rounded object-contain md:max-h-96 lg:max-h-80`}
                 onClick={handleImageClick}
               />
             )}
@@ -124,7 +124,7 @@ export default function Carousel({ images }) {
           </div>
         ))}
       </div>
-      <div className="mx-auto space-x-6">
+      <div className="mx-auto space-x-8">
         {images.map((media, index) => (
           <button
             key={index}
