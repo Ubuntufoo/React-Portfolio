@@ -13,7 +13,7 @@ export default function Tabs({ tabsContent }) {
   const tabAlignments = () => {
     switch (activeTab) {
       case 0:
-        return 'left-1'
+        return 'left-0'
       case 1:
         return 'left-1/4'
       case 2:
@@ -21,7 +21,7 @@ export default function Tabs({ tabsContent }) {
       case 3:
         return 'left-3/4'
       default:
-        return 'left-1'
+        return 'left-0'
     }
   }
 
