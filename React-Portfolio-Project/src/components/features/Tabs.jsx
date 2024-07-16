@@ -13,7 +13,7 @@ export default function Tabs({ tabsContent }) {
   const tabAlignments = () => {
     switch (activeTab) {
       case 0:
-        return 'left-0'
+        return 'left-1'
       case 1:
         return 'left-1/4'
       case 2:
@@ -21,7 +21,7 @@ export default function Tabs({ tabsContent }) {
       case 3:
         return 'left-3/4'
       default:
-        return 'left-0'
+        return 'left-1'
     }
   }
 
@@ -34,7 +34,7 @@ export default function Tabs({ tabsContent }) {
       <div
         role="tablist"
         aria-label="tabs"
-        className="relative border mx-auto text-center grid max-w-max grid-cols-4 place-content-center place-items-center overflow-hidden rounded-full bg-gray-50 shadow-2xl transition h-12"
+        className="relative mx-auto grid h-12 w-[344px] grid-cols-4 overflow-hidden rounded-full border bg-gray-50 shadow-2xl transition"
       >
         {tabsContent.map((tab, index) => (
           <button
@@ -45,13 +45,15 @@ export default function Tabs({ tabsContent }) {
             id={`tab-${index + 1}`}
             tabIndex={activeTab === index ? 0 : -1}
             onClick={() => handleTabClick(index)}
-            className="relative flex w-24 z-10 items-center justify-center rounded-full text-center"
+            className="z-10 flex w-[86px] items-center rounded-full text-center"
           >
-            <span className="font-roboto  text-gray-900">{tab.title}</span>
+            <span className="mx-auto block text-center font-roboto text-gray-900">
+              {tab.title}
+            </span>
           </button>
         ))}
         <div
-          className={`absolute bottom-0 top-0 my-auto h-10 w-[85px] rounded-3xl bg-gray-400 shadow-lg transition-all duration-300 lg:w-24 ${tabAlignments()}`}
+          className={`absolute bottom-0 top-0 my-auto h-10 w-[86px] rounded-3xl bg-gray-400 shadow-lg transition-all duration-300 ${tabAlignments()}`}
         ></div>
       </div>
       <div className="tab relative">
@@ -83,4 +85,3 @@ export default function Tabs({ tabsContent }) {
     </div>
   )
 }
-
