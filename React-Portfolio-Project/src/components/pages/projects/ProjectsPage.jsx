@@ -11,7 +11,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="section fp-noscroll fp-auto-height-responsive h-screen">
-      <div className="slide">
+      <div className="slide ">
         <ProjGallery />
       </div>
       <div className="slide">

@@ -11,7 +11,7 @@ export default function Carousel({ images }) {
   const screenWidth = window.innerWidth
 
   const slidesClasses =
-    'w-full h-fit shrink-0 snap-center snap-always cursor-grab 2xl:cursor-auto first:ms-0 me-6 last:me-0 bg-gray-400 origin-center transition-all relative flex'
+    'w-full h-fit mt-auto shrink-0 snap-center snap-always cursor-grab 2xl:cursor-auto first:ms-0 me-6 last:me-0 bg-gray-400 origin-center transition-all relative flex'
   const activeSlideClasses = ''
 
   const handleSlideChange = (slideNumber) => {
@@ -91,10 +91,10 @@ export default function Carousel({ images }) {
   }, [isFullscreen])
 
   return (
-    <div className="absolute bottom-[14%] overflow-hidden text-center md:bottom-[7%]">
+    <div className="absolute bottom-[14%] overflow-hidden inset-x-0 text-center md:bottom-[7%] 2xl:bottom-[2.5%]">
       <div
         ref={slidesContainerRef}
-        className="slides mb-2.5 flex snap-x snap-mandatory overflow-x-auto scroll-smooth xl:py-2"
+        className="slides mb-2.5 flex mx-auto snap-x snap-mandatory overflow-x-auto scroll-smooth xl:py-2"
       >
         {images.map((media, index) => (
           <div
@@ -107,7 +107,7 @@ export default function Carousel({ images }) {
               <img
                 src={media.src}
                 alt={`Slide ${index}`}
-                className={`max-w-screen mx-auto max-h-52 rounded object-contain md:max-h-96 lg:max-h-80`}
+                className={`max-w-screen mx-auto max-h-52 md:max-w-[460px] rounded object-contain md:max-h-96 lg:max-h-80 xl:max-h-96 xl:max-w-[800px]`}
                 onClick={handleImageClick}
               />
             )}
@@ -128,7 +128,7 @@ export default function Carousel({ images }) {
         {images.map((media, index) => (
           <button
             key={index}
-            className="size-4 cursor-pointer rounded-full bg-gray-50 md:size-6 xl:size-7"
+            className="size-4 cursor-pointer rounded-full bg-gray-50 md:size-5 xl:size-6"
             onClick={() => handleSlideChange(index)}
           ></button>
         ))}

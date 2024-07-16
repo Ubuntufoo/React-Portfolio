@@ -10,7 +10,7 @@ export default function Tabs({ tabsContent }) {
     setActiveTab(index)
   }
 
-  const sliderLeftOffset = () => {
+  const activeTabLeftOffset = () => {
     switch (activeTab) {
       case 0:
         return 'left-1'
@@ -19,9 +19,9 @@ export default function Tabs({ tabsContent }) {
       case 2:
         return 'left-[52.8%]'
       case 3:
-        return 'left-[75%]'
+        return 'left-[76%]'
       default:
-        return 'left-0.5' // Default to first tab
+        return 'left-1' // Default to first tab
     }
   }
 
@@ -30,14 +30,14 @@ export default function Tabs({ tabsContent }) {
   }
 
   return (
-    <div className="relative top-[12.5%] lg:top-[10%] mx-auto flex h-[8%] w-[92%] flex-col justify-between md:w-3/4 lg:w-6/10">
+    <div className="relative top-[12.5%] lg:top-[10%] 2xl:top-[13%] mx-auto flex h-[8%] w-[92%] flex-col justify-between md:w-3/4 lg:w-6/10">
       <div
         role="tablist"
         aria-label="tabs"
         className="relative mx-auto grid h-11 lg:h-14 max-w-max grid-cols-4 items-center overflow-hidden rounded-full bg-gray-50 pe-1 text-sm shadow-2xl transition md:h-12 md:text-base lg:text-lg"
       >
         <div
-          className={`slider absolute bottom-0 top-0 my-auto h-9 w-20 lg:w-24 rounded-3xl bg-gray-400 shadow-2xl transition-all duration-300 md:h-10 lg:h-12 ${sliderLeftOffset()}`}
+          className={`absolute bottom-0 top-0 my-auto h-9 w-20 lg:w-24 rounded-3xl bg-gray-400 shadow-2xl transition-all duration-300 md:h-10 lg:h-12 ${activeTabLeftOffset()}`}
         ></div>
         {tabsContent.map((tab, index) => (
           <button
