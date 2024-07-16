@@ -10,18 +10,18 @@ export default function Tabs({ tabsContent }) {
     setActiveTab(index)
   }
 
-  const activeTabLeftOffset = () => {
+  const tabAlignments = () => {
     switch (activeTab) {
       case 0:
-        return 'left-1.5'
+        return 'left-1'
       case 1:
-        return 'left-[27.5%]'
+        return 'left-1/4'
       case 2:
-        return 'left-[52.8%]'
+        return 'left-1/2'
       case 3:
-        return 'left-[75.5%]'
+        return 'left-3/4'
       default:
-        return 'left-1.5' // Default to first tab
+        return 'left-1.5'
     }
   }
 
@@ -30,14 +30,14 @@ export default function Tabs({ tabsContent }) {
   }
 
   return (
-    <div className="relative top-[12.5%] lg:top-[10%] 2xl:top-[13%] mx-auto flex h-[8%] w-[92%] flex-col justify-between md:w-3/4 lg:w-6/10">
+    <div className="relative top-[12.5%] mx-auto flex h-[8%] w-[92%] flex-col justify-between md:w-3/4 lg:top-[10%] lg:w-6/10 2xl:top-[13%]">
       <div
         role="tablist"
         aria-label="tabs"
-        className="relative mx-auto grid h-11 lg:h-14 max-w-max grid-cols-4 items-center overflow-hidden rounded-full bg-gray-50 pe-1 text-sm shadow-2xl transition md:h-12 md:text-base lg:text-lg"
+        className="relative mx-auto grid h-11 max-w-max grid-cols-4 items-center overflow-hidden rounded-full bg-gray-50 pe-1 text-sm shadow-2xl transition md:h-12 md:text-base lg:h-14 lg:text-lg"
       >
         <div
-          className={`absolute bottom-0 top-0 my-auto h-9 w-20 lg:w-24 rounded-3xl bg-gray-400 shadow-2xl transition-all duration-300 md:h-10 lg:h-12 ${activeTabLeftOffset()}`}
+          className={`absolute bottom-0 top-0 my-auto h-9 w-20 rounded-3xl bg-gray-400 shadow-2xl transition-all duration-300 md:h-10 lg:h-12 lg:w-24 ${tabAlignments()}`}
         ></div>
         {tabsContent.map((tab, index) => (
           <button
@@ -48,7 +48,7 @@ export default function Tabs({ tabsContent }) {
             id={`tab-${index + 1}`}
             tabIndex={activeTab === index ? 0 : -1}
             onClick={() => handleTabClick(index)}
-            className="relative block rounded-full px-6"
+            className="relative flex items-center justify-center rounded-full px-6"
           >
             <span className="font-roboto tracking-wide text-gray-900">
               {tab.title}
@@ -68,7 +68,7 @@ export default function Tabs({ tabsContent }) {
                 : 'pointer-events-none opacity-0'
             }`}
           >
-            <div className="group mx-auto rounded-xl bg-gray-50 px-7 py-4 md:px-9 md:py-6 shadow-xl">
+            <div className="group mx-auto rounded-xl bg-gray-50 px-7 py-4 shadow-xl md:px-9 md:py-6">
               <div className=" inline-flex w-full place-items-center justify-between">
                 <h2 className="text-lg font-bold text-gray-900 md:text-xl">
                   {tab.title}
@@ -85,3 +85,4 @@ export default function Tabs({ tabsContent }) {
     </div>
   )
 }
+
