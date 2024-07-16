@@ -13,7 +13,7 @@ export default function Tabs({ tabsContent }) {
   const tabAlignments = () => {
     switch (activeTab) {
       case 0:
-        return 'left-1'
+        return 'left-0'
       case 1:
         return 'left-1/4'
       case 2:
@@ -21,7 +21,7 @@ export default function Tabs({ tabsContent }) {
       case 3:
         return 'left-3/4'
       default:
-        return 'left-1.5'
+        return 'left-0'
     }
   }
 
@@ -34,11 +34,8 @@ export default function Tabs({ tabsContent }) {
       <div
         role="tablist"
         aria-label="tabs"
-        className="relative mx-auto grid h-11 max-w-max grid-cols-4 place-items-center place-content-center overflow-hidden rounded-full bg-gray-50 text-sm shadow-2xl transition md:h-12 md:text-base lg:h-14 lg:text-lg"
+        className="relative border mx-auto text-center grid max-w-max grid-cols-4 place-content-center place-items-center overflow-hidden rounded-full bg-gray-50 shadow-2xl transition h-12"
       >
-        <div
-          className={`absolute bottom-0 top-0 my-auto h-9 w-20 rounded-3xl bg-gray-400 shadow-lg transition-all duration-300 md:h-10 lg:h-12 lg:w-24 ${tabAlignments()}`}
-        ></div>
         {tabsContent.map((tab, index) => (
           <button
             key={tab.id}
@@ -48,13 +45,14 @@ export default function Tabs({ tabsContent }) {
             id={`tab-${index + 1}`}
             tabIndex={activeTab === index ? 0 : -1}
             onClick={() => handleTabClick(index)}
-            className="relative me-1 flex items-center text-center justify-center rounded-full w-24"
+            className="relative flex w-24 z-10 items-center justify-center rounded-full text-center"
           >
-            <span className="font-roboto  text-gray-900">
-              {tab.title}
-            </span>
+            <span className="font-roboto  text-gray-900">{tab.title}</span>
           </button>
         ))}
+        <div
+          className={`absolute bottom-0 top-0 my-auto h-10 w-[85px] rounded-3xl bg-gray-400 shadow-lg transition-all duration-300 lg:w-24 ${tabAlignments()}`}
+        ></div>
       </div>
       <div className="tab relative">
         {tabsContent.map((tab, index) => (
