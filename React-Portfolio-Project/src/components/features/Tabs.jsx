@@ -13,15 +13,15 @@ export default function Tabs({ tabsContent }) {
   const activeTabLeftOffset = () => {
     switch (activeTab) {
       case 0:
-        return 'left-1'
+        return 'left-1.5'
       case 1:
         return 'left-[27.5%]'
       case 2:
         return 'left-[52.8%]'
       case 3:
-        return 'left-[76%]'
+        return 'left-[75.5%]'
       default:
-        return 'left-1' // Default to first tab
+        return 'left-1.5' // Default to first tab
     }
   }
 
