@@ -26,7 +26,7 @@ export default function ProjGallery() {
           {selectedProject == null ? (
             <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly py-10">
               <img
-                className="absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom scale-[1.6] rounded-3xl opacity-10 brightness-90 sepia md:scale-[1.4] lg:scale-[.81] xl:scale-[.67] 2xl:scale-[.45]"
+                className="absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom scale-[1.58] rounded-3xl opacity-10 brightness-90 sepia md:scale-[1.4] lg:scale-[.81] xl:scale-[.67] 2xl:scale-[.45]"
                 src={BG1}
                 alt="Cluttered desk covered with tech and tools"
               />
@@ -38,9 +38,9 @@ export default function ProjGallery() {
               </p>
             </div>
           ) : (
-            <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly pt-2">
+            <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly pt-5">
               <img
-                className="absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom scale-[1.6] rounded-3xl opacity-15 brightness-90 sepia md:scale-[1.38] lg:scale-[.81] xl:scale-[.67] 2xl:scale-[.45]"
+                className="absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom scale-[1.58] rounded-3xl opacity-15 md:scale-[1.38] lg:scale-[.81] xl:scale-[.67] 2xl:scale-[.45]"
                 src={selectedProject.src}
                 alt={selectedProject.label}
               />

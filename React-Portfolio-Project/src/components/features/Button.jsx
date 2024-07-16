@@ -6,14 +6,14 @@ let buttonClasses = ''
 
 
   if (styles === 'absolute') {
-    buttonClasses = 'absolute left-[36%] md:left-3/4 top-[44%] lg:top-[47%]'
+    buttonClasses = 'absolute inset-x-0 top-[44%] lg:top-[47.3%]'
   }
 
 
 
 
   return (
-    <button className={`mx-auto rounded-lg shadow-lg shadow-white ${buttonClasses}`}>
+    <button className={`mx-auto rounded-lg w-fit shadow-lg shadow-white ${buttonClasses}`}>
       <a
         href={link}
         target="_blank"

@@ -34,7 +34,7 @@ export default function Tabs({ tabsContent }) {
       <div
         role="tablist"
         aria-label="tabs"
-        className="relative mx-auto grid h-12 w-[344px] grid-cols-4 overflow-hidden rounded-full border bg-gray-50 shadow-2xl transition"
+        className="relative mx-auto grid h-11 w-[344px] xl:w-[400px] grid-cols-4 overflow-hidden rounded-full border bg-gray-50 shadow-xl transition"
       >
         {tabsContent.map((tab, index) => (
           <button
@@ -45,7 +45,7 @@ export default function Tabs({ tabsContent }) {
             id={`tab-${index + 1}`}
             tabIndex={activeTab === index ? 0 : -1}
             onClick={() => handleTabClick(index)}
-            className="z-10 flex w-[86px] items-center rounded-full text-center"
+            className="z-10 flex w-[86px] xl:w-[100px] items-center font-semibold rounded-full xl:text-lg text-center"
           >
             <span className="mx-auto block text-center font-roboto text-gray-900">
               {tab.title}
@@ -53,7 +53,7 @@ export default function Tabs({ tabsContent }) {
           </button>
         ))}
         <div
-          className={`absolute bottom-0 top-0 my-auto h-10 w-[86px] rounded-3xl bg-gray-400 shadow-lg transition-all duration-300 ${tabAlignments()}`}
+          className={`absolute bottom-0 top-0 my-auto h-10 w-[86px] xl:w-[100px] rounded-3xl bg-gray-400 scale-95 shadow-lg transition-all duration-300 ${tabAlignments()}`}
         ></div>
       </div>
       <div className="tab relative">
@@ -62,20 +62,20 @@ export default function Tabs({ tabsContent }) {
             key={tab.id}
             role="tabpanel"
             id={`panel-${index + 1}`}
-            className={`group absolute z-50 shadow-2xl transition-opacity duration-500 ${
+            className={`group absolute z-50 shadow-xl transition-opacity duration-500 ${
               activeTab === index
                 ? 'opacity-100'
                 : 'pointer-events-none opacity-0'
             }`}
           >
-            <div className="group mx-auto rounded-xl bg-gray-50 px-7 py-4 shadow-xl md:px-9 md:py-6">
+            <div className="group mx-auto rounded-xl bg-gray-50 px-7 py-4 shadow-xl xl:space-y-4 md:px-9 md:py-6 xl:px-10 xl:py-7">
               <div className=" inline-flex w-full place-items-center justify-between">
                 <h2 className="text-lg font-bold text-gray-900 md:text-xl">
                   {tab.title}
                 </h2>
                 <PiMouseScroll className="text-xl opacity-100 transition group-hover:opacity-0 sm:text-2xl md:text-3xl" />
               </div>
-              <p className="tab-content bottom-10 mt-2 line-clamp-3 h-fit hyphens-auto whitespace-break-spaces text-pretty indent-5 text-gray-900 group-hover:line-clamp-none md:text-lg lg:text-xl">
+              <p className="tab-content bottom-10 mt-2 line-clamp-3 h-fit hyphens-auto whitespace-break-spaces text-pretty indent-4 text-gray-900 group-hover:line-clamp-none md:text-lg lg:text-xl xl:leading-8">
                 {tab.content}
               </p>
             </div>
