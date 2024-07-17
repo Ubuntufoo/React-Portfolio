@@ -2,10 +2,10 @@
 
 import Carousel from '../../features/Carousel'
 import Tabs from '../../features/Tabs'
+import Button from '../../features/Button'
 import { projPortfolioContent } from '../../../utils/images'
 import { tabsPortfolio } from '../../../utils/tabs'
 import { projMainContent } from '../../../utils/images'
-import Button from '../../features/Button'
 
 export default function ProjPortfolioV1() {
   return (

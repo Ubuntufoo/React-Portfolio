@@ -91,10 +91,10 @@ export default function Carousel({ images }) {
   }, [isFullscreen])
 
   return (
-    <div className="absolute bottom-[14%] overflow-hidden inset-x-0 text-center md:bottom-[7%] 2xl:bottom-[2.5%]">
+    <div className="absolute inset-x-0 bottom-[14%] overflow-hidden text-center md:bottom-[7.7%] 2xl:bottom-[3%] 3xl:bottom-[6%]">
       <div
         ref={slidesContainerRef}
-        className="slides mb-2.5 flex mx-auto snap-x snap-mandatory overflow-x-auto scroll-smooth xl:py-2"
+        className="slides mx-auto mb-2.5 flex snap-x snap-mandatory overflow-x-auto scroll-smooth xl:py-2"
       >
         {images.map((media, index) => (
           <div
@@ -107,7 +107,7 @@ export default function Carousel({ images }) {
               <img
                 src={media.src}
                 alt={`Slide ${index}`}
-                className={`max-w-screen mx-auto max-h-52 md:max-w-[460px] rounded object-contain md:max-h-96 lg:max-h-80 xl:max-h-96 xl:max-w-[800px]`}
+                className={`max-w-screen mx-auto max-h-52 ${isFullscreen ? 'cursor-zoom-out' : 'cursor-zoom-in'} rounded-xl object-contain md:max-h-96 md:max-w-[460px] lg:max-h-80 xl:max-h-80 xl:max-w-[600px] 2xl:max-h-[250px] 2xl:max-w-[550px] 3xl:max-h-[330px] 3xl:max-w-[657px]`}
                 onClick={handleImageClick}
               />
             )}
@@ -115,7 +115,7 @@ export default function Carousel({ images }) {
               <video
                 ref={(ref) => (videoRefs.current[index] = ref)} // Store video refs for each slide
                 controls
-                className="h-full w-full object-scale-down"
+                className="max-w-screen mx-auto max-h-52 rounded-xl object-contain md:max-h-96 md:max-w-[460px] lg:max-h-80 xl:max-h-80 xl:max-w-[600px] 2xl:max-h-[250px] 2xl:max-w-[550px] 3xl:max-h-[330px] 3xl:max-w-[680px]"
               >
                 <source src={media.src} type="video/mp4" />
                 Your browser does not support the video tag.

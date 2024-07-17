@@ -94,6 +94,25 @@ export const projPortfolioContent = [
   },
 ]
 
+export const projTADAContent = [
+  {
+    src: TADAmobile,
+    label: 'TADA! Mobile View',
+    type: 'image',
+  },
+  {
+    src: TADA_code_IMG,
+    label: 'TADA! Code View',
+    type: 'image',
+  },
+  {
+    src: TADAdesktop,
+    label: 'TADA! Desktop View',
+    type: 'image',
+  },
+
+]
+
 export const projExploreLLMImages = [
   {
     src: ExploreLLM_IMG,
@@ -139,46 +158,21 @@ export const projBTContent = [
   },
 ]
 
-export const projTADAContent = [
-  {
-    src: TADAmobile,
-    label: 'TADA! Mobile View',
-    description:
-      'The mobile view of the TADA! web app, showcasing the site’s design and features.',
-    link: 'https://tada-w0iq.onrender.com',
-  },
-  {
-    src: TADA_code_IMG,
-    label: 'TADA! Code View',
-    description:
-      'The code view of the TADA! web app, highlighting the React.js and Express.js code used to create the site.',
-  },
-  {
-    src: TADAdesktop,
-    label: 'TADA! Desktop View',
-    description:
-      'The desktop view of the TADA! web app, featuring the site’s design and user interface.',
-  },
-]
-
 export const projWDContent = [
   {
     src: WorkDashIMG,
     label: 'Workflow Dashboard',
-    description:
-      'The Workflow Dashboard web app, showcasing the site’s design and features.',
+    type: 'image',
   },
   {
     src: WorkDashCode1of2,
     label: 'Workflow Dashboard Code 1 of 2',
-    description:
-      'The code view of the Workflow Dashboard web app, highlighting the JavaScript code used to create the site.',
+    type: 'image',
   },
   {
     src: WorkDashCode2of2,
     label: 'Workflow Dashboard Code 2 of 2',
-    description:
-      'The code view of the Workflow Dashboard web app, showcasing the JavaScript code used to create the site.',
+    type: 'image',
   },
 ]
 

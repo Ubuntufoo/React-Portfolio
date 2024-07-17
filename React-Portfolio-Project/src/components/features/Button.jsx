@@ -6,7 +6,7 @@ let buttonClasses = ''
 
 
   if (styles === 'absolute') {
-    buttonClasses = 'absolute inset-x-0 top-[44%] lg:top-[47.3%]'
+    buttonClasses = 'absolute inset-x-0 top-[44%] lg:top-[47.3%] xl:left-2/3 2xl:top-[52%] 3xl:inset-x-0 3xl:top-[49%]'
   }
 
 
