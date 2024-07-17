@@ -75,7 +75,7 @@ export default function Tabs({ tabsContent }) {
                 </h2>
                 <PiMouseScroll className="text-xl opacity-100 transition group-hover:opacity-0 sm:text-2xl md:text-2xl 3xl:text-3xl" />
               </div>
-              <p className="tab-content bottom-10 mt-2 hyphens-auto whitespace-break-spaces text-pretty indent-4 text-gray-900 group-hover:line-clamp-none md:text-lg 2xl:text-base 3xl:text-xl">
+              <p className="tab-content bottom-10 line-clamp-3 mt-2 hyphens-auto whitespace-break-spaces text-pretty indent-4 text-gray-900 group-hover:line-clamp-none md:text-lg 2xl:text-base 3xl:text-xl">
                 {tab.content}
               </p>
             </div>
