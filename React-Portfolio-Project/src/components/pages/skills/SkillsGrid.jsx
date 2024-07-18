@@ -1,71 +1,44 @@
-// a grid of items each focusing on a different skill, with modal popups on click
+// layered cards each detailing a skill, with modal popups onClick
 
-// import { useState } from 'react';
+// import React from 'react'
+// import React from 'react'
+import { skillCardsContent } from '../../../utils/images'
 
-// import { skillCardsContent } from '../../../utils/images';
-import { MdUnfoldMore, MdUnfoldLess } from 'react-icons/md'
+const colStartClasses = [
+  'col-start-1',
+  'col-start-2',
+  'col-start-3',
+  'col-start-4',
+]
 
 export default function SkillsGrid() {
-
   return (
-    <main className="flex size-full place-content-center place-items-center py-5">
-      <ul className="mx-auto grid w-full grid-cols-2 overflow-hidden text-white shadow-xl">
-        <li className="col-span-full flex w-full select-none grid-cols-1 flex-wrap items-center gap-x-3 rounded-t-lg bg-black text-xs sm:text-sm">
-          <input type="checkbox" defaultChecked id="faq1" className="peer appearance-none" />
-          <MdUnfoldMore className="inline text-2xl transition-all peer-checked:hidden peer-hover:scale-125" />
-          <MdUnfoldLess className="hidden text-2xl transition-all peer-checked:inline peer-hover:scale-125" />
-          <label htmlFor="faq1" className="grow cursor-pointer py-4">
-            <p>What is your name?</p>
-          </label>
-          <div className="max-h-0 basis-full overflow-hidden transition-[max-height] duration-500 peer-checked:max-h-40">
-            <p className="w-fit p-2 text-center">My name is Sohan Emon</p>
+    <main className="flex h-full flex-col justify-center">
+      {/* <div className="grid w-3/4 h-2/3 mt-24 mx-auto grid-cols-5 grid-rows-5 place-content-center place-items-center">
+        {skillCardsContent.map((skill, index) => (
+          <div
+            key={index}
+            className={`col-span-2 w-fit h-fit transition-all ease-in hover:z-50 hover:scale-105 ${colStartClasses[index % colStartClasses.length]} rounded-xl border border-black bg-gray-50`}
+          >
+            <div className="p-3">
+              <h2 className="text-center 2xl:text-xl">{skill.title}</h2>
+            </div>
+            <img
+              src={skill.img}
+              alt={skill.title}
+              className="size-full object-scale-down"
+            />
           </div>
-        </li>
-        <li className="col-span-full flex w-full select-none grid-cols-1 flex-wrap items-center gap-x-3 rounded-t-lg bg-black text-xs sm:text-sm">
-          <input type="checkbox" id="faq1" className="peer appearance-none" />
-          <MdUnfoldMore className="inline text-2xl transition-all peer-checked:hidden peer-hover:scale-125" />
-          <MdUnfoldLess className="hidden text-2xl transition-all peer-checked:inline peer-hover:scale-125" />
-          <label htmlFor="faq1" className="grow cursor-pointer py-4">
-            <p>What is your name?</p>
-          </label>
-          <div className="max-h-0 basis-full overflow-hidden transition-[max-height] duration-500 peer-checked:max-h-40">
-            <p className="w-fit p-2 text-center">My name is Sohan Emon</p>
-          </div>
-        </li>
-        <li className="col-span-full flex w-full select-none grid-cols-1 flex-wrap items-center gap-x-3 rounded-t-lg bg-black text-xs sm:text-sm">
-          <input type="checkbox" id="faq1" className="peer appearance-none" />
-          <MdUnfoldMore className="inline text-2xl transition-all peer-checked:hidden peer-hover:scale-125" />
-          <MdUnfoldLess className="hidden text-2xl transition-all peer-checked:inline peer-hover:scale-125" />
-          <label htmlFor="faq1" className="grow cursor-pointer py-4">
-            <p>What is your name?</p>
-          </label>
-          <div className="max-h-0 basis-full overflow-hidden transition-[max-height] duration-500 peer-checked:max-h-40">
-            <p className="w-fit p-2 text-center">My name is Sohan Emon</p>
-          </div>
-        </li>
-        <li className="col-span-full flex w-full select-none grid-cols-1 flex-wrap items-center gap-x-3 rounded-t-lg bg-black text-xs sm:text-sm">
-          <input type="checkbox" id="faq1" className="peer appearance-none" />
-          <MdUnfoldMore className="inline text-2xl transition-all peer-checked:hidden peer-hover:scale-125" />
-          <MdUnfoldLess className="hidden text-2xl transition-all peer-checked:inline peer-hover:scale-125" />
-          <label htmlFor="faq1" className="grow cursor-pointer py-4">
-            <p>What is your name?</p>
-          </label>
-          <div className="max-h-0 basis-full overflow-hidden transition-[max-height] duration-500 peer-checked:max-h-40">
-            <p className="w-fit p-2 text-center">My name is Sohan Emon</p>
-          </div>
-        </li>
-        <li className="col-span-full flex w-full select-none grid-cols-1 flex-wrap items-center gap-x-3 rounded-t-lg bg-black text-xs sm:text-sm">
-          <input type="checkbox" id="faq1" className="peer appearance-none" />
-          <MdUnfoldMore className="inline text-2xl transition-all peer-checked:hidden peer-hover:scale-125" />
-          <MdUnfoldLess className="hidden text-2xl transition-all peer-checked:inline peer-hover:scale-125" />
-          <label htmlFor="faq1" className="grow cursor-pointer py-4">
-            <p>What is your name?</p>
-          </label>
-          <div className="max-h-0 basis-full overflow-hidden transition-[max-height] duration-500 peer-checked:max-h-40">
-            <p className="w-fit p-2 text-center">My name is Sohan Emon</p>
-          </div>
-        </li>
-      </ul>
+        ))}
+      </div> */}
+      <div className="group group mb-14 h-[4em] w-96 overflow-hidden bg-white p-3 transition-all duration-1000 hover:h-[10em]">
+        <div className="test line-clamp-2 bg-white group-hover:line-clamp-none">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+          accusantium non obcaecati perferendis itaque minus natus ex nostrum
+          recusandae dolorem molestias eum deserunt iure quo vel, dolorum
+          delectus sequi culpa.
+        </div>
+      </div>
     </main>
   )
 }

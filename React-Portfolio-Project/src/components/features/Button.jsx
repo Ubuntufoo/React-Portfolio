@@ -1,24 +1,20 @@
 // a button component
 
 export default function Button({ link, styles = 'absolute' }) {
-
-let buttonClasses = ''
-
+  let buttonClasses = ''
 
   if (styles === 'absolute') {
-    buttonClasses = 'absolute inset-x-0 top-[44%] lg:top-[47.3%] xl:left-2/3 2xl:top-[52%] 3xl:inset-x-0 3xl:top-[49%]'
+    buttonClasses =
+      'absolute inset-x-0 top-[44%] lg:top-[47.3%] xl:left-2/3 2xl:top-[52%] 3xl:inset-x-0 3xl:top-[49%]'
   }
 
-
-
-
   return (
-    <button className={`mx-auto rounded-lg w-fit shadow-lg shadow-white ${buttonClasses}`}>
+    <button className={`mx-auto w-fit rounded-lg ${buttonClasses}`}>
       <a
         href={link}
         target="_blank"
         rel="noreferrer"
-        className="group relative inline-flex overflow-hidden rounded-lg bg-gray-700 px-9 py-2 text-gray-50 duration-500 hover:bg-blue-600"
+        className="group relative inline-flex overflow-hidden rounded-lg bg-gray-700 px-9 py-2 text-gray-50 shadow-lg shadow-white duration-500 hover:bg-blue-600  active:bg-blue-900 active:shadow-none"
       >
         <span className="z-40 font-roboto font-semibold tracking-wider lg:text-lg">
           Visit

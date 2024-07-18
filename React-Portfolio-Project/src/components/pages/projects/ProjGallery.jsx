@@ -51,10 +51,10 @@ export default function ProjGallery() {
                 {selectedProject.description}
               </p>
               <div className="mx-auto flex w-3/4 text-sm">
-                <button className="mx-auto rounded-lg shadow-lg shadow-white">
+                <button className="mx-auto rounded-lg">
                   <a
                     href={`http://localhost:5173/#Projects/${selectedProject.linkToSlide}`}
-                    className="group relative inline-flex overflow-hidden rounded-lg bg-black px-7 py-2 text-gray-50 duration-500 hover:bg-blue-600"
+                    className="group relative inline-flex overflow-hidden rounded-lg bg-black px-7 py-2 text-gray-50 shadow-lg shadow-white  duration-500 hover:bg-blue-600 active:bg-blue-900 active:shadow-none"
                   >
                     <span className="z-40 font-roboto font-semibold tracking-wider lg:text-lg">
                       Details
@@ -63,12 +63,12 @@ export default function ProjGallery() {
                   </a>
                 </button>
                 {selectedProject.linkExternal && (
-                  <button className="mx-auto rounded-lg shadow-lg shadow-white">
+                  <button className="mx-auto rounded-lg ">
                     <a
                       href={selectedProject.linkExternal}
                       target="_blank"
                       rel="noreferrer"
-                      className="group relative inline-flex overflow-hidden rounded-lg bg-gray-700 px-9 py-2 text-gray-50 duration-500 hover:bg-blue-600"
+                      className="group relative inline-flex overflow-hidden rounded-lg bg-gray-700 px-9 py-2 text-gray-50 shadow-lg shadow-white duration-500 hover:bg-blue-600 active:bg-blue-900 active:shadow-none"
                     >
                       <span className="z-40 font-roboto font-semibold tracking-wider lg:text-lg">
                         Visit
@@ -81,7 +81,7 @@ export default function ProjGallery() {
             </div>
           )}
         </div>
-        <div className="2xl:h-9/20 h-1/2">
+        <div className="h-1/2 2xl:h-9/20">
           <ul className="flex h-19/20 flex-col place-content-center place-items-center xl:h-full">
             {projMainContent.map((proj, index) => (
               <li

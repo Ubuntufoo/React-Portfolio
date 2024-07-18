@@ -1,6 +1,6 @@
 // Intro and landing page
 
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 import Hero from './Hero'
 
 export default function IntroPage() {
