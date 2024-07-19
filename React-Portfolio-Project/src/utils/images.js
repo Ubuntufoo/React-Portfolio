@@ -181,7 +181,7 @@ export const skillCardsContent = [
     img: reactLOGOcustom,
     title: 'React\nSpecialization',
     firstHeader: 'React Fundamentals',
-    firstPara: "My projects focus on fundamentals and best practices. when I am prepared for new concepts I refer to 'React - The Complete Guide 2024', a comprehensive and highly acclaimed React course on Udemy.\n\nI prefer learning from the ground up, and generally avoid pre-built components until it is something I am actually comfortable building from scratch.",
+    firstPara: "My projects focus on fundamentals and best practices. when I am prepared for new concepts I refer to 'React - The Complete Guide 2024', a comprehensive and highly acclaimed React course on Udemy.\n\nI prefer learning from the ground up, and generally avoid pre-built components until I can build it comfortably from scratch.",
     secondHeader: 'Learning Roadmap',
     secondPara: "I'm also in the process of adding TypeScript to my skill-set, and revisiting raw Javascript. I am excited to experiment with Next.js for more robust applications; as my projects scale up I plan to embrace performance optimization and SEO best practices.",
   },
@@ -196,7 +196,7 @@ export const skillCardsContent = [
   {
     img: fullstackIMG3,
     title: 'Full-Stack \nExperience',
-    firstHeader: 'FE-BE Challenges',
+    firstHeader: 'FE/BE Challenges',
     firstPara: "Unraveling the complexity of the front-end/back-end relationship was ultimately the most rewarding part of my journey thus far.\n\nThe first major challenge I encountered was integrating a Vue FE with a Django BE. This pivotal moment almost made me quit, but instead I turned my frustration into fuel.\n\nAside from Django, I have also deployed server-side code using Express.js and Flask. SQL is a part of my daily workflow; I use Microsoft SQL Server Management Studio extensively.",
   },
   {

@@ -18,15 +18,12 @@ export default function ProjGallery() {
 
   return (
     <main className="relative flex h-screen flex-col justify-center">
-      <h1 className="absolute left-6 top-7 mx-auto w-fit min-w-max rounded-lg border-2 border-black p-1.5 text-center font-mono font-semibold tracking-wider text-gray-950 sm:text-lg md:left-8 md:top-11 2xl:inset-x-0 2xl:top-12 2xl:text-2xl">
-        <code>&lt;Projects&gt;&lt;Gallery&gt;</code>
-      </h1>
       <section className="mx-auto flex h-6/7 w-5/6 flex-col place-content-end place-items-center md:mt-auto">
         <div className="relative h-1/2 w-screen text-center">
           {selectedProject == null ? (
             <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly py-10">
               <img
-                className="absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom scale-[1.58] rounded-3xl opacity-10 brightness-75 sepia md:scale-[1.4] lg:scale-[.81] xl:scale-[.67] 2xl:scale-[.61] 3xl:scale-[.73]"
+                className="absolute inset-x-0 -bottom-4 -z-20 w-full origin-bottom scale-[1.58] rounded-3xl opacity-10 brightness-75 sepia md:scale-[1.4] lg:scale-[.81] xl:scale-[.67] 2xl:scale-[.61] 3xl:scale-[.73]"
                 src={BG1}
                 alt="Cluttered desk covered with tech and tools"
               />
@@ -40,7 +37,7 @@ export default function ProjGallery() {
           ) : (
             <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly pt-5">
               <img
-                className="absolute inset-x-0 -bottom-4 -z-10 w-full origin-bottom scale-[1.58] rounded-3xl opacity-15 brightness-75 md:scale-[1.38] lg:scale-[.81] xl:scale-[.67] 2xl:scale-[.61] 3xl:scale-[.73]"
+                className="absolute inset-x-0 -bottom-4 -z-20 w-full origin-bottom scale-[1.58] rounded-3xl opacity-15 brightness-75 md:scale-[1.38] lg:scale-[.81] xl:scale-[.67] 2xl:scale-[.61] 3xl:scale-[.73]"
                 src={selectedProject.src}
                 alt={selectedProject.label}
               />

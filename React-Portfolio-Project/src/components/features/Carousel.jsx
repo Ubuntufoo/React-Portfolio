@@ -107,7 +107,7 @@ export default function Carousel({ images }) {
               <img
                 src={media.src}
                 alt={`Slide ${index}`}
-                className={`max-w-screen mx-auto max-h-52 ${isFullscreen ? 'cursor-zoom-out' : 'cursor-zoom-in'} rounded-xl object-contain md:max-h-96 md:max-w-[460px] lg:max-h-80 xl:max-h-80 xl:max-w-[600px] 2xl:max-h-[250px] 2xl:max-w-[550px] 3xl:max-h-[330px] 3xl:max-w-[657px]`}
+                className={`max-w-screen mx-auto max-h-52 ${isFullscreen ? 'cursor-zoom-out' : 'cursor-zoom-in'} sm:rounded-xl object-contain md:max-h-96 md:max-w-[460px] lg:max-h-80 xl:max-h-80 xl:max-w-[600px] 2xl:max-h-[250px] 2xl:max-w-[550px] 3xl:max-h-[330px] 3xl:max-w-[657px]`}
                 onClick={handleImageClick}
               />
             )}
@@ -115,7 +115,7 @@ export default function Carousel({ images }) {
               <video
                 ref={(ref) => (videoRefs.current[index] = ref)} // Store video refs for each slide
                 controls
-                className="max-w-screen mx-auto max-h-52 rounded-xl object-contain md:max-h-96 md:max-w-[460px] lg:max-h-80 xl:max-h-80 xl:max-w-[600px] 2xl:max-h-[250px] 2xl:max-w-[550px] 3xl:max-h-[330px] 3xl:max-w-[680px]"
+                className="max-w-screen mx-auto max-h-52 sm:rounded-xl object-contain md:max-h-96 md:max-w-[460px] lg:max-h-80 xl:max-h-80 xl:max-w-[600px] 2xl:max-h-[250px] 2xl:max-w-[550px] 3xl:max-h-[330px] 3xl:max-w-[680px]"
               >
                 <source src={media.src} type="video/mp4" />
                 Your browser does not support the video tag.
