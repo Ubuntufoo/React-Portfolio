@@ -65,7 +65,7 @@ export default function Hero() {
             to the table.
           </p>
         </div>
-        <button className="mx-auto">
+        <button className=" mx-auto">
           <a
             href="http://localhost:5173/#Projects"
             className="group relative inline-flex overflow-hidden rounded-lg bg-black px-7 py-2 text-gray-50 shadow-lg shadow-white duration-500 hover:bg-blue-600 active:bg-blue-900 active:shadow-none"

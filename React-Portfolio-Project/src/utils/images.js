@@ -181,9 +181,9 @@ export const skillCardsContent = [
     img: reactLOGOcustom,
     title: 'React\nSpecialization',
     firstHeader: 'React Fundamentals',
-    firstPara: "My projects focus on fundamentals and best practices. when I am prepared for new concepts I refer to 'React - The Complete Guide 2024', a comprehensive and highly acclaimed React course on Udemy.\n\nI prefer learning from the ground up, and generally avoid pre-built components until I can build it comfortably from scratch.",
+    firstPara: "I follow a structured learning path of mindful progression. My projects focus on fundamentals and best practices.\n\nI prefer learning from the ground up, and generally avoid pre-built components until I can build it comfortably from scratch.",
     secondHeader: 'Learning Roadmap',
-    secondPara: "I'm also in the process of adding TypeScript to my skill-set, and revisiting raw Javascript. I am excited to experiment with Next.js for more robust applications; as my projects scale up I plan to embrace performance optimization and SEO best practices.",
+    secondPara: "I'm currently developing a robust application with Next.js and Typescript to improve my full stack competency.\n\nAs my projects scale up I plan to further embrace performance optimization and SEO best practices. To avoid becoming too specialized I make sure to revisit raw Javascript from time to time.",
   },
   {
     img: genaiIMG,

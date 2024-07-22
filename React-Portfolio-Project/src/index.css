@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.neumorph {
+  border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow: inset 20px 20px 60px #cfcfcf,
+      inset -20px -20px 60px #585858;
+}
+
 /* Carousel styling */
 .slides {
   -webkit-overflow-scrolling: touch;
@@ -97,8 +104,8 @@
   left: -25px;
   right: 0;
   bottom: -13px;
-  height: 200%;
-  width: 145%;
+  height: 205%;
+  width: 150%;
   overflow: visible;
   mask-image: url('./assets/paintstrokeSVG.svg');
   /* Path to your SVG file */
