@@ -34,7 +34,7 @@ export default function Tabs({ tabsContent }) {
       <div
         role="tablist"
         aria-label="tabs"
-        className="relative mx-auto grid h-11 w-[344px] grid-cols-4 overflow-hidden rounded-full border bg-gray-50 shadow-xl transition xl:w-[400px]"
+        className="relative mx-auto grid h-11 w-[344px] grid-cols-4 overflow-hidden rounded-full border bg-gray-100 shadow-xl transition xl:w-[400px]"
       >
         {tabsContent.map((tab, index) => (
           <button
@@ -68,7 +68,7 @@ export default function Tabs({ tabsContent }) {
                 : 'pointer-events-none opacity-0'
             }`}
           >
-            <div className="group mx-auto h-fit rounded-xl bg-gray-50 px-7 py-4 shadow-xl md:px-9 md:py-5 xl:px-9 2xl:py-4 3xl:space-y-6 3xl:px-12 3xl:py-8">
+            <div className="group mx-auto h-fit rounded-xl bg-gray-100 px-7 py-4 shadow-xl md:px-9 md:py-5 xl:px-9 2xl:py-4 3xl:space-y-6 3xl:px-12 3xl:py-8">
               <div className=" inline-flex w-full place-items-center justify-between">
                 <h2 className="text-lg font-bold text-gray-900 md:text-xl">
                   {tab.title}
