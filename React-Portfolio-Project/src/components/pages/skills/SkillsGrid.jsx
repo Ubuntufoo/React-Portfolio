@@ -22,32 +22,32 @@ export default function SkillsGrid() {
   return (
     <main className="mx-auto flex h-screen flex-col justify-evenly">
       <div>
-        <div className="flex w-full mx-auto flex-wrap place-content-center place-items-center gap-2 md:gap-4">
+        <div className="mx-auto flex w-19/20 xl:w-full flex-wrap place-content-center place-items-center gap-1 md:gap-3">
           {skillCardsContent.map((skill, index) => (
             <div
               key={index}
               onClick={() => handleOpenModal(index)}
               className={`
-                  group relative size-40 sm:size-48 md:size-56 lg:size-68 xl:size-72 2xl:size-72 cursor-pointer overflow-hidden rounded-lg border border-gray-300 font-roboto
-                  shadow-lg shadow-gray-600 transition-all duration-200 active:shadow-none
+                   cursor-pointer group relative size-40 overflow-hidden rounded-lg border border-gray-300 font-roboto shadow-lg shadow-gray-600 transition-all
+                  duration-200 active:shadow-none sm:size-48 md:size-60 xl:size-72
                  `}
             >
               <img
                 src={skill.img}
                 alt={skill.title}
-                className="absolute size-fit object-contain transition-all duration-500 group-hover:opacity-10"
+                className="absolute size-fit object-scale-down transition-all duration-500 group-hover:opacity-10"
               />
-              <h2 className="absolute flex size-full select-none flex-col place-content-center text-center text-lg font-semibold text-gray-950 opacity-0 transition-all duration-500 group-hover:opacity-100 sm:text-2xl md:text-3xl p-3">
+              <h2 className="absolute flex size-full select-none flex-col place-content-center p-3 text-center text-lg font-semibold text-gray-950 opacity-0 transition-all duration-500 group-hover:opacity-100 sm:text-2xl md:text-3xl">
                 {skill.title}
-                <IoIosExpand className=" mx-auto mt-3 lg:mt-5 animate-pulse text-center text-2xl md:text-3xl font-bold text-gray-950" />
+                <IoIosExpand className=" mx-auto mt-3 animate-pulse text-center text-2xl font-bold text-gray-950 md:text-3xl lg:mt-5" />
               </h2>
             </div>
           ))}
         </div>
       </div>
       <div className="neumorph relative mx-auto flex w-fit cursor-default flex-col justify-center p-5 md:p-6 xl:p-8">
-        <div className="neumorph absolute inset-x-2/3 -top-3 -z-50 size-8 lg:size-20 skew-x-12 rotate-45 bg-transparent"></div>
-        <h1 className="mx-auto bg-gradient-to-br from-gray-950 to-gray-600 bg-clip-text text-center font-roboto text-lg md:text-2xl xl:text-3xl font-bold tracking-wide text-transparent">
+        <div className="neumorph absolute inset-x-2/3 -top-3 -z-50 size-8 rotate-45 skew-x-12 bg-transparent lg:size-20"></div>
+        <h1 className="mx-auto bg-gradient-to-br from-gray-950 to-gray-600 bg-clip-text text-center font-roboto text-lg font-bold tracking-wide text-transparent md:text-2xl xl:text-3xl">
           Click a tile to learn more
         </h1>
       </div>
