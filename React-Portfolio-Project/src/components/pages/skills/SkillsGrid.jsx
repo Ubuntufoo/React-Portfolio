@@ -22,7 +22,7 @@ export default function SkillsGrid() {
   return (
     <main className="mx-auto flex h-screen flex-col justify-evenly">
       <div>
-        <div className="flex w-full mx-auto flex-wrap place-content-center place-items-center gap-2 pt-8 md:gap-4">
+        <div className="flex w-full mx-auto flex-wrap place-content-center place-items-center gap-2 md:gap-4">
           {skillCardsContent.map((skill, index) => (
             <div
               key={index}
@@ -35,7 +35,7 @@ export default function SkillsGrid() {
               <img
                 src={skill.img}
                 alt={skill.title}
-                className="absolute size-fit object-cover transition-all duration-500 group-hover:opacity-10"
+                className="absolute size-fit object-contain transition-all duration-500 group-hover:opacity-10"
               />
               <h2 className="absolute flex size-full select-none flex-col place-content-center text-center text-lg font-semibold text-gray-950 opacity-0 transition-all duration-500 group-hover:opacity-100 sm:text-2xl md:text-3xl p-3">
                 {skill.title}
@@ -61,7 +61,7 @@ export default function SkillsGrid() {
       {modalState.isOpen && (
         <div
           onClick={handleCloseModal}
-          className="absolute left-0 top-0 z-10 h-full w-screen bg-black opacity-75"
+          className="absolute left-0 top-0 z-10 h-full w-screen bg-black opacity-65"
           role="button"
           tabIndex={0}
         ></div>
