@@ -35,7 +35,7 @@ export default function SkillsGrid() {
               <img
                 src={skill.img}
                 alt={skill.title}
-                className="absolute origin-center size-fit object-cover z-50 transition-all duration-500 group-hover:opacity-10"
+                className="absolute inset-0 size-full object-cover z-50 transition-all duration-500 group-hover:opacity-10"
               />
               <h2 className="absolute flex size-full select-none flex-col place-content-center p-3 text-center text-lg font-semibold text-gray-950 opacity-0 transition-all duration-500 group-hover:opacity-100 sm:text-2xl md:text-3xl">
                 {skill.title}
