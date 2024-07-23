@@ -22,7 +22,7 @@ export default function SkillsGrid() {
   return (
     <main className="mx-auto flex h-screen flex-col justify-evenly">
       <div>
-        <div className="mx-auto flex w-19/20 xl:w-full flex-wrap place-content-center place-items-center gap-1 md:gap-3">
+        <div className="mx-auto flex w-19/20 xl:w-full flex-wrap place-content-center place-items-center gap-2 md:gap-3">
           {skillCardsContent.map((skill, index) => (
             <div
               key={index}
@@ -35,7 +35,7 @@ export default function SkillsGrid() {
               <img
                 src={skill.img}
                 alt={skill.title}
-                className="absolute size-fit object-scale-down transition-all duration-500 group-hover:opacity-10"
+                className="absolute size-fit z-50 transition-all duration-500 group-hover:opacity-10"
               />
               <h2 className="absolute flex size-full select-none flex-col place-content-center p-3 text-center text-lg font-semibold text-gray-950 opacity-0 transition-all duration-500 group-hover:opacity-100 sm:text-2xl md:text-3xl">
                 {skill.title}
