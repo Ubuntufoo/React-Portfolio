@@ -47,7 +47,7 @@ export default function ProjGallery() {
               <p className="text-pretty font-semibold sm:text-lg md:text-xl 2xl:text-2xl">
                 {selectedProject.description}
               </p>
-              <div className="mx-auto flex w-4/5 xl:w-1/2 text-sm">
+              <div className="mx-auto flex w-3/4 xl:w-1/2 text-sm">
                 <Button
                   link={`http://localhost:5173/#Projects/${selectedProject.linkToSlide}`}
                   styles="scale-95"

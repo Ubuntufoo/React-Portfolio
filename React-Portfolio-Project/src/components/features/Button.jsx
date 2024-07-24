@@ -10,7 +10,7 @@ export default function Button({
 
   if (styles === 'absolute') {
     buttonClasses =
-      'absolute inset-x-0 top-[44%] w-fit lg:top-[47.3%] xl:left-2/3 2xl:top-[53%] 3xl:inset-x-0 3xl:top-[50%]'
+      'absolute inset-x-0 top-[44%] w-fit lg:top-[45%] 2xl:top-[53%] 3xl:inset-x-0 3xl:top-[50%]'
   }
 
   return (
