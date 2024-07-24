@@ -50,13 +50,13 @@ export default function ProjGallery() {
               <div className="mx-auto flex w-4/5 xl:w-1/2 text-sm">
                 <Button
                   link={`http://localhost:5173/#Projects/${selectedProject.linkToSlide}`}
-                  styles="shadow-xl scale-95"
+                  styles="scale-95"
                   text="Details"
                 />
 
                 <Button
                   link={selectedProject.linkExternal}
-                  styles="shadow-xl scale-95"
+                  styles="scale-95"
                   text="Visit"
                   isExternal
                 />

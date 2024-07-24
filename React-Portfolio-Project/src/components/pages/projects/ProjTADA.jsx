@@ -15,7 +15,12 @@ export default function ProjTADA() {
       </h1>
       <Tabs tabsContent={tabsTADA} />
       <Carousel images={projTADAContent} />
-      <Button styles="absolute" link={projMainContent[1].linkExternal} />
+      <Button
+        styles="absolute"
+        text="Visit"
+        isExternal
+        link={projMainContent[1].linkExternal}
+      />
     </div>
   )
 }

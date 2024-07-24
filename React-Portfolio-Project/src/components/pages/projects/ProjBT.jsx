@@ -15,7 +15,12 @@ export default function ProjPortfolioV1() {
       </h1>
       <Tabs tabsContent={tabsBrainteasers} />
       <Carousel images={projBTContent} />
-      <Button styles="absolute" link={projMainContent[3].linkExternal} />
+      <Button
+        styles="absolute"
+        text="Visit"
+        isExternal
+        link={projMainContent[3].linkExternal}
+      />
     </div>
   )
 }

@@ -10,12 +10,12 @@ export default function Button({
 
   if (styles === 'absolute') {
     buttonClasses =
-      'absolute inset-x-0 top-[44%] lg:top-[47.3%] xl:left-2/3 2xl:top-[53%] 3xl:inset-x-0 3xl:top-[50%]'
+      'absolute inset-x-0 top-[44%] w-fit lg:top-[47.3%] xl:left-2/3 2xl:top-[53%] 3xl:inset-x-0 3xl:top-[50%]'
   }
 
   return (
     <button
-      className={`mx-auto flex flex-col ${buttonClasses} justify-center overflow-hidden rounded-xl transition duration-500 hover:scale-90 hover:shadow-none ${buttonClasses}`}
+      className={`mx-auto flex flex-col justify-center size-fit overflow-hidden rounded-xl transition duration-500 hover:scale-90 hover:shadow-none ${buttonClasses}`}
       onClick={() => {
         if (isExternal) {
           window.open(link, '_blank', 'noopener,noreferrer')
@@ -28,7 +28,7 @@ export default function Button({
         href={link}
         target={isExternal ? '_blank' : '_self'}
         rel={isExternal ? 'noopener noreferrer' : ''}
-        className={`neumorph group relative block overflow-hidden rounded-xl px-8 py-2 md:px-10 md:py-5 lg:px-12 lg:py-6 2xl:px-10 2xl:py-5`}
+        className={`neumorph group relative block shadow-xl overflow-hidden rounded-xl px-8 py-2 md:px-10 md:py-5 lg:px-12 lg:py-6 2xl:px-10 2xl:py-5`}
         onClick={(e) => {
           if (isExternal) {
             e.preventDefault() // Prevent the default anchor behavior for external links
