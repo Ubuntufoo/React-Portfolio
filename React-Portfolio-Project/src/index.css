@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .neumorph {
-  border-radius: 15px;
-    background: #b9b9b9;
-    box-shadow: inset 20px 20px 60px #cfcfcf,
-      inset -20px -20px 60px #414141;
+    background: #ffffff;
+    box-shadow: inset 20px 20px 60px #ffffff,
+      inset -15px -15px 60px #303030;
 }
 
 /* Carousel styling */
@@ -101,9 +100,10 @@
 .highlight::after {
   content: '';
   position: absolute;
-  left: -25px;
+  left: -26px;
   right: 0;
-  bottom: -13px;
+  scale: 1.1;
+  bottom: -17px;
   height: 200%;
   width: 150%;
   overflow: visible;
@@ -116,12 +116,12 @@
   /* Set the color of the stroke */
   z-index: -1;
   /* Ensure it is behind the text */
-  transition: background-color 0.7s;
+  transition: background-color 0.5s;
   /* Add transition for background-color */
 }
 
 /* .highlight-hover::after {
-  background-color: rgb(59 130 246);
+  background-color: transparent;
 } */
 
 /* improve look of fullscreen effect */

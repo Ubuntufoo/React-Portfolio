@@ -3,14 +3,15 @@
 import { useState } from 'react'
 import { projMainContent } from '../../../utils/images'
 import { LuBadgeInfo } from 'react-icons/lu'
+import Button from '../../features/Button'
 import BG1 from '../../../assets/BG1.png'
 
 const projectClasses = [
-  { bg: 'bg-gray-950', hover: 'hover:bg-red-700' },
-  { bg: 'bg-gray-900', hover: 'hover:bg-orange-700' },
-  { bg: 'bg-gray-800', hover: 'hover:bg-yellow-700' },
-  { bg: 'bg-gray-700', hover: 'hover:bg-green-700' },
-  { bg: 'bg-gray-600', hover: 'hover:bg-blue-700' },
+  { bg: 'bg-gray-950'},
+  { bg: 'bg-gray-900'},
+  { bg: 'bg-gray-800'},
+  { bg: 'bg-gray-700'},
+  { bg: 'bg-gray-600'},
 ]
 
 export default function ProjGallery() {
@@ -18,21 +19,20 @@ export default function ProjGallery() {
 
   return (
     <main className="relative flex h-screen flex-col justify-center">
-      <section className="mx-auto flex h-6/7 w-5/6 flex-col place-content-end place-items-center md:mt-auto">
+      <section className="mx-auto flex h-6/7 3xl:h-19/20 w-5/6 flex-col place-content-end place-items-center md:mt-auto">
         <div className="relative h-1/2 w-screen text-center">
           {selectedProject == null ? (
-            <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly py-10">
+            <div className="mx-auto flex h-full flex-col justify-center">
               <img
-                className="absolute inset-x-0 -bottom-4 -z-20 w-full origin-bottom scale-[1.58] rounded-3xl opacity-10 brightness-75 sepia md:scale-[1.4] lg:scale-[.81] xl:scale-[.67] 2xl:scale-[.61] 3xl:scale-[.73]"
+                className="absolute inset-x-0 -bottom-4 -z-20 w-full origin-bottom scale-[1.58] rounded-3xl opacity-10 brightness-75 md:scale-[1.4] lg:scale-[.81] xl:scale-[.67] 2xl:scale-[.61] 3xl:scale-[.73]"
                 src={BG1}
                 alt="Cluttered desk covered with tech and tools"
               />
-              <h2 className="text-[25px] font-bold sm:text-3xl md:text-4xl 2xl:text-5xl">
-                Select a project below
-              </h2>
-              <p className="text-pretty font-semibold sm:text-lg md:text-xl 2xl:text-2xl">
-                or scroll right to see project details
-              </p>
+              <div className="mx-auto w-fit">
+                <h2 className="text-2xl font-semibold sm:text-3xl md:text-5xl">
+                  Select a project below
+                </h2>
+              </div>
             </div>
           ) : (
             <div className="mx-auto flex h-full w-8/9 flex-col justify-evenly pt-5">
@@ -47,44 +47,30 @@ export default function ProjGallery() {
               <p className="text-pretty font-semibold sm:text-lg md:text-xl 2xl:text-2xl">
                 {selectedProject.description}
               </p>
-              <div className="mx-auto flex w-3/4 text-sm">
-                <button className="mx-auto rounded-lg">
-                  <a
-                    href={`http://localhost:5173/#Projects/${selectedProject.linkToSlide}`}
-                    className="group relative inline-flex overflow-hidden rounded-lg bg-black px-7 py-2 text-gray-50 shadow-lg shadow-white  duration-500 hover:bg-blue-600 active:bg-blue-900 active:shadow-none"
-                  >
-                    <span className="z-40 font-roboto font-semibold tracking-wider lg:text-lg">
-                      Details
-                    </span>
-                    <div className="absolute inset-0 z-20 h-[90%] w-[100%] translate-x-[-95%] rotate-45 bg-gray-400 transition-all duration-500 group-hover:translate-x-[90%] group-hover:scale-100"></div>
-                  </a>
-                </button>
-                {selectedProject.linkExternal && (
-                  <button className="mx-auto rounded-lg ">
-                    <a
-                      href={selectedProject.linkExternal}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="group relative inline-flex overflow-hidden rounded-lg bg-gray-700 px-9 py-2 text-gray-50 shadow-lg shadow-white duration-500 hover:bg-blue-600 active:bg-blue-900 active:shadow-none"
-                    >
-                      <span className="z-40 font-roboto font-semibold tracking-wider lg:text-lg">
-                        Visit
-                      </span>
-                      <div className="absolute inset-0 z-20 h-[90%] w-[100%] translate-x-[-95%] rotate-45 bg-gray-400 transition-all duration-500 group-hover:translate-x-[90%] group-hover:scale-100"></div>
-                    </a>
-                  </button>
-                )}
+              <div className="mx-auto flex w-4/5 xl:w-1/2 text-sm">
+                <Button
+                  link={`http://localhost:5173/#Projects/${selectedProject.linkToSlide}`}
+                  styles="shadow-xl scale-95"
+                  text="Details"
+                />
+
+                <Button
+                  link={selectedProject.linkExternal}
+                  styles="shadow-xl scale-95"
+                  text="Visit"
+                  isExternal
+                />
               </div>
             </div>
           )}
         </div>
         <div className="h-1/2 2xl:h-9/20">
-          <ul className="flex h-19/20 flex-col place-content-center place-items-center xl:h-full">
+          <ul className="flex h-19/20 flex-col bg-gray-800 place-content-center place-items-center xl:h-full">
             {projMainContent.map((proj, index) => (
               <li
                 onClick={() => setSelectedProject(proj)}
                 key={index}
-                className={`flex w-screen grow origin-bottom cursor-pointer place-items-center justify-center text-center font-roboto text-xl tracking-wide transition-all hover:scale-105 hover:sepia ${projectClasses[index % projectClasses.length].bg} ${projectClasses[index % projectClasses.length].hover}`}
+                className={`flex w-screen grow origin-bottom cursor-pointer place-items-center justify-center text-center text-xl tracking-wide transition-all hover:scale-110 ${projectClasses[index % projectClasses.length].bg} ${projectClasses[index % projectClasses.length].hover}`}
               >
                 <button className="relative flex place-items-center text-gray-50">
                   {proj.label}

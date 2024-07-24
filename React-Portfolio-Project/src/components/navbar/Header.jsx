@@ -1,14 +1,11 @@
-// // Header component that includes the navigation bars for both desktop and mobile
+// // Header component that includes navigation hamburger menu
 
-// import NavBarFull from './NavBarFull'
 import NavBarMobile from './NavBarMobile'
 
 export default function Header() {
 
   return (
-    <header className="fixed h-0 top-0 z-40 w-screen font-roboto">
-      {/* <KeyboardArrows keyStyling={keyStyling} /> */}
-      {/* <NavBarFull activePage={activePage} /> */}
+    <header className="fixed h-0 top-0 z-40 w-screen">
       <NavBarMobile />
     </header>
   )

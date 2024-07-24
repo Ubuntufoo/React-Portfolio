@@ -47,7 +47,7 @@ export default function Tabs({ tabsContent }) {
             onClick={() => handleTabClick(index)}
             className={`${activeTab === index ? 'text-gray-50' : 'text-gray-950'} z-10 flex w-[86px] items-center rounded-full text-center font-semibold transition-all duration-500 xl:w-[100px] xl:text-lg`}
           >
-            <span className="mx-auto block text-center font-roboto ">
+            <span className="mx-auto block text-center">
               {tab.title}
             </span>
           </button>

@@ -59,7 +59,7 @@ export default function Form() {
           className="mt-6 grid size-full grid-cols-2 gap-x-4 pb-3 text-sm text-white
          focus:text-gray-950 md:text-xl 2xl:gap-x-5 2xl:gap-y-14 2xl:pb-8"
         >
-          <h1 className="col-span-full font-roboto text-3xl md:text-4xl 2xl:pt-5 2xl:text-center">
+          <h1 className="col-span-full text-3xl md:text-4xl 2xl:pt-5 2xl:text-center">
             Contact Me
           </h1>
           <div className="relative">

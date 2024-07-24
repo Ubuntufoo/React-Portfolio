@@ -14,17 +14,14 @@ export default {
         // => @media (min-width: 992px) { ... }
       },
       fontFamily: {
-        'ubuntu': ['Ubuntu+Mono', 'monospace'],
-        'montserrat': ['"Montserrat"', 'sans-serif'],
-        'roboto': ['"Roboto"', 'sans-serif'],
+        // @import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+        kreon: ['Kreon', 'sans-serif'],
+        ubuntu: ['Ubuntu Sans', 'sans-serif'],
       },
       animation: {
         fade: 'fadeIn 1s ease-in-out',
         fadeFast: 'fadeInFast 0.5s ease-in-out',
-        fadeSlow: 'fadeInSlow 2.5s ease-in-out', // Added fadeSlow animation
-        waving: 'waving 1.2s linear 1s 2.3',
-        marquee: 'marquee 40s linear infinite',
-        marquee2: 'marquee2 40s linear infinite',
+        fadeSlow: 'fadeInSlow 2.5s ease-in-out',
       },
       keyframes: {
         marquee: {

@@ -43,7 +43,7 @@ export default function Modal({ modalContent, modalState, handleClose }) {
       </button>
       <div id="modal-content">
         <div className="z-50 mt-3 flex h-fit flex-col items-stretch justify-between whitespace-pre-line text-sm text-gray-50 sm:text-lg md:mt-6 md:px-5 md:text-xl xl:text-xl">
-          <h2 className="py-3 font-roboto text-lg font-semibold underline underline-offset-8 md:py-5 md:text-2xl xl:text-2xl">
+          <h2 className="py-3 text-lg font-semibold underline underline-offset-8 md:py-5 md:text-2xl xl:text-2xl">
             {modalContent[modalState.contentIndex].firstHeader}
           </h2>
           <p className="text-pretty py-2 indent-6">
@@ -52,7 +52,7 @@ export default function Modal({ modalContent, modalState, handleClose }) {
           {modalContent[modalState.contentIndex].secondHeader && (
             <hr className="my-4 md:my-6" />
           )}
-          <h2 className="py-3 text-right font-roboto text-lg font-semibold underline underline-offset-8 md:py-5 md:text-2xl xl:text-2xl">
+          <h2 className="py-3 text-right text-lg font-semibold underline underline-offset-8 md:py-5 md:text-2xl xl:text-2xl">
             {modalContent[modalState.contentIndex].secondHeader}
           </h2>
           <p className="text-pretty py-2 indent-6">
