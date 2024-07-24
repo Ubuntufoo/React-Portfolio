@@ -6,9 +6,9 @@
 
 .neumorph {
   border-radius: 15px;
-    background: #e0e0e0;
+    background: #b9b9b9;
     box-shadow: inset 20px 20px 60px #cfcfcf,
-      inset -20px -20px 60px #585858;
+      inset -20px -20px 60px #414141;
 }
 
 /* Carousel styling */
@@ -104,7 +104,7 @@
   left: -25px;
   right: 0;
   bottom: -13px;
-  height: 205%;
+  height: 200%;
   width: 150%;
   overflow: visible;
   mask-image: url('./assets/paintstrokeSVG.svg');
@@ -120,9 +120,9 @@
   /* Add transition for background-color */
 }
 
-.highlight-hover::after {
+/* .highlight-hover::after {
   background-color: rgb(59 130 246);
-}
+} */
 
 /* improve look of fullscreen effect */
 /* @media (min-width: 640px) {
@@ -160,7 +160,17 @@ textarea:-webkit-autofill:active {
 @media (max-width: 639px) {
   .fp-prev,
     .fp-next {
-      scale: .7;
-      border-radius: 10%;
+      scale: .75;
+    }
+}
+@media (min-width: 1024px) {
+  .fp-prev
+     {
+      scale: 1.2;
+      margin-left: 20px;
+    }
+  .fp-next {
+      scale: 1.2;
+      margin-right: 20px;
     }
 }

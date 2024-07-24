@@ -20,7 +20,7 @@ export default function SkillsGrid() {
   }
 
   return (
-    <main className="mx-auto flex h-screen flex-col justify-evenly">
+    <main className="mx-auto flex h-screen flex-col justify-evenly 2xl:mt-6">
       <div>
         <div className="mx-auto flex w-19/20 xl:w-full flex-wrap place-content-center place-items-center gap-2 md:gap-3">
           {skillCardsContent.map((skill, index) => (
@@ -29,7 +29,7 @@ export default function SkillsGrid() {
               onClick={() => handleOpenModal(index)}
               className={`
                    cursor-pointer group relative size-40 overflow-hidden rounded-lg border border-gray-300 font-roboto shadow-lg shadow-gray-600 transition-all
-                  duration-200 active:shadow-none sm:size-48 md:size-60 xl:size-72
+                  duration-200 active:shadow-none sm:size-48 md:size-60 3xl:size-72
                  `}
             >
               <img

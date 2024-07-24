@@ -14,6 +14,7 @@ export default {
         // => @media (min-width: 992px) { ... }
       },
       fontFamily: {
+        'ubuntu': ['Ubuntu+Mono', 'monospace'],
         'montserrat': ['"Montserrat"', 'sans-serif'],
         'roboto': ['"Roboto"', 'sans-serif'],
       },

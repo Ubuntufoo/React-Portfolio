@@ -5,7 +5,7 @@ export default function Button({ link, styles = 'absolute' }) {
 
   if (styles === 'absolute') {
     buttonClasses =
-      'absolute inset-x-0 top-[44%] lg:top-[47.3%] xl:left-2/3 2xl:top-[52%] 3xl:inset-x-0 3xl:top-[50%]'
+      'absolute inset-x-0 top-[44%] lg:top-[47.3%] xl:left-2/3 2xl:top-[53%] 3xl:inset-x-0 3xl:top-[50%]'
   }
 
   return (

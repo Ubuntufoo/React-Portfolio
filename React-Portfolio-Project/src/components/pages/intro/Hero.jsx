@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="absolute inset-0 -z-20 h-full w-full rotate-[60deg] rounded-xl border border-gray-950 bg-gray-600"></div>
           <div className="absolute inset-0 -z-30 h-full w-full rotate-[90deg] rounded-xl border border-gray-950 bg-gray-300"></div>
           <h1 className="whitespace-pre text-center text-gray-50">
-            Hi, I&apos;m Tim.
+            Hi, I&apos;m Tim
           </h1>
           <img
             src={imageSrc}
@@ -54,7 +54,7 @@ export default function Hero() {
               onMouseEnter={handleTextMouseEnter}
               onMouseLeave={handleTextMouseLeave}
             >
-              Web Developer.
+              Web Developer
             </span>
           </h2>
           <p className="whitespace-pre-wrap max-sm:text-sm">
@@ -62,7 +62,7 @@ export default function Hero() {
             <br />
             and bring common sense
             <br />
-            to the table.
+            to the table
           </p>
         </div>
         <button className=" mx-auto">
@@ -72,7 +72,7 @@ export default function Hero() {
             onMouseEnter={handleButtonMouseEnter}
             onMouseLeave={handleButtonMouseLeave}
           >
-            <span className="z-40 font-roboto font-semibold tracking-wider">
+            <span className="z-40 font-roboto font-semibold">
               Explore
             </span>
             <div className="absolute inset-0 z-20 h-[90%] w-[100%] translate-x-[-95%] rotate-45 bg-gray-400 transition-all duration-500 group-hover:translate-x-[90%] group-hover:scale-100"></div>

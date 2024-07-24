@@ -8,7 +8,7 @@ export default function Carousel({ images }) {
   const slidesContainerRef = useRef(null)
   const videoRefs = useRef([])
 
-  const screenWidth = window.innerWidth
+  const carouselWidth = window.innerWidth >= 1920 ? window.innerWidth / 1.5 : window.innerWidth
 
   const slidesClasses =
     'w-full h-fit mt-auto shrink-0 snap-center snap-always cursor-grab 2xl:cursor-auto first:ms-0 me-6 last:me-0 bg-gray-400 origin-center transition-all relative flex'
@@ -18,7 +18,7 @@ export default function Carousel({ images }) {
     setActiveSlide(slideNumber)
     const slidesContainer = slidesContainerRef.current
     // width of each slide
-    const slideWidth = screenWidth
+    const slideWidth = carouselWidth
     const slideMargin = 24 // margin-inline-end of each slide
     slidesContainer.scrollTo({
       left: slideNumber * (slideWidth + slideMargin),
@@ -107,7 +107,7 @@ export default function Carousel({ images }) {
               <img
                 src={media.src}
                 alt={`Slide ${index}`}
-                className={`max-w-screen mx-auto max-h-52 ${isFullscreen ? 'cursor-zoom-out' : 'cursor-zoom-in'} object-contain sm:rounded-xl md:max-h-96 md:max-w-[460px] lg:max-h-80 xl:max-h-80 xl:max-w-[550px] 2xl:max-h-[250px] 3xl:max-h-[270px] 3xl:max-w-[657px]`}
+                className={`max-w-screen mx-auto max-h-52 ${isFullscreen ? 'cursor-zoom-out' : 'cursor-zoom-in'} object-contain sm:rounded md:max-h-96 md:max-w-[460px] lg:max-h-80 xl:max-h-80 xl:max-w-[550px] 2xl:max-h-[250px] 3xl:max-h-[270px] 3xl:max-w-[657px]`}
                 onClick={handleImageClick}
               />
             )}
@@ -115,7 +115,7 @@ export default function Carousel({ images }) {
               <video
                 ref={(ref) => (videoRefs.current[index] = ref)} // Store video refs for each slide
                 controls
-                className="max-w-screen mx-auto max-h-52 object-contain sm:rounded-xl md:max-h-96 md:max-w-[460px] lg:max-h-80 xl:max-h-80 xl:max-w-[550px] 2xl:max-h-[250px] 3xl:max-h-[280px] 3xl:max-w-[657px]"
+                className="max-w-screen mx-auto max-h-52 object-contain sm:rounded md:max-h-96 md:max-w-[460px] lg:max-h-80 xl:max-h-80 xl:max-w-[550px] 2xl:max-h-[250px] 3xl:max-h-[280px] 3xl:max-w-[657px]"
               >
                 <source src={media.src} type="video/mp4" />
                 Your browser does not support the video tag.

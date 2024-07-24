@@ -1,9 +1,9 @@
 // image exports for use in components
 
-import reactLOGOcustom from '../assets/grid/reactLOGOcustom.png'
-import genaiIMG from '../assets/grid/genaiIMG.png'
-import fullstackIMG3 from '../assets/grid/fullstackIMG3.png'
-import problemsolveIMG from '../assets/grid/problemsolveIMG.png'
+import reactLOGOcustom from '../assets/skill-cards/reactLOGOcustom.png'
+import genaiIMG from '../assets/skill-cards/genaiIMG.png'
+import fullstackIMG3 from '../assets/skill-cards/fullstackIMG3.png'
+import problemsolveIMG from '../assets/skill-cards/problemsolveIMG.png'
 
 import BrainteasersHomeIMG from '../assets/projects-assets/Brainteasers1800x900.png'
 import ExploreLLM_IMG from '../assets/projects-assets/ExploreLLM_IMG1800x900.png'
@@ -17,6 +17,7 @@ import ExploreLLMcards from '../assets/projects-assets/ExploreLLMcards.png'
 import BrainteasersWordleIMG from '../assets/projects-assets/BrainteasersWordleIMG.png'
 import BrainteasersRegIMG from '../assets/projects-assets/BrainteasersRegIMG.png'
 import BrainteasersAdmin from '../assets/projects-assets/BrainteasersAdmin.png'
+import BrainteasersAccountIMG from '../assets/projects-assets/BrainteasersAccountIMG.png'
 
 import TADA_code_IMG from '../assets/projects-assets/TADA_code_IMG.png'
 import TADAdesktop from '../assets/projects-assets/TADAdesktop.png'
@@ -24,9 +25,9 @@ import TADAdesktop from '../assets/projects-assets/TADAdesktop.png'
 import WorkDashCode1of2 from '../assets/projects-assets/WorkDashCode1of2.png'
 import WorkDashCode2of2 from '../assets/projects-assets/WorkDashCode2of2.png'
 
-import ProjPortfolioFormCode314x900 from '../assets/projects-assets/ProjPortfolioFormCode314x900.png'
-import ProjPortfolioFullpageJSCode533x900 from '../assets/projects-assets/ProjPortfolioFullpageJSCode533x900.png'
-import ProjPortfolioMarqueeCode1284x900 from '../assets/projects-assets/ProjPortfolioMarqueeCode1284x900.png'
+import ProjPortfolioFormCode from '../assets/projects-assets/ProjPortfolioFormCode1262x900.png'
+import ProjPortfolioFullpageJSCode from '../assets/projects-assets/ProjPortfolioFullpageJSCode533x900.png'
+import ProjPortfolioMarqueeCode from '../assets/projects-assets/ProjPortfolioMarqueeCode1284x900.png'
 
 export const projMainContent = [
   {
@@ -78,17 +79,17 @@ export const projPortfolioContent = [
     type: 'image',
   },
   {
-    src: ProjPortfolioFullpageJSCode533x900,
+    src: ProjPortfolioFullpageJSCode,
     label: 'Fullpage.js Code',
     type: 'image',
   },
   {
-    src: ProjPortfolioMarqueeCode1284x900,
+    src: ProjPortfolioMarqueeCode,
     label: 'Marquee Code',
     type: 'image',
   },
   {
-    src: ProjPortfolioFormCode314x900,
+    src: ProjPortfolioFormCode,
     label: 'Form Code',
     type: 'image',
   },
@@ -135,25 +136,31 @@ export const projBTContent = [
   {
   src: BrainteasersHomeIMG,
   label: 'Brainteasers Home',
-  figcaption: 'ExploreLLM concept: a task destructuring approach.',
+  figcaption: 'Brainteasers Home page.',
   type: 'image',
   },
   {
     src: BrainteasersWordleIMG,
     label: 'Brainteasers Wordle',
-    figcaption: 'ExploreLLM concept: a task destructuring approach.',
+    figcaption: 'Brainteasers Wordle game',
     type: 'image',
   },
   {
     src: BrainteasersRegIMG,
     label: 'Brainteasers Registration',
-    figcaption: 'ExploreLLM concept: a task destructuring approach.',
+    figcaption: 'Brainteasers Registration page.',
+    type: 'image',
+  },
+  {
+    src: BrainteasersAccountIMG,
+    label: 'Brainteasers Account',
+    figcaption: 'Brainteasers Account page.',
     type: 'image',
   },
   {
     src: BrainteasersAdmin,
     label: 'Brainteasers Admin',
-    figcaption: 'ExploreLLM concept: a task destructuring approach.',
+    figcaption: 'Brainteasers Admin page.',
     type: 'image',
   },
 ]

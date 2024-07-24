@@ -19,7 +19,7 @@ export const tabsExploreLLM = [
   {
     id: 3,
     title: 'Techs',
-    content: "Featuring React.js with a Flask back-end. A series of API requests from the client carry user input to the local server, where the input is added to a composite prompt and sent to OpenAI's endpoint.\n\nThe LLM decomposes the prompt into sub-parts with options relating to each, and returns those parts to the user in a visually constructive way. Finally, the sub-parts are recombined and sent to the OpenAI endpoint for a final report. Please see the demonstration video above.",
+    content: "Featuring React.js with a Flask back-end. A series of API requests from the client carry user input to the local server, where the input is added to a composite prompt and sent to OpenAI's endpoint.\n\nThe LLM decomposes the prompt into sub-parts with options relating to each, and returns them the user in a visually constructive way. Finally, the sub-parts are recombined and sent to the OpenAI endpoint for a final report. Please see the demonstration video below.",
   },
 ];
 
@@ -27,7 +27,7 @@ export const tabsBrainteasers = [
   {
     id: 0,
     title: 'About',
-    content: "Brainteasers is a responsive, full-stack website which uses traditional routing for a multi-page, full featured experience.\n\n Users have 3 game choices: a Wordle clone with enhanced features, a math game, and an anagram hunt game. A contact form is available for users to reach me. Brainteasers also features user authentication, providing registration and account updating - even adding a custom avatar.",
+    content: "Brainteasers is a responsive, full-stack website which uses traditional routing for a multi-page, full featured experience.\n\n Users have 3 game choices: a Wordle clone with enhanced features, a math game, and an anagram hunt game.\n\nA contact form is available for users to reach me. Brainteasers also features user authentication, providing registration and account updating - even adding a custom avatar.",
   },
   {
     id: 1,
@@ -42,7 +42,7 @@ export const tabsBrainteasers = [
   {
     id: 3,
     title: 'Techs',
-    content: "Brainteasers is built with Django, Vue.js, and Bootstrap, and is hosted on the Heroku platform, complete with PostgreSQL integration.\n\nA monolithic file structure, Django handles the server-side logic while also serving the font-end Vue templates. Sendgrid powers the email contact form. Django has a convenient native tool-set that includes an admin UI for CRUD operations, and object-relational mapping, effectively SQL-in-Python.",
+    content: "Brainteasers is built with Django, Vue.js, and Bootstrap, and is hosted on the Heroku platform, complete with PostgreSQL integration.\n\nA monolithic file structure, Django handles the server-side logic while also serving the font-end Vue templates. Sendgrid powers the email contact form.\n\nDjango has a convenient native tool-set that includes an admin UI for CRUD operations, and object-relational mapping, effectively SQL-in-Python.",
   },
 ];
 
@@ -65,7 +65,7 @@ export const tabsTADA = [
   {
     id: 3,
     title: 'Techs',
-    content: "Built with React.js and Express.js, and hosted on Render. TADA! combines user input into a server-side composite prompt and sends it to the API endpoint of OpenAI. The Large Language Model (LLM), role-playing a self-help and mindfulness coach, returns a custom response based on the input. I increased the AI model's temperature, i.e. creativity setting, to ensure a variety of responses.\n\nThe project is lightweight allowing the freedom to adapt it as a PWA or mobile app in the future.",
+    content: "Built with React.js and Express.js, and hosted on Render. TADA! combines user input into a server-side composite prompt and sends it to the API endpoint of OpenAI. The Large Language Model (LLM), role-playing a self-help and mindfulness coach, returns a custom response based on the input.\n\nI increased the AI model's temperature, i.e. creativity setting, to ensure a variety of responses.\n\nThe project is lightweight allowing the freedom to adapt it as a PWA or mobile app in the future.",
   },
 ];
 
@@ -78,7 +78,7 @@ export const tabsWorkDash = [
   {
     id: 1,
     title: 'Journey',
-    content: "My Work Dashboard was born of necessity. Too much time was spent searching bookmark folders, or navigating multi-step authentication flow to download a single file.\n\nI began crafting the Python scripts as stand-alone tools before building out the front-end. With each feature added, I shaved a bit of time off my daily routine. I will adapt this tool to my web dev workflow in the future so I can quickly scaffold new projects and access resources.",
+    content: "My Work Dashboard was born of necessity. Too much time was spent searching bookmark folders, or navigating multi-step authentication flow to download a single file.\n\nI began crafting the Python scripts as stand-alone tools before building out the front-end. With each feature added, I shaved a bit of time off my daily routine.\n\nI will adapt this tool to my web dev workflow in the future so I can quickly scaffold new projects and access resources.",
   },
   {
     id: 2,
@@ -96,17 +96,17 @@ export const tabsPortfolio = [
   {
     id: 0,
     title: 'About',
-    content: "A responsive site featuring a sharp geometric theme with a cyan color palette, showcasing my developer accomplishments. Designed from scratch - no component libraries here.\n\nThe content is presented as smooth-transitioning slides thanks to my secret-sauce: a JS library called Fullpage, built by a friendly fellow named Alvaro Trigo. Navigation is encouraged via the up, down, left, and right keys.",
+    content: "A responsive site featuring a sharp geometric theme with a cyan color palette, showcasing my developer accomplishments. Designed from scratch - no component libraries here.\n\nThe content is presented as smooth-transitioning slides thanks to Fullpage.js, a library built by a friendly deveoper named Alvaro Trigo. Navigation is encouraged via the up, down, left, and right keys.",
   },
   {
     id: 1,
     title: 'Journey',
-    content: "This website is actually a do-over from a previous iteration built with Vue.js. When I chose React as my future focus I put this project on the back burner to lock-in my React skills. Now that I'm 99% done with this project, I realize I wasn't ready to tackle this back then as a Vue.js beginner. I was naive to working with a large library's callbacks and methods, prop drilling, and the like.\n\nMany new doors have opened thanks to the concepts I discovered through this process.",
+    content: "This website is actually a do-over from a previous iteration built with Vue.js. When I chose React as my future focus I put this project on the back burner to lock-in my React skills. \n\nNow that I'm 99% done with this project, I realize I wasn't ready to tackle this back then as a Vue.js beginner. I was naive to working with a large library's callbacks and methods, prop drilling, and the like.\n\nMany new doors have opened thanks to the concepts I discovered through this process.",
   },
   {
     id: 2,
     title: 'Lessons',
-    content: "So many lessons learned here. For starters: Intrinsic vs extrinsic sizing, layout patterns, multi-browser/device support, UX design for images, Tailwind customization. \n\nI'm comfortable telling on myself: Why is there a vertical distortion beneath images when the Fullscreen method is called, just a Fullpage.js quirk? How can I widen my net for device compatibility? Why does the marquee on the Skills page inexplicably overlap icons on rare occasion?",
+    content: "So many lessons learned here: Intrinsic vs extrinsic sizing, layout patterns, multi-browser/device support, Tailwind customization. \n\nA good amount of time was spent outside my code editor, working with media. Image editing, aspect ratios, and fullscreen API were all new to me. I learned how to make images fit the viewport, and how to scale them to fit my cramped slide-style layouts.",
   },
   {
     id: 3,

@@ -32,7 +32,7 @@ export default function Modal({ modalContent, modalState, handleClose }) {
       aria-modal="true"
       aria-labelledby="Modal for Highlighted Skill"
       aria-describedby="A description of the highlighted skill."
-      className="absolute inset-x-0 z-50 mx-auto h-fit w-9/10 max-w-[650px] overflow-hidden rounded-3xl bg-current p-5 md:p-7 2xl:w-1/2"
+      className="absolute inset-x-0 z-50 mx-auto h-fit w-9/10 max-w-[900px] overflow-hidden rounded-3xl bg-current p-5 md:p-6 2xl:w-3/4 3xl:w-1/2"
     >
       <button
         onClick={handleClose}
@@ -42,20 +42,20 @@ export default function Modal({ modalContent, modalState, handleClose }) {
         <IoCloseSharp className="bg-inherit" />
       </button>
       <div id="modal-content">
-        <div className="z-50 mt-4 flex h-fit flex-col items-stretch justify-between whitespace-pre-line text-sm text-gray-50 sm:text-lg md:mt-10 md:px-5 md:text-xl xl:text-xl">
-          <h2 className="py-3 font-roboto text-lg font-semibold underline underline-offset-8 md:py-5 md:text-2xl xl:text-3xl">
+        <div className="z-50 mt-3 flex h-fit flex-col items-stretch justify-between whitespace-pre-line text-sm text-gray-50 sm:text-lg md:mt-6 md:px-5 md:text-xl xl:text-xl">
+          <h2 className="py-3 font-roboto text-lg font-semibold underline underline-offset-8 md:py-5 md:text-2xl xl:text-2xl">
             {modalContent[modalState.contentIndex].firstHeader}
           </h2>
-          <p className="text-pretty py-2">
+          <p className="text-pretty py-2 indent-6">
             {modalContent[modalState.contentIndex].firstPara}
           </p>
           {modalContent[modalState.contentIndex].secondHeader && (
-            <hr className="my-4 md:my-8" />
+            <hr className="my-4 md:my-6" />
           )}
-          <h2 className="py-3 text-right font-roboto text-lg font-semibold underline underline-offset-8 md:py-5 md:text-2xl xl:text-3xl">
+          <h2 className="py-3 text-right font-roboto text-lg font-semibold underline underline-offset-8 md:py-5 md:text-2xl xl:text-2xl">
             {modalContent[modalState.contentIndex].secondHeader}
           </h2>
-          <p className="text-pretty py-2">
+          <p className="text-pretty py-2 indent-6">
             {modalContent[modalState.contentIndex].secondPara}
           </p>
         </div>
