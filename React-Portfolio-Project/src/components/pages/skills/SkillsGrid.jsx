@@ -45,7 +45,7 @@ export default function SkillsGrid() {
           ))}
         </div>
       </div>
-      <div className="neumorph relative mx-auto flex w-fit cursor-default flex-col justify-center p-5 md:p-6 xl:p-8">
+      <div className="neumorph rounded-xl relative mx-auto flex w-fit cursor-default flex-col justify-center p-5 md:p-6 xl:p-8">
         <div className="neumorph absolute inset-x-2/3 -top-3 -z-50 size-8 rotate-45 skew-x-12 bg-transparent lg:size-20"></div>
         <h1 className="mx-auto bg-gradient-to-br from-gray-950 to-gray-600 bg-clip-text text-center text-lg font-bold tracking-wide text-transparent md:text-2xl xl:text-3xl">
           Click a tile to learn more

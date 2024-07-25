@@ -6,7 +6,7 @@ export default function Button({ link, text, isExternal, styles, position = 'abs
 
   if (position === 'absolute') {
     buttonPosition =
-      'absolute inset-x-0 top-[42%] scale-95 w-fit lg:top-[43%] xl:top-[45%] 2xl:top-[53%] 3xl:inset-x-0 3xl:top-[50%]'
+      'absolute inset-x-0 top-[42%] scale-95 w-fit lg:top-[44%] xl:top-[45%] 2xl:top-[65%] 2xl:left-2/3 2xl:right-1 3xl:inset-x-0 3xl:top-[47%]'
   }
 
   return (
@@ -24,7 +24,7 @@ export default function Button({ link, text, isExternal, styles, position = 'abs
         href={link}
         target={isExternal ? '_blank' : '_self'}
         rel={isExternal ? 'noopener noreferrer' : ''}
-        className={`neumorph group relative block overflow-hidden rounded-xl px-8 py-2 shadow-xl md:px-10 md:py-5 lg:px-12 lg:py-6 2xl:px-10 2xl:py-5 ${buttonStyles}`}
+        className={`neumorph group relative block overflow-hidden rounded-xl px-8 py-2 shadow-xl md:px-10 md:py-5 lg:px-12 lg:py-4 2xl:px-10 2xl:py-5 ${buttonStyles}`}
         onClick={(e) => {
           if (isExternal) {
             e.preventDefault()
