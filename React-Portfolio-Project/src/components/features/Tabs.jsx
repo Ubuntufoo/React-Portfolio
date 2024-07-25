@@ -30,11 +30,11 @@ export default function Tabs({ tabsContent }) {
   }
 
   return (
-    <div className="relative top-[12.5%] mx-auto flex h-[7%] 2xl:h-[8%] 3xl:h-[7%] w-[92%] flex-col justify-between md:w-3/4 lg:top-[10%] lg:w-2/5 2xl:top-[18%] 2xl:w-[500px] 3xl:top-[14%] 3xl:w-[540px]">
+    <div className="relative top-[12.5%] mx-auto flex h-[7%] 2xl:h-[8%] 3xl:h-[7%] w-full flex-col justify-between md:w-3/4 lg:top-[10%] lg:w-2/5 2xl:top-[18%] 2xl:w-[500px] 3xl:top-[14%] 3xl:w-[540px]">
       <div
         role="tablist"
         aria-label="tabs"
-        className="relative mx-auto grid h-11 w-[344px] grid-cols-4 overflow-hidden rounded-full border bg-gray-100 shadow-xl transition xl:w-[400px]"
+        className="relative mx-auto grid h-11 w-[344px] grid-cols-4 overflow-hidden transition xl:w-[400px]"
       >
         {tabsContent.map((tab, index) => (
           <button
@@ -53,29 +53,29 @@ export default function Tabs({ tabsContent }) {
           </button>
         ))}
         <div
-          className={`absolute bottom-0 top-0 my-auto h-10 w-[86px] scale-95 rounded-3xl bg-gray-700 shadow-lg transition-all duration-300 xl:w-[101px] ${tabAlignments()}`}
+          className={`absolute bottom-0 top-0 my-auto h-10 w-[86px] rounded-3xl bg-gray-950 shadow-xl transition-all duration-300 xl:w-[101px] ${tabAlignments()}`}
         ></div>
       </div>
-      <div className="tab relative">
+      <div className="relative">
         {tabsContent.map((tab, index) => (
           <div
             key={tab.id}
             role="tabpanel"
             id={`panel-${index + 1}`}
-            className={`group absolute z-50 shadow-xl transition-all duration-500 ${
+            className={`group absolute z-50 transition-all duration-500 ${
               activeTab === index
                 ? 'opacity-100'
                 : 'pointer-events-none opacity-0'
             }`}
           >
-            <div className="group mx-auto h-fit rounded-xl bg-gray-100 px-7 py-4 shadow-xl md:px-9 md:py-5 xl:px-9 2xl:py-4 3xl:space-y-6 3xl:px-12 3xl:py-8">
-              <div className=" inline-flex w-full place-items-center justify-between">
+            <div className="group mx-auto h-fit z-50 bg-gray-400 px-14 py-4 md:px-9 md:py-5 xl:px-9 2xl:py-4 3xl:space-y-6 3xl:px-12 3xl:py-8">
+              <div className=" inline-flex w-full z-50 place-items-center justify-between">
                 <h2 className="text-lg font-bold text-gray-900 md:text-xl 2xl:py-1 xl:text-2xl">
                   {tab.title}
                 </h2>
                 <PiMouseScroll className="text-xl opacity-100 transition group-hover:opacity-0 sm:text-2xl md:text-2xl 3xl:text-3xl" />
               </div>
-              <p className="tab-content mt-2 line-clamp-3 hyphens-auto whitespace-break-spaces  indent-6 text-gray-900 group-hover:line-clamp-none md:text-lg 2xl:text-base 3xl:text-xl">
+              <p className="tab-content mt-2 line-clamp-3 hyphens-auto whitespace-break-spaces  indent-6 text-gray-900 group-hover:line-clamp-none sm:group-hover:h-fit group-hover:h-screen md:text-lg 2xl:text-base 3xl:text-xl">
                 {tab.content}
               </p>
             </div>

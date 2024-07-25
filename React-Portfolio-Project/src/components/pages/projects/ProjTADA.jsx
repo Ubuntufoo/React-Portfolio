@@ -16,7 +16,8 @@ export default function ProjTADA() {
       <Tabs tabsContent={tabsTADA} />
       <Carousel images={projTADAContent} />
       <Button
-        styles="absolute"
+        styles=""
+        position="absolute"
         text="Visit"
         isExternal
         link={projMainContent[1].linkExternal}

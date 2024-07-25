@@ -16,7 +16,8 @@ export default function ProjPortfolioV1() {
       <Tabs tabsContent={tabsBrainteasers} />
       <Carousel images={projBTContent} />
       <Button
-        styles="absolute"
+        styles=""
+        position="absolute"
         text="Visit"
         isExternal
         link={projMainContent[3].linkExternal}

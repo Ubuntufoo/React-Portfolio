@@ -19,7 +19,7 @@ export default function ProjGallery() {
 
   return (
     <main className="relative flex h-screen flex-col justify-center">
-      <section className="mx-auto flex h-6/7 3xl:h-19/20 w-5/6 flex-col place-content-end place-items-center md:mt-auto">
+      <section className="mx-auto flex h-6/7 w-5/6 flex-col place-content-end place-items-center md:mt-auto 3xl:h-19/20">
         <div className="relative h-1/2 w-screen text-center">
           {selectedProject == null ? (
             <div className="mx-auto flex h-full flex-col justify-center">
@@ -47,16 +47,18 @@ export default function ProjGallery() {
               <p className="text-pretty font-semibold sm:text-lg md:text-xl 2xl:text-2xl">
                 {selectedProject.description}
               </p>
-              <div className="mx-auto flex w-3/4 xl:w-1/2 text-sm">
+              <div className="mx-auto flex w-3/4 text-sm xl:w-1/2">
                 <Button
                   link={`http://localhost:5173/#Projects/${selectedProject.linkToSlide}`}
-                  styles="scale-95"
+                  position=""
+                  styles="scale-90"
                   text="Details"
                 />
 
                 <Button
                   link={selectedProject.linkExternal}
-                  styles="scale-95"
+                  position=""
+                  styles="scale-90"
                   text="Visit"
                   isExternal
                 />
@@ -65,7 +67,7 @@ export default function ProjGallery() {
           )}
         </div>
         <div className="h-1/2 2xl:h-9/20">
-          <ul className="flex h-19/20 flex-col bg-gray-800 place-content-center place-items-center xl:h-full">
+          <ul className="flex h-19/20 flex-col place-content-center place-items-center bg-gray-800 xl:h-full">
             {projMainContent.map((proj, index) => (
               <li
                 onClick={() => setSelectedProject(proj)}
