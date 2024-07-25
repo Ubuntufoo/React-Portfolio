@@ -25,58 +25,79 @@ export default function NavBarMobile() {
         className="group absolute right-7 top-7 z-40 flex h-10 w-9 cursor-pointer flex-col items-center justify-center space-y-1.5 md:right-11 md:top-11 3xl:right-36 3xl:top-14"
       >
         <div
-          className={`h-1.5 w-9 z-1 origin-right rounded bg-black transition-all duration-500 lg:h-2 lg:w-12 ${isOpen ? 'translate-y-[-5px] rotate-[-29deg] lg:translate-y-[-13px] lg:rotate-[-36deg]' : ''}`}
+          className={`z-1 h-1.5 w-9 origin-right rounded bg-black transition-all duration-500 lg:h-2 lg:w-12 ${isOpen ? 'translate-y-[-5px] rotate-[-29deg] lg:translate-y-[-13px] lg:rotate-[-36deg]' : ''}`}
         ></div>
         <div
-          className={`h-1.5 z-2 w-full origin-center rounded bg-gray-900 transition-all duration-500 lg:h-2 lg:w-14 ${isOpen ? 'translate-x-4 rotate-90 lg:translate-x-[21px]' : ''} `}
+          className={`z-2 h-1.5 w-full origin-center rounded bg-gray-900 transition-all duration-500 lg:h-2 lg:w-14 ${isOpen ? 'translate-x-4 rotate-90 lg:translate-x-[21px]' : ''} `}
         ></div>
         <div
-          className={`h-1.5 z-3 w-9 origin-right rounded bg-gray-800 transition-all duration-500 lg:h-2 lg:w-12 ${isOpen ? 'translate-y-[5px] rotate-[29deg] lg:translate-y-[13px] lg:rotate-[36deg]' : ''}`}
+          className={`z-3 h-1.5 w-9 origin-right rounded bg-gray-800 transition-all duration-500 lg:h-2 lg:w-12 ${isOpen ? 'translate-y-[5px] rotate-[29deg] lg:translate-y-[13px] lg:rotate-[36deg]' : ''}`}
         ></div>
       </div>
 
-      <div className={`transform ${isOpen ? 'translate-y-0' : '-translate-y-full'} h-screen grid grid-cols-2 place-content-evenly place-items-center gap-y-6 transition-transform duration-300 relative text-xl`}>
-        <div className='w-fit space-y-2 col-span-2'>
+      <div
+        className={`transform ${isOpen ? 'translate-y-0' : '-translate-y-full'} relative grid h-screen grid-cols-2 place-content-evenly place-items-center gap-y-3 text-xl transition-transform duration-300`}
+      >
+        <div className="col-span-2 w-fit space-y-2">
           <img
             src={logo3}
             alt="logo of computer monitor on easel"
-            className="brightness-105 w-3/10 mx-auto"
+            className="mx-auto w-3/10 brightness-105"
           />
-          <p><code>&lt;Tim&gt; &lt;Murphy/&gt;</code></p>
+          <p>
+            <code>&lt;Tim&gt; &lt;Murphy/&gt;</code>
+          </p>
         </div>
 
-
-        <ul
-          id
-          className={``}
-        >
-          <li className="">
+        <ul className={`flex w-[98%] flex-col gap-9 border-r-2 border-gray-600`}>
+          <li className="mx-auto scale-105 cursor-pointer">
+            <a
+              href="mailto:TimothyMurphy123@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+            >
+              <SiMinutemailer className="text-5xl" />
+            </a>
+          </li>
+          <li className="cursor-pointer mx-auto">
             <a
               href="https://github.com/Ubuntufoo"
               target="_blank"
               rel="noopener noreferrer"
               className=""
             >
+              <FaGithub className="text-5xl" />
             </a>
-            <FaGithub className="text-4xl" />
           </li>
-          <li className="">
+          <li className="scale-110 cursor-pointer ps-0.5 mx-auto">
             <a
-              href="mailto:TimothyMurphy123@gmail.com"
+              href="https://www.linkedin.com/in/timothy-murphy-19a702213/"
+              target="_blank"
+              rel="noopener noreferrer"
               className=""
             >
+              <BiLogoLinkedinSquare className="text-5xl" />
             </a>
-            <SiMinutemailer className="text-4xl" />
+          </li>
+          <li className="cursor-pointer mx-auto">
+            <a
+              href="https://docs.google.com/document/d/15K8jNlhiDEw9anGdRNiWMGWhdIbsLZinUbh73TV_LD8/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+            >
+              <GrDocumentUser className="text-5xl" />
+            </a>
           </li>
         </ul>
 
-
-        <ul
-          id="myMenu"
-          className={`space-y-10`}
-        >
+        <ul id="myMenu" className={`mx-auto w-full space-y-10 `}>
           {['Intro', 'Projects', 'Skills', 'Contact'].map((section) => (
-            <li className="w-full neumorph px-4 mx-auto py-2 rounded-xl font-kreon hover:scale-110 hover:font-bold transition" key={section}>
+            <li
+              className="neumorph mx-auto w-1/2 rounded-xl px-4 py-2 font-kreon transition hover:scale-110 hover:font-bold"
+              key={section}
+            >
               <a
                 data-menuanchor={`${section}`}
                 href={`#${section}`}
@@ -89,7 +110,6 @@ export default function NavBarMobile() {
         </ul>
         <KeyboardNoti />
       </div>
-
     </nav>
   )
 }
