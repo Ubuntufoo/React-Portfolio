@@ -2,6 +2,8 @@
 
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser' // EmailJS SDK for sending emails from client-side
+
+import paperairplane2 from '../../../assets/paperairplane2.png'
 import { PiCheckFatBold } from 'react-icons/pi'
 import { TbFaceIdError } from 'react-icons/tb'
 
@@ -42,10 +44,10 @@ export default function Form() {
 
   return (
     <div
-      className={`${loading && 'animate-pulse'} top-0 absolute z-10 h-1/2 w-full px-4 shadow-xl
+      className={`${loading && 'animate-pulse'} absolute top-0 z-10 h-[55%] w-full px-4 shadow-xl
       2xl:left-14 2xl:top-10 2xl:h-fit 2xl:max-w-[550px] 2xl:pb-6`}
     >
-      <div className="absolute inset-0 -z-10 2xl:rounded-xl bg-gray-700 bg-opacity-90"></div>
+      <div className="absolute inset-0 -z-10 bg-gray-700 bg-opacity-90 2xl:rounded-xl"></div>
 
       <form
         ref={form}
@@ -59,7 +61,7 @@ export default function Form() {
           className="mt-6 grid size-full grid-cols-2 gap-x-4 pb-3 text-sm text-white
          focus:text-gray-950 md:text-xl 2xl:gap-x-5 2xl:gap-y-14 2xl:pb-8"
         >
-          <h1 className="col-span-full text-3xl md:text-4xl 2xl:pt-5 2xl:text-center">
+          <h1 className="font-kreon col-span-full text-3xl md:text-4xl 2xl:pt-5 2xl:text-center">
             Contact Me
           </h1>
           <div className="relative">
@@ -96,7 +98,7 @@ export default function Form() {
               type="text"
               name="message"
               id="message"
-              rows="4"
+              rows="3"
               className={inputClasses}
               placeholder=" "
               required
@@ -128,12 +130,18 @@ export default function Form() {
           <button
             type="submit"
             aria-label="Send"
-            className="col-start-2 flex size-full h-fit w-fit cursor-pointer justify-self-center
-             bg-cyan-600 px-8 py-2 text-base tracking-wide ring-1 ring-gray-950 transition-all
-              duration-200 hover:bg-cyan-500 hover:ring-cyan-200 group-invalid:pointer-events-none
-               group-invalid:opacity-50 md:text-lg 2xl:-mb-2"
+            className={`col-start-2 ms-auto flex w-1/2 cursor-pointer justify-self-center
+           transition-all
+               group-invalid:pointer-events-none
+               group-invalid:cursor-not-allowed
+               group-invalid:opacity-40`}
           >
-            Send
+            <span className="sr-only">Send</span>
+            <img
+              src={paperairplane2}
+              alt="paper airplane"
+              className={`${success && 'translate-x-[900%] opacity-0 duration-700 ease-in'} size-14 -rotate-12 scale-[2] md:scale-[2.5] contrast-200 grayscale transition-all md:size-16 xl:size-14`}
+            />
           </button>
         </div>
       </form>

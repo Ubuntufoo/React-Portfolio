@@ -13,7 +13,7 @@ export default function ContactPage() {
    }
 
   return (
-    <div className="section fp-noscroll fp-auto-height-responsive h-screen">
+    <div className="section fp-noscroll fp-auto-height-responsive point h-screen">
       <section className="w-full">
         <div
           onClick={handleIframeClick}

@@ -6,7 +6,7 @@ export default function Button({ link, text, isExternal, styles, position = 'abs
 
   if (position === 'absolute') {
     buttonPosition =
-      'absolute inset-x-0 top-[42%] scale-95 w-fit lg:top-[44%] xl:top-[45%] 2xl:top-[65%] 2xl:left-2/3 2xl:right-1 3xl:inset-x-0 3xl:top-[47%]'
+      'absolute inset-x-0 top-[42%] scale-95 w-fit lg:top-[44%] xl:top-[45%] 2xl:top-[66%] 2xl:left-[62%] 2xl:right-1 3xl:inset-x-0 3xl:top-[47%]'
   }
 
   return (
