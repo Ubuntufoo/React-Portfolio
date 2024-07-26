@@ -32,7 +32,7 @@ export default function Modal({ modalContent, modalState, handleClose }) {
       aria-modal="true"
       aria-labelledby="Modal for Highlighted Skill"
       aria-describedby="A description of the highlighted skill."
-      className="absolute inset-x-0 z-50 mx-auto h-fit w-9/10 max-w-[900px] overflow-hidden rounded-3xl bg-current p-5 md:p-6 2xl:w-3/4 3xl:w-1/2"
+      className="absolute inset-x-0 2xl:mb-10 z-50 mx-auto h-fit w-9/10 max-w-[950px] overflow-hidden rounded-3xl bg-current p-5 md:p-6 2xl:w-3/4 3xl:w-1/2"
     >
       <button
         onClick={(event) => {

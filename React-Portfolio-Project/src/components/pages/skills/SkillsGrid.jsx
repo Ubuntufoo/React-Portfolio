@@ -31,7 +31,15 @@ export default function SkillsGrid() {
   const delayClasses = ['delay-0', 'delay-150', 'delay-300', 'delay-[450ms]']
 
   return (
-    <main className="mx-auto flex h-screen flex-col justify-evenly 2xl:mt-6">
+    <main className="mx-auto flex h-screen flex-col justify-evenly 2xl:mt-12 3xl:mt-6">
+      {modalState.isOpen && (
+        <div
+          onClick={handleCloseModal}
+          className="absolute left-0 z-50 top-0 h-full w-full bg-black opacity-65"
+          role="button"
+          tabIndex={0}
+        ></div>
+      )}
       <div>
         <div className="mx-auto flex w-19/20 flex-wrap place-content-center place-items-center gap-2 md:gap-3 xl:w-full">
           {skillCardsContent.map((skill, index) => (
@@ -47,7 +55,7 @@ export default function SkillsGrid() {
                 src={skill.img}
                 alt={skill.title}
                 className={`
-                  absolute inset-0 z-50 size-full object-cover transition-all duration-500 group-hover:opacity-10
+                  absolute inset-0 z-40 size-full object-cover transition-all duration-500 group-hover:opacity-10
                   ${isHovered ? `opacity-10 ${delayClasses[index % delayClasses.length]}` : ``}
                 `}
               />
@@ -66,7 +74,7 @@ export default function SkillsGrid() {
         </div>
       </div>
       <div
-        className="neumorph bottom-2 relative mx-auto flex w-fit cursor-default flex-col justify-center rounded-xl p-5 md:p-6 xl:p-8"
+        className="neumorph relative bottom-2 mx-auto flex w-fit cursor-default flex-col justify-center rounded-xl p-5 md:p-6 xl:p-8"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -81,14 +89,6 @@ export default function SkillsGrid() {
           modalState={modalState}
           handleClose={handleCloseModal}
         />
-      )}
-      {modalState.isOpen && (
-        <div
-          onClick={handleCloseModal}
-          className="absolute left-0 top-0 z-10 h-full w-screen bg-black opacity-65"
-          role="button"
-          tabIndex={0}
-        ></div>
       )}
     </main>
   )

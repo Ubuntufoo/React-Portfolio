@@ -18,7 +18,7 @@ export default function NavBarMobile() {
   return (
     <nav
       id="NavBarMobile"
-      className={`fixed inset-x-0 top-0 z-50 flex flex-col bg-gray-500 text-center text-gray-950 transition-all ease-in-out duration-300 ${isOpen ? 'h-screen' : 'h-0'}`}
+      className={`fixed inset-x-0 top-0 z-50 flex flex-col bg-gray-500 text-center text-gray-950 transition-all ease-in-out duration-500 ${isOpen ? 'h-screen' : 'h-0'}`}
     >
       <div
         onClick={toggleNav}
@@ -36,7 +36,7 @@ export default function NavBarMobile() {
       </div>
 
       <div
-        className={` ${isOpen ? 'translate-y-0' : '-translate-y-full'} relative bottom-9 grid h-screen grid-cols-2 place-content-evenly place-items-center text-xl transition-all duration-300 sm:bottom-0 md:text-2xl lg:text-3xl`}
+        className={` ${isOpen ? 'translate-y-0' : '-translate-y-full'} relative bottom-9 grid h-screen grid-cols-2 place-content-evenly place-items-center text-xl transition-all duration-500 sm:bottom-0 md:text-2xl lg:text-3xl`}
       >
         <div className="col-span-2 w-fit space-y-2 3xl:space-y-4">
           <img
