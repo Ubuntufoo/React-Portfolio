@@ -36,7 +36,7 @@ export default function NavBarMobile() {
       </div>
 
       <div
-        className={` ${isOpen ? 'translate-y-0' : '-translate-y-full'} relative bottom-9 grid h-screen grid-cols-2 place-content-evenly place-items-center text-xl transition-all duration-300 sm:mb-0 md:text-2xl lg:text-3xl`}
+        className={` ${isOpen ? 'translate-y-0' : '-translate-y-full'} relative bottom-9 grid h-screen grid-cols-2 place-content-evenly place-items-center text-xl transition-all duration-300 sm:bottom-0 md:text-2xl lg:text-3xl`}
       >
         <div className="col-span-2 w-fit space-y-2 3xl:space-y-4">
           <img
