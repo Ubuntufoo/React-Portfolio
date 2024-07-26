@@ -86,7 +86,7 @@ export default function Tabs({ tabsContent }) {
                 onClick={handleContentClick}
                 className={`${
                   isLineClamped
-                    ? 'tab-content h-fit'
+                    ? 'tab-content line-clamp-3 h-fit'
                     : 'line-clamp-none h-screen'
                 }  mt-2 hyphens-auto whitespace-break-spaces indent-6
                   text-gray-900

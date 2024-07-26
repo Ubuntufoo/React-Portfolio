@@ -18,7 +18,7 @@ export default function NavBarMobile() {
   return (
     <nav
       id="NavBarMobile"
-      className={`fixed inset-x-0 top-0 z-50 flex flex-col bg-gray-500 text-center text-gray-950 transition-all duration-300 ${isOpen ? 'h-screen' : 'h-0'}`}
+      className={`fixed inset-x-0 top-0 z-50 flex flex-col bg-gray-500 text-center text-gray-950 transition-all ease-in-out duration-300 ${isOpen ? 'h-screen' : 'h-0'}`}
     >
       <div
         onClick={toggleNav}
@@ -36,13 +36,13 @@ export default function NavBarMobile() {
       </div>
 
       <div
-        className={`transform ${isOpen ? 'translate-y-0' : '-translate-y-full'} relative mb-6 grid h-screen grid-cols-2 place-content-evenly place-items-center gap-y-3 text-xl transition-transform duration-300 md:mb-0 md:text-2xl lg:text-3xl`}
+        className={` ${isOpen ? 'translate-y-0' : '-translate-y-full'} relative mb-10 grid h-screen grid-cols-2 place-content-evenly place-items-center text-xl transition-all duration-300 md:mb-0 md:text-2xl lg:text-3xl`}
       >
-        <div className="col-span-2 w-fit space-y-2">
+        <div className="col-span-2 w-fit space-y-2 3xl:space-y-4">
           <img
             src={logo3}
             alt="logo of computer monitor on easel"
-            className="mx-auto w-3/10 brightness-105 xl:w-2/5"
+            className="mx-auto w-3/10 brightness-105 xl:w-2/5 2xl:w-1/4 3xl:w-2/5"
           />
           <p>
             <code>&lt;Tim&gt; &lt;Murphy/&gt;</code>
@@ -50,7 +50,7 @@ export default function NavBarMobile() {
         </div>
 
         <ul
-          className={`flex w-[98%] flex-col gap-9 border-r-2 border-gray-600 lg:gap-14 2xl:gap-16`}
+          className={`flex w-[98%] flex-col gap-9 border-r-2 border-gray-600 lg:gap-10 3xl:gap-16`}
         >
           <li className="mx-auto scale-105 cursor-pointer">
             <a
@@ -101,7 +101,7 @@ export default function NavBarMobile() {
                 data-menuanchor={`${section}`}
                 href={`#${section}`}
                 onClick={toggleNav}
-                className="neumorph mx-auto block w-1/2 cursor-pointer rounded-xl py-2 font-kreon transition hover:scale-110 hover:font-semibold md:w-2/5 lg:py-3 xl:w-1/3 xl:py-5 2xl:w-3/10 2xl:py-6"
+                className="neumorph mx-auto block w-1/2 cursor-pointer rounded-xl py-2 font-kreon transition hover:scale-110 hover:font-semibold md:w-2/5 lg:py-3 xl:w-1/3 xl:py-3 2xl:w-1/4 3xl:py-5"
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
