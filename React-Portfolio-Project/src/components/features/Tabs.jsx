@@ -5,9 +5,14 @@ import { PiMouseScroll } from 'react-icons/pi'
 
 export default function Tabs({ tabsContent }) {
   const [activeTab, setActiveTab] = useState(0)
+  const [isLineClamped, setIsLineClamped] = useState(true)
 
   const handleTabClick = (index) => {
     setActiveTab(index)
+  }
+
+  const handleContentClick = () => {
+    setIsLineClamped(!isLineClamped)
   }
 
   const tabAlignments = () => {
@@ -65,27 +70,35 @@ export default function Tabs({ tabsContent }) {
             key={tab.id}
             role="tabpanel"
             id={`panel-${index + 1}`}
-            className={`group absolute z-50 transition-all duration-500 ${
+            className={`group absolute z-50 ${
               activeTab === index
                 ? 'opacity-100'
                 : 'pointer-events-none opacity-0'
             }`}
           >
-            <div className="group z-50 mx-auto h-fit rounded-xl bg-gray-400 px-14 py-4 group-hover:shadow-[0px_30px_30px_0px_rgba(0,0,0,0.4)] md:px-9 md:py-4 xl:px-8 3xl:space-y-6 3xl:px-12 3xl:py-8">
+            <div className="group z-50 mx-auto h-fit rounded-xl bg-gray-400 px-16 py-4 md:px-9 md:py-4 xl:px-8 2xl:group-hover:shadow-[0px_30px_30px_0px_rgba(0,0,0,0.4)] 3xl:space-y-6 3xl:px-12 3xl:py-8">
               <div className=" z-50 inline-flex w-full place-items-center justify-between">
                 <h2 className="text-lg font-bold text-gray-900 md:text-xl xl:text-2xl">
                   {tab.title}
                 </h2>
               </div>
               <p
-                className="tab-content mt-2 line-clamp-3 hyphens-auto whitespace-break-spaces indent-6 text-gray-900
-              group-hover:line-clamp-none group-hover:h-screen sm:group-hover:h-fit  md:mt-4 md:text-lg xl:mt-5 xl:text-xl"
+                onClick={handleContentClick}
+                className={`${
+                  isLineClamped
+                    ? 'tab-content h-fit'
+                    : 'line-clamp-none h-screen'
+                }  mt-2 hyphens-auto whitespace-break-spaces indent-6
+                  text-gray-900
+                    md:mt-4 md:text-lg
+                    xl:mt-5 xl:text-xl 2xl:group-hover:line-clamp-none
+                2xl:group-hover:h-fit`}
               >
                 {tab.content}
               </p>
               <PiMouseScroll
-                className="absolute bottom-5 right-7 text-2xl opacity-100 group-hover:opacity-0 sm:right-1 sm:text-2xl
-            md:text-3xl 2xl:bottom-7 3xl:text-4xl"
+                className="absolute bottom-5 right-10 text-2xl sm:text-2xl md:right-1 max-md:top-5
+                md:text-3xl 3xl:text-4xl 3xl:bottom-2"
               />
             </div>
           </div>

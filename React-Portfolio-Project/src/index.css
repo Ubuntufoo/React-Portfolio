@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-height: 800px) {
+@media (min-height: 768px) {
   .tab-content {
     display: -webkit-box;
     line-clamp: 4;
@@ -53,23 +53,13 @@
   }
 }
 
-/* @media (min-height: 882px) {
+/* @media (min-height: 1024px) {
   .tab-content {
       overflow: hidden;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 5;
       line-clamp: 5;
-    }
-} */
-
-/* @media (min-height: 1024px) {
-  .tab-content {
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 6;
-      line-clamp: 6;
     }
 } */
 
