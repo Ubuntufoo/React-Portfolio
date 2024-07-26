@@ -8,43 +8,43 @@ import './index.css'
 import { anchors } from './utils/utils'
 
 // Incompatible Component
-const Incompatible = () => (
-  <div className="flex h-screen flex-col justify-center text-3xl">
-    <h1 className="mx-auto w-4/5 text-center font-kreon">
-      Your device is &lt;768 pixels wide. Please rotate your device to use this
-      site.
-    </h1>
-  </div>
-)
+// const Incompatible = () => (
+//   <div className="flex h-screen flex-col justify-center text-3xl">
+//     <h1 className="mx-auto w-4/5 text-center font-kreon">
+//       Your device is &lt;768 pixels wide. Please rotate your device to use this
+//       site.
+//     </h1>
+//   </div>
+// )
 
 const App = () => {
   const [activePage, setActivePage] = useState('Intro')
-  const [isPortrait, setIsPortrait] = useState(
-    window.matchMedia('(orientation: portrait)').matches,
-  )
-  const [isSmallScreen, setIsSmallScreen] = useState(
-    window.matchMedia('(max-width: 767px)').matches,
-  )
+  // const [isPortrait, setIsPortrait] = useState(
+  //   window.matchMedia('(orientation: portrait)').matches,
+  // )
+  // const [isSmallScreen, setIsSmallScreen] = useState(
+  //   window.matchMedia('(max-width: 767px)').matches,
+  // )
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsPortrait(window.matchMedia('(orientation: portrait)').matches)
-      setIsSmallScreen(window.matchMedia('(max-width: 767px)').matches)
-    }
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsPortrait(window.matchMedia('(orientation: portrait)').matches)
+  //     setIsSmallScreen(window.matchMedia('(max-width: 767px)').matches)
+  //   }
 
-    // Add event listeners for resize and orientation change
-    window.addEventListener('resize', handleResize)
-    window.addEventListener('orientationchange', handleResize)
+  //   // Add event listeners for resize and orientation change
+  //   window.addEventListener('resize', handleResize)
+  //   window.addEventListener('orientationchange', handleResize)
 
-    // Initial check
-    handleResize()
+  //   // Initial check
+  //   handleResize()
 
-    // Clean up event listeners on unmount
-    return () => {
-      window.removeEventListener('resize', handleResize)
-      window.removeEventListener('orientationchange', handleResize)
-    }
-  }, [])
+  //   // Clean up event listeners on unmount
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize)
+  //     window.removeEventListener('orientationchange', handleResize)
+  //   }
+  // }, [])
 
   useEffect(() => {
     const handler = setupKeydownHandler()
@@ -71,9 +71,9 @@ const App = () => {
     setActivePage(activeSection)
   }
 
-  if (isSmallScreen && !isPortrait) {
-    return <Incompatible />
-  }
+  // if (isSmallScreen && !isPortrait) {
+  //   return <Incompatible />
+  // }
 
   return (
     <>
