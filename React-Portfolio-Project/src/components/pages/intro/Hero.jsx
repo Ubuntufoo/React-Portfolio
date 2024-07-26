@@ -31,7 +31,7 @@ export default function Hero() {
             Husband. <br /> Father.
           </h2>
           <h2
-            className={`highlight bottom-1 mx-auto italic md:right-2 md:pb-0.5 md:ps-1 lg:ps-4 xl:ps-6`}
+            className={`highlight bottom-2 mx-auto italic md:right-2 md:pb-0.5 md:ps-1 lg:ps-4 xl:ps-6`}
           >
             Web Developer
           </h2>

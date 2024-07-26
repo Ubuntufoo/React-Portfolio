@@ -49,7 +49,7 @@ export default function ProjGallery() {
               </p>
               <div className="mx-auto flex w-3/4 text-sm xl:w-1/2">
                 <Button
-                  link={`/Projects/${selectedProject.linkToSlide}`}
+                  link={`/#Projects/${selectedProject.linkToSlide}`}
                   position=""
                   styles="scale-90"
                   text="Details"
