@@ -35,7 +35,10 @@ export default function Modal({ modalContent, modalState, handleClose }) {
       className="absolute inset-x-0 z-50 mx-auto h-fit w-9/10 max-w-[900px] overflow-hidden rounded-3xl bg-current p-5 md:p-6 2xl:w-3/4 3xl:w-1/2"
     >
       <button
-        onClick={handleClose}
+        onClick={(event) => {
+          event.stopPropagation()
+          handleClose()
+        }}
         className="rotate group absolute right-[7%] top-[5%] cursor-pointer bg-transparent text-2xl font-bold text-white transition-all duration-1000 ease-out hover:rotate-180 hover:scale-75 md:text-3xl xl:text-5xl"
         aria-label="Close modal"
       >

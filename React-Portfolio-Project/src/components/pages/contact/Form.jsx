@@ -44,7 +44,7 @@ export default function Form() {
 
   return (
     <div
-      className={`${loading && 'animate-pulse'} absolute top-0 z-10 h-[55%] w-full px-4 shadow-xl
+      className={`${loading && 'animate-pulse'} absolute top-0 z-10 h-[50%] w-full px-4 shadow-xl
       2xl:left-14 2xl:top-10 2xl:h-fit 2xl:max-w-[550px] 2xl:pb-6`}
     >
       <div className="absolute inset-0 -z-10 bg-gray-700 bg-opacity-90 2xl:rounded-xl"></div>

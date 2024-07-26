@@ -10,7 +10,7 @@ export default function Hero() {
 
   return (
     <main className="flex h-screen flex-col justify-center">
-      <section className="isolate flex h-6/7 flex-col place-content-evenly place-items-center text-lg sm:gap-20 md:gap-20 md:text-2xl lg:flex-row lg:place-content-center lg:gap-x-32 lg:ps-8 lg:pt-0 lg:text-2xl xl:gap-x-52 xl:ps-8 xl:text-3xl 3xl:ps-12">
+      <section className="isolate mb-6 flex h-6/7 flex-col place-content-evenly place-items-center text-lg sm:mb-0 sm:gap-20 md:text-2xl lg:flex-row lg:place-content-center lg:gap-x-32 lg:ps-8 lg:pt-0 lg:text-2xl xl:gap-x-52 xl:ps-8 xl:text-3xl 3xl:ps-12">
         <div className="relative flex w-9/20 flex-col gap-4 rounded-lg border border-gray-950 bg-gray-950 pt-5 tracking-wide sm:w-1/4 sm:gap-0 sm:pt-8 md:w-2/5 md:gap-9 md:pt-10 lg:ms-12 lg:w-1/4 lg:gap-10 lg:pt-12 3xl:w-3/10">
           <div className="absolute inset-0 -z-10 h-full w-full rotate-[33deg] rounded-xl border border-gray-950 bg-gray-900"></div>
           <div className="absolute inset-0 -z-20 h-full w-full rotate-[60deg] rounded-xl border border-gray-950 bg-gray-600"></div>
@@ -31,13 +31,13 @@ export default function Hero() {
             Husband. <br /> Father.
           </h2>
           <h2
-            className={`highlight mx-auto italic md:right-2 md:pb-0.5 md:ps-1 lg:ps-4 xl:ps-6`}
+            className={`highlight bottom-1 mx-auto italic md:right-2 md:pb-0.5 md:ps-1 lg:ps-4 xl:ps-6`}
           >
             Web Developer
           </h2>
           <Button
             text="Explore"
-            link="http://localhost:5173/#Projects"
+            link="https://tmurphywebdev.netlify.app/#Projects"
             position=""
             styles="md:px-10 md:py-5 lg:px-12 lg:py-8 px-10 py-3"
           />

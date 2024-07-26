@@ -66,7 +66,7 @@ export default function SkillsGrid() {
         </div>
       </div>
       <div
-        className="neumorph relative mx-auto flex w-fit cursor-default flex-col justify-center rounded-xl p-5 md:p-6 xl:p-8"
+        className="neumorph bottom-2 relative mx-auto flex w-fit cursor-default flex-col justify-center rounded-xl p-5 md:p-6 xl:p-8"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
