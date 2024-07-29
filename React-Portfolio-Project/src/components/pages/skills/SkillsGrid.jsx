@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Modal from '../../features/Modal'
-import { skillCardsContent } from '../../../utils/images'
+import { skillCardsContent } from '../../../utils/skillcards'
 import { IoIosExpand } from 'react-icons/io'
 
 export default function SkillsGrid() {
