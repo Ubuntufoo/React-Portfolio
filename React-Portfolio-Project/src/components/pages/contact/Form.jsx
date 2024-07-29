@@ -69,7 +69,7 @@ export default function Form() {
               type="text"
               name="name"
               id="name"
-              pattern=".{2,}"
+              // pattern=".{2,}"
               className={inputClasses}
               placeholder=""
               required

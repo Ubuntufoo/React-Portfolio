@@ -8,7 +8,8 @@ export default function Carousel({ images }) {
   const slidesContainerRef = useRef(null)
   const videoRefs = useRef([])
 
-  const carouselWidth = window.innerWidth >= 1920 ? window.innerWidth / 1.5 : window.innerWidth
+  const carouselWidth =
+    window.innerWidth >= 1920 ? window.innerWidth / 1.5 : window.innerWidth
 
   const slidesClasses =
     'w-full h-fit mt-auto shrink-0 snap-center snap-always cursor-grab 2xl:cursor-auto first:ms-0 me-6 last:me-0 bg-gray-400 origin-center transition-all relative flex'
@@ -17,30 +18,26 @@ export default function Carousel({ images }) {
   const handleSlideChange = (slideNumber) => {
     setActiveSlide(slideNumber)
     const slidesContainer = slidesContainerRef.current
-    // width of each slide
     const slideWidth = carouselWidth
-    const slideMargin = 24 // margin-inline-end of each slide
+    const slideMargin = 24
     slidesContainer.scrollTo({
       left: slideNumber * (slideWidth + slideMargin),
       behavior: 'smooth',
     })
   }
 
-  // Pause all videos except the active slide
   useEffect(() => {
     videoRefs.current.forEach((videoRef, index) => {
       if (index === activeSlide) {
-        videoRef.play() // Play the video if it's the active slide
+        videoRef.play()
       } else {
-        videoRef.pause() // Pause the video if it's not the active slide
+        videoRef.pause()
       }
     })
   }, [activeSlide])
 
-  // Toggle fullscreen mode on image click event
   const handleImageClick = (event) => {
     const imageElement = event.target
-
     if (!isFullscreen) {
       if (imageElement.requestFullscreen) {
         imageElement.requestFullscreen()
@@ -62,11 +59,9 @@ export default function Carousel({ images }) {
         document.msExitFullscreen()
       }
     }
-
     setIsFullscreen(!isFullscreen)
   }
 
-  // Handle ESC key press to exit fullscreen mode
   useEffect(() => {
     const handleKeyPress = (event) => {
       if (event.key === 'Escape') {
@@ -84,11 +79,27 @@ export default function Carousel({ images }) {
     }
 
     document.addEventListener('keydown', handleKeyPress)
-
     return () => {
       document.removeEventListener('keydown', handleKeyPress)
     }
   }, [isFullscreen])
+
+  useEffect(() => {
+    const slidesContainer = slidesContainerRef.current
+
+    const onScroll = () => {
+      const { scrollLeft } = slidesContainer
+      const slideWidth = carouselWidth + 24 // Including margin
+      const newActiveSlide = Math.round(scrollLeft / slideWidth)
+      setActiveSlide(newActiveSlide)
+    }
+
+    slidesContainer.addEventListener('scroll', onScroll)
+
+    return () => {
+      slidesContainer.removeEventListener('scroll', onScroll)
+    }
+  }, [carouselWidth])
 
   return (
     <div className="absolute inset-x-0 bottom-[14%] overflow-hidden text-center md:bottom-[7.7%] 2xl:bottom-[3%] 3xl:bottom-[6%]">
@@ -102,7 +113,6 @@ export default function Carousel({ images }) {
             id={`slide${index}`}
             className={`${slidesClasses} ${activeSlide === index ? activeSlideClasses : ''}`}
           >
-            {/* Conditional rendering based on media type */}
             {media.type === 'image' && (
               <img
                 src={media.src}
@@ -113,7 +123,7 @@ export default function Carousel({ images }) {
             )}
             {media.type === 'video' && (
               <video
-                ref={(ref) => (videoRefs.current[index] = ref)} // Store video refs for each slide
+                ref={(ref) => (videoRefs.current[index] = ref)}
                 controls
                 className="max-w-screen mx-auto max-h-52 object-contain sm:rounded md:max-h-96 md:max-w-[460px] lg:max-h-80 xl:max-h-80 xl:max-w-[550px] 2xl:max-h-[230px] 3xl:max-h-[250px] 3xl:max-w-[657px]"
               >
@@ -128,7 +138,9 @@ export default function Carousel({ images }) {
         {images.map((media, index) => (
           <button
             key={index}
-            className="size-4 cursor-pointer rounded-full bg-gray-50 md:size-5 xl:size-6"
+            className={`size-4 cursor-pointer rounded-full md:size-5 xl:size-6 ${
+              activeSlide === index ? 'bg-gray-950' : 'bg-gray-50'
+            }`}
             onClick={() => handleSlideChange(index)}
           ></button>
         ))}
@@ -136,3 +148,4 @@ export default function Carousel({ images }) {
     </div>
   )
 }
+
