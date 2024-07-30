@@ -69,7 +69,7 @@ export default function Form() {
               type="text"
               name="name"
               id="name"
-              // pattern=".{2,}"
+              pattern=".{2,}"
               className={inputClasses}
               placeholder=""
               required
@@ -108,7 +108,6 @@ export default function Form() {
               Your Message
             </label>
           </div>
-          {/* Success and failure indicators */}
           {success === true && (
             <div
               aria-live="polite" // Accessibility attribute for screen readers

@@ -72,7 +72,7 @@ export default function ProjGallery() {
               <li
                 onClick={() => setSelectedProject(proj)}
                 key={index}
-                className={`flex w-screen grow origin-bottom cursor-pointer place-items-center justify-center text-center text-xl tracking-wide transition-all hover:scale-110 ${projectClasses[index % projectClasses.length].bg} ${projectClasses[index % projectClasses.length].hover}`}
+                className={`flex w-screen grow origin-bottom cursor-pointer place-items-center justify-center text-center text-xl tracking-wide transition-all hover:scale-[1.15] ${projectClasses[index % projectClasses.length].bg} ${projectClasses[index % projectClasses.length].hover}`}
               >
                 <button className="relative flex place-items-center text-gray-50">
                   {proj.label}

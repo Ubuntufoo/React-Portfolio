@@ -1,19 +1,35 @@
 //an image carousel
 
 import { useState, useRef, useEffect } from 'react'
+import { toggleFullscreen, exitFullscreenOnEscape } from '../../utils/utils'
 
 export default function Carousel({ images }) {
-  const [activeSlide, setActiveSlide] = useState(0)
   const [isFullscreen, setIsFullscreen] = useState(false)
+  const [activeSlide, setActiveSlide] = useState(0)
   const slidesContainerRef = useRef(null)
   const videoRefs = useRef([])
 
   const carouselWidth =
     window.innerWidth >= 1920 ? window.innerWidth / 1.5 : window.innerWidth
 
-  const slidesClasses =
-    'w-full h-fit mt-auto shrink-0 snap-center snap-always cursor-grab 2xl:cursor-auto first:ms-0 me-6 last:me-0 bg-gray-400 origin-center transition-all relative flex'
-  const activeSlideClasses = ''
+  const handleImageClick = (event) => {
+    toggleFullscreen(event.target, isFullscreen)
+    setIsFullscreen(!isFullscreen)
+  }
+
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === 'Escape') {
+        exitFullscreenOnEscape()
+        setIsFullscreen(false)
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyPress)
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress)
+    }
+  }, [isFullscreen])
 
   const handleSlideChange = (slideNumber) => {
     setActiveSlide(slideNumber)
@@ -25,64 +41,6 @@ export default function Carousel({ images }) {
       behavior: 'smooth',
     })
   }
-
-  useEffect(() => {
-    videoRefs.current.forEach((videoRef, index) => {
-      if (index === activeSlide) {
-        videoRef.play()
-      } else {
-        videoRef.pause()
-      }
-    })
-  }, [activeSlide])
-
-  const handleImageClick = (event) => {
-    const imageElement = event.target
-    if (!isFullscreen) {
-      if (imageElement.requestFullscreen) {
-        imageElement.requestFullscreen()
-      } else if (imageElement.mozRequestFullScreen) {
-        imageElement.mozRequestFullScreen()
-      } else if (imageElement.webkitRequestFullscreen) {
-        imageElement.webkitRequestFullscreen()
-      } else if (imageElement.msRequestFullscreen) {
-        imageElement.msRequestFullscreen()
-      }
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen()
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen()
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen()
-      } else if (document.msExitFullscreen) {
-        document.msExitFullscreen()
-      }
-    }
-    setIsFullscreen(!isFullscreen)
-  }
-
-  useEffect(() => {
-    const handleKeyPress = (event) => {
-      if (event.key === 'Escape') {
-        if (document.exitFullscreen) {
-          document.exitFullscreen()
-        } else if (document.mozCancelFullScreen) {
-          document.mozCancelFullScreen()
-        } else if (document.webkitExitFullscreen) {
-          document.webkitExitFullscreen()
-        } else if (document.msExitFullscreen) {
-          document.msExitFullscreen()
-        }
-        setIsFullscreen(false)
-      }
-    }
-
-    document.addEventListener('keydown', handleKeyPress)
-    return () => {
-      document.removeEventListener('keydown', handleKeyPress)
-    }
-  }, [isFullscreen])
 
   useEffect(() => {
     const slidesContainer = slidesContainerRef.current
@@ -100,6 +58,10 @@ export default function Carousel({ images }) {
       slidesContainer.removeEventListener('scroll', onScroll)
     }
   }, [carouselWidth])
+
+  const slidesClasses =
+    'w-full h-fit mt-auto shrink-0 snap-center snap-always cursor-grab 2xl:cursor-auto first:ms-0 me-6 last:me-0 bg-gray-400 origin-center transition-all relative flex'
+  const activeSlideClasses = ''
 
   return (
     <div className="absolute inset-x-0 bottom-[14%] overflow-hidden text-center md:bottom-[7.7%] 2xl:bottom-[3%] 3xl:bottom-[6%]">
