@@ -1,4 +1,4 @@
-// child component for a contact form
+// parent component for a contact form
 
 import Form from "./Form";
 import { useState } from 'react'

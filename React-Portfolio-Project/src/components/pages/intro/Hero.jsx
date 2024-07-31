@@ -10,7 +10,7 @@ export default function Hero() {
 
   return (
     <main className="flex h-screen flex-col justify-center">
-      <section className="isolate mb-6 flex h-6/7 flex-col place-content-evenly place-items-center text-lg sm:mb-0 sm:gap-20 md:text-2xl lg:flex-row lg:place-content-center lg:gap-x-32 lg:ps-8 lg:pt-0 lg:text-2xl xl:gap-x-52 xl:ps-8 xl:text-3xl 3xl:ps-12">
+      <section className="isolate mb-6 flex h-6/7 flex-col place-content-evenly place-items-center text-xl sm:mb-0 sm:gap-20 md:text-2xl lg:flex-row lg:place-content-center lg:gap-x-32 lg:ps-8 lg:pt-0 lg:text-2xl xl:gap-x-52 xl:ps-8 xl:text-3xl 3xl:ps-12">
         <div
           onMouseEnter={() => setImageSrc(Design1)}
           onMouseLeave={() => setImageSrc(Design2)}
@@ -28,12 +28,12 @@ export default function Hero() {
             className="brightness-95"
           />
         </div>
-        <div className="-z-10 flex h-1/3 w-full flex-col justify-between text-center lg:h-[55%] lg:w-1/3 lg:gap-10 lg:bg-inherit xl:h-[60%] 3xl:h-1/2">
+        <div className="-z-10 flex h-1/3 w-full flex-col justify-between text-center lg:h-[55%] lg:w-1/3 lg:gap-10 lg:bg-inherit xl:h-[60%] 3xl:h-2/5">
           <h2>
             Husband. <br /> Father.
           </h2>
           <h2
-            className={`highlight bottom-2 mx-auto italic md:right-2 md:pb-0.5 md:ps-1 lg:ps-4 xl:ps-6`}
+            className={`highlight bottom-1 mx-auto italic md:right-2 md:pb-0.5 md:ps-1 lg:ps-4 xl:ps-6`}
           >
             Web Developer
           </h2>
