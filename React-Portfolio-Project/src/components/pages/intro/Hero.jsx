@@ -16,8 +16,8 @@ export default function Hero() {
           onMouseLeave={() => setImageSrc(Design2)}
           className="relative flex w-9/20 flex-col gap-4 rounded-lg border border-gray-950 bg-gray-950 pt-5 tracking-wide sm:w-1/4 sm:gap-0 sm:pt-8 md:w-2/5 md:gap-9 md:pt-10 lg:ms-12 lg:w-1/4 lg:gap-10 lg:pt-12 3xl:w-3/10"
         >
-          <div className="absolute inset-0 -z-10 h-full w-full rotate-[33deg] rounded-xl border border-gray-950 bg-gray-900"></div>
-          <div className="absolute inset-0 -z-20 h-full w-full rotate-[60deg] rounded-xl border border-gray-950 bg-gray-600"></div>
+          <div className="absolute inset-0 -z-10 h-full w-full rotate-[33deg] rounded-xl border border-gray-950 bg-gray-700"></div>
+          <div className="absolute inset-0 -z-20 h-full w-full rotate-[60deg] rounded-xl border border-gray-950 bg-gray-500"></div>
           <div className="absolute inset-0 -z-30 h-full w-full rotate-[90deg] rounded-xl border border-gray-950 bg-gray-300"></div>
           <h1 className="whitespace-pre text-center italic text-gray-50">
             Hi, I&apos;m Tim
@@ -28,7 +28,7 @@ export default function Hero() {
             className="brightness-95"
           />
         </div>
-        <div className="-z-10 flex h-1/3 w-full flex-col justify-between text-center lg:h-[55%] lg:w-1/3 lg:gap-10 lg:bg-inherit xl:h-1/2">
+        <div className="-z-10 flex h-1/3 w-full flex-col justify-between text-center lg:h-[55%] lg:w-1/3 lg:gap-10 lg:bg-inherit xl:h-[60%] 3xl:h-1/2">
           <h2>
             Husband. <br /> Father.
           </h2>
@@ -41,7 +41,7 @@ export default function Hero() {
             text="Explore"
             link="https://tmurphywebdev.netlify.app/#Projects"
             position=""
-            styles="md:px-10 md:py-5 lg:px-12 lg:py-8 px-10 py-3"
+            styles="md:px-10 md:py-5 lg:px-10 lg:py-4 px-10 py-3"
           />
         </div>
       </section>
