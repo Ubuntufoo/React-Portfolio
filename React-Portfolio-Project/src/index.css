@@ -90,10 +90,10 @@
 .highlight::after {
   content: '';
   position: absolute;
-  left: -30px;
+  left: -34px;
   right: 0;
   scale: 1.15;
-  bottom: -20px;
+  bottom: -21px;
   height: 200%;
   width: 150%;
   overflow: visible;

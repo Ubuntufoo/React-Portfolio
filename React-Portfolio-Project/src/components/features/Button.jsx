@@ -31,7 +31,7 @@ export default function Button({ link, text, isExternal, styles, position = 'abs
           }
         }}
       >
-        <span className="font-kreon text-lg font-semibold tracking-wide text-gray-950 md:text-2xl xl:text-3xl">
+        <span className="font-kreon font-semibold tracking-wide text-gray-950 text-2xl xl:text-3xl">
           {text}
         </span>
         <div className="absolute inset-0 z-20 h-[50%] w-[150%] translate-x-[60%] translate-y-16 -rotate-45 bg-gray-900 opacity-50 blur-2xl transition-all duration-[800ms] group-hover:-translate-x-[60%] group-hover:-translate-y-16"></div>
