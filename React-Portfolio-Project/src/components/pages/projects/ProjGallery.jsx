@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { projMainContent } from '../../../utils/images'
 import { LuBadgeInfo } from 'react-icons/lu'
 import Button from '../../features/Button'
-import BG1 from '../../../assets/BG1.png'
+import BG1 from '../../../assets/BG1.jpg'
 
 const projectClasses = [
   { bg: 'bg-gray-950'},

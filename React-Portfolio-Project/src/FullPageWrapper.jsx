@@ -34,7 +34,6 @@ const FullpageWrapper = ({ afterLoad, activePage }) => {
       fixedElements="#NavBar"
       lazyLoading={true}
       normalScrollElements="#map, .slider, .slides, .tab"
-      loopBottom={true}
       scrollOverflow={true}
       afterLoad={handleAfterLoad}
       // responsiveWidth={640}

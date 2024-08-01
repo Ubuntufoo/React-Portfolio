@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Button from '../../features/Button'
 import Design1 from '../../../assets/Design1.png'
-import Design2 from '../../../assets/Design2.png'
+import Design2 from '../../../assets/Design2JPG.jpg'
 
 export default function Hero() {
   const [imageSrc, setImageSrc] = useState(Design2)

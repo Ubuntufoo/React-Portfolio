@@ -11,6 +11,7 @@ export default function Button({ link, text, isExternal, styles, position = 'abs
 
   return (
     <button
+      aria-label="button"
       className={`mx-auto flex size-fit flex-col justify-center overflow-hidden rounded-xl transition duration-500 hover:scale-95 hover:shadow-none ${buttonPosition}`}
       onClick={() => {
         if (isExternal) {
