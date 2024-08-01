@@ -20,6 +20,7 @@ export default function ContactPage() {
           className="absolute inset-x-0 bottom-0 w-full h-1/2 2xl:inset-0 2xl:h-full mx-auto 2xl:py-24"
         >
           <iframe
+            fetchPriority="low"
             id="map"
             className={`size-full mx-auto ${mapClicked ? '' : 'pointer-events-none'} brightness-95`}
             title="Map of My Area"

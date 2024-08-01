@@ -23,9 +23,11 @@ export default function Hero() {
             Hi, I&apos;m Tim
           </h1>
           <img
+            fetchPriority='high'
+            width={462}
+            height={418}
             src={imageSrc}
-            alt="Tim's image as a cross hatch illustration"
-            className="brightness-95"
+            alt="Tim's image as alternate graphic design"
           />
         </div>
         <div className="-z-10 flex h-[35%] w-full flex-col justify-between text-center lg:h-[55%] lg:w-1/3 lg:gap-10 lg:bg-inherit xl:h-[60%] 3xl:h-2/5">

@@ -99,6 +99,7 @@ export default function Carousel({ images }) {
       <div className="mx-auto space-x-8">
         {images.map((media, index) => (
           <button
+            aria-label="button"
             key={index}
             className={`size-4 cursor-pointer rounded-full md:size-5 xl:size-6 ${
               activeSlide === index ? 'bg-gray-950' : 'bg-gray-50'
