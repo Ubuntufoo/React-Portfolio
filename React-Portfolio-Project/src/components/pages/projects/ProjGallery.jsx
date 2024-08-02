@@ -67,7 +67,7 @@ export default function ProjGallery() {
           )}
         </div>
         <div className="h-1/2 2xl:h-9/20">
-          <ul className="flex h-19/20 flex-col place-content-center place-items-center bg-gray-800 xl:h-full">
+          <ol className="flex h-19/20 flex-col place-content-center place-items-center bg-gray-800 xl:h-full">
             {projMainContent.map((proj, index) => (
               <li
                 onClick={() => setSelectedProject(proj)}
@@ -80,7 +80,7 @@ export default function ProjGallery() {
                 </button>
               </li>
             ))}
-          </ul>
+          </ol>
         </div>
       </section>
     </main>

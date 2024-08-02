@@ -13,11 +13,19 @@ export default function SkillsGrid() {
   const [isHovered, setIsHovered] = useState(false)
 
   const handleOpenModal = (index) => {
-    setModalState({ isOpen: true, contentIndex: index })
+    setModalState((prevState) => ({
+      ...prevState,
+      isOpen: true,
+      contentIndex: index,
+    }))
   }
 
   const handleCloseModal = () => {
-    setModalState({ isOpen: false, contentIndex: null })
+    setModalState((prevState) => ({
+      ...prevState,
+      isOpen: false,
+      contentIndex: null,
+    }))
   }
 
   const handleMouseEnter = () => {

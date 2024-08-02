@@ -23,7 +23,8 @@ export default function Hero() {
             Hi, I&apos;m Tim
           </h1>
           <img
-            fetchPriority='high'
+            // eslint-disable-next-line react/no-unknown-property
+            fetchpriority='high'
             width={462}
             height={418}
             src={imageSrc}

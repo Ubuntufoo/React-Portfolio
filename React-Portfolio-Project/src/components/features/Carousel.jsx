@@ -14,7 +14,7 @@ export default function Carousel({ images }) {
 
   const handleImageClick = (event) => {
     toggleFullscreen(event.target, isFullscreen)
-    setIsFullscreen(!isFullscreen)
+    setIsFullscreen(prevFullscreen => !prevFullscreen);
   }
 
   useEffect(() => {
@@ -96,7 +96,7 @@ export default function Carousel({ images }) {
           </div>
         ))}
       </div>
-      <div className="mx-auto space-x-8">
+      <menu className="mx-auto space-x-8">
         {images.map((media, index) => (
           <button
             aria-label="button"
@@ -107,7 +107,7 @@ export default function Carousel({ images }) {
             onClick={() => handleSlideChange(index)}
           ></button>
         ))}
-      </div>
+      </menu>
     </div>
   )
 }

@@ -12,7 +12,7 @@ export default function Tabs({ tabsContent }) {
   }
 
   const handleContentClick = () => {
-    setIsLineClamped(!isLineClamped)
+    setIsLineClamped((prevLineClamped) => !prevLineClamped)
   }
 
   const tabAlignments = () => {
@@ -39,7 +39,7 @@ export default function Tabs({ tabsContent }) {
       className="relative top-[12.5%] mx-auto flex h-[7%] w-full flex-col justify-between md:w-4/5 lg:top-[10%]
     lg:w-[55%] xl:top-[12%] xl:w-1/2 2xl:top-[20%] 2xl:h-[7%] 2xl:w-[500px] 3xl:top-[16%] 3xl:h-[5%] 3xl:w-[620px]"
     >
-      <div
+      <menu
         role="tablist"
         aria-label="tabs"
         className="relative mx-auto grid h-11 w-[344px] grid-cols-4 overflow-hidden transition xl:w-[400px]"
@@ -63,7 +63,7 @@ export default function Tabs({ tabsContent }) {
           className={`absolute bottom-0 top-0 my-auto h-10 w-[86px] rounded-3xl bg-gray-950 shadow-xl transition-all
             duration-300 xl:w-[101px] ${tabAlignments()}`}
         ></div>
-      </div>
+      </menu>
       <div className="relative">
         {tabsContent.map((tab, index) => (
           <div

@@ -12,7 +12,7 @@ export default function NavBarMobile() {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleNav = () => {
-    setIsOpen(!isOpen)
+    setIsOpen(isOpen => !isOpen)
   }
 
   return (
