@@ -10,7 +10,7 @@ export default function Hero() {
 
   return (
     <main className="flex h-screen flex-col justify-center">
-      <section className="isolate mb-6 flex h-6/7 flex-col place-content-evenly place-items-center sm:mb-0 sm:gap-20 text-2xl lg:flex-row lg:place-content-center lg:gap-x-32 lg:ps-8 lg:pt-0 lg:text-2xl xl:gap-x-52 xl:ps-8 xl:text-3xl 3xl:ps-12">
+      <section className="isolate mb-6 flex h-6/7 select-none flex-col place-content-evenly place-items-center text-2xl sm:mb-0 sm:gap-20 lg:flex-row lg:place-content-center lg:gap-x-32 lg:ps-8 lg:pt-0 lg:text-2xl xl:gap-x-52 xl:ps-8 xl:text-3xl 3xl:ps-12">
         <div
           onMouseEnter={() => setImageSrc(Design1)}
           onMouseLeave={() => setImageSrc(Design2)}
@@ -24,7 +24,7 @@ export default function Hero() {
           </h1>
           <img
             // eslint-disable-next-line react/no-unknown-property
-            fetchpriority='high'
+            fetchpriority="high"
             width={462}
             height={418}
             src={imageSrc}
@@ -36,6 +36,8 @@ export default function Hero() {
             Husband. <br /> Father.
           </h2>
           <h2
+            onMouseEnter={() => setImageSrc(Design1)}
+            onMouseLeave={() => setImageSrc(Design2)}
             className={`highlight bottom-1 mx-auto italic md:right-2 md:pb-0.5 md:ps-1 lg:ps-4 xl:ps-6`}
           >
             Web Developer

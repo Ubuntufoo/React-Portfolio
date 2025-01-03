@@ -54,14 +54,15 @@ export default function ProjGallery() {
                   styles="scale-90"
                   text="Details"
                 />
-
-                <Button
-                  link={selectedProject.linkExternal}
-                  position=""
-                  styles="scale-90"
-                  text="Visit"
-                  isExternal
-                />
+                {selectedProject.linkExternal && (
+                  <Button
+                    link={selectedProject.linkExternal}
+                    position=""
+                    styles="scale-90"
+                    text="Visit"
+                    isExternal
+                  />
+                )}
               </div>
             </div>
           )}
