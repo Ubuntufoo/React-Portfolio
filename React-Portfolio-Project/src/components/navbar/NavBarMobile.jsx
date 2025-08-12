@@ -12,13 +12,13 @@ export default function NavBarMobile() {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleNav = () => {
-    setIsOpen(isOpen => !isOpen)
+    setIsOpen((isOpen) => !isOpen)
   }
 
   return (
     <nav
       id="NavBarMobile"
-      className={`fixed inset-x-0 top-0 z-50 flex flex-col bg-gray-500 text-center text-gray-950 transition-all ease-in-out duration-500 ${isOpen ? 'h-screen' : 'h-0'}`}
+      className={`fixed inset-x-0 top-0 z-50 flex flex-col bg-gray-500 text-center text-gray-950 transition-all duration-500 ease-in-out ${isOpen ? 'h-screen' : 'h-0'}`}
     >
       <div
         onClick={toggleNav}
@@ -54,7 +54,7 @@ export default function NavBarMobile() {
         >
           <li className="mx-auto scale-105 cursor-pointer">
             <a
-              aria-label='email'
+              aria-label="email"
               href="mailto:TimothyMurphy123@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -65,7 +65,7 @@ export default function NavBarMobile() {
           </li>
           <li className="mx-auto cursor-pointer">
             <a
-              aria-label='github'
+              aria-label="github"
               href="https://github.com/Ubuntufoo"
               target="_blank"
               rel="noopener noreferrer"
@@ -76,7 +76,7 @@ export default function NavBarMobile() {
           </li>
           <li className="mx-auto scale-110 cursor-pointer ps-0.5">
             <a
-              aria-label='linkedin'
+              aria-label="linkedin"
               href="https://www.linkedin.com/in/timothy-murphy-19a702213/"
               target="_blank"
               rel="noopener noreferrer"
@@ -87,8 +87,8 @@ export default function NavBarMobile() {
           </li>
           <li className="mx-auto cursor-pointer">
             <a
-              aria-label='resume - google docs'
-              href="https://docs.google.com/document/d/15K8jNlhiDEw9anGdRNiWMGWhdIbsLZinUbh73TV_LD8/edit?usp=sharing"
+              aria-label="resume - google docs"
+              href="https://drive.google.com/file/d/1DoNrT5sSiY0XZaBCJmBIs8kTvAVd3Fpg/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className=""
