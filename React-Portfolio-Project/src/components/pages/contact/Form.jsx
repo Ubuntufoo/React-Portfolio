@@ -99,7 +99,7 @@ export default function Form() {
               name="message"
               id="message"
               rows="3"
-              className={inputClasses}
+              className={`${inputClasses} resize-none`}
               placeholder=" "
               required
               aria-label="Your Message"
@@ -110,7 +110,7 @@ export default function Form() {
           </div>
           {success === true && (
             <div
-              aria-live="polite" // Accessibility attribute for screen readers
+              aria-live="polite"
               className="justify-self-center text-4xl text-green-500 md:text-5xl"
             >
               <PiCheckFatBold />
@@ -119,7 +119,7 @@ export default function Form() {
           )}
           {success === false && (
             <div
-              aria-live="polite" // Accessibility attribute for screen readers
+              aria-live="polite"
               className="dura justify-self-center text-4xl text-red-500 md:text-5xl"
             >
               <TbFaceIdError />
