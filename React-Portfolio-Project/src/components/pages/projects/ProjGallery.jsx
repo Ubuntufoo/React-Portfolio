@@ -7,11 +7,11 @@ import Button from '../../features/Button'
 import BG1 from '../../../assets/BG1.jpg'
 
 const projectClasses = [
-  { bg: 'bg-gray-950'},
-  { bg: 'bg-gray-900'},
-  { bg: 'bg-gray-800'},
-  { bg: 'bg-gray-700'},
-  { bg: 'bg-gray-600'},
+  { bg: 'bg-gray-950' },
+  { bg: 'bg-gray-900' },
+  { bg: 'bg-gray-800' },
+  { bg: 'bg-gray-700' },
+  { bg: 'bg-gray-600' },
 ]
 
 export default function ProjGallery() {
@@ -44,9 +44,12 @@ export default function ProjGallery() {
               <h2 className="text-[25px] font-bold sm:text-3xl md:text-4xl 2xl:text-5xl">
                 {selectedProject.label}
               </h2>
-              <p className="text-pretty font-semibold sm:text-lg md:text-xl 2xl:text-2xl">
-                {selectedProject.description}
-              </p>
+              <p
+                className="whitespace-pre-line text-pretty font-semibold sm:text-lg md:text-xl 2xl:text-2xl"
+                dangerouslySetInnerHTML={{
+                  __html: selectedProject.description,
+                }}
+              />
               <div className="mx-auto flex w-3/4 text-sm xl:w-1/2">
                 <Button
                   link={`/#Projects/${selectedProject.linkToSlide}`}

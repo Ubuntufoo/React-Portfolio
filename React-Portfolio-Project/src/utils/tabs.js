@@ -19,7 +19,7 @@ export const tabsExploreLLM = [
   {
     id: 3,
     title: 'Techs',
-    content: "Featuring React.js with a Flask back-end. A series of API requests from the client carry user input to the local server, where the input is added to a composite prompt and sent to OpenAI's endpoint.\n\nThe LLM decomposes the prompt into sub-parts with options relating to each, and returns them the user in a visually constructive way. Finally, the sub-parts are recombined and sent to the OpenAI endpoint for a final report. Please see the demonstration video below.",
+    content: "Featuring React.js with a Flask back-end. A series of API requests from the client carry user input to the local server, where the input is added to a composite prompt and sent to OpenAI's endpoint.\n\nThe LLM decomposes the prompt into sub-parts with options relating to each, and returns them to the user in a visually constructive way. Finally, the sub-parts are recombined and sent to the OpenAI endpoint for a final report. Please see the demonstration video below.",
   },
 ];
 
@@ -73,24 +73,28 @@ export const tabsWorkDash = [
   {
     id: 0,
     title: 'About',
-    content: "This dashboard consolidates 6 tools that I use regularly into 1 pinned browser tab. I am able to store a list of my assignments, modify strings of data, and configure server-side scripts that automate aspects of my software, such as Microsoft SQL Server Management Studio or web data retrieval.\n\nEmbedded in the page are other 3rd-party tools such as a web diff checker and my test case management tool.",
+    content:
+      'This dashboard consolidates several tools that I use regularly into 1 pinned browser tab. It provides configurable server-side scripts that automate Microsoft SQL Server and retrieve web data. It allows me to store a list of my assignments and format data sets for SQL queries. Embedded in the page are other 3rd-party tools such as a web diff checker and my test case management tool.',
   },
   {
     id: 1,
     title: 'Journey',
-    content: "My Work Dashboard was born of necessity. Too much time was spent searching bookmark folders, or navigating multi-step authentication flow to download a single file.\n\nI began crafting the Python scripts as stand-alone tools before building out the front-end. With each feature added, I shaved a bit of time off my daily routine.\n\nI will adapt this tool to my web dev workflow in the future so I can quickly scaffold new projects and access resources.",
+    content:
+      'My Work Dashboard was born of necessity. I tired of searching bookmark folders,and navigating multi-step auth to download a frequent file.\n\nI began crafting the Python scripts as stand-alone tools before building out the front-end. With each feature added, I shaved a bit of time off my daily routine.\n\nI will adapt this tool to my web dev workflow in the future so I can quickly scaffold new projects and access resources.',
   },
   {
     id: 2,
     title: 'Lessons',
-    content: "I discovered the power of executing external processes using the Python subprocess module to automate tasks. In fact, I went deep down the automation rabbit hole, learned a great deal about Selenium for web data retrieval, web scraping tools like Scrapy, and PyAutoGUI for desktop automation.\n\nPreviously I was unfamiliar with the HTML iframe tag; I learned how to use it to embed 3rd-party tools into my dashboard, and I began to see a whole host of use cases for it.",
+    content:
+      'I discovered the power of external processes using the Python subprocess module to automate tasks. I went deep down the automation rabbit hole, learned a great deal about Selenium for web data retrieval, web scraping tools like Scrapy, and PyAutoGUI for desktop automation.\n\nPreviously I was unfamiliar with the HTML iframe tag; I learned how to use it to embed 3rd-party tools into my dashboard.',
   },
   {
     id: 3,
     title: 'Techs',
-    content: "Built with React.js and Flask, featuring sever-side script automation. By adding a new system env variable and using the Python subprocess module I can execute any CLI tool from my browser.\n\nHTML iframe tags embed 3rd-party tools that have weak or non-existent authentication barriers (thanks Testrail!). Client-side string editing functions ensure data is formatted for quick use in my SQL queries.",
+    content:
+      'Built with React.js and Flask, featuring sever-side script automation. By adding a new system env variable and using the Python subprocess module I can execute any CLI tool from my browser.\n\nHTML iframe tags embed 3rd-party tools that have weak authentication barriers (thanks Testrail!). Client-side string editing functions ensure data is formatted efficiently for my SQL queries.',
   },
-];
+]
 
 export const tabsPortfolio = [
   {

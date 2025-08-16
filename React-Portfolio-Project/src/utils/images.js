@@ -28,8 +28,7 @@ export const projMainContent = [
   {
     src: ProjPortfolioHero,
     label: 'Portfolio V1',
-    description:
-      "A previous version of my web developer portfolio site.",
+    description: 'A previous version of my web developer portfolio site.',
     linkExternal: 'https://timmurphywebdev.netlify.app/',
     linkToSlide: 1,
   },
@@ -37,7 +36,7 @@ export const projMainContent = [
     src: TADAmobile,
     label: 'TADA! Web App',
     description:
-    "Generative AI produces positive affirmations for accomplishments.",
+      'Generative AI produces positive affirmations for accomplishments.',
     linkExternal: 'https://tada-w0iq.onrender.com',
     linkToSlide: 2,
   },
@@ -45,23 +44,22 @@ export const projMainContent = [
     src: ExploreLLM_IMG,
     label: 'ExploreLLM Concept',
     description:
-      "Custom GUI concept aimed at enhancing generative AI interaction.",
+      'Custom GUI concept aimed at enhancing generative AI interaction.',
     linkExternal: false,
     linkToSlide: 3,
   },
   {
     src: BrainteasersHomeIMG,
-    label: 'Brainteasers',
+    label: 'Brainteasers, featuring Wordle+',
     description:
-      'A responsive, full-stack website with user auth and admin capabilities.',
-    linkExternal: 'https://brainteasers.herokuapp.com/',
+      "A responsive, full-stack website with user auth and admin page.\n<i><small>Hosting is temporarily down. Please visit to view a demo of Wordle+.</small></i>",
+    linkExternal: 'https://inspiring-cat-03d6a6.netlify.app/',
     linkToSlide: 4,
   },
   {
     src: WorkDashIMG,
     label: 'Workflow Dashboard',
-    description:
-      'A personal web app for boosting my daily workflow.',
+    description: 'A personal web app for boosting my daily workflow.',
     linkExternal: false,
     linkToSlide: 5,
   },
@@ -106,7 +104,6 @@ export const projTADAContent = [
     label: 'TADA! Desktop View',
     type: 'image',
   },
-
 ]
 
 export const projExploreLLMImages = [
@@ -125,14 +122,14 @@ export const projExploreLLMImages = [
     label: 'ExploreLLM Concept Cards',
     type: 'image',
   },
-];
+]
 
 export const projBTContent = [
   {
-  src: BrainteasersHomeIMG,
-  label: 'Brainteasers Home',
-  figcaption: 'Brainteasers Home page.',
-  type: 'image',
+    src: BrainteasersHomeIMG,
+    label: 'Brainteasers Home',
+    figcaption: 'Brainteasers Home page.',
+    type: 'image',
   },
   {
     src: BrainteasersWordleIMG,
