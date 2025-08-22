@@ -88,7 +88,7 @@ export default function NavBarMobile() {
           <li className="mx-auto cursor-pointer">
             <a
               aria-label="resume - google docs"
-              href="https://drive.google.com/file/d/1DoNrT5sSiY0XZaBCJmBIs8kTvAVd3Fpg/view?usp=sharing"
+              href="https://drive.google.com/file/d/1qlVKR97dbHndbK_6v_GAAS2nD7n987Rf/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className=""
